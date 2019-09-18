@@ -15,19 +15,19 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 {{/if}}
 
 {{if !_.PLAYED_BEFORE}}
-[#play1# PLAY! #play2#](#intro-start) `publish("intro-to-game-1"); Game.OVERRIDE_CHOICE_LINE=true;`
+[#play1# JOUER! #play2#](#intro-start) `publish("intro-to-game-1"); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="act2"}}
-[_CONTINUE_: The Party](#act2) `publish("LOAD_GAME", ["act2"]); Game.OVERRIDE_CHOICE_LINE=true;`
+[_CONTINUER_: La Fête](#act2) `publish("LOAD_GAME", ["act2"]); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="act3"}}
-[_CONTINUE_: The Other Party](#act3) `publish("LOAD_GAME", ["act3"]); Game.OVERRIDE_CHOICE_LINE=true;`
+[_CONTINUE_: L'autre Fête](#act3) `publish("LOAD_GAME", ["act3"]); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="act4"}}
-[_CONTINUE_: The Other Sandwich](#act4) `publish("LOAD_GAME", ["act4"]); Game.OVERRIDE_CHOICE_LINE=true;`
+[_CONTINUE_: L'autre Sandwich](#act4) `publish("LOAD_GAME", ["act4"]); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="replay"}}
@@ -35,14 +35,14 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="replay"}}
-[#play1# REPLAY! #play2#](#intro-start) `publish("intro-to-game-1"); Game.OVERRIDE_CHOICE_LINE=true;`
+[#play1# REJOUER! #play2#](#intro-start) `publish("intro-to-game-1"); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE}}
-[Chapter Select](#chapter-select) `Game.OVERRIDE_CHOICE_LINE=true;`
+[Sélection du Chapitre](#chapter-select) `Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
-[(content notes)](#intro-play-button) `Game.OVERRIDE_CHOICE_LINE=true; publish('show_cn');`
+[(notes de contenu)](#intro-play-button) `Game.OVERRIDE_CHOICE_LINE=true; publish('show_cn');`
 
 # chapter-select
 
