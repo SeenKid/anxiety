@@ -159,37 +159,37 @@ r: Pardon, tu t'est fait avoir par cette mode McPleineconscience qui dit que se 
 publish("act3",["roofhunter",17]);
 ```
 
-r: Le plaisir c'est l'opposé de la douleur. Par ^putain^ de conséquent, tu peux utiliser le plaisir pour combattre la douleur !
+r: Le plaisir c'est l'opposé de la douleur. En ^putain^ de conséquent, tu peux utiliser le plaisir pour combattre la douleur !
 
 ```
 publish("act3",["roofhunter",18]);
 ```
 
-r: How do those Silicon Valley pseudo-Buddhists not see this ^shit^?!
+r: Comment font ces pseudos-Bouddhistes de la Silicon Valley pour ne pas s'apercevoir de cette ^merde^ ?!
 
 ```
 publish("act3",["roofhunter",6]);
 ```
 
-r: Kid, I know that *you* know that animal *hurts* people like us. It *tortures* people like us.
+r: Gamin, je sais que *tu* sais que cet animal fait *souffrir* les gens comme nous. Il *torture* les gens comme nous.
 
 ```
 publish("act3",["roofhunter",19]);
 ```
 
-r: It's not our friend. It's a rabid beast, which either needs to be *tranquilized*,
+r: Ce n'est pas notre ami. C'est une bête enragée, qui doit soit être *tranquillisée*,
 
 ```
 publish("act3",["roofhunter",20]);
 ```
 
-r: Or have a *bullet put in its skull*.
+r: Ou *se prendre une balle dans le crâne*.
 
 ```
 publish("act3",["roofhunter",27]);
 ```
 
-r: Otherwise, you're going to let it win.
+r: Sinon, tu vas la laisser gagner.
 
 ```
 publish("act3",["roofhunter",31]);
@@ -197,7 +197,7 @@ publish("act3",["roofhong",14]);
 publish("act3",["dd",2]);
 ```
 
-h2: No. You're wrong.
+h2: Non, tu a tort.
 
 ```
 publish("act3",["roofhunter",13]);
@@ -207,7 +207,7 @@ music('battle_dark', {volume:1.0}, function(){
 });
 ```
 
-h2: I'm not going to let it win.
+h2: Je ne la laisserai pas gagner.
 
 ```
 publish("act3",["roofhunter",25]);
@@ -216,7 +216,7 @@ publish("act3-alpha", ["transition",1]);
 publish("act3",["dd",6]);
 ```
 
-r: ^Fuck^ yeah! I believe in you, babe! Kill it! <3
+r: ^Fuck^ yeah ! Je crois en toi, bébé ! Bute la ! <3
 
 (#act3a)
 
@@ -237,13 +237,13 @@ _.act3_bb_body = 1;
 publish("hp_show");
 ```
 
-b: no no no no no no
+b: non non non non non non
 
-n: THIS CHAPTER HAS TWO POSSIBLE ENDINGS. ONE IS *VERY, VERY BAD.*
+n: CE CHAPITRE A DEUX FINS POSSIBLES. UNE DES DEUX EST *VRAIMENT, VRAIMENT GRAVE.*
 
-b: NO NO NO NO NO NO NO NO NO NO NO NO NO NO
+b: NON NON NON NON NON NON NON NON NON NON NON NON NON NON
 
-n: CHOOSE WISELY. PROTECT YOUR HUMAN
+n: CHOISIS SAGEMENT. PROTEGE TON HUMAIN
 
 `bb({ eyes:"oh_crap", mouth:"normal_talk", MOUTH_LOCK:true });`
 
@@ -251,18 +251,18 @@ b: AAAAAAAAAAAAAAAAAA
 
 `bb({ mouth:"normal" });`
 
-n: GOOD LUCK
+n: BONNE CHANCE
 
 ```
 Game.clearText();
 bb({ eyes:"start" });
 ```
 
-[Human, you could actually DIE here!](#act3a_harm) `Game.OVERRIDE_CHOICE_LINE=true`
+[Humain, tu pourrais vraiment MOURIR là !](#act3a_harm) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[This is stupid and self-destructive!](#act3a_bad) `Game.OVERRIDE_CHOICE_LINE=true`
+[C'est stupide et auto-destructeur !](#act3a_bad) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[These sickos aren't really your friends!](#act3a_alone) `Game.OVERRIDE_CHOICE_LINE=true`
+[Ces malades ne sont pas vraiment tes amis !](#act3a_alone) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act3a_harm
 
@@ -304,9 +304,9 @@ hong({ body:"normal" });
 bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 ```
 
-h: You know, I might've believed you... if you hadn't tried that a zillion times before.
+h: Tu sais, j'aurais pu te croire... Si t'avais pas déja essayé ça un million de fois.
 
-h: You're the wolf who cried wolf.
+h: Tu es le loup qui a crié au loup.
 
 ```
 bb({ eyes:"sad" });
@@ -351,20 +351,19 @@ hong({ body:"normal" });
 bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 ```
 
-h: You tried that too.
+h: T'a déja essayé ça.
 
-b: human, please...
+b: humain, je t'en prie...
 
 `hong({ eyes:"look_right" });`
 
-h: Oh I'm *sorry* Big Pharma doesn't approve of my self-medication.
+h: Oh je suis*désolé* que Big Pharme n'approuve pas mon auto-médication.
 
-h: Look ^asshole^, we *all* have a way of shutting you the ^fuck^ up.
+h: Regarde ^connard^, on a tous un moyen de te faire fermer ta *putain* de gueule.
 
 `hong({ body:"look_up", eyes:"look_up" });`
 
-h: Some people throw themselves into work.
-
+h: Certains ce lancent dans le travail à corps perdu.
 `hong({ body:"look_down", eyes:"look_down" });`
 
 h: Some people throw themselves into sex, drugs, and refreshing their Facebook feed.
