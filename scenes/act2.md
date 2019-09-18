@@ -445,7 +445,7 @@ b: Tu vas créer une épidémie mortelle de SYNDROME DE LA TRISTESSE!
 
 `bb({eyes:"suspect", body:"normal", mouth:"normal"})`
 
-b: We need to get out of here and quarantine ourselves forever in a small room with Netflix and food delivery!
+b: On doit se barrer d'ici et se mettre en quarantaine dans une petite pièce avec NetFlix et livraison à domicile!
 
 ```
 _.a2_second_danger = 'netflix';
