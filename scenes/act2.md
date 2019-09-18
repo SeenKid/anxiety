@@ -439,9 +439,9 @@ b: JE DOIS T'AVERTIR À PROPOS...
 
 `bb({eyes:"shock", body:"two_up", mouth:"normal"})`
 
-b: EMOTIONS ARE CONTAGIOUS! SO IF YOU DON'T LEAVE YOU'LL INFECT EVERYONE WITH YOUR MENTAL ILLNESS! 
+b: LES ÉMOTIONS SONT CONTAGIEUSES! DONC SI TU NE PARS PAS TU VAS INFECTER TOUT LE MONDE AVEC TON PROBLÈME MENTAL!
 
-b: You'll create a deadly outbreak of SAD LUMP SYNDROME
+b: Tu vas créer une épidémie mortelle de SYNDROME DE LA TRISTESSE!
 
 `bb({eyes:"suspect", body:"normal", mouth:"normal"})`
 
