@@ -196,7 +196,7 @@ n: VOTRE TRAVAIL EST DE PROTÉGER VOTRE HUMAIN·E DU *DANGER*
 
 n: EN FAIT, CE SANDWICH LE MET EN *DANGER*, JUSTE MAINTENANT, LÀ
 
-n: VITE, PREVIENS LE!
+n: VITE, PRÉVIENS-LE!
 
 ```
 sfx("squeak");
@@ -208,7 +208,7 @@ b: Humain! Écoute, on est en danger! Le danger est...
 
 `bb({body:"squeeze"})`
 
-n4: (LAISSE _TON_ ANXIETÉ SORTIR ET JOUER ! CHOISIS CE QUI EST LE PLUS SIMILAIRE À CE QUE _TA_ PEUR TE DIT)
+n4: (LAISSE _TON_ ANXIETÉ SORTIR ET JOUER ! CHOISIS CE QUI RESSEMBLE LE PLUS À CE QUE _TA_ PEUR TE DIT)
 
 (#act1_normal_choice)
 
@@ -216,7 +216,7 @@ n4: (LAISSE _TON_ ANXIETÉ SORTIR ET JOUER ! CHOISIS CE QUI EST LE PLUS SIMILAIR
 
 [On mange tout seul le midi! Encore!](#act1a_alone) `bb({body:"squeeze_talk"})`
 
-[Pendant qu'on mange, on ne produit rien d'utile!](#act1a_productive) `bb({body:"squeeze_talk"})`
+[Pendant qu'on mange, on n'est pas productif!](#act1a_productive) `bb({body:"squeeze_talk"})`
 
 [Ce pain blanc est mauvais pour notre santé!](#act1a_bread) `bb({body:"squeeze_talk"})`
 
@@ -233,7 +233,7 @@ b: Ne sais-tu pas que la solitude est aussi toxique que fumer 15 cigarettes par 
 
 `bb({mouth:"normal", eyes:"normal_right"})`
 
-b: (Holt-Lunstad 2010, PLoS Medicine)
+b: (Julianne Holt-Lunstad 2010, Journal PLoS Medicine)
 
 `hong({eyes:"0_annoyed"})`
 
@@ -271,11 +271,11 @@ bb({body:"normal", mouth:"small", eyes:"normal"});
 hong({body:"0_sammich"});
 ```
 
-b: Sors ton ordinateur portable et met toi a travailler *maintenant*!
+b: Sors ton ordinateur portable et travaille *maintenant*!
 
 `hong({eyes:"0_annoyed"})`
 
-h: Hum, je prefererais ne pas mettre de miettes sur mon cla--
+h: Hum, je préfèrerais ne pas mettre de miettes sur mon cla--
 
 ```
 bb({mouth:"normal", eyes:"fear"});
@@ -284,7 +284,7 @@ Game.OVERRIDE_TEXT_SPEED = 1.5;
 
 b: Si on ne contribue pas à la société on est un parasite!
 
-b: Le corps-société ira demander des médicaments au docteur-société pour éliminer ses parasites-société et on va--
+b: Le corps-société ira demander des médicaments au docteur-société pour éliminer ses parasites-sociaux et on va--
 
 ```
 bb({body:"panic", mouth:"normal", eyes:"fear"});
@@ -315,14 +315,14 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich", eyes:"0_annoyed"});
 ```
 
-h: Est ce que ces études on été val--
+h: Est-ce que ces études on été val--
 
 ```
 bb({body:"fear", mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Le blé rafiné augmente le taux de sucre dans le sang, ils devront nous amputer les bras et on va -
+b: Le blé rafiné augmente le taux de sucre dans le sang, ils devront nous amputer les bras et on va-
 
 `bb({body:"panic"})`
 
@@ -345,31 +345,31 @@ n: TU AS UTILISÉ LA *PEUR D'AVOIR MAL*
 
 # act1b
 
-n: C'EST SUPER ÉFFICACE
+n: C'EST SUPER EFFICACE
 
 `bb({mouth:"smile", eyes:"smile"});`
 
-b: See, human? I am your loyal guard-wolf!
+b: Tu vois, humain·e? Je suis ton fidèle loup protecteur!
 
 `bb({body:"pride_talk"});`
 
-b: Trust your gut! Your feelings are always valid!
+b: Aie confiance en tes intuitions! Tes pensées sont toujours justifiées!
 
 `bb({body:"pride"});`
 
-n: GET YOUR HUMAN'S ENERGY BAR TO ZERO
+n: METS LA JAUGE D'ÉNERGIE DE TON HUMAIN À ZÉRO
 
-n: TO PROTECT THEIR PHYSICAL + SOCIAL + MORAL NEEDS, YOU CAN USE:
+n: POUR PROTÉGER SES BESOINS PHYSIQUES + SOCIAUX + MORAUX, TU PEUX UTILISER :
 
-n: FEAR OF *BEING HARMED* #harm#
+n: LA PEUR D'*ÊTRE BLESSÉ·E* #harm#
 
-n: FEAR OF *BEING UNLOVED* #alone#
+n: LA PEUR D'*ÊTRE DÉLAISSÉ·E* #alone#
 
-n: AND FEAR OF *BEING A BAD PERSON* #bad#
+n: ET LA PEUR D'*ÊTRE UNE MAUVAISE PERSONNE* #bad#
 
 `Game.OVERRIDE_TEXT_SPEED = 1.25;`
 
-n4: (PRO-TIP: PLAY THE CHOICES THAT PERSONALLY HIT YOUR DEEPEST, DARKEST FEARS!~)
+n4: (ASTUCE: CHOISIS CE QUI TOUCHE LE PLUS À TES PEURS LES PLUS SOMBRES ET PROFONDES!~)
 
 h: ...
 
@@ -383,18 +383,18 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-h: you know what maybe it's time to check my phone.
+h: tu sais qu'il est peut-être temps de jeter un œil à ton téléphone.
 
 ```
 sfx("rustle2");
 hong({body:"phone1", mouth:"neutral", eyes:"neutral"})
 ```
 
-n: PROTECT YOUR HUMAN
+n: PROTEGE TON HUMAIN
 
-n: FROM THE WORLD. FROM OTHER PEOPLE. FROM THEMSELF.
+n: DU MONDE. DES AUTRES. DE LUI-MÊME.
 
-n: GOOD LUCK
+n: BONNE CHANCE
 
 (...500)
 
@@ -408,38 +408,38 @@ n: GOOD LUCK
 
 `music('battle', {volume:0.5})`
 
-n: ROUND ONE: *FIGHT!*
+n: PREMIER ROUND: *COMBATTEZ!*
 
 `bb({body:"normal", mouth:"normal", eyes:"normal"});`
 
-h: Huh. Facebook feed says there's a party happening this weekend.
+h: Hum. Le flux Facebook annonce une fête ce week-end.
 
 `bb({eyes:"uncertain"});`
 
-b: Doesn't that weirdo throw a party *every* weekend?
+b: Mais ce·tte taré·e organise une fête *chaque* semaine?
 
 `bb({eyes:"uncertain_right"});`
 
-b: What inner void are they trying to fill? They must be deeply messed up inside!
+b: C'est pour chercher à combler quel vide intérieur? C'est quelqu'un de profondément perturbé!
 
 `hong({eyes:"surprise"});`
 
-h: Also, I got an invite?
+h: Ah et, j'ai été invité·e?
 
 `bb({eyes:"fear", mouth:"normal"});`
 
-b: Well then!
+b: Dans ce cas!
 
-[Say yes, or we'll die from loneliness!](#act1c_loner)
+[Dis oui, ou tu crèveras de solitude!](#act1c_loner)
 
-[Say no, it's full of poisonous drugs!](#act1c_drugs)
+[Dis non, c'est bourré de drogues dangereuses!](#act1c_drugs)
 
-[Ignore it, we just make parties sad.](#act1c_sad)
+[Ignore l'invitation, on ne fait que rendre les fêtes tristes.](#act1c_sad)
 
 # act1c_loner
 
 {{if _.fifteencigs}}
-b: Fifteen cigarettes a day, human! Fifteen!
+b: Quinze cigarettes par jour, humain·e ! Quinze !
 {{/if}}
 
 {{if !_.fifteencigs}}
@@ -447,11 +447,11 @@ b: Fifteen cigarettes a day, human! Fifteen!
 {{/if}}
 
 {{if !_.fifteencigs}}
-b: Then no one will show up at our funeral, they'll dump our ashes into the ocean, we get eaten by a whale,
+b: Comme ça personne ne viendra à nos funérailles, ils jetteront nos cendres dans l'océan, on sera mangé par une baleine,
 {{/if}}
 
 {{if !_.fifteencigs}}
-b: and we become WHALE POOP!
+b: et nous deviendrons de la CROTTE DE BALEINE!
 {{/if}}
 
 {{if !_.fifteencigs}} `_.whalepoop = true` {{/if}}
@@ -468,15 +468,15 @@ attack("18p", "alone");
 `bb({eyes:"normal"});`
 
 {{if !_.fifteencigs}}
-b: So yeah we should go to that party!
+b: Donc ouais, on devrait aller à cette fête!
 {{/if}}
 
 {{if _.parasite}}
-b: Just bring the laptop so we can do work, and not be a society-parasite.
+b:Mais amène ton ordi pour travailler, et ne pas être un parasite social.
 {{/if}}
 
 {{if _.whitebread}}
-b: Just as long as they don't serve WHITE BREAD
+b: Tant qu'on ne nous sert pas du PAIN BLANC
 {{/if}}
 
 `hong({mouth:"anger", eyes:"anger"});`
