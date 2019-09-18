@@ -1,1753 +1,4958 @@
-# act2
 
-`SceneSetup.act2();`
+# act1
 
-{{if _.badnews && !_.factcheck}}
-(#act2-preamble-news1)
+```
+SceneSetup.act1();
+```
+
+(...300)
+
+n: ET CECI EST L’ANXIÉTÉ DE L'HUMAIN
+
+n: _TU_ EST L’ANXIÉTÉ
+
+{{if window.localStorage.continueChapter=="replay"}}
+(#act1_replay)
 {{/if}}
 
-{{if _.badnews && _.factcheck}}
-(#act2-preamble-news2)
+{{if window.localStorage.continueChapter!="replay"}}
+(#act1_normal)
 {{/if}}
 
-{{if _.catmilk}}
-(#act2-preamble-cat)
+
+
+# act1_replay
+
+`hong({mouth:"0_neutral", eyes:"0_neutral"})`
+
+h: Oh salut! On est de retour ici ?
+
+`hong({eyes:"0_neutral"})`
+
+n: TON BOULOT EST DE PROTÉGER L'HUMAIN DU *DANGER*
+
+`bb({eyes:"look", mouth:"small_lock"})`
+
+n: EN FAIT, REJOUER A CE JEU C'EST LE METTRE EN *DANGER* MAINTENANT
+
+n: VIENS, PRÉVIENS LE!
+
+```
+sfx("squeak");
+bb({body:"squeeze_talk"});
+hong({body:"0_squeeze"});
+```
+
+b: Humain ! Ecoute, on est en danger! Le joueur...
+
+[...va encore nous torturer!](#act1_replay_torture)
+
+[...ne trouveras pas de fin alternative!](#act1_replay_alternate)
+
+[...va avoir une dissonance ludonarrative!](#act1_replay_dissonance)
+
+# act1_replay_torture
+
+```
+window.HACK_REPLAY = JSON.parse(localStorage.act4);
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({body:"0_sammich"});
+```
+
+{{if window.HACK_REPLAY.act1_ending=="fight"}}
+b: Il va nous faire nous recroqueviller et pleurer !
 {{/if}}
 
-(#act2-preamble-tinder)
-
-
-# act2-preamble-news1
-
-```
-publish("act2",["dee",3]);
-```
-
-s: But did you *see* that "news story" about that horrible thing happening somewhere?
-
-```
-publish("act2",["dee",2]);
-publish("act2",["party_hong","next"]);
-```
-
-h2: h-hi...
-
-```
-publish("act2",["party_hunter",1]);
-publish("act2",["party_hong","next"]);
-publish("act2",["dum",3]);
-```
-
-a: God I hate the news. It's all sensationalism and clickbait.
-
-```
-publish("act2",["dum",2]);
-publish("act2",["party_hong","next"]);
-```
-
-h2: n... nice party...
-
-```
-publish("act2",["party_hong","next"]);
-publish("act2",["party_hunter",0]);
-publish("act2",["dee",1]);
-```
-
-s: True, but they're just following incentives. The *real* problem is people who click the clickbait.
-
-```
-publish("act2",["dee",3]);
-```
-
-s: Who would retweet a terrible news story, and make all their friends feel bad?
-
-```
-publish("act2",["party_hunter",1]);
-publish("act2",["dee",2]);
-publish("act2",["dum",3]);
-```
-
-a: Ugh, I know right?
-
-(#act2-preamble-end)
-
-
-# act2-preamble-news2
-
-```
-publish("act2",["dee",3]);
-```
-
-s: But did you *see* that "news story" going viral?
-
-```
-publish("act2",["dee",2]);
-publish("act2",["party_hong","next"]);
-```
-
-h2: h-hi...
-
-```
-publish("act2",["party_hunter",1]);
-publish("act2",["party_hong","next"]);
-publish("act2",["dum",3]);
-```
-
-a: Yeah, totally fake. Who would fall for that and retweet it?
-
-```
-publish("act2",["dum",2]);
-publish("act2",["party_hong","next"]);
-```
-
-h2: n... nice party...
-
-```
-publish("act2",["party_hong","next"]);
-publish("act2",["party_hunter",0]);
-publish("act2",["dee",3]);
-```
-
-s: Seriously dude. Like, hello, open up Google and factcheck first?
-
-```
-publish("act2",["party_hunter",1]);
-publish("act2",["dee",2]);
-publish("act2",["dum",3]);
-```
-
-a: Ugh, I know right?
-
-(#act2-preamble-end)
-
-
-# act2-preamble-cat
-
-```
-publish("act2",["dee",3]);
-```
-
-s: Like I was saying, the Meme Industrial Complex exploits cats.
-
-```
-publish("act2",["dee",2]);
-publish("act2",["party_hong","next"]);
-```
-
-h2: h-hi...
-
-```
-publish("act2",["party_hunter",1]);
-publish("act2",["party_hong","next"]);
-publish("act2",["dum",1]);
-```
-
-a: Elaborate on this thesis.
-
-```
-publish("act2",["dum",0]);
-publish("act2",["party_hong","next"]);
-```
-
-h2: n... nice party...
-
-```
-publish("act2",["party_hong","next"]);
-publish("act2",["party_hunter",0]);
-publish("act2",["dee",1]);
-```
-
-s: Well, I saw someone retweet a GIF of a cat drinking milk yesterday.
-
-```
-publish("act2",["dee",3]);
-```
-
-s: They can't digest that ^crap^! Who would retweet *animal abuse* like that?
-
-```
-publish("act2",["party_hunter",1]);
-publish("act2",["dee",2]);
-publish("act2",["dum",3]);
-```
-
-a: Ugh, I know right?
-
-(#act2-preamble-end)
-
-
-# act2-preamble-tinder
-
-```
-publish("act2",["dee",1]);
-```
-
-s: So yeah they never replied back!
-
-```
-publish("act2",["dee",0]);
-publish("act2",["party_hong","next"]);
-```
-
-h2: h-hi...
-
-```
-publish("act2",["party_hunter",1]);
-publish("act2",["party_hong","next"]);
-publish("act2",["dum",1]);
-```
-
-a: Even though you both matched each other on Tinder?
-
-```
-publish("act2",["dum",0]);
-publish("act2",["party_hong","next"]);
-```
-
-h2: n... nice party...
-
-```
-publish("act2",["party_hong","next"]);
-```
-
-{{if _.serialkiller}}
-(#act2-preamble-serialkiller)
+{{if window.HACK_REPLAY.act1_ending=="flight"}}
+b: Il va te faire détruire ton portable pour t'avoir donné une crise d'angoisse!
 {{/if}}
 
-{{if _.hookuphole}}
-(#act2-preamble-hookuphole)
+{{if window.HACK_REPLAY.a2_ending=="fight"}}
+b: Il va te faire *NE PAS* frapper l'hôte de la fête!
 {{/if}}
 
-{{if _.pokemon}}
-(#act2-preamble-pokemon)
+{{if window.HACK_REPLAY.a2_ending=="flight"}}
+b: Il va te faire frapper le Sympathique Anti-vilain hôte de la fête!
 {{/if}}
 
-# act2-preamble-serialkiller
+{{if window.HACK_REPLAY.a3_ending=="jump"}}
+h: Au moins on ne sautera pas du toit cette fo--
+{{/if}}
+
+{{if window.HACK_REPLAY.a3_ending=="walkaway"}}
+b: IL VA NOUS FAIRE SAUTER DU TOIT.
+{{/if}}
+
+`bb({body:"fear"});`
+
+b: TOUTES CES NOUVELLES CHOSE HORRIBLES VONT NOUS ARRIVER, ET APRES ON VA--
+
+(#act1_replay_end)
+
+
+#act1_replay_alternate
 
 ```
-publish("act2",["party_hunter",0]);
-publish("act2",["dee",3]);
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({body:"0_sammich"});
 ```
 
-s: Yeah I dunno! What, did they think I was a *serial killer* or something? So paranoid.
+h: D'accord, l'histoire *de manière générale* est la même, mais chaque chapitre à deux fins différentes possibles, plus tous les embranchements de dialo--
+
+`bb({body:"fear"});`
+
+b: Le joueur sera déçu, fermera cet onglet de navigateur, supprimera notre programme, et après on va--
+
+(#act1_replay_end)
+
+
+# act1_replay_dissonance
 
 ```
-publish("act2",["party_hunter",1]);
-publish("act2",["dee",2]);
-publish("act2",["dum",3]);
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({body:"0_sammich"});
 ```
 
-a: Ugh, I know right?
+h: Un obscène -- quoi?
 
-(#act2-preamble-end)
+`bb({eyes:"normal"});`
 
+b: Cet arc de l'histoire parler de comment tu pouvais *CHOISIR* de construire une relation saine avec ta peur,
 
-# act2-preamble-hookuphole
+`bb({eyes:"normal_right"});`
 
-```
-publish("act2",["party_hunter",0]);
-publish("act2",["dee",3]);
-```
+b: Mais rejouer au jeu va te redonner la même histoire, ce qui implique que tes *CHOIX* ne comptent pas,
 
-s: Yeah I dunno! Maybe they think hookups can't fill the hole in their heart?
+`bb({eyes:"narrow_eyebrow"});`
 
-s: Stop being such a prude! Open your mind, then open your legs!
+b: Ce qui montre alors une contradiction entre le message du jeu et ses mécaniques,
 
-```
-publish("act2",["party_hunter",1]);
-publish("act2",["dee",2]);
-publish("act2",["dum",3]);
-```
+`bb({eyes:"fear"});`
 
-a: Ugh, I know right?
+b: Dénouant alors le tissu de cet univers narratif,
 
-(#act2-preamble-end)
+`bb({body:"fear"});`
+
+b: Et après on va--
+
+(#act1_replay_end)
 
 
-# act2-preamble-pokemon
+# act1_replay_end
 
-```
-publish("act2",["party_hunter",0]);
-publish("act2",["dee",3]);
-```
+`bb({body:"panic"})`
 
-s: Yeah I dunno! They weren't that hot, but they would have been a nice catch!
+b: CREEEEEEEEEEEEEEEEVER
 
 ```
-publish("act2",["party_hunter",1]);
-publish("act2",["dee",2]);
-publish("act2",["dum",3]);
-```
-
-a: Gotta Catch 'Em All!™
-
-(#act2-preamble-end)
-
-
-# act2-preamble-end
-
-```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
 Game.clearText();
-publish("act2-out-1");
-music(null, {fade:1});
-```
-
-(...3000)
-
-```
-music('battle', {volume:0.5});
-publish("hp_show");
-bb({body:"normal", mouth:"normal", eyes:"normal"});
-```
-
-n: ROUND TWO: *FIGHT!*
-
-[Oh no they all hate us!](#act2a_social)
-
-[Were you *ogling* the redhead?](#act2a_perv)
-
-[Hey, let's talk about the meaning of life.](#act2a_meaning)
-
-# act2a_social
-
-`bb({eyes:"sad"})`
-
-b: We're bringing down the mood of this party by being such a sad lump!
-
-`bb({eyes:"shock", body:"two_up"})`
-
-b: We're killing the good vibes! We're committing first-degree vibe-murder!
-
-`bb({eyes:"normal", body:"normal"})`
-
-b: Human, we have to leave *now* before--
-
-```
-_.a2_first_danger = 'social';
-_.a2_attack_1 = "alone";
-```
-
-(#act2b)
-
-# act2a_perv
-
-`bb({eyes:"suspect"})`
-
-b: They're more attractive than us, which means if we even *look* at them, then--
-
-`bb({eyes:"shock", body:"two_up"})`
-
-b: WE'RE CREEPS
-
-`bb({body:"normal"})`
-
-b: We're creepy, evil, bad bad bad terrible terrible perv--
-
-```
-_.a2_first_danger = 'perv';
-_.a2_attack_1 = "bad";
-```
-
-(#act2b)
-
-# act2a_meaning
-
-`bb({body:"one_up", eyes:"normal_r"})`
-
-b: At the end of it all, what can we possibly do that really matters? 
-
-`bb({body:"normal", eyes:"sad"})`
-
-b: Contribute to humanity? All great works decay the way of Ozymandias. Love? Death will always do it part.
-
-`bb({eyes:"sad_r"})`
-
-b: And how much death there is! *We* will die. *Our loved ones* will die.
-
-`bb({eyes:"shock", body:"two_up"})`
-
-b: Heck, the Second Law of Thermodynamics means even our *universe* will die!
-
-`bb({eyes:"suspect", body:"normal"})`
-
-b: Oh, "death makes us appreciate life"? That's like saying slavery is good because it makes us appreciate freedom!
-
-`bb({body:"one_up"})`
-
-b: Oh, "you need to make your own meaning"? That's what cultists and conspiracy theorists do!
-
-`bb({eyes:"shock", body:"two_up"})`
-
-b: Life has no meaning, death has no meaning, even *meaning* has no meaning! What is a mortal soul supposed to--
-
-```
-_.a2_first_danger = 'meaning';
-_.a2_attack_1 = "bad";
-```
-
-(#act2b)
-
-# act2b
-
-`bb({eyes:"normal", mouth:"normal", body:"normal", MOUTH_LOCK:true})`
-
-b: ...
-
-`bb({eyes:"suspect"})`
-
-b: Um... can you hear me, human?
-
-`bb({eyes:"normal", MOUTH_LOCK:true})`
-
-b: ...
-
-`bb({eyes:"shock", mouth:"small_talk", body:"chest", MOUTH_LOCK:true})`
-
-b: *GASP*
-
-`bb({mouth:"small_talk"})`
-
-b: I MUST WARN YOU ABOUT...
-
-[*More* of the same danger!](#act2b_louder)
-
-{{if _.a2_first_danger=="social"}}
-[A *different* social danger!](#act2b_different_social)
-{{/if}}
-
-{{if _.a2_first_danger=="perv" || _.a2_first_danger=="meaning"}}
-[A *different* moral danger!](#act2b_different_moral)
-{{/if}}
-
-[You're ignoring danger! That's dangerous!](#act2b_ignore)
-
-# act2b_louder
-
-`_.a2_first_choice = "louder"`
-
-{{if _.a2_first_danger=="social"}}
-(#act2b_louder_social)
-{{/if}}
-
-{{if _.a2_first_danger=="perv"}}
-(#act2b_louder_perv)
-{{/if}}
-
-{{if _.a2_first_danger=="meaning"}}
-(#act2b_louder_meaning)
-{{/if}}
-
-# act2b_louder_social
-
-`bb({eyes:"shock", body:"two_up", mouth:"normal"})`
-
-b: EMOTIONS ARE CONTAGIOUS! SO IF YOU DON'T LEAVE YOU'LL INFECT EVERYONE WITH YOUR MENTAL ILLNESS! 
-
-b: You'll create a deadly outbreak of SAD LUMP SYNDROME
-
-`bb({eyes:"suspect", body:"normal", mouth:"normal"})`
-
-b: We need to get out of here and quarantine ourselves forever in a small room with Netflix and food delivery!
-
-```
-_.a2_second_danger = 'netflix';
-_.a2_attack_2 = "alone";
-_.a2_hoodie_callback = "a quarantine";
-```
-
-(#act2c)
-
-# act2b_louder_perv
-
-`bb({eyes:"suspect", body:"two_up", mouth:"normal"})`
-
-b: DON'T BE A CREEP. IT'S AGAINST THE LAW!
-
-`bb({eyes:"judge", body:"judge_1", mouth:"normal"})`
-
-(...201)
-
-```
-bb({body:"judge_2"}, 0);
-sfx("gravel");
-```
-
-(...168)
-
-`bb({body:"judge_1"}, 0)`
-
-(...168)
-
-`bb({body:"judge_2"}, 0)`
-
-(...168)
-
-`bb({body:"judge_1"}, 0)`
-
-(...501)
-
-b: Creep Law, Section 74.5: (1) Any Person who checks out (a) those muscular shoulders (b) that bubble booty (2) shall be hereby known as
-
-`bb({eyes:"shock", body:"two_up", mouth:"normal"})`
-
-b: "A BIG DISGUSTING TRASH PERVERT"
-
-```
-_.a2_second_danger = 'law';
-_.a2_attack_2 = "bad";
-_.a2_hoodie_callback = "the law";
-```
-
-(#act2c)
-
-# act2b_louder_meaning
-
-`bb({body:"two_up", mouth:"normal", eyes:"shock"})`
-
-b: Actually, even if you find a noble purpose in life, you can *still* mess everything up!
-
-`bb({body:"normal", mouth:"normal", eyes:"normal"})`
-
-b: Alfred Nobel wanted world peace and for cultures to understand each other. So he decided to make travel easier.
-
-`bb({eyes:"normal_r"})`
-
-b: So he needed a way to cheaply create train tunnels. So he invented a new material called "dynamite"...
-
-`bb({body:"one_up", eyes:"normal"})`
-
-b: which was used in World War I to KILL MILLIONS OF PEOPLE
-
-`bb({body:"two_up", eyes:"shock"})`
-
-b: IT'S THE BUTTERFLY EFFECT, HUMAN! HOW MANY PEOPLE ARE YOU ACCIDENTALLY KILLING RIGHT NOW
-
-```
-_.a2_second_danger = 'butterfly';
-_.a2_attack_2 = "bad";
-_.a2_hoodie_callback = "World War I";
-```
-
-(#act2c)
-
-# act2b_different_social
-
-`_.a2_first_choice = "different"`
-
-`bb({eyes:"normal_r", body:"point", mouth:"normal"})`
-
-b: Actually, you know what's worse than no-one liking you? *Everyone* liking you.
-
-`bb({body:"one_up", eyes:"suspect", mouth:"normal"})`
-
-b: That is, becoming one of *these* pleasure-chasing party animals.
-
-`bb({body:"normal", mouth:"small"})`
-
-b: A shallow life with shallow friends who only know the shallow you!
-
-`bb({body:"two_up", eyes:"shock", mouth:"normal"})`
-
-b: Human, we need to run away from these pleasure-zombies before they turn us into one of them!
-
-```
-_.a2_second_danger = 'zombies';
-_.a2_attack_2 = "alone";
-_.a2_hoodie_callback = "zombies";
-```
-
-(#act2c)
-
-# act2b_different_moral
-
-`_.a2_first_choice = "different"`
-
-`bb({body:"two_up", eyes:"shock", mouth:"normal"})`
-
-b: People are dying in famines and genocides *right now* and we're just partying!
-
-`bb({body:"point", eyes:"closed", mouth:"small"})`
-
-b: A wise person once said, "the only thing necessary for the triumph of evil is for good folks to do nothing."
-
-`bb({body:"two_up", eyes:"shock", mouth:"normal"})`
-
-b: WE'RE DOING NOTHING.
-
-`bb({mouth:"small"})`
-
-b: BY PARTYING, WE'RE HELPING *HITLER*.
-
-```
-_.a2_second_danger = 'hitler';
-_.a2_attack_2 = "bad";
-_.a2_hoodie_callback = "Hitler";
-```
-
-(#act2c)
-
-# act2b_ignore
-
-`_.a2_first_choice = "ignore"`
-
-`bb({body:"normal", mouth:"normal", eyes:"suspect"})`
-
-b: You think you're safe just because you took the batteries out of the carbon monoxide detector?
-
-`bb({eyes:"suspect_r"})`
-
-b: You won't even smell the poison! You'll just get sleepy and then you'll--
-
-`bb({body:"scream_c_1"})`
-
-b: DIEEEEEEEEEEEEEEEEEE
-
-```
-_.a2_second_danger = 'ignore';
-_.a2_attack_2 = "harm";
-_.a2_hoodie_callback = "carbon monoxide";
-```
-
-(#act2c)
-
-# act2c
-
-```
-hong({body:"ignore_sweat"});
-bb({eyes:"normal", mouth:"normal", body:"normal", MOUTH_LOCK:true});
-```
-
-b: ...
-
-`bb({eyes:"happy", mouth:"smile", body:"chest"})`
-
-b: Oh thank goodness human, I think you can hear me again!
-
-`bb({eyes:"closed", body:"point"})`
-
-b: I SHALL WARN YOU ABOUT...
-
-{{if _.a2_first_choice=="louder"}}
-[*Even more* of the same danger!](#act2c_louder)
-{{/if}}
-
-{{if _.a2_first_choice!="louder"}}
-[*More* of the same danger!](#act2c_louder)
-{{/if}}
-
-{{if _.a2_first_danger=="social"}}
-[A *different* social danger!](#act2c_different_social)
-{{/if}}
-
-{{if _.a2_first_danger=="perv" || _.a2_first_danger=="meaning"}}
-[A *different* moral danger!](#act2c_different_moral)
-{{/if}}
-
-[Did you check that punch before drinking?](#act2c_punch)
-
-#act2c_louder
-
-{{if _.a2_second_danger=="netflix"}}
-(#act2c_louder_netflix)
-{{/if}}
-
-{{if _.a2_second_danger=="law"}}
-(#act2c_louder_law)
-{{/if}}
-
-{{if _.a2_second_danger=="butterfly"}}
-(#act2c_louder_butterfly)
-{{/if}}
-
-{{if _.a2_second_danger=="zombies"}}
-(#act2c_louder_zombies)
-{{/if}}
-
-{{if _.a2_second_danger=="hitler"}}
-(#act2c_louder_hitler)
-{{/if}}
-
-{{if _.a2_second_danger=="ignore"}}
-(#act2c_louder_ignore)
-{{/if}}
-
-# act2c_louder_netflix
-
-`bb({body:"normal", mouth:"normal", eyes:"shock"})`
-
-b: Actually, Netflix & food delivery isn't quarantined enough! We'd still infect the delivery person!
-
-`bb({body:"one_up", mouth:"small"})`
-
-b: We need to move to the Canadian Yukon territories, and have our food delivered by drone!
-
-`bb({body:"two_up", mouth:"normal"})`
-
-b: And then they'd have to sterilize the drone to rid it of our SAD LUMP GERMS
-
-`_.a2_attack_3 = "alone";`
-
-`_.a2_hoodie_callback = "a quarantine";`
-
-(#act2d)
-
-# act2c_louder_law
-
-`bb({eyes:"judge", body:"judge_1", mouth:"normal"})`
-
-(...201)
-
-```
-bb({body:"judge_2"}, 0);
-sfx("gravel");
-```
-
-(...168)
-
-`bb({body:"judge_1"}, 0)`
-
-(...168)
-
-`bb({body:"judge_2"}, 0)`
-
-(...168)
-
-`bb({body:"judge_1"}, 0)`
-
-(...501)
-
-b: The BIG DISGUSTING TRASH PERVERT shall be sentenced to 72 hours in one of those medieval public-humiliation devices
-
-b: unless they're secretly *into* that sort of thing
-
-`bb({body:"scream_a_1"})`
-
-b: because they're a BIG DISGUSTING TRASH PERVERT
-
-`_.a2_attack_3 = "bad";`
-
-`_.a2_hoodie_callback = "the law";`
-
-(#act2d)
-
-# act2c_louder_butterfly
-
-`bb({body:"normal", mouth:"small", eyes:"suspect"})`
-
-b: BUTTERFLY EFFECT! You're using a non-biodegradable plastic cup?
-
-`bb({body:"two_up", mouth:"normal", eyes:"shock"})`
-
-b: BAM, A LANDFILL LEAKS POISON AND KILLS A KID
-
-`bb({body:"normal", mouth:"small", eyes:"suspect"})`
-
-b: You're sweating and your heart's pounding?
-
-`bb({body:"scream_a_1"})`
-
-b: BAM, YOU BANKRUPT OUR HEALTHCARE SYSTEM AND MILLIONS DIE
-
-`_.a2_attack_3 = "bad";`
-
-`_.a2_hoodie_callback = "the butterfly effect";`
-
-(#act2d)
-
-# act2c_louder_zombies
-
-`bb({body:"normal", mouth:"small", eyes:"angry"})`
-
-b: These pleasure-zombies will stumble towards you mumbling,
-
-`bb({body:"normal", mouth:"normal", eyes:"shock"})`
-
-b: LIIIIIKES. LIIIIIIIIIIKES.
-
-`bb({body:"scream_a_1"})`
-
-b: Then they'll BITE YOU and turn you into a BRAINLESS BRO and/or THOUGHTLESS THOT!
-
-`_.a2_attack_3 = "bad";`
-
-`_.a2_hoodie_callback = "zombies";`
-
-(#act2d)
-
-# act2c_louder_hitler
-
-`bb({body:"scream_a_1"})`
-
-b: THE NAZIS ARE GOOSE-STEPPING BACK ON THE STREETS RIGHT NOW
-
-`bb({body:"one_up", mouth:"smile", eyes:"happy"})`
-
-b: Saying, *good thing those 'good folks' slacked off with stuff like 'relaxing' and 'self-care'!*
-
-`bb({body:"point", mouth:"smile", eyes:"happy_r"})`
-
-b: *Now our plans can go fourth, reich on schedule!*
-
-`_.a2_attack_3 = "bad";`
-
-`_.a2_hoodie_callback = "Hitler";`
-
-(#act2d)
-
-# act2c_louder_ignore
-
-`bb({body:"normal", mouth:"normal", eyes:"normal_r"})`
-
-b: Come to think about it, do we know if this building *has* a monoxide detector?!
-
-`bb({body:"two_up", mouth:"small", eyes:"normal"})`
-
-b: What if we're all being poisoned *RIGHT NOW?*
-
-`bb({body:"scream_a_1"})`
-
-b: WE WOULDN'T EVEN SEE DEATH APPROACH. WE'D JUST STOP EXISTING FOREVER AND EVER AND EV--
-
-`_.a2_attack_3 = "harm";`
-
-`_.a2_hoodie_callback = "carbon monoxide";`
-
-(#act2d)
-
-# act2c_different_social
-
-`bb({body:"normal", mouth:"normal", eyes:"sad"})`
-
-b: What if we're just *fundamentally incapable* of ever being loved, or loving another?
-
-`bb({body:"normal", mouth:"small", eyes:"sad_r"})`
-
-b: What if something irreversibly broke inside of us a long time ago? Or never existed in us in the first place?
-
-`bb({body:"scream_a_1"})`
-
-b: AHH WE'RE BROKEN! SO BROKEN SO BROKEN SO BROKE--
-
-`_.a2_attack_3 = "alone";`
-
-(#act2d)
-
-# act2c_different_moral
-
-`bb({body:"normal", mouth:"normal", eyes:"normal"})`
-
-b: What if we're just *fundamentally rotten?*
-
-`bb({body:"one_up", eyes:"sad"})`
-
-b: Others have an inner drive to do goodness, but we only do "good" out of guilt or shame, if at all.
-
-`bb({body:"normal", mouth:"small", eyes:"sad_r"})`
-
-b: What if it's in our nature to hurt others? What if we can't be anything *other* than a burden to those close to us?
-
-`bb({body:"scream_a_1"})`
-
-b: AHH WE'RE BROKEN! SO BROKEN SO BROKEN SO BROKE--
-
-`_.a2_attack_3 = "bad";`
-
-(#act2d)
-
-# act2c_punch
-
-`bb({body:"normal", mouth:"normal", eyes:"normal"})`
-
-b: I'm not being irrational. People *do* drug punch bowls. That is an actual thing that actually happens.
-
-`bb({eyes:"suspect"})`
-
-b: Human, does your head hurt? Are your limbs limp? I think we're dying.
-
-`bb({body:"scream_a_1"})`
-
-b: AHHH WE'RE DYING! WE'RE DYING WE'RE DYING WE'RE DYI--
-
-`_.a2_attack_3 = "harm";`
-
-`_.a2_hoodie_callback = "punch bowls";`
-
-(#act2d)
-
-# act2d
-
-```
-bb({body:"normal", mouth:"normal", eyes:"normal"});
-hong({body:"attacked"});
-attack("20p", _.a2_attack_1);
-```
-
-(...401)
-
-```
-hong({body:"attacked_2"});
-attack("20p", _.a2_attack_2);
-```
-
-(...401)
-
-```
-hong({body:"attacked_3"});
-attack("20p", _.a2_attack_3);
 ```
 
 (...1001)
 
-h: F^AAACK^!
-
-h: F^ACK^ING F^ACK^-F^AKK^ITY *F^AAAAACK^*
-
-`bb({body:"two_up", mouth:"smile", eyes:"happy"});`
-
-b: Yay, human! I'm so happy you can hear me again!
-
-`bb({body:"normal", mouth:"small", eyes:"sad"})`
-
-b: Why were you ignoring me?
-
-`hong({body:"facepalm"})`
-
-h: Holy ^hell^, you absolute moron.
-
-`hong({body:"facepalm_2"})`
-
-h: You know that Native American story?
-
-h: "There are two wolves inside you, one is hope, one is despair, which wolf wins? The one you feed."
-
 ```
-hong({body:"facepalm_3"});
-bb({eyes:"normal"});
+bb({body:"laugh"});
+hong({body:"laugh"});
+Game.clearText();
+sfx("laugh");
 ```
 
-h: I was trying to *starve* you, you sadistic ^asshole^!
-
-`hong({body:"smile", mouth:"smile"})`
-
-h: Screw it, I'll do positive affirmations instead.
-
-h: *I am loved. I am good. I am smart. I am beautiful. I am special.*
-
-`bb({eyes:"suspect"});`
-
-[Golly, that's so narcissistic!](#act2d_narcissist)
-
-[Y'know affirmations were *disproven?*](#act2d_disproven)
-
-[omg don't credit random stories to indigenous folk](#act2d_racist)
-
-# act2d_disproven
-
-`bb({body:"point", mouth:"normal", eyes:"closed"})`
-
-b: In fact, they actually *backfire* for people with low self-esteem! 
-
-`bb({body:"one_up", mouth:"small", eyes:"normal"})`
-
-b: It was a well-designed study – randomized controlled trial, experimenter was blinded as to who was in which group.
-
-`bb({body:"two_up", mouth:"small", eyes:"normal_r"})`
-
-b: Results: if you already had low self-esteem, being asked to repeat affirmations makes you feel *worse* than if you'd said nothing at all!
-
-`bb({body:"point", mouth:"normal", eyes:"closed"})`
-
-b: Wood 2009, Psychological Science. Look it up on Google Scholar, human,
-
-`bb({body:"scream_b_1"})`
-
-b: THEN STOP SPREADING UNSCIENTIFIC FAKE NEWS
+(...5001)
 
 ```
-hong({body:"attacked"});
 bb({body:"normal", mouth:"normal", eyes:"normal"});
-attack("10p", "bad");
+hong({body:"0_sammich"});
+```
+
+h: Ok, revenons dans le personnage.
+
+```
+Game.clearText();
+```
+
+n4: (LAISSE _TON_ ANXIÉTÉ BLAH BLAH BLAH AU PLUS PROCHE DE CE QUE _TA_ PEUR BLAH BLAH TU VOIS LE GENRE)
+
+```
+sfx("squeak");
+hong({body:"0_squeeze"});
+bb({body:"squeeze"});
+```
+
+(#act1_normal_choice)
+
+
+
+# act1_normal
+
+`hong({mouth:"0_neutral", eyes:"0_annoyed"})`
+
+h: Oh bien, mon loup est de retour. Gééééénial.
+
+`hong({eyes:"0_neutral"})`
+
+n: TON BOULOT EST DE PROTÉGER L'HUMAIN DU *DANGER*
+
+`bb({eyes:"look", mouth:"small_lock"})`
+
+n: EN FAIT, CE SANDWICH LE MET EN *DANGER* EN CE MOMENT
+
+n: VITE, PRÉVIENT LE !
+
+```
+sfx("squeak");
+bb({body:"squeeze_talk"});
+hong({body:"0_squeeze"});
+```
+
+b: Human! Listen, we're in danger! The danger is...
+
+`bb({body:"squeeze"})`
+
+n4: (LAISSE _TON_ ANXIETE SORTIR JOUER ! CHOISIS CE QUI EST LE PLUS PROCHE DE CE QUE _TES_ PEURS TE DISENT)
+
+(#act1_normal_choice)
+
+# act1_normal_choice
+
+[On mange seul ! Encore !](#act1a_alone) `bb({body:"squeeze_talk"})`
+
+[On n'est pas productif en mangeant !](#act1a_productive) `bb({body:"squeeze_talk"})`
+
+[Ce pain blanc est mauvais pour nous !](#act1a_bread) `bb({body:"squeeze_talk"})`
+
+# act1a_alone
+
+```
+bb({body:"normal", mouth:"small", eyes:"narrow"});
+hong({body:"0_sammich"});
+```
+
+b: Tu sais que la solitude est autant associée à une mort prématurée que fumer 15 cigarettes par jour ?-
+
+`Game.OVERRIDE_TEXT_SPEED = 2;`
+
+`bb({mouth:"normal", eyes:"normal_right"})`
+
+b: (Holt-Lunstad 2010, PLoS Medicine)
+
+`hong({eyes:"0_annoyed"})`
+
+h: Euh, merci de citer tes sources mais--
+
+`Game.OVERRIDE_TEXT_SPEED = 2;`
+
+`bb({body:"fear", mouth:"normal", eyes:"fear"})`
+
+b: Ce qui veut dire que si on ne parle pas à quelqu'un *maintenant* on va-
+
+`bb({body:"panic"})`
+
+b: CREEEEEEEEEEEVER
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+hong({mouth:"0_shock", eyes:"0_shock"});
+attack("18p", "alone");
+publish("hp_show");
 ```
 
 (...2500)
 
-(#act2e)
+`_.fifteencigs = true`
 
-# act2d_narcissist
+n: VOUS AVEZ UTILISE *PEUR DE NE PAS ÊTRE AIME*  
 
-`bb({body:"normal", mouth:"normal", eyes:"normal"})`
+(#act1b)
 
-b: You *need* to humbly see your own flaws in order to grow as a person!
-
-`bb({body:"two_up", eyes:"suspect"})`
-
-b: You can't spray air freshener over a moldy room! Covering up your flaws makes you worse in the long run.
-
-`bb({body:"chest", mouth:"smile", eyes:"closed"})`
-
-b: Thankfully, I, as your loyal guard-wolf, can alert you to your flaws. And right now, it's-
-
-`bb({body:"scream_b_1"})`
-
-b: EVERYTHING. EVERYTHING IS WRONG
+# act1a_productive
 
 ```
-hong({body:"attacked"});
+bb({body:"normal", mouth:"small", eyes:"normal"});
+hong({body:"0_sammich"});
+```
+
+b: Whip out your laptop and do some work right now!
+
+`hong({eyes:"0_annoyed"})`
+
+h: Um, I'd rather not get crumbs in my keyboa--
+
+```
+bb({mouth:"normal", eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: If we're not contributing to the body of society then we're a society-parasite!
+
+b: The society-body will go to the society-doctor for medication to kill their society-parasites then we'll--
+
+```
+bb({body:"panic", mouth:"normal", eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: DIEEEEEEEEEEEEEEEEEEE
+
+```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
-attack("10p", "bad");
+hong({mouth:"0_shock", eyes:"0_shock"});
+attack("18p", "bad");
+publish("hp_show");
 ```
 
 (...2500)
 
-(#act2e)
+`_.parasite = true`
 
-# act2d_racist
+n: YOU USED *FEAR OF BEING A BAD PERSON*
 
-`bb({body:"normal", mouth:"normal", eyes:"suspect"})`
+(#act1b)
 
-b: Native Americans are *actual people*, not some "noble savages" you can namedrop to make your fortune-cookie advice more *exotic*.
-
-`bb({eyes:"suspect_r"})`
-
-b: You're reducing individual persons & complex cultures to a Hallmark card! That's "benevolent racism"! 
-
-`bb({body:"scream_b_1"})`
-
-b: STOP BEING RACIST YOU SQUINTY-EYED JERK
+# act1a_bread
 
 ```
-hong({body:"attacked"});
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({body:"0_sammich", eyes:"0_annoyed"});
+```
+
+h: Have those studies been replicat--
+
+```
+bb({body:"fear", mouth:"normal", eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Processed wheat will spike our blood sugar so they'll have to amputate all our limbs and then we'll-
+
+`bb({body:"panic"})`
+
+b: DIEEEEEEEEEEEEEEEEEEE
+
+```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
-attack("10p", "bad");
+hong({mouth:"0_shock", eyes:"0_shock"});
+attack("18p", "harm");
+publish("hp_show");
 ```
 
 (...2500)
 
-(#act2e)
+`_.whitebread = true`
 
-# act2e
+n: YOU USED *FEAR OF BEING HARMED*
 
-h: ^ASSDAMMIT^.
+(#act1b)
 
-`hong({body:"yell", mouth:"yell"})`
+# act1b
 
-h: You know what? You're *irrational*.
+n: IT'S SUPER EFFECTIVE
 
-h: Everyone knows emotions are irrational! Especially fear!
+`bb({mouth:"smile", eyes:"smile"});`
 
-`hong({body:"facepalm_2"})`
+b: See, human? I am your loyal guard-wolf!
 
-h: You're a useless evolutionary leftover, like my appendix or wisdom teeth!
+`bb({body:"pride_talk"});`
 
-`hong({body:"yell", mouth:"yell"})`
+b: Trust your gut! Your feelings are always valid!
 
-h: ^Hell^, this whole wolf metaphor is stupid! You're just a bunch of neuro-chemicals in my head.
+`bb({body:"pride"});`
 
-`hong({body:"cross", mouth:"cross"})`
+n: GET YOUR HUMAN'S ENERGY BAR TO ZERO
 
-h: So why should I listen to a worthless, irrational, non-existent piece of ^shit^ like you?!
+n: TO PROTECT THEIR PHYSICAL + SOCIAL + MORAL NEEDS, YOU CAN USE:
 
-`bb({eyes:"sad", MOUTH_LOCK:true})`
+n: FEAR OF *BEING HARMED* #harm#
 
-b: ...
+n: FEAR OF *BEING UNLOVED* #alone#
 
-[Jeez, human. That's really hurtful.](#act2e_hurtful)
+n: AND FEAR OF *BEING A BAD PERSON* #bad#
 
-[I'm a feeling. Feelings are valid.](#act2e_valid)
+`Game.OVERRIDE_TEXT_SPEED = 1.25;`
 
-[Human, we're *both* "just chemicals."](#act2e_rational)
-
-# act2e_hurtful
-
-`bb({body:"chest"})`
-
-b: I'm *part* of you, you know. When you say that, you're hurting *yourself*.
-
-`bb({body:"scream_a_1"})`
-
-b: Why are you hitting yourself, human? STOP HITTING YOURSELF.
-
-```
-music(null);
-hong({body:"attacked"});
-bb({body:"normal", mouth:"normal", eyes:"normal"});
-attack("10p", "harm");
-```
-
-(...2500)
-
-(#act2f)
-
-# act2e_rational
-
-`bb({body:"normal", mouth:"normal", eyes:"normal_r"});`
-
-b: Your deepest motivations are dopamine, your richest joys are serotonin.
-
-`bb({body:"one_up"});`
-
-b: Your memories are synaptic weights, your reason is fault-prone electrical signals.
-
-`bb({eyes:"normal", body:"normal"});`
-
-b: So if me being "just chemicals" means *I'm* irrational... then that means *you're* irrational!
-
-`bb({body:"two_up", eyes:"shock"});`
-
-b: And if we're *both* irrational, then we'll *never* figure out how to be fulfilled and happy!
-
-`bb({body:"scream_a_1"})`
-
-b: AHHH WE'RE BROKEN! SO BROKEN SO BROKEN SO BROKEN--
-
-```
-music(null);
-hong({body:"attacked"});
-bb({body:"normal", mouth:"normal", eyes:"normal"});
-attack("10p", "bad");
-```
-
-(...2500)
-
-(#act2f)
-
-# act2e_valid
-
-`bb({body:"normal", mouth:"normal", eyes:"suspect"});`
-
-b: Hang on... "they" say that feelings are valid, that you should always accept your emotions.
-
-`bb({eyes:"suspect_r"});`
-
-b: But "they" also say emotions are irrational, that emotions are not to be trusted.
-
-`bb({eyes:"angry"});`
-
-b: Oh my gosh, "they" have been lying to us this whole time!
-
-`bb({body:"scream_a_1"})`
-
-b: "THEY" FEED US CONTRADICTIONS TO MAKE US DEPENDENT ON THE SELF-HELP INDUSTRIAL COMPLEX
-
-```
-music(null);
-hong({body:"attacked"});
-bb({body:"normal", mouth:"normal", eyes:"normal"});
-attack("10p", "harm");
-```
-
-(...2500)
-
-(#act2f)
-
-# act2f
-
-`hong({body:"defeated", MOUTH_LOCK:true});`
+n4: (PRO-TIP: PLAY THE CHOICES THAT PERSONALLY HIT YOUR DEEPEST, DARKEST FEARS!~)
 
 h: ...
 
-h: I hate this. God it hurts so much I *hate* this.
-
-h: I can't appease you. I can't ignore you. I can't fight you. 
-
-`bb({eyes:"suspect"});`
-
-h: No matter what I do, I can't seem to get rid of yo--
-
-`bb({body:"cry_1"});`
-
-b: Well maybe you're NOT *SUPPOSED* TO GET RID OF ME.
-
-`bb({body:"cry_2"});`
-
-b: How do you think *I* feel, human?!
-
-`bb({body:"cry_4", mouth:"cry", eyes:"cry"})`
-
-b: I'm trying my best to be your guard-dog, but you keep seeing me as some Big Bad Wolf!
-
-b: So I try even *harder* to alert you to danger! *More* danger! *Different* danger!
-
-`bb({eyes:"cry_2"})`
-
-b: But no matter how hard I try to protect you, you *still* think I'm your enemy!
-
-`bb({body:"cry_5"});`
-
-b: What am I doing wrong?!
-
-`bb({body:"cry_2"});`
-
-b: I *know* I suck at my job. But I'm *trying*, human!
-
-`bb({body:"cry_3"});`
-
-b: ...I'm trying.
-
-`bb({body:"cry_6", mouth:"right", eyes:"cry_r_1"});`
-
-b: You don't have to heed my warnings, or agree with me, or even *like* me.
-
-`bb({eyes:"cry_r_2"});`
-
-b: I just... all I want is for you to be patient with me.
-
-`bb({eyes:"cry_r_3"});`
-
-b: I just want for you to sit with me for a while, instead of turning away and--
-
 ```
-bb({eyes:"cry_r_4"});
-hong({body:"listen"});
-```
-
-r: Hey.
-
-```
-hong({body:"look"});
-Game.clearText();
-publish("act2-in-2");
-publish("hp_hide");
-music('party1', {volume:0.4, fade:2});
-```
-
-(...2000)
-
-```
-publish("act2",["party_hunter",2]);
-Game.WORDS_HEIGHT_BOTTOM = 230;
-```
-
-r: Looks like you're caught in a fight with yourself, kid.
-
-```
-publish("act2",["party_hunter",3]);
-publish("act2",["party_hong",13]);
-```
-
-h2: Was it that obvious?
-
-```
-publish("act2",["party_hunter",4]);
-publish("act2",["party_hong",14]);
-```
-
-r: You were, uh, mumbling at your hoodie about {{_.a2_hoodie_callback}} or something.
-
-```
-publish("act2",["party_hunter",13]);
-publish("act2",["party_hong",15]);
-sfx("rustle", {volume:0.6});
-setTimeout(function(){
-	publish("act2",["party_hong",16]);
-	sfx("concrete_step3", {volume:0.6});
-},401);
-setTimeout(function(){
-	publish("act2",["party_hong",17]);
-	sfx("concrete_step4", {volume:0.6});
-},801);
-```
-
-h2: oh god i'm such a mess.
-
-```
-publish("act2",["party_hunter",7]);
-publish("act2",["party_hong",18]);
-sfx("squeak");
-```
-
-r: Hey. You're not alone, friend. Anxiety's super common.
-
-```
-publish("act2",["party_hunter",5]);
-publish("act2",["party_hong",19]);
-```
-
-{{if _.act1_ending=="fight"}}
-r: Heck, just yesterday, I heard someone on campus had a nervous breakdown and smashed their phone!
-{{/if}}
-
-{{if _.act1_ending=="flight"}}
-r: Heck, just yesterday, I heard someone curled up into an armadillo ball and cried in public!
-{{/if}}
-
-```
-publish("act2",["party_hunter",2]);
-```
-
-r: Listen: I know what it's like to have that animal in your head.
-
-```
-publish("act2",["party_hunter",8]);
-```
-
-r: We *all* do. That's why I throw these parties every weekend, to forget our worries, forget that animal.
-
-```
-publish("act2",["party_hunter",9]);
-publish("act2",["party_hong",20]);
-```
-
-h2: but my anxiety...
-
-```
-publish("act2",["party_hunter",2]);
-publish("act2",["party_hong",21]);
-```
-
-r: Don't worry, kid. I used to be like you. But then I found a little trick to get that negative voice to shut up forever...
-
-```
-publish("act2",["party_hunter",3]);
-Game.clearText();
-music(null, {fade:1});
-```
-
-(...2001)
-
-```
-publish("act2",["party_hunter",10]);
-publish("act2",["party_hong",22]);
+hong({body:"putaway"});
 sfx("rustle");
+bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-(...2501)
+(...1000)
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+h: you know what maybe it's time to check my phone.
 
 ```
-publish("act2",["party_hunter",10]);
-publish("act2",["party_hong",23]);
 sfx("rustle2");
+hong({body:"phone1", mouth:"neutral", eyes:"neutral"})
 ```
 
-(...1001)
+n: PROTECT YOUR HUMAN
+
+n: FROM THE WORLD. FROM OTHER PEOPLE. FROM THEMSELF.
+
+n: GOOD LUCK
+
+(...500)
+
+`Game.clearText()`
+
+(...500)
+
+(#act1c)
+
+# act1c
+
+`music('battle', {volume:0.5})`
+
+n: ROUND ONE: *FIGHT!*
+
+`bb({body:"normal", mouth:"normal", eyes:"normal"});`
+
+h: Huh. Facebook feed says there's a party happening this weekend.
+
+`bb({eyes:"uncertain"});`
+
+b: Doesn't that weirdo throw a party *every* weekend?
+
+`bb({eyes:"uncertain_right"});`
+
+b: What inner void are they trying to fill? They must be deeply messed up inside!
+
+`hong({eyes:"surprise"});`
+
+h: Also, I got an invite?
+
+`bb({eyes:"fear", mouth:"normal"});`
+
+b: Well then!
+
+[Say yes, or we'll die from loneliness!](#act1c_loner)
+
+[Say no, it's full of poisonous drugs!](#act1c_drugs)
+
+[Ignore it, we just make parties sad.](#act1c_sad)
+
+# act1c_loner
+
+{{if _.fifteencigs}}
+b: Fifteen cigarettes a day, human! Fifteen!
+{{/if}}
+
+{{if !_.fifteencigs}}
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+{{/if}}
+
+{{if !_.fifteencigs}}
+b: Then no one will show up at our funeral, they'll dump our ashes into the ocean, we get eaten by a whale,
+{{/if}}
+
+{{if !_.fifteencigs}}
+b: and we become WHALE POOP!
+{{/if}}
+
+{{if !_.fifteencigs}} `_.whalepoop = true` {{/if}}
+
+(...500)
 
 ```
-publish("act2",["party_hunter",11]);
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
 ```
 
-r: My own specialty blend. It's a bit stronger than... well, anything legal really.
+(...2500)
+
+`bb({eyes:"normal"});`
+
+{{if !_.fifteencigs}}
+b: So yeah we should go to that party!
+{{/if}}
+
+{{if _.parasite}}
+b: Just bring the laptop so we can do work, and not be a society-parasite.
+{{/if}}
+
+{{if _.whitebread}}
+b: Just as long as they don't serve WHITE BREAD
+{{/if}}
+
+`hong({mouth:"anger", eyes:"anger"});`
+
+h: GOD. If it'll make you shut up, fine.
+
+h: I'll say yes.
+
+{{if _.whalepoop}}
+b: Whale poop, human! Whale poop!
+{{/if}}
+
+`_.partyinvite="yes"`
+
+(#act1d)
+
+# act1c_drugs
+
+`bb({mouth:"small", eyes:"fear"});`
+
+{{if _.whitebread}}
+b: or even worse... WHITE BREAD
+{{/if}}
+
+{{if _.whitebread}}
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+{{/if}}
+
+{{if _.whitebread}}
+b: We'll overdose on so much meth and white bread they won't be able to fit our fat corpse into the cremation furnace!
+{{/if}}
+
+{{if !_.whitebread}}
+b: We'll overdose on so many drugs the undertaker will wonder how our body was *already* pre-embalmed!
+{{/if}}
 
 ```
-publish("act2",["party_hunter",12]);
-publish("act2",["party_hong",24]);
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
 ```
 
-r: Bottoms up, ^bee-yatch^!
+(...2500)
+
+{{if _.parasite}}
+b: Besides, can't party, we need to do work or we're a terrible society-parasite!
+{{/if}}
+
+`hong({mouth:"anger", eyes:"anger"});`
+
+h: GOD. If it'll make you shut up, fine.
+
+h: I'll say no.
+
+`_.partyinvite="no"`
+
+(#act1d)
+
+# act1c_sad
+
+`bb({eyes:"uncertain_right", mouth:"normal"});`
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+{{if _.fifteencigs}}
+b: All we ever do is cry in a corner about how loneliness is as deadly as 15 cigarettes a day.
+{{/if}}
+
+{{if _.parasite}}
+b: All we ever do at parties is worry about how we should be productive instead.
+{{/if}}
+
+{{if _.whitebread}}
+b: All we ever do is worry about how the unhealthy food options are going to kill us.
+{{/if}}
 
 ```
-hong({body:"hold"});
-bb({body:"normal", mouth:"small", eyes:"wat"});
-Game.clearText();
-Game.WORDS_HEIGHT_BOTTOM = -1;
-publish("act2-out-3");
-publish("hp_show");
+bb({mouth:"normal", eyes:"normal"});
+hong({mouth:"neutral", eyes:"lookaway"});
 ```
 
-(...3500)
+h: gee i wonder why.
 
-[Oh my God.](#act2g_1) `Game.OVERRIDE_CHOICE_LINE=true`
+`hong({eyes:"neutral"});`
 
-[This is a bad coping mechanism.](#act2g_2) `Game.OVERRIDE_CHOICE_LINE=true`
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-[Don't take drinks from strangers.](#act2g_3) `Game.OVERRIDE_CHOICE_LINE=true`
+b: So if we go we'll make them feel bad, but if we reject their invite we'll also make them feel bad!
 
-# act2g_1
+`bb({body:"fear", eyes:"fear"});`
 
-b: O--
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-(#act2g)
-
-# act2g_2
-
-b: T--
-
-(#act2g)
-
-# act2g_3
-
-b: D--
-
-(#act2g)
-
-# act2g
+b: ALL WE DO IS MAKE PEOPLE FEEL BAD, SO WE SHOULD FEEL BAD
 
 ```
-hong({body:"drink"});
-bb({body:"attacked"});
-attackBB("40p", "harm");
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "bad");
 ```
 
-(...2000)
+(...2500)
+
+`hong({mouth:"anger", eyes:"anger"});`
+
+h: Ugh. If it'll make you shut up, fine.
+
+h: I'll ignore the invite.
+
+`_.partyinvite="ignore"`
+
+(#act1d)
+
+# act1d
 
 ```
-hong({body:"forward", mouth:"forward"});
-bb({body:"frazzled", mouth:"frazzled", eyes:"frazzled"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+hong({mouth:"neutral", eyes:"annoyed"});
 ```
 
-h: Mmm, what an exquisite palette!
+h: Anyway. Facebook's too much. I need something calmer, less anxiety-producing.
 
-h: A full-bodied flavor of "shut your mind up," with a subtle aftertaste of "never feel anything ever again"!
+`hong({eyes:"neutral"});`
 
-b: This is bad, human. This is really, really bad.
+h: What's new on Twitter?
 
-[This is *actually* how addiction starts.](#act2h_opt1) `Game.OVERRIDE_CHOICE_LINE=true`
+`bb({eyes:"look"});`
 
-[I *knew* the host was deeply messed up!](#act2h_opt3) `Game.OVERRIDE_CHOICE_LINE=true`
+[Oh no, look at that horrible news story!](#act1d_news)
 
-[Also, they could have drugged that!](#act2h_opt2) `Game.OVERRIDE_CHOICE_LINE=true`
+[Oh no, is that tweet secretly about *us?*](#act1d_subtweet)
+
+[Hey, a GIF of a cat drinking milk](#act1d_milk)
 
 
-# act2h_opt1
-
-b: This is *actu*--
-
-(#act2h)
-
-# act2h_opt2
-
-b: Also, they co--
-
-(#act2h)
-
-# act2h_opt3
-
-b: I *knew* th--
-
-(#act2h)
-
-# act2h
+# act1d_news
 
 ```
-hong({body:"drink"});
-bb({body:"attacked"});
-attackBB("40p", "harm");
+bb({eyes:"pained1"});
+music(null, {fade:2});
 ```
 
-(...2000)
+b: God, it feels like the world's burning, isn't it?
 
 ```
-hong({body:"back", mouth:"back"});
-bb({body:"panicked", mouth:"panicked", eyes:"panicked"});
+bb({eyes:"pained2"});
+hong({mouth:"sad", eyes:"sad"});
 ```
 
-h: Delicious, *and* cheaper than therapy!
-
-b: HUMAN PLEASE STOP
-
-h: Hehehe!
-
-h: And what are *you* gonna do about it, ^asshole^?
-
-b: I'm so sorry, human.
-
-b: I'm going to have to use my SPECIAL ATTACK
+b: It feels like it's all ending, like everything's dying and we're doomed and there's nothing we can do about it.
 
 ```
-bb({body:"special_a"});
+Game.OVERRIDE_TEXT_SPEED = 0.5;
+bb({mouth:"shut"});
+```
+
+b: ...
+
+`bb({mouth:"smile", eyes:"smile"});`
+
+b: Let's retweet that story!
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+`_.badnews=true`
+
+```
 music('battle', {volume:0.5});
+hong({mouth:"anger", eyes:"anger"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-`Game.OVERRIDE_CHOICE_SPEAKER = "fear_harm"`
+h: Okay I'll retweet it just please be quiet!
 
-[](#act2h_attack) `_.SPECIAL_ATTACK="harm"; Game.OVERRIDE_CHOICE_LINE=true`
+`hong({mouth:"neutral", eyes:"annoyed"});`
 
-`Game.OVERRIDE_CHOICE_SPEAKER = "fear_alone"`
+h: Screw it, let's look at Snapchat.
 
-[](#act2h_attack) `_.SPECIAL_ATTACK="alone"; Game.OVERRIDE_CHOICE_LINE=true`
+(#act1e)
 
-`Game.OVERRIDE_CHOICE_SPEAKER = "fear_bad"`
 
-[](#act2h_attack) `_.SPECIAL_ATTACK="bad"; Game.OVERRIDE_CHOICE_LINE=true`
+# act1d_subtweet
 
-# act2h_attack
+`bb({eyes:"fear"});`
+
+b: It's a subtweet! A sneaky, sneaky subtweet!
+
+`hong({eyes:"annoyed"});`
+
+h: It's probably not?
+
+`bb({eyes:"narrow", mouth:"small"});`
+
+b: but what if they're all talking behind our back
+
+h: They're n--
+
+`bb({body:"fear", eyes:"fear", mouth:"normal"});`
+
+b: IN FRONT OF OUR BACK
+
+`hong({eyes:"sad", mouth:"sad"});`
+
+h: I d--
+
+`bb({eyes:"narrow", mouth:"small"});`
+
+b: but *what if*
+
+h: S--
+
+`bb({eyes:"narrow_eyebrow"});`
+
+b: *what if*
 
 ```
-bb({body:"special_b_1"});
-hong({body:"forward", mouth:"forward"});
-sfx("charging");
+Game.OVERRIDE_TEXT_SPEED = 0.5;
+hong({mouth:"shut"});
 ```
 
-h: What's this ^crap^?
+h: ...
 
-h: You're gonna yap more stupid *words* at me to--
-
-```
-bb({body:"special_c"});
-sfx("hadouken");
-```
-
-(...901)
-
-(#act2i)
-
-# act2i
+(...1000)
 
 ```
-publish("hide_tabs");
-publish("show_special_attack");
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+`_.subtweet=true`
+
+```
+hong({mouth:"anger", eyes:"annoyed"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+```
+
+h: o-KAY, gonna try Snapchat.
+
+(#act1e)
+
+# act1d_milk
+
+`hong({mouth:"smile", eyes:"neutral"});`
+
+h: Heh ya that's cute, just retweeted it, I thi--
+
+```
+hong({mouth:"shock", eyes:"shock"});
+bb({body:"scream"});
+Game.OVERRIDE_TEXT_SPEED = 1.8;
+```
+
+b: CATS CAN'T DIGEST MILK AND WE'RE TERRIBLE PEOPLE FOR ENJOYING ANIMAL ABUSE
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+
+`_.catmilk=true`
+
+```
+hong({mouth:"anger", eyes:"annoyed"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+```
+
+h: o-KAY, gonna try Snapchat.
+
+(#act1e)
+
+# act1e
+
+`hong({mouth:"neutral", eyes:"neutral"});`
+
+h: Huh, photos from yesterday night. So *that's* what those weekly parties are like.
+
+{{if _.partyinvite=="yes"}} (#act1e_said_yes) {{/if}}
+
+{{if _.partyinvite=="no"}} (#act1e_said_no) {{/if}}
+
+{{if _.partyinvite=="ignore"}} (#act1e_said_ignore) {{/if}}
+
+# act1e_said_yes
+
+`hong({mouth:"sad", eyes:"annoyed"});`
+
+h: Oof, looks way too crowded for my anxiety.
+
+h: Maybe I shouldn't have said yes to the invite?
+
+```
+hong({mouth:"neutral", eyes:"neutral"});
+bb({mouth:"normal", eyes:"normal"});
+```
+
+[Change our answer? Like a jerk?!](#act1e_yes_dontchange)
+
+[Change our answer! It's too crowded!](#act1e_yes_changetono)
+
+{{if _.subtweet}}
+[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+{{/if}}
+
+{{if _.badnews}}
+[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+{{/if}}
+
+{{if (!_.subtweet && !_.badnews)}}
+[You know, you've got really bad posture?](#act1e_ignore_posture)
+{{/if}}
+
+# act1e_yes_dontchange
+
+```
+bb({eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: They were counting on us to come and now we're betraying their trust? Do you wanna die alone?!
+
+{{if _.fifteencigs}}
+b: FIFTEEN. CIGARETTES.
+{{/if}}
+
+{{if _.whalepoop}}
+b: WHALE. POOP.
+{{/if}}
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+```
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Shut up shut up I'll keep it as yes!
+
+(#act1f)
+
+# act1e_yes_changetono
+
+```
+bb({eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Don't you know about human stampedes?
+
+```
+bb({body:"fear", mouth:"small", eyes:"narrow"});
+hong({eyes:"sad", mouth:"sad"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: In 2003 a Rhode Island nightclub had a fire and the panic made people jam the exits so 100 people burned to death-
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({mouth:"shock"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: DO YOU WANT THAT TO HAPPEN TO US-
+
+```
+bb({body:"scream"});
+Game.OVERRIDE_TEXT_SPEED = 2.5;
+```
+
+b: SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY N-
+
+
+```
+bb({body:"normal", eyes:"fear", mouth:"normal"});
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+```
+hong({eyes:"anger", mouth:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Shut up shut up I'll change my answer to no! God!
+
+(#act1f)
+
+# act1e_said_no
+
+`hong({mouth:"sad", eyes:"sad"});`
+
+h: Hm... that looks really fun.
+
+h: Maybe I shouldn't have said no to the invite?
+
+`bb({mouth:"normal", eyes:"normal"});`
+
+[Change our answer? Like a jerk?!](#act1e_no_dontchange)
+
+[Change our answer! Don't die alone!](#act1e_no_changetoyes)
+
+{{if _.subtweet}}
+[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+{{/if}}
+
+{{if _.badnews}}
+[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+{{/if}}
+
+{{if (!_.subtweet && !_.badnews)}}
+[You know, you've got really bad posture?](#act1e_ignore_posture)
+{{/if}}
+
+# act1e_no_dontchange
+
+`bb({eyes:"anger"})`
+
+b: Everybody was counting on us!
+
+b: ...to leave them alone and let them have a nice party without a horrible disgusting {{if _.whitebread}}white-bread-munching{{/if}} creep like u--
+
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+```
+bb({body:"normal", eyes:"uncertain", mouth:"normal"});
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Shut up shut up I'll keep it as no!
+
+(#act1f)
+
+# act1e_no_changetoyes
+
+```
+bb({body:"fear", eyes:"fear", mouth:"normal"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Chronic loneliness increases our cortisol levels as well as risk for cardiovascular disease and stroke!
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+{{if _.fifteencigs}}
+b: FIFTEEN. CIGARETTES.
+{{/if}}
+
+```
+bb({body:"normal", eyes:"normal", mouth:"normal"});
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Shut up shut up I'll change my answer to yes! God!
+
+(#act1f)
+
+# act1e_ignore_subtweet
+
+```
+bb({eyes:"fear", mouth:"small"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: All our problematic tweets have come back to roost!
+
+```
+bb({body:"fear", eyes:"fear", mouth:"normal"});
+Game.OVERRIDE_TEXT_SPEED = 1.7;
+```
+
+b: We're gonna get called out and cancelled and dragged with a rope on horseback down the information superhighway!
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+```
+bb({body:"normal", eyes:"normal", mouth:"normal"});
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Why are you like this?!
+
+(#act1f)
+
+# act1e_ignore_factcheck
+
+```
+bb({eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: We're spreading disinformation! We're destroying trust in a free press!
+
+```
+bb({body:"scream"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: We're the reason fascism will arise from the rubble of democracy!
+
+```
+bb({body:"normal", eyes:"anger"});
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+```
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+_.factcheck = true;
+```
+
+h: Why are you like this?!
+
+(#act1f)
+
+# act1e_ignore_posture
+
+```
+bb({eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Do you want to have a pretzel for a spine?! Stop hunching over your screen!
+
+```
+bb({body:"meta"});
+```
+
+b: That means you too.
+
+```
+bb({body:"normal", mouth:"normal"});
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+```
+bb({body:"normal", eyes:"normal", mouth:"normal"});
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Why are you like this?!
+
+(#act1f)
+
+# act1e_said_ignore
+
+`hong({mouth:"sad", eyes:"sad"});`
+
+h: Hm... that looks really fun.
+
+h: Maybe I shouldn't have ignored the invite?
+
+`bb({mouth:"normal", eyes:"normal"});`
+
+[Keep ignoring, we're still party poopers.](#act1e_ignore_continue)
+
+[Actually, say yes.](#act1e_ignore_changetoyes)
+
+[Actually, say no.](#act1e_ignore_changetono)
+
+# act1e_ignore_continue
+
+`hong({eyes:"annoyed"});`
+
+h: It's kinda rude to keep ignoring them though, no?
+
+`bb({eyes:"normal_right"});`
+
+b: Well other people always ignore *us*, so
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+`bb({eyes:"normal"});`
+
+b: so let's just call it even.
+
+(#act1f)
+
+# act1e_ignore_changetoyes
+
+`hong({eyes:"surprise", mouth:"smile"});`
+
+h: You're... letting me have fun?
+
+b: Well, I mean, loneliness *can* kill us.
+
+`hong({eyes:"neutral", mouth:"neutral"});`
+
+(#act1e_no_changetoyes)
+
+# act1e_ignore_changetono
+
+`bb({eyes:"narrow"});`
+
+b: It's too crowded. Crowds are dangerous.
+
+(#act1e_yes_changetono)
+
+
+# act1f
+
+```
+hong({mouth:"neutral", eyes:"neutral"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+```
+
+h: Whatever. New Tinder notification.
+
+`bb({eyes:"uncertain"})`
+
+b: What, that hookup app?
+
+`hong({eyes:"annoyed"})`
+
+h: It's not a hookup app, it's just a way to meet new peopl--
+
+`bb({eyes:"narrow"})`
+
+b: It's a hookup app.
+
+```
+hong({eyes:"surprise", mouth:"smile"});
+bb({eyes:"normal"});
+```
+
+h: Oh, I got a match! They look cute!
+
+```
+bb({eyes:"narrow_eyebrow"});
+hong({eyes:"sad", mouth:"anger"})
+```
+
+h: Please don't ruin this for m--
+
+```
+bb({body:"panic"});
+Game.OVERRIDE_TEXT_SPEED = 2.0;
+```
+
+b: DANGER DANGER DANGER DANGER DANGER DANGER
+
+`bb({body:"fear", eyes:"fear", mouth:"normal"})`
+
+[We're being *used* by other people.](#act1f_used_by_others)
+
+[We're just *using* other people.](#act1f_using_others)
+
+[YOUR MATCH IS A SERIAL KILLER](#act1f_killer)
+
+# act1f_used_by_others
+
+`bb({body:"point_crotch", eyes:"normal", mouth:"normal"})`
+
+b: Random hookups may be able to fill the hole down there,
+
+b: but they can never fill the hole...
+
+`bb({body:"point_heart", eyes:"pretty", mouth:"small"})`
+
+b: in *here*.
+
+(...1000)
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: The point is WE'RE GOING TO DIE ALONE
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+`_.hookuphole=true`
+
+(#act1g)
+
+# act1f_using_others
+
+`bb({eyes:"narrow", mouth:"small"})`
+
+b: You think other people's genitals are Pokémon for us to collect?
+
+```
+bb({body:"sing", eyes:"pretty", mouth:"shut"});
+music("pokemon");
+Game.clearText();
 Game.FORCE_CANT_SKIP = true;
-music(null);
-stopAllSounds();
 ```
 
-(...5000)
-
 ```
-publish("show_tabs");
-hong({ body:"final", mouth:"final" });
-bb({ body:"normal", mouth:"normal", eyes:"sad" });
-attack("100p", _.SPECIAL_ATTACK);
-Game.FORCE_CANT_SKIP = false;
-setTimeout(function(){
-	publish("remove_special_attack");
-},30);
+Game.FORCE_TEXT_DURATION = 1000;
+Game.FORCE_NO_VOICE = true;
 ```
 
-(...2500)
+b: ♫ (pokemon theme song)-
 
-h: WHAT THE ^HELL^ WAS THAT
-
-b: I'm sorry. I needed to show you the consequences.
-
-{{if _.SPECIAL_ATTACK=="harm"}}
-h: I COULD *SEE* MY OWN CORPSE. I COULD *FEEL* THE SENSATION OF BEING ACTUALLY DEAD.
-{{/if}}
-
-{{if _.SPECIAL_ATTACK=="alone"}}
-h: I COULD *SEE* EVERYONE'S LOOK OF DISGUST. I COULD *HEAR* ALL THE THINGS THEY SAID.
-{{/if}}
-
-{{if _.SPECIAL_ATTACK=="bad"}}
-h: I COULD *HEAR* THE CRUNCHING OF RIBS. I COULD *TASTE* THE BLOOD IN THE AIR.
-{{/if}}
-
-b: I'm sorry, human.
-
-n: *FINISH THEM*
-
-[{FIGHT: Punch the host.}](#act2j_fight) `Game.OVERRIDE_CHOICE_LINE=true`
-
-[{FLIGHT: Let's get out of here.}](#act2j_flight) `Game.OVERRIDE_CHOICE_LINE=true`
-
-# act2j_fight
-
-`bb({ eyes:"angry" });`
-
-b: That psychopath was taking advantage of you.
-
-b: They were trying to corrupt you, make you as messed up as they are!
-
-`bb({ body:"yell_angry_1" });`
-
-b: Punch that jerk! Knock their friggin' lights out!
-
-`bb({ body:"final_1" });`
-
-b: PUNCH THEM PUNCH THEM PUNCH THEM PUNCH THEM PUNCH THEM PUNCH THEM PUNCH THEM PUNCH THE--
-
-`_.a2_ending = "fight";`
-
-(#act2k)
-
-# act2j_flight
-
-b: I *knew* all these partygoers were deeply messed up. They all dull their pain with horrible things!
-
-`bb({ body:"yell_1" });`
-
-b: And they're tricking you into doing the same thing! They're corrupting you! We need to get out!
-
-`bb({ body:"final_1" });`
-
-b: GET OUT GET OUT GET OUT GET OUT GET OUT GET OUT GET OUT GET OUT GET OUT GET OU--
-
-`_.a2_ending = "flight";`
-
-(#act2k)
-
-# act2k
+(...5600)
 
 ```
-Game.clearText();
-publish("act2-in-4");
-publish("hp_hide");
-music('party1', {volume:0.6, fade:1.5});
+bb({mouth:"normal"});
+Game.FORCE_TEXT_DURATION = 2400;
 ```
 
-(...2001)
+b: ♫ I wanna be, the ^slut^ti-est-
+
+(...500)
 
 ```
-publish("act2",["party_hong",26]);
-sfx("slide");
+bb({eyes:"narrow", mouth:"small"});
+Game.FORCE_TEXT_DURATION = 2100;
 ```
 
-(...1001)
-
-```
-publish("act2",["party_hunter",14]);
-Game.WORDS_HEIGHT_BOTTOM = 230;
-```
-
-r: You alright, kid?
-
-`publish("act2",["party_hunter",13]);`
-
-{{if _.a2_ending=="fight"}}
-(#act2k_fight)
-{{/if}}
-
-{{if _.a2_ending=="flight"}}
-(#act2k_flight)
-{{/if}}
-
-# act2k_fight
-
-```
-Game.clearText();
-publish("act2",["party_hunter",21]);
-publish("act2",["party_hong",33]);
-music(null);
-sfx("hit");
-```
-
-(...1000)
-
-```
-sfx("record_scratch");
-publish("act2",["party_hunter",22]);
-publish("act2",["party_hong",34]);
-publish("act2",["dee",6]);
-publish("act2",["dum",6]);
-```
-
-r: Y-you...
-
-```
-publish("act2",["party_hunter",23]);
-publish("act2",["party_hong",35]);
-publish("act2",["dee",5]);
-publish("act2",["dum",5]);
-music('party1', {volume:0.6, fade:6});
-```
-
-r: are *kinky*.
-
-r: I like that. Come to my party next weekend, cutie.
-
-```
-publish("act2",["party_hunter",19]);
-publish("act2",["party_hong",36]);
-```
-
-h2: ok bye, ciao, adios, au revoir
-
-r: The animal might have won today, but come back, and I'll mix something even stronger for you!
-
-h2: sayōnara, auf wiedersehen, zài jiàn, shalom
-
-r: You and me, kid, we'll show that beast who's boss!
-
-(#act2k_end)
-
-# act2k_flight
-
-`publish("act2",["party_hong",36]);`
-
-h2: ok sorry i have to run
-
-`publish("act2",["party_hunter",16]);`
-
-r: ^Damn^ it. The animal won today, huh?
-
-`publish("act2",["party_hunter",15]);`
-
-h2: no no, just, uh, gotta run a marathon. gotta go fast.
-
-`publish("act2",["party_hunter",19]);`
-
-r: Come to my party next weekend, cutie. I'll mix something even stronger for you.
-
-h2: ok thanks gonna run run run run run
-
-r: You and me, kid, we'll show that beast who's boss!
-
-(#act2k_end)
-
-# act2k_end
-
-```
-Game.clearText();
-publish("act2-out-5");
-publish("act2-outro", ["end1"]);
-music("hum", {fade:2, volume:0.6});
-Game.WORDS_HEIGHT_BOTTOM = -1;
-```
-
-(...2500)
-
-```
-publish("act2", ["act2_end",2]);
-sfx("whoosh");
-```
-
-(...1000)
-
-b: Human! Are you okay?!
-
-```
-publish("act2", ["act2_end","next"]);
-```
-
-b: Gosh, that was *close.* We really could've--
-
-```
-Game.clearText();
-publish("act2", ["act2_end","next"]);
-music(null);
-sfx("squeak");
-```
+b: ♫ Like no one ever was-
 
 (...1500)
 
 ```
-publish("act2", ["act2_end","next"]);
-sfx("hit");
+bb({eyes:"pretty"});
+Game.FORCE_TEXT_DURATION = 2300;
+```
+
+b: ♫ Thighs n' ^ass^, voluptuous breast-
+
+(...500)
+
+```
+bb({eyes:"fear", mouth:"normal"});
+Game.FORCE_TEXT_DURATION = 2000;
+```
+
+b: ♫ with sweaty ^dick^ and balls!-
+
+(...1000)
+
+```
+bb({eyes:"smile", mouth:"smile"});
+Game.FORCE_TEXT_DURATION = 1000;
+```
+
+b: ♫ PERVY-MON! GOTTA CA-
+
+```
+Game.FORCE_CANT_SKIP = false;
+Game.clearText();
+music(false);
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: The point is we're a manipulative creep.
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+`_.pokemon=true`
+
+(#act1g)
+
+# act1f_killer
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+{{if _.whitebread}}
+b: They'll trap you in a well and force-feed you white bread to fatten you up so they can wear your skin like a suit!
+{{/if}}
+
+{{if _.parasite}}
+b: They'll bludgeon you with a pomodoro timer and say "YOU SHOULDA BEEN MORE PRODUCTIVE YOU PARASITE"
+{{/if}}
+
+{{if !_.whitebread && !_.parasite}}
+b: They'll tear your flesh to gory confetti, turn your entrails into streamers, and mix your blood into a punch bowl!
+{{/if}}
+
+{{if !_.whitebread && !_.parasite}}
+b: How's THAT for a party invite?!
+{{/if}}
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+`_.serialkiller=true`
+
+(#act1g)
+
+# act1g
+
+```
+bb({body:"normal", mouth:"normal", eyes:"look"});
+hong({body:"2_tired"});
+Game.OVERRIDE_TEXT_SPEED = 0.5;
+music(false);
+```
+
+h: ...
+
+(...500)
+
+h: i'm so sick of this game.
+
+(...700)
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+h:
+{{if _.fifteencigs}}"loneliness will kill us"... {{/if}}
+{{if _.parasite}}"we're a society-parasite"... {{/if}}
+{{if _.whitebread}}"don't eat that, it'll kill us"... {{/if}}
+{{if _.subtweet}}"they're talking behind our back"... {{/if}}
+{{if _.badnews}}"the world is burning"... {{/if}}
+{{if _.hookuphole}}"we'll die alone"... {{/if}}
+{{if _.serialkiller}}"they're a serial killer"... {{/if}}
+{{if _.catmilk}}"cats can't digest milk"... {{/if}}
+{{if _.pokemon}}a ^crappy^ parody song... {{/if}}
+
+h: i just want to live my life.
+
+h: i just want to be free from all this... pain.
+
+`bb({eyes:"look_sad"});`
+
+b: Hey... human...
+
+`Game.OVERRIDE_TEXT_SPEED = 0.5;`
+
+b: It'll be okay.
+
+(...600)
+
+`bb({body:"point_heart", eyes:"look_sad_smile", mouth:"smile"});`
+
+b: As your loyal guard-wolf, I'll always keep an eye out for danger, and do my best to keep you safe.
+
+`bb({body:"normal", eyes:"look_sad", mouth:"smile"});`
+
+b: I promise.
+
+(...600)
+
+```
+bb({body:"normal", eyes:"normal", mouth:"normal"});
+hong({body:"phone1", eyes:"neutral", mouth:"neutral"});
+```
+
+h: Last app. Instagram. What you got?
+
+`hong({eyes:"sad"});`
+
+h: It's... more party pictures.
+
+`hong({mouth:"sad"});`
+
+h: Everyone looks so happy. Free from worry. Free from anxiety.
+
+`hong({mouth:"anger"});`
+
+h: God, why can't I be like them? Why can't I just be *normal?*
+
+`bb({eyes:"normal_right"});`
+
+b: Speaking of parties, about this weekend's invite. Here's my FINAL decision:
+
+`bb({eyes:"normal"});`
+
+[We should go.](#act1g_go) `Game.OVERRIDE_CHOICE_LINE=true`
+
+[We should not go.](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
+
+# act1g_go
+
+`_.act1g = "go"`
+
+(#act1h)
+
+# act1g_dont
+
+`_.act1g = "dont"`
+
+(#act1h)
+
+# act1h
+
+b: We sh--
+
+```
+bb({eyes:"wat", mouth:"small"});
+hong({body:"2_fuck"});
+```
+
+h: *^FUCK^.*
+
+`hong({body:"2_you"});`
+
+h: YOU.
+
+(...500)
+
+b: w
+
+(...1500)
+
+`bb({eyes:"wat_2"});`
+
+b: wha?
+
+`hong({body:"phone1", eyes:"anger", mouth:"anger"});`
+
+h: I'm going to say YES to that party,
+
+{{if _.act1g=="go"}}
+h: NOT because you want me to, but because *I* want to.
+{{/if}}
+
+{{if _.act1g=="dont"}}
+h: Precisely BECAUSE you don't want me to.
+{{/if}}
+
+```
+hong({body:"putaway"});
+sfx("rustle");
+```
+
+h: You're NOT in control of me.
+
+```
+sfx("rustle2");
+hong({body:"0_sammich", eyes:"0_annoyed", mouth:"0_neutral"});
+```
+
+h: Now excuse me while I eat this delicious sandwich in ^goddamn^ peace.
+
+`hong({body:"2_sammich_eat"});`
+
+(...601)
+
+```
+sfx("sandwich");
+hong({body:"2_sammich_eaten", eyes:"0_lookaway", mouth:"0_chew1"})
+```
+
+(...601)
+
+```
+bb({body:"normal", eyes:"uncertain", mouth:"shut"});
+Game.OVERRIDE_TEXT_SPEED = 0.5;
+```
+
+b: ...
+
+```
+bb({eyes:"normal_right"});
+Game.OVERRIDE_TEXT_SPEED = 1;
+```
+
+b: ...
+
+```
+bb({eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 4;
+```
+
+b: ..................
+
+(...500)
+
+`bb({mouth:"normal"});`
+
+[AHHHH WE'RE GONNA DIE](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
+
+[AHHHH EVERYONE HATES US](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
+
+[AHHHH WE'RE HORRIBLE PEOPLE](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
+
+# act1h_death
+
+```
+bb({body:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 3;
+```
+
+b: AHHHH WE'RE GONNA DIE AAAAAAHHHHHHH
+
+```
+hong({body:"3_defeated1"});
+attack("100p", "harm");
+```
+
+(...2500)
+
+(#act1i)
+
+# act1h_loneliness
+
+```
+bb({body:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 3;
+```
+
+b: AHHHH EVERYONE HATES US AAAAAAHHHHHHH
+
+```
+hong({body:"3_defeated1"});
+attack("100p", "alone");
+```
+
+(...2500)
+
+(#act1i)
+
+# act1h_worthless
+
+```
+bb({body:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 3;
+```
+
+b: AHHHH WE'RE HORRIBLE PEOPLE AAAAAAHHHHHHH
+
+```
+hong({body:"3_defeated1"});
+attack("100p", "bad");
+```
+
+(...2500)
+
+(#act1i)
+
+# act1i
+
+```
+bb({mouth:"smile_lock", eyes:"smile", body:"normal"});
+music('battle', {volume:0.5});
+```
+
+n: CONGRATULATIONS
+
+(...500)
+
+n: YOU'VE SUCCESSFULLY PROTECTED YOUR HUMAN'S PHYSICAL + SOCIAL + MORAL NEEDS
+
+n: WHY, LOOK HOW GRATEFUL THEY ARE!
+
+(...500)
+
+n: NOW THAT THEIR ENERGY IS ZERO, YOU CAN DIRECTLY CONTROL THEIR ACTIONS
+
+`bb({mouth:"smile", eyes:"normal"});`
+
+n: PICK YOUR ENDING MOVE
+
+`bb({mouth:"small_lock", eyes:"fear"});`
+
+n: *FINISH THEM*
+
+[{FIGHT: Punish your stressful phone!}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
+
+[{FLIGHT: Curl up in a ball and cry!}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
+
+# act1i_phone
+
+`bb({mouth:"normal", eyes:"narrow"})`
+
+b: Your phone was giving you a panic attack!
+
+`bb({eyes:"anger"})`
+
+b: Zuckerberg and Co are hijacking your mental health for venture capitalist money!
+
+```
+bb({body:"fear", eyes:"fear"});
+hong({body:"3_defeated2"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Punish your phone! Destroy it! Kill it!
+
+```
+Game.OVERRIDE_TEXT_SPEED = 2.5;
+bb({body:"flail"});
+hong({body:"3_defeated3"});
+_.act1_ending = "fight";
+```
+
+b: KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL I--
+
+(#act1j)
+
+# act1i_cry
+
+`bb({eyes:"fear", mouth:"normal"})`
+
+b: The whole world is filled with danger!
+
+```
+bb({body:"fear"});
+hong({body:"3_defeated2"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Do like the armadillo! Curl up into a ball for self-defense!
+
+```
+Game.OVERRIDE_TEXT_SPEED = 2.5;
+bb({body:"flail"});
+hong({body:"3_defeated3"});
+_.act1_ending = "flight";
+```
+
+b: CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CR-- 
+
+(#act1j)
+
+# act1j
+
+`SceneSetup.act1_outro()`# act1
+
+```
+SceneSetup.act1();
+```
+
+(...300)
+
+n: AND THIS IS THE HUMAN'S ANXIETY
+
+n: _YOU_ ARE THE ANXIETY
+
+{{if window.localStorage.continueChapter=="replay"}}
+(#act1_replay)
+{{/if}}
+
+{{if window.localStorage.continueChapter!="replay"}}
+(#act1_normal)
+{{/if}}
+
+
+
+# act1_replay
+
+`hong({mouth:"0_neutral", eyes:"0_neutral"})`
+
+h: Oh hey! We're back here again?
+
+`hong({eyes:"0_neutral"})`
+
+n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+
+`bb({eyes:"look", mouth:"small_lock"})`
+
+n: IN FACT, REPLAYING THIS GAME IS PUTTING THEM IN *DANGER* RIGHT NOW
+
+n: QUICK, WARN THEM!
+
+```
+sfx("squeak");
+bb({body:"squeeze_talk"});
+hong({body:"0_squeeze"});
+```
+
+b: Human! Listen, we're in danger! The player...
+
+[...is gonna torture us again!](#act1_replay_torture)
+
+[...won't find an alternate ending!](#act1_replay_alternate)
+
+[...will get ludonarrative dissonance!](#act1_replay_dissonance)
+
+# act1_replay_torture
+
+```
+window.HACK_REPLAY = JSON.parse(localStorage.act4);
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({body:"0_sammich"});
+```
+
+{{if window.HACK_REPLAY.act1_ending=="fight"}}
+b: They'll make us curl up into a ball and cry!
+{{/if}}
+
+{{if window.HACK_REPLAY.act1_ending=="flight"}}
+b: They'll make us kill your phone for giving you a panic attack!
+{{/if}}
+
+{{if window.HACK_REPLAY.a2_ending=="fight"}}
+b: They'll make us *NOT* punch the party host!
+{{/if}}
+
+{{if window.HACK_REPLAY.a2_ending=="flight"}}
+b: They'll make us punch the Sympathetic Anti-Villain party host!
+{{/if}}
+
+{{if window.HACK_REPLAY.a3_ending=="jump"}}
+h: Well at least we might not jump off the roof this ti--
+{{/if}}
+
+{{if window.HACK_REPLAY.a3_ending=="walkaway"}}
+b: THEY'LL MAKE US JUMP OFF THE ROOF.
+{{/if}}
+
+`bb({body:"fear"});`
+
+b: ALL THESE NEW TERRIBLE THINGS WILL HAPPEN TO US, AND THEN WE'LL--
+
+(#act1_replay_end)
+
+
+#act1_replay_alternate
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({body:"0_sammich"});
+```
+
+h: Sure, the story as a *whole* is the same, but each chapter has two possible endings, plus all the branching dialogue opti--
+
+`bb({body:"fear"});`
+
+b: The player will be disappointed, close this browser tab, delete our software, and then we'll--
+
+(#act1_replay_end)
+
+
+# act1_replay_dissonance
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({body:"0_sammich"});
+```
+
+h: A lewd-what now?
+
+`bb({eyes:"normal"});`
+
+b: The story arc was about how you can *CHOOSE* to build a healthy collaboration with your fear,
+
+`bb({eyes:"normal_right"});`
+
+b: But replaying the game will give the same story, implying your *CHOICES* don't matter,
+
+`bb({eyes:"narrow_eyebrow"});`
+
+b: Thus showing a contradiction between the game's message and mechanics,
+
+`bb({eyes:"fear"});`
+
+b: Thus unraveling the fabric of this narrative universe,
+
+`bb({body:"fear"});`
+
+b: And then we'll--
+
+(#act1_replay_end)
+
+
+# act1_replay_end
+
+`bb({body:"panic"})`
+
+b: DIEEEEEEEEEEEEEEEEEEE
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+Game.clearText();
+```
+
+(...1001)
+
+```
+bb({body:"laugh"});
+hong({body:"laugh"});
+Game.clearText();
+sfx("laugh");
+```
+
+(...5001)
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+hong({body:"0_sammich"});
+```
+
+h: Okay let's get back into character.
+
+```
+Game.clearText();
+```
+
+n4: (LET _YOUR_ ANXIETY BLAH BLAH BLAH MOST SIMILAR TO WHAT _YOUR_ FEAR BLAH BLAH YOU KNOW THE DRILL)
+
+```
+sfx("squeak");
+hong({body:"0_squeeze"});
+bb({body:"squeeze"});
+```
+
+(#act1_normal_choice)
+
+
+
+# act1_normal
+
+`hong({mouth:"0_neutral", eyes:"0_annoyed"})`
+
+h: Oh good, my wolf's back. Faaaaantastic.
+
+`hong({eyes:"0_neutral"})`
+
+n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+
+`bb({eyes:"look", mouth:"small_lock"})`
+
+n: IN FACT, THAT SANDWICH IS PUTTING THEM IN *DANGER* RIGHT NOW
+
+n: QUICK, WARN THEM!
+
+```
+sfx("squeak");
+bb({body:"squeeze_talk"});
+hong({body:"0_squeeze"});
+```
+
+b: Human! Listen, we're in danger! The danger is...
+
+`bb({body:"squeeze"})`
+
+n4: (LET _YOUR_ ANXIETY COME OUT TO PLAY! PICK WHAT'S MOST SIMILAR TO WHAT _YOUR_ FEAR TELLS YOU)
+
+(#act1_normal_choice)
+
+# act1_normal_choice
+
+[We're eating alone for lunch! Again!](#act1a_alone) `bb({body:"squeeze_talk"})`
+
+[We're not productive while eating!](#act1a_productive) `bb({body:"squeeze_talk"})`
+
+[That white bread's bad for us!](#act1a_bread) `bb({body:"squeeze_talk"})`
+
+# act1a_alone
+
+```
+bb({body:"normal", mouth:"small", eyes:"narrow"});
+hong({body:"0_sammich"});
+```
+
+b: Don't you know loneliness is associated with premature death as much as smoking 15 cigarettes a day?-
+
+`Game.OVERRIDE_TEXT_SPEED = 2;`
+
+`bb({mouth:"normal", eyes:"normal_right"})`
+
+b: (Holt-Lunstad 2010, PLoS Medicine)
+
+`hong({eyes:"0_annoyed"})`
+
+h: Um, thanks for citing your sources but--
+
+`Game.OVERRIDE_TEXT_SPEED = 2;`
+
+`bb({body:"fear", mouth:"normal", eyes:"fear"})`
+
+b: Which means if we don't hang out with someone *right now* we're gonna-
+
+`bb({body:"panic"})`
+
+b: DIEEEEEEEEEEEEEEEEEEE
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+hong({mouth:"0_shock", eyes:"0_shock"});
+attack("18p", "alone");
+publish("hp_show");
+```
+
+(...2500)
+
+`_.fifteencigs = true`
+
+n: YOU USED *FEAR OF BEING UNLOVED*
+
+(#act1b)
+
+# act1a_productive
+
+```
+bb({body:"normal", mouth:"small", eyes:"normal"});
+hong({body:"0_sammich"});
+```
+
+b: Whip out your laptop and do some work right now!
+
+`hong({eyes:"0_annoyed"})`
+
+h: Um, I'd rather not get crumbs in my keyboa--
+
+```
+bb({mouth:"normal", eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: If we're not contributing to the body of society then we're a society-parasite!
+
+b: The society-body will go to the society-doctor for medication to kill their society-parasites then we'll--
+
+```
+bb({body:"panic", mouth:"normal", eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: DIEEEEEEEEEEEEEEEEEEE
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+hong({mouth:"0_shock", eyes:"0_shock"});
+attack("18p", "bad");
+publish("hp_show");
+```
+
+(...2500)
+
+`_.parasite = true`
+
+n: YOU USED *FEAR OF BEING A BAD PERSON*
+
+(#act1b)
+
+# act1a_bread
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({body:"0_sammich", eyes:"0_annoyed"});
+```
+
+h: Have those studies been replicat--
+
+```
+bb({body:"fear", mouth:"normal", eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Processed wheat will spike our blood sugar so they'll have to amputate all our limbs and then we'll-
+
+`bb({body:"panic"})`
+
+b: DIEEEEEEEEEEEEEEEEEEE
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+hong({mouth:"0_shock", eyes:"0_shock"});
+attack("18p", "harm");
+publish("hp_show");
+```
+
+(...2500)
+
+`_.whitebread = true`
+
+n: YOU USED *FEAR OF BEING HARMED*
+
+(#act1b)
+
+# act1b
+
+n: IT'S SUPER EFFECTIVE
+
+`bb({mouth:"smile", eyes:"smile"});`
+
+b: See, human? I am your loyal guard-wolf!
+
+`bb({body:"pride_talk"});`
+
+b: Trust your gut! Your feelings are always valid!
+
+`bb({body:"pride"});`
+
+n: GET YOUR HUMAN'S ENERGY BAR TO ZERO
+
+n: TO PROTECT THEIR PHYSICAL + SOCIAL + MORAL NEEDS, YOU CAN USE:
+
+n: FEAR OF *BEING HARMED* #harm#
+
+n: FEAR OF *BEING UNLOVED* #alone#
+
+n: AND FEAR OF *BEING A BAD PERSON* #bad#
+
+`Game.OVERRIDE_TEXT_SPEED = 1.25;`
+
+n4: (PRO-TIP: PLAY THE CHOICES THAT PERSONALLY HIT YOUR DEEPEST, DARKEST FEARS!~)
+
+h: ...
+
+```
+hong({body:"putaway"});
+sfx("rustle");
+bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
 (...1000)
 
-h: I'm coming back to the party next weekend.
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-h: The next time we fight, I'm not just going to *defeat* you...
+h: you know what maybe it's time to check my phone.
 
-h: I'm going to ^fuck^ing *kill* you.
+```
+sfx("rustle2");
+hong({body:"phone1", mouth:"neutral", eyes:"neutral"})
+```
+
+n: PROTECT YOUR HUMAN
+
+n: FROM THE WORLD. FROM OTHER PEOPLE. FROM THEMSELF.
+
+n: GOOD LUCK
+
+(...500)
+
+`Game.clearText()`
+
+(...500)
+
+(#act1c)
+
+# act1c
+
+`music('battle', {volume:0.5})`
+
+n: ROUND ONE: *FIGHT!*
+
+`bb({body:"normal", mouth:"normal", eyes:"normal"});`
+
+h: Huh. Facebook feed says there's a party happening this weekend.
+
+`bb({eyes:"uncertain"});`
+
+b: Doesn't that weirdo throw a party *every* weekend?
+
+`bb({eyes:"uncertain_right"});`
+
+b: What inner void are they trying to fill? They must be deeply messed up inside!
+
+`hong({eyes:"surprise"});`
+
+h: Also, I got an invite?
+
+`bb({eyes:"fear", mouth:"normal"});`
+
+b: Well then!
+
+[Say yes, or we'll die from loneliness!](#act1c_loner)
+
+[Say no, it's full of poisonous drugs!](#act1c_drugs)
+
+[Ignore it, we just make parties sad.](#act1c_sad)
+
+# act1c_loner
+
+{{if _.fifteencigs}}
+b: Fifteen cigarettes a day, human! Fifteen!
+{{/if}}
+
+{{if !_.fifteencigs}}
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+{{/if}}
+
+{{if !_.fifteencigs}}
+b: Then no one will show up at our funeral, they'll dump our ashes into the ocean, we get eaten by a whale,
+{{/if}}
+
+{{if !_.fifteencigs}}
+b: and we become WHALE POOP!
+{{/if}}
+
+{{if !_.fifteencigs}} `_.whalepoop = true` {{/if}}
+
+(...500)
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+`bb({eyes:"normal"});`
+
+{{if !_.fifteencigs}}
+b: So yeah we should go to that party!
+{{/if}}
+
+{{if _.parasite}}
+b: Just bring the laptop so we can do work, and not be a society-parasite.
+{{/if}}
+
+{{if _.whitebread}}
+b: Just as long as they don't serve WHITE BREAD
+{{/if}}
+
+`hong({mouth:"anger", eyes:"anger"});`
+
+h: GOD. If it'll make you shut up, fine.
+
+h: I'll say yes.
+
+{{if _.whalepoop}}
+b: Whale poop, human! Whale poop!
+{{/if}}
+
+`_.partyinvite="yes"`
+
+(#act1d)
+
+# act1c_drugs
+
+`bb({mouth:"small", eyes:"fear"});`
+
+{{if _.whitebread}}
+b: or even worse... WHITE BREAD
+{{/if}}
+
+{{if _.whitebread}}
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+{{/if}}
+
+{{if _.whitebread}}
+b: We'll overdose on so much meth and white bread they won't be able to fit our fat corpse into the cremation furnace!
+{{/if}}
+
+{{if !_.whitebread}}
+b: We'll overdose on so many drugs the undertaker will wonder how our body was *already* pre-embalmed!
+{{/if}}
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+{{if _.parasite}}
+b: Besides, can't party, we need to do work or we're a terrible society-parasite!
+{{/if}}
+
+`hong({mouth:"anger", eyes:"anger"});`
+
+h: GOD. If it'll make you shut up, fine.
+
+h: I'll say no.
+
+`_.partyinvite="no"`
+
+(#act1d)
+
+# act1c_sad
+
+`bb({eyes:"uncertain_right", mouth:"normal"});`
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+{{if _.fifteencigs}}
+b: All we ever do is cry in a corner about how loneliness is as deadly as 15 cigarettes a day.
+{{/if}}
+
+{{if _.parasite}}
+b: All we ever do at parties is worry about how we should be productive instead.
+{{/if}}
+
+{{if _.whitebread}}
+b: All we ever do is worry about how the unhealthy food options are going to kill us.
+{{/if}}
+
+```
+bb({mouth:"normal", eyes:"normal"});
+hong({mouth:"neutral", eyes:"lookaway"});
+```
+
+h: gee i wonder why.
+
+`hong({eyes:"neutral"});`
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+b: So if we go we'll make them feel bad, but if we reject their invite we'll also make them feel bad!
+
+`bb({body:"fear", eyes:"fear"});`
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+b: ALL WE DO IS MAKE PEOPLE FEEL BAD, SO WE SHOULD FEEL BAD
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+`hong({mouth:"anger", eyes:"anger"});`
+
+h: Ugh. If it'll make you shut up, fine.
+
+h: I'll ignore the invite.
+
+`_.partyinvite="ignore"`
+
+(#act1d)
+
+# act1d
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+hong({mouth:"neutral", eyes:"annoyed"});
+```
+
+h: Anyway. Facebook's too much. I need something calmer, less anxiety-producing.
+
+`hong({eyes:"neutral"});`
+
+h: What's new on Twitter?
+
+`bb({eyes:"look"});`
+
+[Oh no, look at that horrible news story!](#act1d_news)
+
+[Oh no, is that tweet secretly about *us?*](#act1d_subtweet)
+
+[Hey, a GIF of a cat drinking milk](#act1d_milk)
+
+
+# act1d_news
+
+```
+bb({eyes:"pained1"});
+music(null, {fade:2});
+```
+
+b: God, it feels like the world's burning, isn't it?
+
+```
+bb({eyes:"pained2"});
+hong({mouth:"sad", eyes:"sad"});
+```
+
+b: It feels like it's all ending, like everything's dying and we're doomed and there's nothing we can do about it.
+
+```
+Game.OVERRIDE_TEXT_SPEED = 0.5;
+bb({mouth:"shut"});
+```
+
+b: ...
+
+`bb({mouth:"smile", eyes:"smile"});`
+
+b: Let's retweet that story!
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+`_.badnews=true`
+
+```
+music('battle', {volume:0.5});
+hong({mouth:"anger", eyes:"anger"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Okay I'll retweet it just please be quiet!
+
+`hong({mouth:"neutral", eyes:"annoyed"});`
+
+h: Screw it, let's look at Snapchat.
+
+(#act1e)
+
+
+# act1d_subtweet
+
+`bb({eyes:"fear"});`
+
+b: It's a subtweet! A sneaky, sneaky subtweet!
+
+`hong({eyes:"annoyed"});`
+
+h: It's probably not?
+
+`bb({eyes:"narrow", mouth:"small"});`
+
+b: but what if they're all talking behind our back
+
+h: They're n--
+
+`bb({body:"fear", eyes:"fear", mouth:"normal"});`
+
+b: IN FRONT OF OUR BACK
+
+`hong({eyes:"sad", mouth:"sad"});`
+
+h: I d--
+
+`bb({eyes:"narrow", mouth:"small"});`
+
+b: but *what if*
+
+h: S--
+
+`bb({eyes:"narrow_eyebrow"});`
+
+b: *what if*
+
+```
+Game.OVERRIDE_TEXT_SPEED = 0.5;
+hong({mouth:"shut"});
+```
+
+h: ...
+
+(...1000)
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+`_.subtweet=true`
+
+```
+hong({mouth:"anger", eyes:"annoyed"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+```
+
+h: o-KAY, gonna try Snapchat.
+
+(#act1e)
+
+# act1d_milk
+
+`hong({mouth:"smile", eyes:"neutral"});`
+
+h: Heh ya that's cute, just retweeted it, I thi--
+
+```
+hong({mouth:"shock", eyes:"shock"});
+bb({body:"scream"});
+Game.OVERRIDE_TEXT_SPEED = 1.8;
+```
+
+b: CATS CAN'T DIGEST MILK AND WE'RE TERRIBLE PEOPLE FOR ENJOYING ANIMAL ABUSE
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+
+`_.catmilk=true`
+
+```
+hong({mouth:"anger", eyes:"annoyed"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+```
+
+h: o-KAY, gonna try Snapchat.
+
+(#act1e)
+
+# act1e
+
+`hong({mouth:"neutral", eyes:"neutral"});`
+
+h: Huh, photos from yesterday night. So *that's* what those weekly parties are like.
+
+{{if _.partyinvite=="yes"}} (#act1e_said_yes) {{/if}}
+
+{{if _.partyinvite=="no"}} (#act1e_said_no) {{/if}}
+
+{{if _.partyinvite=="ignore"}} (#act1e_said_ignore) {{/if}}
+
+# act1e_said_yes
+
+`hong({mouth:"sad", eyes:"annoyed"});`
+
+h: Oof, looks way too crowded for my anxiety.
+
+h: Maybe I shouldn't have said yes to the invite?
+
+```
+hong({mouth:"neutral", eyes:"neutral"});
+bb({mouth:"normal", eyes:"normal"});
+```
+
+[Change our answer? Like a jerk?!](#act1e_yes_dontchange)
+
+[Change our answer! It's too crowded!](#act1e_yes_changetono)
+
+{{if _.subtweet}}
+[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+{{/if}}
+
+{{if _.badnews}}
+[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+{{/if}}
+
+{{if (!_.subtweet && !_.badnews)}}
+[You know, you've got really bad posture?](#act1e_ignore_posture)
+{{/if}}
+
+# act1e_yes_dontchange
+
+```
+bb({eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: They were counting on us to come and now we're betraying their trust? Do you wanna die alone?!
+
+{{if _.fifteencigs}}
+b: FIFTEEN. CIGARETTES.
+{{/if}}
+
+{{if _.whalepoop}}
+b: WHALE. POOP.
+{{/if}}
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+```
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Shut up shut up I'll keep it as yes!
+
+(#act1f)
+
+# act1e_yes_changetono
+
+```
+bb({eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Don't you know about human stampedes?
+
+```
+bb({body:"fear", mouth:"small", eyes:"narrow"});
+hong({eyes:"sad", mouth:"sad"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: In 2003 a Rhode Island nightclub had a fire and the panic made people jam the exits so 100 people burned to death-
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({mouth:"shock"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: DO YOU WANT THAT TO HAPPEN TO US-
+
+```
+bb({body:"scream"});
+Game.OVERRIDE_TEXT_SPEED = 2.5;
+```
+
+b: SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY N-
+
+
+```
+bb({body:"normal", eyes:"fear", mouth:"normal"});
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+```
+hong({eyes:"anger", mouth:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Shut up shut up I'll change my answer to no! God!
+
+(#act1f)
+
+# act1e_said_no
+
+`hong({mouth:"sad", eyes:"sad"});`
+
+h: Hm... that looks really fun.
+
+h: Maybe I shouldn't have said no to the invite?
+
+`bb({mouth:"normal", eyes:"normal"});`
+
+[Change our answer? Like a jerk?!](#act1e_no_dontchange)
+
+[Change our answer! Don't die alone!](#act1e_no_changetoyes)
+
+{{if _.subtweet}}
+[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+{{/if}}
+
+{{if _.badnews}}
+[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+{{/if}}
+
+{{if (!_.subtweet && !_.badnews)}}
+[You know, you've got really bad posture?](#act1e_ignore_posture)
+{{/if}}
+
+# act1e_no_dontchange
+
+`bb({eyes:"anger"})`
+
+b: Everybody was counting on us!
+
+b: ...to leave them alone and let them have a nice party without a horrible disgusting {{if _.whitebread}}white-bread-munching{{/if}} creep like u--
+
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+```
+bb({body:"normal", eyes:"uncertain", mouth:"normal"});
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Shut up shut up I'll keep it as no!
+
+(#act1f)
+
+# act1e_no_changetoyes
+
+```
+bb({body:"fear", eyes:"fear", mouth:"normal"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Chronic loneliness increases our cortisol levels as well as risk for cardiovascular disease and stroke!
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+{{if _.fifteencigs}}
+b: FIFTEEN. CIGARETTES.
+{{/if}}
+
+```
+bb({body:"normal", eyes:"normal", mouth:"normal"});
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Shut up shut up I'll change my answer to yes! God!
+
+(#act1f)
+
+# act1e_ignore_subtweet
+
+```
+bb({eyes:"fear", mouth:"small"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: All our problematic tweets have come back to roost!
+
+```
+bb({body:"fear", eyes:"fear", mouth:"normal"});
+Game.OVERRIDE_TEXT_SPEED = 1.7;
+```
+
+b: We're gonna get called out and cancelled and dragged with a rope on horseback down the information superhighway!
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+```
+bb({body:"normal", eyes:"normal", mouth:"normal"});
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Why are you like this?!
+
+(#act1f)
+
+# act1e_ignore_factcheck
+
+```
+bb({eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: We're spreading disinformation! We're destroying trust in a free press!
+
+```
+bb({body:"scream"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: We're the reason fascism will arise from the rubble of democracy!
+
+```
+bb({body:"normal", eyes:"anger"});
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+```
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+_.factcheck = true;
+```
+
+h: Why are you like this?!
+
+(#act1f)
+
+# act1e_ignore_posture
+
+```
+bb({eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Do you want to have a pretzel for a spine?! Stop hunching over your screen!
+
+```
+bb({body:"meta"});
+```
+
+b: That means you too.
+
+```
+bb({body:"normal", mouth:"normal"});
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+```
+bb({body:"normal", eyes:"normal", mouth:"normal"});
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Why are you like this?!
+
+(#act1f)
+
+# act1e_said_ignore
+
+`hong({mouth:"sad", eyes:"sad"});`
+
+h: Hm... that looks really fun.
+
+h: Maybe I shouldn't have ignored the invite?
+
+`bb({mouth:"normal", eyes:"normal"});`
+
+[Keep ignoring, we're still party poopers.](#act1e_ignore_continue)
+
+[Actually, say yes.](#act1e_ignore_changetoyes)
+
+[Actually, say no.](#act1e_ignore_changetono)
+
+# act1e_ignore_continue
+
+`hong({eyes:"annoyed"});`
+
+h: It's kinda rude to keep ignoring them though, no?
+
+`bb({eyes:"normal_right"});`
+
+b: Well other people always ignore *us*, so
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+`bb({eyes:"normal"});`
+
+b: so let's just call it even.
+
+(#act1f)
+
+# act1e_ignore_changetoyes
+
+`hong({eyes:"surprise", mouth:"smile"});`
+
+h: You're... letting me have fun?
+
+b: Well, I mean, loneliness *can* kill us.
+
+`hong({eyes:"neutral", mouth:"neutral"});`
+
+(#act1e_no_changetoyes)
+
+# act1e_ignore_changetono
+
+`bb({eyes:"narrow"});`
+
+b: It's too crowded. Crowds are dangerous.
+
+(#act1e_yes_changetono)
+
+
+# act1f
+
+```
+hong({mouth:"neutral", eyes:"neutral"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+```
+
+h: Whatever. New Tinder notification.
+
+`bb({eyes:"uncertain"})`
+
+b: What, that hookup app?
+
+`hong({eyes:"annoyed"})`
+
+h: It's not a hookup app, it's just a way to meet new peopl--
+
+`bb({eyes:"narrow"})`
+
+b: It's a hookup app.
+
+```
+hong({eyes:"surprise", mouth:"smile"});
+bb({eyes:"normal"});
+```
+
+h: Oh, I got a match! They look cute!
+
+```
+bb({eyes:"narrow_eyebrow"});
+hong({eyes:"sad", mouth:"anger"})
+```
+
+h: Please don't ruin this for m--
+
+```
+bb({body:"panic"});
+Game.OVERRIDE_TEXT_SPEED = 2.0;
+```
+
+b: DANGER DANGER DANGER DANGER DANGER DANGER
+
+`bb({body:"fear", eyes:"fear", mouth:"normal"})`
+
+[We're being *used* by other people.](#act1f_used_by_others)
+
+[We're just *using* other people.](#act1f_using_others)
+
+[YOUR MATCH IS A SERIAL KILLER](#act1f_killer)
+
+# act1f_used_by_others
+
+`bb({body:"point_crotch", eyes:"normal", mouth:"normal"})`
+
+b: Random hookups may be able to fill the hole down there,
+
+b: but they can never fill the hole...
+
+`bb({body:"point_heart", eyes:"pretty", mouth:"small"})`
+
+b: in *here*.
+
+(...1000)
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: The point is WE'RE GOING TO DIE ALONE
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+`_.hookuphole=true`
+
+(#act1g)
+
+# act1f_using_others
+
+`bb({eyes:"narrow", mouth:"small"})`
+
+b: You think other people's genitals are Pokémon for us to collect?
+
+```
+bb({body:"sing", eyes:"pretty", mouth:"shut"});
+music("pokemon");
+Game.clearText();
+Game.FORCE_CANT_SKIP = true;
+```
+
+```
+Game.FORCE_TEXT_DURATION = 1000;
+Game.FORCE_NO_VOICE = true;
+```
+
+b: ♫ (pokemon theme song)-
+
+(...5600)
+
+```
+bb({mouth:"normal"});
+Game.FORCE_TEXT_DURATION = 2400;
+```
+
+b: ♫ I wanna be, the ^slut^ti-est-
+
+(...500)
+
+```
+bb({eyes:"narrow", mouth:"small"});
+Game.FORCE_TEXT_DURATION = 2100;
+```
+
+b: ♫ Like no one ever was-
+
+(...1500)
+
+```
+bb({eyes:"pretty"});
+Game.FORCE_TEXT_DURATION = 2300;
+```
+
+b: ♫ Thighs n' ^ass^, voluptuous breast-
+
+(...500)
+
+```
+bb({eyes:"fear", mouth:"normal"});
+Game.FORCE_TEXT_DURATION = 2000;
+```
+
+b: ♫ with sweaty ^dick^ and balls!-
+
+(...1000)
+
+```
+bb({eyes:"smile", mouth:"smile"});
+Game.FORCE_TEXT_DURATION = 1000;
+```
+
+b: ♫ PERVY-MON! GOTTA CA-
+
+```
+Game.FORCE_CANT_SKIP = false;
+Game.clearText();
+music(false);
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: The point is we're a manipulative creep.
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+`_.pokemon=true`
+
+(#act1g)
+
+# act1f_killer
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+{{if _.whitebread}}
+b: They'll trap you in a well and force-feed you white bread to fatten you up so they can wear your skin like a suit!
+{{/if}}
+
+{{if _.parasite}}
+b: They'll bludgeon you with a pomodoro timer and say "YOU SHOULDA BEEN MORE PRODUCTIVE YOU PARASITE"
+{{/if}}
+
+{{if !_.whitebread && !_.parasite}}
+b: They'll tear your flesh to gory confetti, turn your entrails into streamers, and mix your blood into a punch bowl!
+{{/if}}
+
+{{if !_.whitebread && !_.parasite}}
+b: How's THAT for a party invite?!
+{{/if}}
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+`_.serialkiller=true`
+
+(#act1g)
+
+# act1g
+
+```
+bb({body:"normal", mouth:"normal", eyes:"look"});
+hong({body:"2_tired"});
+Game.OVERRIDE_TEXT_SPEED = 0.5;
+music(false);
+```
+
+h: ...
+
+(...500)
+
+h: i'm so sick of this game.
+
+(...700)
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+h:
+{{if _.fifteencigs}}"loneliness will kill us"... {{/if}}
+{{if _.parasite}}"we're a society-parasite"... {{/if}}
+{{if _.whitebread}}"don't eat that, it'll kill us"... {{/if}}
+{{if _.subtweet}}"they're talking behind our back"... {{/if}}
+{{if _.badnews}}"the world is burning"... {{/if}}
+{{if _.hookuphole}}"we'll die alone"... {{/if}}
+{{if _.serialkiller}}"they're a serial killer"... {{/if}}
+{{if _.catmilk}}"cats can't digest milk"... {{/if}}
+{{if _.pokemon}}a ^crappy^ parody song... {{/if}}
+
+h: i just want to live my life.
+
+h: i just want to be free from all this... pain.
+
+`bb({eyes:"look_sad"});`
+
+b: Hey... human...
+
+`Game.OVERRIDE_TEXT_SPEED = 0.5;`
+
+b: It'll be okay.
+
+(...600)
+
+`bb({body:"point_heart", eyes:"look_sad_smile", mouth:"smile"});`
+
+b: As your loyal guard-wolf, I'll always keep an eye out for danger, and do my best to keep you safe.
+
+`bb({body:"normal", eyes:"look_sad", mouth:"smile"});`
+
+b: I promise.
+
+(...600)
+
+```
+bb({body:"normal", eyes:"normal", mouth:"normal"});
+hong({body:"phone1", eyes:"neutral", mouth:"neutral"});
+```
+
+h: Last app. Instagram. What you got?
+
+`hong({eyes:"sad"});`
+
+h: It's... more party pictures.
+
+`hong({mouth:"sad"});`
+
+h: Everyone looks so happy. Free from worry. Free from anxiety.
+
+`hong({mouth:"anger"});`
+
+h: God, why can't I be like them? Why can't I just be *normal?*
+
+`bb({eyes:"normal_right"});`
+
+b: Speaking of parties, about this weekend's invite. Here's my FINAL decision:
+
+`bb({eyes:"normal"});`
+
+[We should go.](#act1g_go) `Game.OVERRIDE_CHOICE_LINE=true`
+
+[We should not go.](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
+
+# act1g_go
+
+`_.act1g = "go"`
+
+(#act1h)
+
+# act1g_dont
+
+`_.act1g = "dont"`
+
+(#act1h)
+
+# act1h
+
+b: We sh--
+
+```
+bb({eyes:"wat", mouth:"small"});
+hong({body:"2_fuck"});
+```
+
+h: *^FUCK^.*
+
+`hong({body:"2_you"});`
+
+h: YOU.
+
+(...500)
+
+b: w
+
+(...1500)
+
+`bb({eyes:"wat_2"});`
+
+b: wha?
+
+`hong({body:"phone1", eyes:"anger", mouth:"anger"});`
+
+h: I'm going to say YES to that party,
+
+{{if _.act1g=="go"}}
+h: NOT because you want me to, but because *I* want to.
+{{/if}}
+
+{{if _.act1g=="dont"}}
+h: Precisely BECAUSE you don't want me to.
+{{/if}}
+
+```
+hong({body:"putaway"});
+sfx("rustle");
+```
+
+h: You're NOT in control of me.
+
+```
+sfx("rustle2");
+hong({body:"0_sammich", eyes:"0_annoyed", mouth:"0_neutral"});
+```
+
+h: Now excuse me while I eat this delicious sandwich in ^goddamn^ peace.
+
+`hong({body:"2_sammich_eat"});`
+
+(...601)
+
+```
+sfx("sandwich");
+hong({body:"2_sammich_eaten", eyes:"0_lookaway", mouth:"0_chew1"})
+```
+
+(...601)
+
+```
+bb({body:"normal", eyes:"uncertain", mouth:"shut"});
+Game.OVERRIDE_TEXT_SPEED = 0.5;
+```
+
+b: ...
+
+```
+bb({eyes:"normal_right"});
+Game.OVERRIDE_TEXT_SPEED = 1;
+```
+
+b: ...
+
+```
+bb({eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 4;
+```
+
+b: ..................
+
+(...500)
+
+`bb({mouth:"normal"});`
+
+[AHHHH WE'RE GONNA DIE](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
+
+[AHHHH EVERYONE HATES US](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
+
+[AHHHH WE'RE HORRIBLE PEOPLE](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
+
+# act1h_death
+
+```
+bb({body:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 3;
+```
+
+b: AHHHH WE'RE GONNA DIE AAAAAAHHHHHHH
+
+```
+hong({body:"3_defeated1"});
+attack("100p", "harm");
+```
+
+(...2500)
+
+(#act1i)
+
+# act1h_loneliness
+
+```
+bb({body:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 3;
+```
+
+b: AHHHH EVERYONE HATES US AAAAAAHHHHHHH
+
+```
+hong({body:"3_defeated1"});
+attack("100p", "alone");
+```
+
+(...2500)
+
+(#act1i)
+
+# act1h_worthless
+
+```
+bb({body:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 3;
+```
+
+b: AHHHH WE'RE HORRIBLE PEOPLE AAAAAAHHHHHHH
+
+```
+hong({body:"3_defeated1"});
+attack("100p", "bad");
+```
+
+(...2500)
+
+(#act1i)
+
+# act1i
+
+```
+bb({mouth:"smile_lock", eyes:"smile", body:"normal"});
+music('battle', {volume:0.5});
+```
+
+n: CONGRATULATIONS
+
+(...500)
+
+n: YOU'VE SUCCESSFULLY PROTECTED YOUR HUMAN'S PHYSICAL + SOCIAL + MORAL NEEDS
+
+n: WHY, LOOK HOW GRATEFUL THEY ARE!
+
+(...500)
+
+n: NOW THAT THEIR ENERGY IS ZERO, YOU CAN DIRECTLY CONTROL THEIR ACTIONS
+
+`bb({mouth:"smile", eyes:"normal"});`
+
+n: PICK YOUR ENDING MOVE
+
+`bb({mouth:"small_lock", eyes:"fear"});`
+
+n: *FINISH THEM*
+
+[{FIGHT: Punish your stressful phone!}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
+
+[{FLIGHT: Curl up in a ball and cry!}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
+
+# act1i_phone
+
+`bb({mouth:"normal", eyes:"narrow"})`
+
+b: Your phone was giving you a panic attack!
+
+`bb({eyes:"anger"})`
+
+b: Zuckerberg and Co are hijacking your mental health for venture capitalist money!
+
+```
+bb({body:"fear", eyes:"fear"});
+hong({body:"3_defeated2"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Punish your phone! Destroy it! Kill it!
+
+```
+Game.OVERRIDE_TEXT_SPEED = 2.5;
+bb({body:"flail"});
+hong({body:"3_defeated3"});
+_.act1_ending = "fight";
+```
+
+b: KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL I--
+
+(#act1j)
+
+# act1i_cry
+
+`bb({eyes:"fear", mouth:"normal"})`
+
+b: The whole world is filled with danger!
+
+```
+bb({body:"fear"});
+hong({body:"3_defeated2"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Do like the armadillo! Curl up into a ball for self-defense!
+
+```
+Game.OVERRIDE_TEXT_SPEED = 2.5;
+bb({body:"flail"});
+hong({body:"3_defeated3"});
+_.act1_ending = "flight";
+```
+
+b: CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CR-- 
+
+(#act1j)
+
+# act1j
+
+`SceneSetup.act1_outro()`# act1
+
+```
+SceneSetup.act1();
+```
+
+(...300)
+
+n: AND THIS IS THE HUMAN'S ANXIETY
+
+n: _YOU_ ARE THE ANXIETY
+
+{{if window.localStorage.continueChapter=="replay"}}
+(#act1_replay)
+{{/if}}
+
+{{if window.localStorage.continueChapter!="replay"}}
+(#act1_normal)
+{{/if}}
+
+
+
+# act1_replay
+
+`hong({mouth:"0_neutral", eyes:"0_neutral"})`
+
+h: Oh hey! We're back here again?
+
+`hong({eyes:"0_neutral"})`
+
+n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+
+`bb({eyes:"look", mouth:"small_lock"})`
+
+n: IN FACT, REPLAYING THIS GAME IS PUTTING THEM IN *DANGER* RIGHT NOW
+
+n: QUICK, WARN THEM!
+
+```
+sfx("squeak");
+bb({body:"squeeze_talk"});
+hong({body:"0_squeeze"});
+```
+
+b: Human! Listen, we're in danger! The player...
+
+[...is gonna torture us again!](#act1_replay_torture)
+
+[...won't find an alternate ending!](#act1_replay_alternate)
+
+[...will get ludonarrative dissonance!](#act1_replay_dissonance)
+
+# act1_replay_torture
+
+```
+window.HACK_REPLAY = JSON.parse(localStorage.act4);
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({body:"0_sammich"});
+```
+
+{{if window.HACK_REPLAY.act1_ending=="fight"}}
+b: They'll make us curl up into a ball and cry!
+{{/if}}
+
+{{if window.HACK_REPLAY.act1_ending=="flight"}}
+b: They'll make us kill your phone for giving you a panic attack!
+{{/if}}
+
+{{if window.HACK_REPLAY.a2_ending=="fight"}}
+b: They'll make us *NOT* punch the party host!
+{{/if}}
+
+{{if window.HACK_REPLAY.a2_ending=="flight"}}
+b: They'll make us punch the Sympathetic Anti-Villain party host!
+{{/if}}
+
+{{if window.HACK_REPLAY.a3_ending=="jump"}}
+h: Well at least we might not jump off the roof this ti--
+{{/if}}
+
+{{if window.HACK_REPLAY.a3_ending=="walkaway"}}
+b: THEY'LL MAKE US JUMP OFF THE ROOF.
+{{/if}}
+
+`bb({body:"fear"});`
+
+b: ALL THESE NEW TERRIBLE THINGS WILL HAPPEN TO US, AND THEN WE'LL--
+
+(#act1_replay_end)
+
+
+#act1_replay_alternate
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({body:"0_sammich"});
+```
+
+h: Sure, the story as a *whole* is the same, but each chapter has two possible endings, plus all the branching dialogue opti--
+
+`bb({body:"fear"});`
+
+b: The player will be disappointed, close this browser tab, delete our software, and then we'll--
+
+(#act1_replay_end)
+
+
+# act1_replay_dissonance
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({body:"0_sammich"});
+```
+
+h: A lewd-what now?
+
+`bb({eyes:"normal"});`
+
+b: The story arc was about how you can *CHOOSE* to build a healthy collaboration with your fear,
+
+`bb({eyes:"normal_right"});`
+
+b: But replaying the game will give the same story, implying your *CHOICES* don't matter,
+
+`bb({eyes:"narrow_eyebrow"});`
+
+b: Thus showing a contradiction between the game's message and mechanics,
+
+`bb({eyes:"fear"});`
+
+b: Thus unraveling the fabric of this narrative universe,
+
+`bb({body:"fear"});`
+
+b: And then we'll--
+
+(#act1_replay_end)
+
+
+# act1_replay_end
+
+`bb({body:"panic"})`
+
+b: DIEEEEEEEEEEEEEEEEEEE
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+Game.clearText();
+```
+
+(...1001)
+
+```
+bb({body:"laugh"});
+hong({body:"laugh"});
+Game.clearText();
+sfx("laugh");
+```
+
+(...5001)
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+hong({body:"0_sammich"});
+```
+
+h: Okay let's get back into character.
 
 ```
 Game.clearText();
-publish("act2", ["act2_end","next"]);
-sfx("concrete_step1");
-````
-
-(...901)
-
-```
-publish("act2", ["act2_end","next"]);
-sfx("concrete_step2", {volume:0.8});
 ```
 
-(...901)
+n4: (LET _YOUR_ ANXIETY BLAH BLAH BLAH MOST SIMILAR TO WHAT _YOUR_ FEAR BLAH BLAH YOU KNOW THE DRILL)
 
 ```
-publish("act2", ["act2_end","next"]);
-sfx("concrete_step3", {volume:0.5});
+sfx("squeak");
+hong({body:"0_squeeze"});
+bb({body:"squeeze"});
 ```
 
-(...901)
+(#act1_normal_choice)
 
-`sfx("concrete_step4", {volume:0.25});`
 
-(...3000)
 
-`_.INTERMISSION_STAGE = 2;`
+# act1_normal
 
-(#intermission)
+`hong({mouth:"0_neutral", eyes:"0_annoyed"})`
+
+h: Oh good, my wolf's back. Faaaaantastic.
+
+`hong({eyes:"0_neutral"})`
+
+n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+
+`bb({eyes:"look", mouth:"small_lock"})`
+
+n: IN FACT, THAT SANDWICH IS PUTTING THEM IN *DANGER* RIGHT NOW
+
+n: QUICK, WARN THEM!
+
+```
+sfx("squeak");
+bb({body:"squeeze_talk"});
+hong({body:"0_squeeze"});
+```
+
+b: Human! Listen, we're in danger! The danger is...
+
+`bb({body:"squeeze"})`
+
+n4: (LET _YOUR_ ANXIETY COME OUT TO PLAY! PICK WHAT'S MOST SIMILAR TO WHAT _YOUR_ FEAR TELLS YOU)
+
+(#act1_normal_choice)
+
+# act1_normal_choice
+
+[We're eating alone for lunch! Again!](#act1a_alone) `bb({body:"squeeze_talk"})`
+
+[We're not productive while eating!](#act1a_productive) `bb({body:"squeeze_talk"})`
+
+[That white bread's bad for us!](#act1a_bread) `bb({body:"squeeze_talk"})`
+
+# act1a_alone
+
+```
+bb({body:"normal", mouth:"small", eyes:"narrow"});
+hong({body:"0_sammich"});
+```
+
+b: Don't you know loneliness is associated with premature death as much as smoking 15 cigarettes a day?-
+
+`Game.OVERRIDE_TEXT_SPEED = 2;`
+
+`bb({mouth:"normal", eyes:"normal_right"})`
+
+b: (Holt-Lunstad 2010, PLoS Medicine)
+
+`hong({eyes:"0_annoyed"})`
+
+h: Um, thanks for citing your sources but--
+
+`Game.OVERRIDE_TEXT_SPEED = 2;`
+
+`bb({body:"fear", mouth:"normal", eyes:"fear"})`
+
+b: Which means if we don't hang out with someone *right now* we're gonna-
+
+`bb({body:"panic"})`
+
+b: DIEEEEEEEEEEEEEEEEEEE
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+hong({mouth:"0_shock", eyes:"0_shock"});
+attack("18p", "alone");
+publish("hp_show");
+```
+
+(...2500)
+
+`_.fifteencigs = true`
+
+n: YOU USED *FEAR OF BEING UNLOVED*
+
+(#act1b)
+
+# act1a_productive
+
+```
+bb({body:"normal", mouth:"small", eyes:"normal"});
+hong({body:"0_sammich"});
+```
+
+b: Whip out your laptop and do some work right now!
+
+`hong({eyes:"0_annoyed"})`
+
+h: Um, I'd rather not get crumbs in my keyboa--
+
+```
+bb({mouth:"normal", eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: If we're not contributing to the body of society then we're a society-parasite!
+
+b: The society-body will go to the society-doctor for medication to kill their society-parasites then we'll--
+
+```
+bb({body:"panic", mouth:"normal", eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: DIEEEEEEEEEEEEEEEEEEE
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+hong({mouth:"0_shock", eyes:"0_shock"});
+attack("18p", "bad");
+publish("hp_show");
+```
+
+(...2500)
+
+`_.parasite = true`
+
+n: YOU USED *FEAR OF BEING A BAD PERSON*
+
+(#act1b)
+
+# act1a_bread
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({body:"0_sammich", eyes:"0_annoyed"});
+```
+
+h: Have those studies been replicat--
+
+```
+bb({body:"fear", mouth:"normal", eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Processed wheat will spike our blood sugar so they'll have to amputate all our limbs and then we'll-
+
+`bb({body:"panic"})`
+
+b: DIEEEEEEEEEEEEEEEEEEE
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+hong({mouth:"0_shock", eyes:"0_shock"});
+attack("18p", "harm");
+publish("hp_show");
+```
+
+(...2500)
+
+`_.whitebread = true`
+
+n: YOU USED *FEAR OF BEING HARMED*
+
+(#act1b)
+
+# act1b
+
+n: IT'S SUPER EFFECTIVE
+
+`bb({mouth:"smile", eyes:"smile"});`
+
+b: See, human? I am your loyal guard-wolf!
+
+`bb({body:"pride_talk"});`
+
+b: Trust your gut! Your feelings are always valid!
+
+`bb({body:"pride"});`
+
+n: GET YOUR HUMAN'S ENERGY BAR TO ZERO
+
+n: TO PROTECT THEIR PHYSICAL + SOCIAL + MORAL NEEDS, YOU CAN USE:
+
+n: FEAR OF *BEING HARMED* #harm#
+
+n: FEAR OF *BEING UNLOVED* #alone#
+
+n: AND FEAR OF *BEING A BAD PERSON* #bad#
+
+`Game.OVERRIDE_TEXT_SPEED = 1.25;`
+
+n4: (PRO-TIP: PLAY THE CHOICES THAT PERSONALLY HIT YOUR DEEPEST, DARKEST FEARS!~)
+
+h: ...
+
+```
+hong({body:"putaway"});
+sfx("rustle");
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+```
+
+(...1000)
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+h: you know what maybe it's time to check my phone.
+
+```
+sfx("rustle2");
+hong({body:"phone1", mouth:"neutral", eyes:"neutral"})
+```
+
+n: PROTECT YOUR HUMAN
+
+n: FROM THE WORLD. FROM OTHER PEOPLE. FROM THEMSELF.
+
+n: GOOD LUCK
+
+(...500)
+
+`Game.clearText()`
+
+(...500)
+
+(#act1c)
+
+# act1c
+
+`music('battle', {volume:0.5})`
+
+n: ROUND ONE: *FIGHT!*
+
+`bb({body:"normal", mouth:"normal", eyes:"normal"});`
+
+h: Huh. Facebook feed says there's a party happening this weekend.
+
+`bb({eyes:"uncertain"});`
+
+b: Doesn't that weirdo throw a party *every* weekend?
+
+`bb({eyes:"uncertain_right"});`
+
+b: What inner void are they trying to fill? They must be deeply messed up inside!
+
+`hong({eyes:"surprise"});`
+
+h: Also, I got an invite?
+
+`bb({eyes:"fear", mouth:"normal"});`
+
+b: Well then!
+
+[Say yes, or we'll die from loneliness!](#act1c_loner)
+
+[Say no, it's full of poisonous drugs!](#act1c_drugs)
+
+[Ignore it, we just make parties sad.](#act1c_sad)
+
+# act1c_loner
+
+{{if _.fifteencigs}}
+b: Fifteen cigarettes a day, human! Fifteen!
+{{/if}}
+
+{{if !_.fifteencigs}}
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+{{/if}}
+
+{{if !_.fifteencigs}}
+b: Then no one will show up at our funeral, they'll dump our ashes into the ocean, we get eaten by a whale,
+{{/if}}
+
+{{if !_.fifteencigs}}
+b: and we become WHALE POOP!
+{{/if}}
+
+{{if !_.fifteencigs}} `_.whalepoop = true` {{/if}}
+
+(...500)
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+`bb({eyes:"normal"});`
+
+{{if !_.fifteencigs}}
+b: So yeah we should go to that party!
+{{/if}}
+
+{{if _.parasite}}
+b: Just bring the laptop so we can do work, and not be a society-parasite.
+{{/if}}
+
+{{if _.whitebread}}
+b: Just as long as they don't serve WHITE BREAD
+{{/if}}
+
+`hong({mouth:"anger", eyes:"anger"});`
+
+h: GOD. If it'll make you shut up, fine.
+
+h: I'll say yes.
+
+{{if _.whalepoop}}
+b: Whale poop, human! Whale poop!
+{{/if}}
+
+`_.partyinvite="yes"`
+
+(#act1d)
+
+# act1c_drugs
+
+`bb({mouth:"small", eyes:"fear"});`
+
+{{if _.whitebread}}
+b: or even worse... WHITE BREAD
+{{/if}}
+
+{{if _.whitebread}}
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+{{/if}}
+
+{{if _.whitebread}}
+b: We'll overdose on so much meth and white bread they won't be able to fit our fat corpse into the cremation furnace!
+{{/if}}
+
+{{if !_.whitebread}}
+b: We'll overdose on so many drugs the undertaker will wonder how our body was *already* pre-embalmed!
+{{/if}}
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+{{if _.parasite}}
+b: Besides, can't party, we need to do work or we're a terrible society-parasite!
+{{/if}}
+
+`hong({mouth:"anger", eyes:"anger"});`
+
+h: GOD. If it'll make you shut up, fine.
+
+h: I'll say no.
+
+`_.partyinvite="no"`
+
+(#act1d)
+
+# act1c_sad
+
+`bb({eyes:"uncertain_right", mouth:"normal"});`
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+{{if _.fifteencigs}}
+b: All we ever do is cry in a corner about how loneliness is as deadly as 15 cigarettes a day.
+{{/if}}
+
+{{if _.parasite}}
+b: All we ever do at parties is worry about how we should be productive instead.
+{{/if}}
+
+{{if _.whitebread}}
+b: All we ever do is worry about how the unhealthy food options are going to kill us.
+{{/if}}
+
+```
+bb({mouth:"normal", eyes:"normal"});
+hong({mouth:"neutral", eyes:"lookaway"});
+```
+
+h: gee i wonder why.
+
+`hong({eyes:"neutral"});`
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+b: So if we go we'll make them feel bad, but if we reject their invite we'll also make them feel bad!
+
+`bb({body:"fear", eyes:"fear"});`
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+b: ALL WE DO IS MAKE PEOPLE FEEL BAD, SO WE SHOULD FEEL BAD
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+`hong({mouth:"anger", eyes:"anger"});`
+
+h: Ugh. If it'll make you shut up, fine.
+
+h: I'll ignore the invite.
+
+`_.partyinvite="ignore"`
+
+(#act1d)
+
+# act1d
+
+```
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+hong({mouth:"neutral", eyes:"annoyed"});
+```
+
+h: Anyway. Facebook's too much. I need something calmer, less anxiety-producing.
+
+`hong({eyes:"neutral"});`
+
+h: What's new on Twitter?
+
+`bb({eyes:"look"});`
+
+[Oh no, look at that horrible news story!](#act1d_news)
+
+[Oh no, is that tweet secretly about *us?*](#act1d_subtweet)
+
+[Hey, a GIF of a cat drinking milk](#act1d_milk)
+
+
+# act1d_news
+
+```
+bb({eyes:"pained1"});
+music(null, {fade:2});
+```
+
+b: God, it feels like the world's burning, isn't it?
+
+```
+bb({eyes:"pained2"});
+hong({mouth:"sad", eyes:"sad"});
+```
+
+b: It feels like it's all ending, like everything's dying and we're doomed and there's nothing we can do about it.
+
+```
+Game.OVERRIDE_TEXT_SPEED = 0.5;
+bb({mouth:"shut"});
+```
+
+b: ...
+
+`bb({mouth:"smile", eyes:"smile"});`
+
+b: Let's retweet that story!
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+`_.badnews=true`
+
+```
+music('battle', {volume:0.5});
+hong({mouth:"anger", eyes:"anger"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Okay I'll retweet it just please be quiet!
+
+`hong({mouth:"neutral", eyes:"annoyed"});`
+
+h: Screw it, let's look at Snapchat.
+
+(#act1e)
+
+
+# act1d_subtweet
+
+`bb({eyes:"fear"});`
+
+b: It's a subtweet! A sneaky, sneaky subtweet!
+
+`hong({eyes:"annoyed"});`
+
+h: It's probably not?
+
+`bb({eyes:"narrow", mouth:"small"});`
+
+b: but what if they're all talking behind our back
+
+h: They're n--
+
+`bb({body:"fear", eyes:"fear", mouth:"normal"});`
+
+b: IN FRONT OF OUR BACK
+
+`hong({eyes:"sad", mouth:"sad"});`
+
+h: I d--
+
+`bb({eyes:"narrow", mouth:"small"});`
+
+b: but *what if*
+
+h: S--
+
+`bb({eyes:"narrow_eyebrow"});`
+
+b: *what if*
+
+```
+Game.OVERRIDE_TEXT_SPEED = 0.5;
+hong({mouth:"shut"});
+```
+
+h: ...
+
+(...1000)
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+`_.subtweet=true`
+
+```
+hong({mouth:"anger", eyes:"annoyed"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+```
+
+h: o-KAY, gonna try Snapchat.
+
+(#act1e)
+
+# act1d_milk
+
+`hong({mouth:"smile", eyes:"neutral"});`
+
+h: Heh ya that's cute, just retweeted it, I thi--
+
+```
+hong({mouth:"shock", eyes:"shock"});
+bb({body:"scream"});
+Game.OVERRIDE_TEXT_SPEED = 1.8;
+```
+
+b: CATS CAN'T DIGEST MILK AND WE'RE TERRIBLE PEOPLE FOR ENJOYING ANIMAL ABUSE
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+
+`_.catmilk=true`
+
+```
+hong({mouth:"anger", eyes:"annoyed"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+```
+
+h: o-KAY, gonna try Snapchat.
+
+(#act1e)
+
+# act1e
+
+`hong({mouth:"neutral", eyes:"neutral"});`
+
+h: Huh, photos from yesterday night. So *that's* what those weekly parties are like.
+
+{{if _.partyinvite=="yes"}} (#act1e_said_yes) {{/if}}
+
+{{if _.partyinvite=="no"}} (#act1e_said_no) {{/if}}
+
+{{if _.partyinvite=="ignore"}} (#act1e_said_ignore) {{/if}}
+
+# act1e_said_yes
+
+`hong({mouth:"sad", eyes:"annoyed"});`
+
+h: Oof, looks way too crowded for my anxiety.
+
+h: Maybe I shouldn't have said yes to the invite?
+
+```
+hong({mouth:"neutral", eyes:"neutral"});
+bb({mouth:"normal", eyes:"normal"});
+```
+
+[Change our answer? Like a jerk?!](#act1e_yes_dontchange)
+
+[Change our answer! It's too crowded!](#act1e_yes_changetono)
+
+{{if _.subtweet}}
+[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+{{/if}}
+
+{{if _.badnews}}
+[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+{{/if}}
+
+{{if (!_.subtweet && !_.badnews)}}
+[You know, you've got really bad posture?](#act1e_ignore_posture)
+{{/if}}
+
+# act1e_yes_dontchange
+
+```
+bb({eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: They were counting on us to come and now we're betraying their trust? Do you wanna die alone?!
+
+{{if _.fifteencigs}}
+b: FIFTEEN. CIGARETTES.
+{{/if}}
+
+{{if _.whalepoop}}
+b: WHALE. POOP.
+{{/if}}
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+```
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Shut up shut up I'll keep it as yes!
+
+(#act1f)
+
+# act1e_yes_changetono
+
+```
+bb({eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Don't you know about human stampedes?
+
+```
+bb({body:"fear", mouth:"small", eyes:"narrow"});
+hong({eyes:"sad", mouth:"sad"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: In 2003 a Rhode Island nightclub had a fire and the panic made people jam the exits so 100 people burned to death-
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+hong({mouth:"shock"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: DO YOU WANT THAT TO HAPPEN TO US-
+
+```
+bb({body:"scream"});
+Game.OVERRIDE_TEXT_SPEED = 2.5;
+```
+
+b: SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY N-
+
+
+```
+bb({body:"normal", eyes:"fear", mouth:"normal"});
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+```
+hong({eyes:"anger", mouth:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Shut up shut up I'll change my answer to no! God!
+
+(#act1f)
+
+# act1e_said_no
+
+`hong({mouth:"sad", eyes:"sad"});`
+
+h: Hm... that looks really fun.
+
+h: Maybe I shouldn't have said no to the invite?
+
+`bb({mouth:"normal", eyes:"normal"});`
+
+[Change our answer? Like a jerk?!](#act1e_no_dontchange)
+
+[Change our answer! Don't die alone!](#act1e_no_changetoyes)
+
+{{if _.subtweet}}
+[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+{{/if}}
+
+{{if _.badnews}}
+[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+{{/if}}
+
+{{if (!_.subtweet && !_.badnews)}}
+[You know, you've got really bad posture?](#act1e_ignore_posture)
+{{/if}}
+
+# act1e_no_dontchange
+
+`bb({eyes:"anger"})`
+
+b: Everybody was counting on us!
+
+b: ...to leave them alone and let them have a nice party without a horrible disgusting {{if _.whitebread}}white-bread-munching{{/if}} creep like u--
+
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+```
+bb({body:"normal", eyes:"uncertain", mouth:"normal"});
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Shut up shut up I'll keep it as no!
+
+(#act1f)
+
+# act1e_no_changetoyes
+
+```
+bb({body:"fear", eyes:"fear", mouth:"normal"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Chronic loneliness increases our cortisol levels as well as risk for cardiovascular disease and stroke!
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+{{if _.fifteencigs}}
+b: FIFTEEN. CIGARETTES.
+{{/if}}
+
+```
+bb({body:"normal", eyes:"normal", mouth:"normal"});
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Shut up shut up I'll change my answer to yes! God!
+
+(#act1f)
+
+# act1e_ignore_subtweet
+
+```
+bb({eyes:"fear", mouth:"small"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: All our problematic tweets have come back to roost!
+
+```
+bb({body:"fear", eyes:"fear", mouth:"normal"});
+Game.OVERRIDE_TEXT_SPEED = 1.7;
+```
+
+b: We're gonna get called out and cancelled and dragged with a rope on horseback down the information superhighway!
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+```
+bb({body:"normal", eyes:"normal", mouth:"normal"});
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Why are you like this?!
+
+(#act1f)
+
+# act1e_ignore_factcheck
+
+```
+bb({eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: We're spreading disinformation! We're destroying trust in a free press!
+
+```
+bb({body:"scream"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: We're the reason fascism will arise from the rubble of democracy!
+
+```
+bb({body:"normal", eyes:"anger"});
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+```
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+_.factcheck = true;
+```
+
+h: Why are you like this?!
+
+(#act1f)
+
+# act1e_ignore_posture
+
+```
+bb({eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Do you want to have a pretzel for a spine?! Stop hunching over your screen!
+
+```
+bb({body:"meta"});
+```
+
+b: That means you too.
+
+```
+bb({body:"normal", mouth:"normal"});
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+```
+bb({body:"normal", eyes:"normal", mouth:"normal"});
+hong({mouth:"anger", eyes:"anger"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+h: Why are you like this?!
+
+(#act1f)
+
+# act1e_said_ignore
+
+`hong({mouth:"sad", eyes:"sad"});`
+
+h: Hm... that looks really fun.
+
+h: Maybe I shouldn't have ignored the invite?
+
+`bb({mouth:"normal", eyes:"normal"});`
+
+[Keep ignoring, we're still party poopers.](#act1e_ignore_continue)
+
+[Actually, say yes.](#act1e_ignore_changetoyes)
+
+[Actually, say no.](#act1e_ignore_changetono)
+
+# act1e_ignore_continue
+
+`hong({eyes:"annoyed"});`
+
+h: It's kinda rude to keep ignoring them though, no?
+
+`bb({eyes:"normal_right"});`
+
+b: Well other people always ignore *us*, so
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+`bb({eyes:"normal"});`
+
+b: so let's just call it even.
+
+(#act1f)
+
+# act1e_ignore_changetoyes
+
+`hong({eyes:"surprise", mouth:"smile"});`
+
+h: You're... letting me have fun?
+
+b: Well, I mean, loneliness *can* kill us.
+
+`hong({eyes:"neutral", mouth:"neutral"});`
+
+(#act1e_no_changetoyes)
+
+# act1e_ignore_changetono
+
+`bb({eyes:"narrow"});`
+
+b: It's too crowded. Crowds are dangerous.
+
+(#act1e_yes_changetono)
+
+
+# act1f
+
+```
+hong({mouth:"neutral", eyes:"neutral"});
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+```
+
+h: Whatever. New Tinder notification.
+
+`bb({eyes:"uncertain"})`
+
+b: What, that hookup app?
+
+`hong({eyes:"annoyed"})`
+
+h: It's not a hookup app, it's just a way to meet new peopl--
+
+`bb({eyes:"narrow"})`
+
+b: It's a hookup app.
+
+```
+hong({eyes:"surprise", mouth:"smile"});
+bb({eyes:"normal"});
+```
+
+h: Oh, I got a match! They look cute!
+
+```
+bb({eyes:"narrow_eyebrow"});
+hong({eyes:"sad", mouth:"anger"})
+```
+
+h: Please don't ruin this for m--
+
+```
+bb({body:"panic"});
+Game.OVERRIDE_TEXT_SPEED = 2.0;
+```
+
+b: DANGER DANGER DANGER DANGER DANGER DANGER
+
+`bb({body:"fear", eyes:"fear", mouth:"normal"})`
+
+[We're being *used* by other people.](#act1f_used_by_others)
+
+[We're just *using* other people.](#act1f_using_others)
+
+[YOUR MATCH IS A SERIAL KILLER](#act1f_killer)
+
+# act1f_used_by_others
+
+`bb({body:"point_crotch", eyes:"normal", mouth:"normal"})`
+
+b: Random hookups may be able to fill the hole down there,
+
+b: but they can never fill the hole...
+
+`bb({body:"point_heart", eyes:"pretty", mouth:"small"})`
+
+b: in *here*.
+
+(...1000)
+
+```
+bb({body:"normal", mouth:"normal", eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: The point is WE'RE GOING TO DIE ALONE
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "alone");
+```
+
+(...2500)
+
+`_.hookuphole=true`
+
+(#act1g)
+
+# act1f_using_others
+
+`bb({eyes:"narrow", mouth:"small"})`
+
+b: You think other people's genitals are Pokémon for us to collect?
+
+```
+bb({body:"sing", eyes:"pretty", mouth:"shut"});
+music("pokemon");
+Game.clearText();
+Game.FORCE_CANT_SKIP = true;
+```
+
+```
+Game.FORCE_TEXT_DURATION = 1000;
+Game.FORCE_NO_VOICE = true;
+```
+
+b: ♫ (pokemon theme song)-
+
+(...5600)
+
+```
+bb({mouth:"normal"});
+Game.FORCE_TEXT_DURATION = 2400;
+```
+
+b: ♫ I wanna be, the ^slut^ti-est-
+
+(...500)
+
+```
+bb({eyes:"narrow", mouth:"small"});
+Game.FORCE_TEXT_DURATION = 2100;
+```
+
+b: ♫ Like no one ever was-
+
+(...1500)
+
+```
+bb({eyes:"pretty"});
+Game.FORCE_TEXT_DURATION = 2300;
+```
+
+b: ♫ Thighs n' ^ass^, voluptuous breast-
+
+(...500)
+
+```
+bb({eyes:"fear", mouth:"normal"});
+Game.FORCE_TEXT_DURATION = 2000;
+```
+
+b: ♫ with sweaty ^dick^ and balls!-
+
+(...1000)
+
+```
+bb({eyes:"smile", mouth:"smile"});
+Game.FORCE_TEXT_DURATION = 1000;
+```
+
+b: ♫ PERVY-MON! GOTTA CA-
+
+```
+Game.FORCE_CANT_SKIP = false;
+Game.clearText();
+music(false);
+bb({body:"normal", mouth:"normal", eyes:"normal"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: The point is we're a manipulative creep.
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "bad");
+```
+
+(...2500)
+
+`_.pokemon=true`
+
+(#act1g)
+
+# act1f_killer
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+{{if _.whitebread}}
+b: They'll trap you in a well and force-feed you white bread to fatten you up so they can wear your skin like a suit!
+{{/if}}
+
+{{if _.parasite}}
+b: They'll bludgeon you with a pomodoro timer and say "YOU SHOULDA BEEN MORE PRODUCTIVE YOU PARASITE"
+{{/if}}
+
+{{if !_.whitebread && !_.parasite}}
+b: They'll tear your flesh to gory confetti, turn your entrails into streamers, and mix your blood into a punch bowl!
+{{/if}}
+
+{{if !_.whitebread && !_.parasite}}
+b: How's THAT for a party invite?!
+{{/if}}
+
+```
+hong({mouth:"shock", eyes:"shock"});
+attack("18p", "harm");
+```
+
+(...2500)
+
+`_.serialkiller=true`
+
+(#act1g)
+
+# act1g
+
+```
+bb({body:"normal", mouth:"normal", eyes:"look"});
+hong({body:"2_tired"});
+Game.OVERRIDE_TEXT_SPEED = 0.5;
+music(false);
+```
+
+h: ...
+
+(...500)
+
+h: i'm so sick of this game.
+
+(...700)
+
+`Game.OVERRIDE_TEXT_SPEED = 1.5;`
+
+h:
+{{if _.fifteencigs}}"loneliness will kill us"... {{/if}}
+{{if _.parasite}}"we're a society-parasite"... {{/if}}
+{{if _.whitebread}}"don't eat that, it'll kill us"... {{/if}}
+{{if _.subtweet}}"they're talking behind our back"... {{/if}}
+{{if _.badnews}}"the world is burning"... {{/if}}
+{{if _.hookuphole}}"we'll die alone"... {{/if}}
+{{if _.serialkiller}}"they're a serial killer"... {{/if}}
+{{if _.catmilk}}"cats can't digest milk"... {{/if}}
+{{if _.pokemon}}a ^crappy^ parody song... {{/if}}
+
+h: i just want to live my life.
+
+h: i just want to be free from all this... pain.
+
+`bb({eyes:"look_sad"});`
+
+b: Hey... human...
+
+`Game.OVERRIDE_TEXT_SPEED = 0.5;`
+
+b: It'll be okay.
+
+(...600)
+
+`bb({body:"point_heart", eyes:"look_sad_smile", mouth:"smile"});`
+
+b: As your loyal guard-wolf, I'll always keep an eye out for danger, and do my best to keep you safe.
+
+`bb({body:"normal", eyes:"look_sad", mouth:"smile"});`
+
+b: I promise.
+
+(...600)
+
+```
+bb({body:"normal", eyes:"normal", mouth:"normal"});
+hong({body:"phone1", eyes:"neutral", mouth:"neutral"});
+```
+
+h: Last app. Instagram. What you got?
+
+`hong({eyes:"sad"});`
+
+h: It's... more party pictures.
+
+`hong({mouth:"sad"});`
+
+h: Everyone looks so happy. Free from worry. Free from anxiety.
+
+`hong({mouth:"anger"});`
+
+h: God, why can't I be like them? Why can't I just be *normal?*
+
+`bb({eyes:"normal_right"});`
+
+b: Speaking of parties, about this weekend's invite. Here's my FINAL decision:
+
+`bb({eyes:"normal"});`
+
+[We should go.](#act1g_go) `Game.OVERRIDE_CHOICE_LINE=true`
+
+[We should not go.](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
+
+# act1g_go
+
+`_.act1g = "go"`
+
+(#act1h)
+
+# act1g_dont
+
+`_.act1g = "dont"`
+
+(#act1h)
+
+# act1h
+
+b: We sh--
+
+```
+bb({eyes:"wat", mouth:"small"});
+hong({body:"2_fuck"});
+```
+
+h: *^FUCK^.*
+
+`hong({body:"2_you"});`
+
+h: YOU.
+
+(...500)
+
+b: w
+
+(...1500)
+
+`bb({eyes:"wat_2"});`
+
+b: wha?
+
+`hong({body:"phone1", eyes:"anger", mouth:"anger"});`
+
+h: I'm going to say YES to that party,
+
+{{if _.act1g=="go"}}
+h: NOT because you want me to, but because *I* want to.
+{{/if}}
+
+{{if _.act1g=="dont"}}
+h: Precisely BECAUSE you don't want me to.
+{{/if}}
+
+```
+hong({body:"putaway"});
+sfx("rustle");
+```
+
+h: You're NOT in control of me.
+
+```
+sfx("rustle2");
+hong({body:"0_sammich", eyes:"0_annoyed", mouth:"0_neutral"});
+```
+
+h: Now excuse me while I eat this delicious sandwich in ^goddamn^ peace.
+
+`hong({body:"2_sammich_eat"});`
+
+(...601)
+
+```
+sfx("sandwich");
+hong({body:"2_sammich_eaten", eyes:"0_lookaway", mouth:"0_chew1"})
+```
+
+(...601)
+
+```
+bb({body:"normal", eyes:"uncertain", mouth:"shut"});
+Game.OVERRIDE_TEXT_SPEED = 0.5;
+```
+
+b: ...
+
+```
+bb({eyes:"normal_right"});
+Game.OVERRIDE_TEXT_SPEED = 1;
+```
+
+b: ...
+
+```
+bb({eyes:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 4;
+```
+
+b: ..................
+
+(...500)
+
+`bb({mouth:"normal"});`
+
+[AHHHH WE'RE GONNA DIE](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
+
+[AHHHH EVERYONE HATES US](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
+
+[AHHHH WE'RE HORRIBLE PEOPLE](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
+
+# act1h_death
+
+```
+bb({body:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 3;
+```
+
+b: AHHHH WE'RE GONNA DIE AAAAAAHHHHHHH
+
+```
+hong({body:"3_defeated1"});
+attack("100p", "harm");
+```
+
+(...2500)
+
+(#act1i)
+
+# act1h_loneliness
+
+```
+bb({body:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 3;
+```
+
+b: AHHHH EVERYONE HATES US AAAAAAHHHHHHH
+
+```
+hong({body:"3_defeated1"});
+attack("100p", "alone");
+```
+
+(...2500)
+
+(#act1i)
+
+# act1h_worthless
+
+```
+bb({body:"fear"});
+Game.OVERRIDE_TEXT_SPEED = 3;
+```
+
+b: AHHHH WE'RE HORRIBLE PEOPLE AAAAAAHHHHHHH
+
+```
+hong({body:"3_defeated1"});
+attack("100p", "bad");
+```
+
+(...2500)
+
+(#act1i)
+
+# act1i
+
+```
+bb({mouth:"smile_lock", eyes:"smile", body:"normal"});
+music('battle', {volume:0.5});
+```
+
+n: CONGRATULATIONS
+
+(...500)
+
+n: YOU'VE SUCCESSFULLY PROTECTED YOUR HUMAN'S PHYSICAL + SOCIAL + MORAL NEEDS
+
+n: WHY, LOOK HOW GRATEFUL THEY ARE!
+
+(...500)
+
+n: NOW THAT THEIR ENERGY IS ZERO, YOU CAN DIRECTLY CONTROL THEIR ACTIONS
+
+`bb({mouth:"smile", eyes:"normal"});`
+
+n: PICK YOUR ENDING MOVE
+
+`bb({mouth:"small_lock", eyes:"fear"});`
+
+n: *FINISH THEM*
+
+[{FIGHT: Punish your stressful phone!}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
+
+[{FLIGHT: Curl up in a ball and cry!}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
+
+# act1i_phone
+
+`bb({mouth:"normal", eyes:"narrow"})`
+
+b: Your phone was giving you a panic attack!
+
+`bb({eyes:"anger"})`
+
+b: Zuckerberg and Co are hijacking your mental health for venture capitalist money!
+
+```
+bb({body:"fear", eyes:"fear"});
+hong({body:"3_defeated2"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Punish your phone! Destroy it! Kill it!
+
+```
+Game.OVERRIDE_TEXT_SPEED = 2.5;
+bb({body:"flail"});
+hong({body:"3_defeated3"});
+_.act1_ending = "fight";
+```
+
+b: KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL I--
+
+(#act1j)
+
+# act1i_cry
+
+`bb({eyes:"fear", mouth:"normal"})`
+
+b: The whole world is filled with danger!
+
+```
+bb({body:"fear"});
+hong({body:"3_defeated2"});
+Game.OVERRIDE_TEXT_SPEED = 1.5;
+```
+
+b: Do like the armadillo! Curl up into a ball for self-defense!
+
+```
+Game.OVERRIDE_TEXT_SPEED = 2.5;
+bb({body:"flail"});
+hong({body:"3_defeated3"});
+_.act1_ending = "flight";
+```
+
+b: CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CR-- 
+
+(#act1j)
+
+# act1j
+
+`SceneSetup.act1_outro()`
