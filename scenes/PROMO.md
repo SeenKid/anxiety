@@ -20,7 +20,7 @@ n3: Alors avant qu'on commence, comment est-ce que *tu* aimes lire?
 
 # intro-start-2
 
-n3: Now, let's begin our story...
+n3: Maintenant, commençons notre histoire...
 
 ```
 publish("hide_tabs");
@@ -82,7 +82,6 @@ bb({eyes:"normal", mouth:"normal", body:"normal"});
 hong({eyes:"annoyed"});
 ```
 
-h: Yeah I wonder why I don't just sit and listen to my thoughts more often.
 h: Ouais je me demande pourquoi je ne m'asseois pas un moment et écoute mes pensées plus souvent.
 
 `hong({eyes:"neutral"});`
@@ -111,7 +110,6 @@ bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 1.8;
 ```
 
-b: CATS CAN'T DIGEST MILK AND WE'RE TERRIBLE PEOPLE FOR ENJOYING ANIMAL ABUSE
 b: LES CHATS NE PEUVENT PAS DIGÉRÉR LE LAIT ET ON EST DES PERSONNES HORRIBLES POUR AVOIR APPRÉCIÉ CELA
 
 (...200)
