@@ -349,27 +349,27 @@ n: C'EST SUPER ÉFFICACE
 
 `bb({mouth:"smile", eyes:"smile"});`
 
-b: See, human? I am your loyal guard-wolf!
+b: Tu vois, humain? Je suis ton loup de guarde loyal!
 
 `bb({body:"pride_talk"});`
 
-b: Trust your gut! Your feelings are always valid!
+b: Suis ton intuiotion! Tes sentiments sont toujours valides!
 
 `bb({body:"pride"});`
 
-n: GET YOUR HUMAN'S ENERGY BAR TO ZERO
+n: RÉDUIT LA BARRE D'ÉNERGIE DE TON HUMAIN A ZÉRO
 
-n: TO PROTECT THEIR PHYSICAL + SOCIAL + MORAL NEEDS, YOU CAN USE:
+n: POUR PROTÉGER LEUR BESOINS PHYSIQUES, SOCIAUZ et MORAUX, TU PEUX UTILISER:
 
-n: FEAR OF *BEING HARMED* #harm#
+n: LA *PEUR D'AVOIR MAL* #harm#
 
-n: FEAR OF *BEING UNLOVED* #alone#
+n: LA *PEUR DE NE PAS ÊTRE AIMÉ* #alone#
 
-n: AND FEAR OF *BEING A BAD PERSON* #bad#
+n: ET LA *PEUR D'ÊTRE JUGÉ* #bad#
 
 `Game.OVERRIDE_TEXT_SPEED = 1.25;`
 
-n4: (PRO-TIP: PLAY THE CHOICES THAT PERSONALLY HIT YOUR DEEPEST, DARKEST FEARS!~)
+n4: (PRO-TIP: CHOISIT LES OPTIONS CORRESPONDANT A TES PEURS LES PLUS PROFONDES!~)
 
 h: ...
 
@@ -383,18 +383,18 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-h: you know what maybe it's time to check my phone.
+h: tu sais quoi? Peut-être que je ferais mieux de vérifier mon téléphone.
 
 ```
 sfx("rustle2");
 hong({body:"phone1", mouth:"neutral", eyes:"neutral"})
 ```
 
-n: PROTECT YOUR HUMAN
+n: PROTÈGE TON HUMAIN
 
-n: FROM THE WORLD. FROM OTHER PEOPLE. FROM THEMSELF.
+n: DU MONDE. DES AUTRES. D'EUX-MÊME.
 
-n: GOOD LUCK
+n: BON COURAGE.
 
 (...500)
 
@@ -408,38 +408,38 @@ n: GOOD LUCK
 
 `music('battle', {volume:0.5})`
 
-n: ROUND ONE: *FIGHT!*
+n: PREMIER ROUND: *COMBAT!*
 
 `bb({body:"normal", mouth:"normal", eyes:"normal"});`
 
-h: Huh. Facebook feed says there's a party happening this weekend.
+h: Huh. Facebook indique qu'il y aura une fête cette fin de semaine.
 
 `bb({eyes:"uncertain"});`
 
-b: Doesn't that weirdo throw a party *every* weekend?
+b: Ce guignol organise une fête *chaque* fin de semaine, non?
 
 `bb({eyes:"uncertain_right"});`
 
-b: What inner void are they trying to fill? They must be deeply messed up inside!
+b: Qu'est-ce qu'il essaye de compenser? Il doit avoir un problème, c'est sur!
 
 `hong({eyes:"surprise"});`
 
-h: Also, I got an invite?
+h: Hum, et je suis invité?
 
 `bb({eyes:"fear", mouth:"normal"});`
 
-b: Well then!
+b: Et bien!
 
-[Say yes, or we'll die from loneliness!](#act1c_loner)
+[Accepte, ou on va mourir de solitude!](#act1c_loner)
 
-[Say no, it's full of poisonous drugs!](#act1c_drugs)
+[Refuse, c'est plein de drogues nocives!](#act1c_drugs)
 
-[Ignore it, we just make parties sad.](#act1c_sad)
+[Ignore-la, c'est pas notre truc de toute façon.](#act1c_sad)
 
 # act1c_loner
 
 {{if _.fifteencigs}}
-b: Fifteen cigarettes a day, human! Fifteen!
+b: Quinze cigarettes para jour, humain! Quinze!
 {{/if}}
 
 {{if !_.fifteencigs}}
@@ -447,11 +447,11 @@ b: Fifteen cigarettes a day, human! Fifteen!
 {{/if}}
 
 {{if !_.fifteencigs}}
-b: Then no one will show up at our funeral, they'll dump our ashes into the ocean, we get eaten by a whale,
+b: Et personne ne viendra à tes funérailles, ils jetteront tes cendres dans l'océan, on sera manger par une baleine,
 {{/if}}
 
 {{if !_.fifteencigs}}
-b: and we become WHALE POOP!
+b: et on deviendra de la MERDE DE BALEINE!
 {{/if}}
 
 {{if !_.fifteencigs}} `_.whalepoop = true` {{/if}}
@@ -468,25 +468,25 @@ attack("18p", "alone");
 `bb({eyes:"normal"});`
 
 {{if !_.fifteencigs}}
-b: So yeah we should go to that party!
+b: Bien sur qu'on devrait aller à cette fête!
 {{/if}}
 
 {{if _.parasite}}
-b: Just bring the laptop so we can do work, and not be a society-parasite.
+b: On amenera juste notre ordinateur portable pour pouvoir travailler, et ne pas être un parasite de la société.
 {{/if}}
 
 {{if _.whitebread}}
-b: Just as long as they don't serve WHITE BREAD
+b: En espérant qu'ils ne serviront pas de PAIN BLANC.
 {{/if}}
 
 `hong({mouth:"anger", eyes:"anger"});`
 
-h: GOD. If it'll make you shut up, fine.
+h: Mon dieu. Si ça te fais taire, ok.
 
-h: I'll say yes.
+h: J'accepte l'invitation.
 
 {{if _.whalepoop}}
-b: Whale poop, human! Whale poop!
+b: Merde de baleine, humain! Merde de baleine!
 {{/if}}
 
 `_.partyinvite="yes"`
@@ -498,7 +498,7 @@ b: Whale poop, human! Whale poop!
 `bb({mouth:"small", eyes:"fear"});`
 
 {{if _.whitebread}}
-b: or even worse... WHITE BREAD
+b: voire même pire... PAIN BLANC
 {{/if}}
 
 {{if _.whitebread}}
@@ -506,11 +506,11 @@ b: or even worse... WHITE BREAD
 {{/if}}
 
 {{if _.whitebread}}
-b: We'll overdose on so much meth and white bread they won't be able to fit our fat corpse into the cremation furnace!
+b: On va faire une overdose sur tant de meth et de pain blanc que notre cadavre ne rentrera pas dans le four crématoire!
 {{/if}}
 
 {{if !_.whitebread}}
-b: We'll overdose on so many drugs the undertaker will wonder how our body was *already* pre-embalmed!
+b: On va faire une overdose sur tellement de drogues que l'embaumeur se demandera pourquoi notre cadavre est *déjà* embaumé!
 {{/if}}
 
 ```
