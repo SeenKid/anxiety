@@ -92,7 +92,7 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 
 `clearText()`
 
-n3: Bienvenue ! Ceci n'est pas vraiment un "jeu," mais plutôt une histoire interactive. J'éspère que t'aimes lire, sucka!
+n3: Bienvenue&nbsp;! Ceci n'est pas vraiment un "jeu," mais plutôt une histoire interactive. J'espère que t'aimes lire, sucka!
 
 n3: Alors, avant de commencer, comment préfères-*tu* lire ?
 
