@@ -94,7 +94,7 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 
 n3: Bienvenue! Ceci n'est pas vraiment un "jeu," mais plutôt une histoire intéractive. J'éspère que t'aime lire, sucka!
 
-n3: Alors, avant de commencer, comment préfère *tu* lire ?
+n3: Alors, avant de commencer, comment préfères *tu* lire ?
 
 `publish("show_options_bottom")`
 
