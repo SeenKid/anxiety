@@ -363,30 +363,30 @@ h: Regarde ^connard^, on a tous un moyen de te faire fermer ta *putain* de gueul
 
 `hong({ body:"look_up", eyes:"look_up" });`
 
-h: Certains ce lancent dans le travail à corps perdu.
+h: Certains se lancent dans le travail à corps perdu.
 `hong({ body:"look_down", eyes:"look_down" });`
 
-h: Some people throw themselves into sex, drugs, and refreshing their Facebook feed.
+h: Certains se lancent dans le sexe, la drogue, et le rafraichissement de leur feed Facebook.
 
 `hong({ body:"normal", eyes:"look_right" });`
 
-h: Some people throw themselves into other people. 
+h: Certains se lancent vers d'autres gens. 
 
 `hong({ eyes:"angry" });`
 
-h: I'm going to throw myself into that swimming pool.
+h: Je vais me lancer dans cette piscine.
 
-[You're drunk and it's SIX FLOORS DOWN](#act3_bad_1_harm)
+[Tu es bourré et c'est SIX ÉTAGES PLUS BAS](#act3_bad_1_harm)
 
-[Dang it, this is the thanks I get?!](#act3_bad_1_insult) `bb({eyes:"angry"});`
+[Bon sang, c'est ça mes remerciements ?!](#act3_bad_1_insult) `bb({eyes:"angry"});`
 
-[Okay, I admit it. I messed up.](#act3_good_1) `bb({mouth:"sorry", eyes:"sorry_down"});`
+[Okay, je l'admet. J'ai merdé.](#act3_good_1) `bb({mouth:"sorry", eyes:"sorry_down"});`
 
 # act3_bad_1_harm
 
-b: Even if you land in the water, the surface tension will crack your ribs and give you a concussion *at the least!*
+b: Même si tu atteris dans l'eau, la tension surfacique va *au moins* te briser les côtes et te donner une commotion !
 
-h: Eh.
+h: Meh.
 
 ```
 hong({body:"drink"});
@@ -402,7 +402,7 @@ hong({ body:"normal", mouth:"angry", eyes:"angry" });
 bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 ```
 
-h: I saw a Russian guy do this on YouTube once.
+h: J'ai vu un mec Russe faire ça sur youtube une fois.
 
 (#act3_bad_2)
 
@@ -410,13 +410,13 @@ h: I saw a Russian guy do this on YouTube once.
 
 `hong({ eyes:"look_right" });`
 
-h: I- Excuse me, the *thanks?*
+h: Je- Excuse moi, tes *remerciements ?*
 
 `bb({ eyes:"angry" });`
 
-b: This is exactly why I *exist!* Because humans can't be trusted to protect themselves!
+b: C'est exactement pour ça que j'*existe !* Parce qu'on ne peut pas faire confiance aux humains pour se protéger d'eux-même !
 
-b: I've been trying to protect your stupid butt all my life and now you're just going t--
+b: J'ai passée ma vie à essayer de protéger ton stupide derrière et maintenant tu vas just--
 
 ```
 hong({body:"drink"});
