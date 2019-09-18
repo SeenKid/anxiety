@@ -23,7 +23,7 @@
 publish("act2",["dee",3]);
 ```
 
-s: Mais a tu *vu* ce "reportage" à propos de cette chose horrible qui s'est passée quelque part?
+s: Mais as-tu *vu* ce "reportage" à propos de cette chose horrible qui s'est passée quelque part?
 
 ```
 publish("act2",["dee",2]);
@@ -78,7 +78,7 @@ a: Ugh, n'est-ce pas ?
 publish("act2",["dee",3]);
 ```
 
-s: Mais a tu *vu* ce "reportage qui est devenu viral?
+s: Mais as-tu *vu* ce "reportage qui est devenu viral?
 
 ```
 publish("act2",["dee",2]);
@@ -93,7 +93,7 @@ publish("act2",["party_hong","next"]);
 publish("act2",["dum",3]);
 ```
 
-a: Ouais, complètement faux. Qui tomberai dans le panneau et retweeterai ça ?
+a: Ouais, complètement faux. Qui tomberai dans le panneau et retweeterait ça ?
 
 ```
 publish("act2",["dum",2]);
@@ -108,7 +108,7 @@ publish("act2",["party_hunter",0]);
 publish("act2",["dee",3]);
 ```
 
-s: Serieusement mec. Genre, salut, ouvre Google et factcheck d'abord?
+s: Sérieusement mec. Genre, salut, ouvre Google et vérifie d'abord?
 
 ```
 publish("act2",["party_hunter",1]);
@@ -298,23 +298,23 @@ publish("hp_show");
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-n: DEUXIÈME ROUND: *COMBATTEZ !*
+n: DEUXIÈME ROUND: *COMBATTEZ!*
 
-[Oh non ils nous détestent tous!](#act2a_social)
+[Oh non, ils nous détestent tous!](#act2a_social)
 
 [T'étais en train de *reluquer* la rousse?](#act2a_perv)
 
-[Hey, parlons du sens de la vie.](#act2a_meaning)
+[Hé, parlons du sens de la vie.](#act2a_meaning)
 
 # act2a_social
 
 `bb({eyes:"sad"})`
 
-b: On ruine l'ambiance de la partie an étant un tel tas de tristesse !
+b: On ruine l'ambiance de la fête en étant un tel tas de tristesse !
 
 `bb({eyes:"shock", body:"two_up"})`
 
-b: On tue la bonne ambiance ! On commet un meurtre-d'ambiance de premier degré !
+b: On tue la bonne ambiance ! On commet un meurtre d'ambiance de premier degré !
 
 `bb({eyes:"normal", body:"normal"})`
 
@@ -331,7 +331,7 @@ _.a2_attack_1 = "alone";
 
 `bb({eyes:"suspect"})`
 
-b: Ils sont plus beau que nous, ce qui ve dire que si on ose même les *regarder*, alors--
+b: Elles sont plus belles que nous, ce qui ve dire que si on ose même les *regarder*, alors--
 
 `bb({eyes:"shock", body:"two_up"})`
 
@@ -352,7 +352,7 @@ _.a2_attack_1 = "bad";
 
 `bb({body:"one_up", eyes:"normal_r"})`
 
-b: Au final, que peut on vraiment faire qui ai de l'importance? 
+b: Au final, que peut on vraiment faire qui aie de l'importance? 
 
 `bb({body:"normal", eyes:"sad"})`
 
@@ -360,7 +360,7 @@ b: Contribuer à l'humanité ? Toutes les grandes oeuvres se décomposent à la 
 
 `bb({eyes:"sad_r"})`
 
-b: Et de la mort il y en a! *On* va mourir. *Nos êtres aimés* vont mourir.
+b: Et de la mort, il y en a! *On* va mourir. *Nos êtres aimés* vont mourir.
 
 `bb({eyes:"shock", body:"two_up"})`
 
@@ -393,7 +393,7 @@ b: ...
 
 `bb({eyes:"suspect"})`
 
-b: Um... can you hear me, human?
+b: Euh... est-ce que tu peux m'entendre, humain?
 
 `bb({eyes:"normal", MOUTH_LOCK:true})`
 
@@ -405,19 +405,19 @@ b: *GASP*
 
 `bb({mouth:"small_talk"})`
 
-b: I MUST WARN YOU ABOUT...
+b: JE DOIS T'AVERTIR À PROPOS...
 
-[*More* of the same danger!](#act2b_louder)
+[de *PLUS* du même danger!](#act2b_louder)
 
 {{if _.a2_first_danger=="social"}}
-[A *different* social danger!](#act2b_different_social)
+[d'un danger social *different*!](#act2b_different_social)
 {{/if}}
 
 {{if _.a2_first_danger=="perv" || _.a2_first_danger=="meaning"}}
-[A *different* moral danger!](#act2b_different_moral)
+[d'un danger moral *different*!](#act2b_different_moral)
 {{/if}}
 
-[You're ignoring danger! That's dangerous!](#act2b_ignore)
+[Tu ignores le danger! C'est dangereux!](#act2b_ignore)
 
 # act2b_louder
 
