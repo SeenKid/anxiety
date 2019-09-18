@@ -6,7 +6,7 @@ SceneSetup.act1();
 
 (...300)
 
-n: ET VOICI L'ANXIÉTÉ DE L'HUMAIN
+n: ET VOICI L'ANXIÉTÉ DE L'HUMAIN·E
 
 n: _TU_ ES L'ANXIÉTÉ
 
@@ -28,13 +28,13 @@ h: Oh! Encore?
 
 `hong({eyes:"0_neutral"})`
 
-n: TON TRAVAIL ES DE PROTÉGER TON HUMAIN DU *DANGER*
+n: TON TRAVAIL EST DE PROTÉGER TON HUMAIN·E DU *DANGER*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
 n: EN FAIT, RIEN QUE DE JOUER DE NOUVEAU À CE JEU LE MET EN *DANGER* 
 
-n: VITE, PREVIENS LE!
+n: VITE, PREVIENS-LE!
 
 ```
 sfx("squeak");
@@ -42,7 +42,7 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-b: Humain! Écoute, on est en danger! Les joueurs...
+b: Humain! Écoute, on est en danger! Les joueur·ses...
 
 [...vont nous torturer de nouveau !](#act1_replay_torture)
 
@@ -79,7 +79,7 @@ h: Au moins on sautera pas du toît cette f--
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="walkaway"}}
-b: ILS NOUS VONT FAIRE SAUTER DU TOÎT.
+b: ILS VONT NOUS FAIRE SAUTER DU TOIT.
 {{/if}}
 
 `bb({body:"fear"});`
@@ -100,7 +100,7 @@ h: OK, l'histoire est la même, mais chaque chapitre a deux fins possibles, en p
 
 `bb({body:"fear"});`
 
-b: Las joueurs vont être déçus, ferme ce tab, efface ce logiciel, et on--
+b: Les joueur·ses vont être déçu·es, ferme cet onglet, efface ce logiciel, et on--
 
 (#act1_replay_end)
 
@@ -116,15 +116,15 @@ h: Un quoi maintenant?
 
 `bb({eyes:"normal"});`
 
-b: Le fil de l'histoire était sur comment on peut *CHOISIR* de construir une collaboration saine avec sa peur,
+b: Le fil de l'histoire parlait de comment on peut *CHOISIR* de construire une collaboration saine avec sa peur,
 
 `bb({eyes:"normal_right"});`
 
-b: Mais jouer le jeu de nouveau donnera la même histoire, impliqant que vos *CHOIX* n'importent pas,
+b: Mais jouer de nouveau la partie donnera la même histoire, impliquant que vos *CHOIX* n'importent pas,
 
 `bb({eyes:"narrow_eyebrow"});`
 
-b: Ce qui contradit le message et la mecanique du jeu,
+b: Ce qui contradit le message et la mécanique du jeu,
 
 `bb({eyes:"fear"});`
 
@@ -170,7 +170,7 @@ h: Ok, on recommence.
 Game.clearText();
 ```
 
-n4: (LAISSE  _TON_ ANGOISSE BLAH BLAH BLAH LE PLUS PROCHE DE _TA_ PEUR BLAH BLAH TU CONNAIS LA CHANSON)
+n4: (LAISSE _TON_ ANGOISSE BLAH BLAH BLAH LE PLUS PROCHE DE _TA_ PEUR BLAH BLAH TU CONNAIS LA CHANSON)
 
 ```
 sfx("squeak");
@@ -190,7 +190,7 @@ h: Oh zut, mon loup est de retour. Faaaaantastique.
 
 `hong({eyes:"0_neutral"})`
 
-n: VOTRE TRAVAIL ES DE PROTÉGER VOTRE HUMAIN DU *DANGER*
+n: VOTRE TRAVAIL EST DE PROTÉGER VOTRE HUMAIN·E DU *DANGER*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
