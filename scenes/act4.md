@@ -14,7 +14,7 @@ Game.FORCE_CANT_SKIP = false;
 Game.CLICK_TO_ADVANCE = true;
 ```
 
-n3: (game auto-saved)
+n3: (jeu sauvegardé)
 
 ```
 Game.clearText();
@@ -215,11 +215,11 @@ hong({body:"hold", eyes:"normal", mouth:"normal"});
 bb({eyes:"normal"});
 ```
 
-h: Donc "what the hell" est la moral de l'histoire ?
+h: Donc que diable est la morale de l'histoire ?
 
 `hong({body:"one_up", eyes:"annoyed"})`
 
-h: What did we even *learn*? I *was* being stupid, my "friends" *were* using me, and we almost frickin' *died*.
+h: Qu'a t'on *appris*? J'*étais* stupide, mes "amis" *étaient* en train de me mainpuler, et on est presque *mort*.
 
 `hong({body:"normal", eyes:"normal"})`
 
@@ -239,7 +239,7 @@ h: What did we even *learn*? I *was* being stupid, my "friends" *were* using me,
 
 `hong({eyes:"annoyed_l", mouth:"narrow"});`
 
-h: Right. I don't think my insurance plan covers "being a dumb^ass^".
+h: Ouais. Je pense pas que mon assurance vie couvre le fait d'"être un ^crétin^".
 
 `hong({eyes:"annoyed", mouth:"normal"});`
 
@@ -288,7 +288,7 @@ b: Nous avons survécu!
 
 `bb({eyes:"normal_d"});`
 
-b: Bon... vous aviez vu juste.
+b: Bon... t'avais vu juste.
 
 `hong({eyes:"surprise"});`
 
