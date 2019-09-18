@@ -6,7 +6,7 @@ Game.WORDS_HEIGHT_BOTTOM = 205;
 sfx("cheers");
 ```
 
-r: Cheers!
+r: Santé !
 
 ```
 publish("act3",["roofhunter",1]);
@@ -23,41 +23,39 @@ publish("act3",["roofhunter",3]);
 publish("act3",["roofhong",3]);
 ```
 
-h2: *Ah* that hits the spot.
+h2: *Ah* ça cogne la où il faut.
 
 ```
 publish("act3",["roofhunter",2]);
 publish("act3",["roofhong",2]);
 ```
 
-r: You know, kid...
+r: Tu sais, gamin...
 
 ```
 publish("act3",["roofhunter",3]);
 publish("act3",["roofhong",6]);
 ```
 
-h2: Specifically, the spots hit are my left and right amygdala.
-
+h2: Plus précisement, les endroits cognés sont mes amygdales gauche et droite.
 ```
 publish("act3",["roofhunter",8]);
 publish("act3",["roofhong",5]);
 ```
 
-r: You remind me of myself when I was younger. Back when I was tormented by the animal in my head.
-
+r: Tu me rappelle moi quand j'était plus jeune. A l'époque où j'étais tourmentée par l'animal dans ma tête.
 ```
 publish("act3",["roofhunter",9]);
 publish("act3",["roofhong",2]);
 ```
 
-r: I'm so grateful I can pay it forward, and help you kill the beast the way I killed mine.
+r: Je suis si reconnaissante de pouvoir le transmettre, et t'aider à tuer ta bête comme j'ai tuée la mienne.
 
 ```
 publish("act3",["roofhunter",2]);
 ```
 
-r: Hey, quick question: truth or da--
+r: Hé, question rapide: action ou véri--
 
 ```
 publish("act3",["roofhunter",3]);
@@ -65,7 +63,7 @@ publish("act3",["roofhong",7]);
 publish("act3-alpha", ["dizzyhong",0]);
 ```
 
-h2: DARE!
+h2: ACTION !
 
 ```
 publish("act3-alpha", ["dizzyhong",1]);
@@ -73,29 +71,28 @@ publish("act3",["roofhunter",10]);
 publish("act3",["roofhong",2]);
 ```
 
-r: Haha! Good.
+r: Haha! Bien.
 
 ```
 publish("act3",["roofhunter",21]);
 publish("act3",["roofhong",4]);
 ```
 
-r: Ok. You see that baby-blue swimming pool down there?
-
+r: Ok. Tu vois cette piscine bleu clair en bas ?
 ```
 publish("act3-alpha", ["dizzyhong",0]);
 publish("act3",["roofhunter",11]);
 publish("act3",["roofhong",9]);
 ```
 
-h2: Yeah? Six floors down?
+h2: Ouais? Six étages plus bas?
 
 ```
 publish("act3",["roofhunter",10]);
 publish("act3",["roofhong",8]);
 ```
 
-r: Jump in.
+r: Saute dedans.
 
 ```
 publish("act3",["roofhunter",11]);
@@ -108,39 +105,39 @@ h2: ...
 publish("act3",["roofhong",11]);
 ```
 
-h2: Wait, what?
+h2: Attend, quoi ?
 
 ```
 publish("act3",["roofhong",10]);
 publish("act3",["roofhunter",2]);
 ```
 
-r: The animal's started whining, hasn't it?
+r: L'animal à commencé à gémir, n'est-ce pas ?
 
 ```
 publish("act3",["roofhunter",23]);
 ```
 
-r: *Oh nooooo it's dangerous, don't do iiiiit.*
+r: *Oh nooooon c'est dangereux, ne le fais paaaaas.*
 
 ```
 publish("act3",["roofhunter",22]);
 ```
 
-r: But that's exactly why we need death-defying thrills! Party hard! Carpe diem! Snort coke off a hooker's ^ass^, #YOLO!
+r: Mais c'est exactement pour ça que nous avons besoin de défier la mort ! Party hard! Carpe diem! Sniffer de la coke sur le ^cul^ d'une pute, #YOLO!
 
 ```
 publish("act3",["roofhunter",10]);
 ```
 
-r: Show that animal we don't give two *^dick^s* about its ^bitch^ing! Jump in.
+r: Montre à cet animal qu'on s'en bas les *^couilles^* de ses *^putain^* de râlements ! Saute.
 
 ```
 publish("act3",["roofhunter",11]);
 publish("act3",["roofhong",13]);
 ```
 
-h2: Uh, but sometimes, um... fear has a point...
+h2: Euh, mais des fois, hum... la peur à raison...
 
 ```
 publish("act3",["roofhunter",5]);
@@ -156,13 +153,13 @@ publish("act3",["roofhunter",6]);
 publish("act3",["dd",1]);
 ```
 
-r: I'm sorry, did you fall for that McMindfulness fad that claims feeling bad is *good?*
+r: Pardon, tu t'est fait avoir par cette mode McPleineconscience qui dit que se sentir mal c'est *bien?*
 
 ```
 publish("act3",["roofhunter",17]);
 ```
 
-r: Pleasure is the opposite of pain. There-^fuck^ing-fore, you can use pleasure to fight pain!
+r: Le plaisir c'est l'opposé de la douleur. Par ^putain^ de conséquent, tu peux utiliser le plaisir pour combattre la douleur !
 
 ```
 publish("act3",["roofhunter",18]);
