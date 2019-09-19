@@ -92,9 +92,9 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 
 `clearText()`
 
-n3: Bienvenue! Ceci n'est pas vraiment un "jeu," mais plutôt une histoire intéractive. J'éspère que t'aime lire, sucka!
+n3: Bienvenue&nbsp;! Ceci n'est pas vraiment un "jeu," mais plutôt une histoire interactive. J'espère que t'aimes lire, sucka!
 
-n3: Alors, avant de commencer, comment préfères *tu* lire ?
+n3: Alors, avant de commencer, comment préfères-*tu* lire ?
 
 `publish("show_options_bottom")`
 
@@ -110,7 +110,7 @@ n3: Et maintenant, commençons notre histoire...
 
 `publish("intro-to-game-2")`
 
-n2: CECI EST UN HUMAIN
+n2: CECI EST UN·E HUMAIN·E
 
 (...600)
 

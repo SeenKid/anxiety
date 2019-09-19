@@ -14,7 +14,7 @@ Game.FORCE_CANT_SKIP = false;
 Game.CLICK_TO_ADVANCE = true;
 ```
 
-n3: (game auto-saved)
+n3: (jeu sauvegardé)
 
 ```
 Game.clearText();
@@ -215,20 +215,20 @@ hong({body:"hold", eyes:"normal", mouth:"normal"});
 bb({eyes:"normal"});
 ```
 
-h: So what the ^hell^ was the moral of this story?
+h: Donc que diable est la morale de l'histoire ?
 
 `hong({body:"one_up", eyes:"annoyed"})`
 
-h: What did we even *learn*? I *was* being stupid, my "friends" *were* using me, and we almost frickin' *died*.
+h: Qu'a t'on *appris*? J'*étais* stupide, mes "amis" *étaient* en train de me mainpuler, et on est presque *mort*.
 
 `hong({body:"normal", eyes:"normal"})`
 
 {{if _.INJURED}}
-[Yeah, not to mention the hospital bill.](#act4a_bill)
+[Ouais, sans parler de la facture de l'hopital.](#act4a_bill)
 {{/if}}
 
 {{if !_.INJURED}}
-[Yeah, not to mention the liver damage.](#act4a_liver)
+[Ouais, n'ai pas a parler des dommages au foie.](#act4a_liver)
 {{/if}}
 
 [Yeah, that *was* the worst-case scenario.](#act4a_worst)
@@ -239,11 +239,11 @@ h: What did we even *learn*? I *was* being stupid, my "friends" *were* using me,
 
 `hong({eyes:"annoyed_l", mouth:"narrow"});`
 
-h: Right. I don't think my insurance plan covers "being a dumb^ass^".
+h: Ouais. Je pense pas que mon assurance vie couvre le fait d'"être un ^crétin^".
 
 `hong({eyes:"annoyed", mouth:"normal"});`
 
-b: And yet... we survived!
+b: Et pourtant nous avons survécu!
 
 `hong({eyes:"normal"});`
 
@@ -274,13 +274,13 @@ h: ?
 
 `bb({eyes:"normal_d"});`
 
-b: And yet...
+b: Et pourtant...
 
 h: Hm?
 
 `bb({eyes:"surprise"});`
 
-b: We survived!
+b: Nous avons survécu!
 
 (#act4b)
 
@@ -288,7 +288,7 @@ b: We survived!
 
 `bb({eyes:"normal_d"});`
 
-b: But... you were right, too.
+b: Bon... t'avais vu juste.
 
 `hong({eyes:"surprise"});`
 
@@ -338,11 +338,11 @@ h: But me fighting you *also* sucks, because it just makes you yell louder...
 
 `bb({eyes:"normal_r"})`
 
-b: Then maybe...
+b: Alors peut être...
 
 `bb({eyes:"normal"})`
 
-h: Maybe we don't have to fight.
+h: Alors nous n'avons pas a nous battre.
 
 ```
 Game.FORCE_CANT_SKIP = true;
@@ -381,11 +381,11 @@ music('dontfight',{fade:5, volume:0.6});
 bb({eyes:"annoyed_d"});
 ```
 
-b: I'm not a Big Bad Wolf. But I'm not a guard-wolf either.
+b: Je ne suis pas un grand méchant loup. Mais je ne suis pas non plus un chien de garde.
 
 `bb({eyes:"sad_d"})`
 
-b: I'm a battered shelter dog.
+b: Je suis un chien battue.
 
 `bb({eyes:"sad"})`
 
@@ -408,19 +408,19 @@ Game.FORCE_CANT_SKIP = false;
 bb({body:"normal", mouth:"scream", eyes:"scream_sad"});
 ```
 
-b: But I don't *want* to be a cowardly dog! I want to protect you! I want to be a good dog!
+b: Mais je ne veut pas etre un chien lâche! Je veut te protéger! Je veut etre un bon chien!
 
 `bb({eyes:"sad", mouth:"normal"});`
 
-b: Human... will you help tame this wolf?
+b: Humain... vuet tu m'aider a apprivoiser ce chien?
 
 `hong({eyes:"sad"})`
 
-h: I... I'll try.
+h: Je... je veut essayer.
 
 `hong({eyes:"normal_l", body:"chin", mouth:"narrow"})`
 
-h: Okay. Healthy relationship with emotions. Relationships need communication. So, let's communicate.
+h: Ok. Une bonne relation avec des émotions. Les relations ont besoin de communication. Bon, communiquons.
 
 `hong({eyes:"normal", body:"hands_1", mouth:"normal"})`
 
