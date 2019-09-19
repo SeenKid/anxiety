@@ -1854,11 +1854,11 @@ b: I'm sorry! I'm a battered shelter dog! Battered dogs poop on your bed sometim
 
 `publish("act4", ["bb_closer", 4]);`
 
-b: But if you're patient with me... and just stay and sit with me...
+b: Mais si tu es patient avec moi... et reste juste, assiez toi avec moi...
 
 `publish("act4", ["bb_closer", 8]);`
 
-b: Maybe you can tame this wolf.
+b: Peut-être que tu peux apprivoiser ce loup.
 
 `publish("act4", ["bb_closer", 0]);`
 
@@ -1969,15 +1969,15 @@ publish("act4", ["hong_closer", 5]);
 ```
 
 {{if _.fifteencigs}}
-b: AAAAA YOU'RE STILL EATING ALONE FIFTEEN CIGARETTES AAAAA
+b: AAAAA TU MANGES ENCORE TOUT SEUL QUINZE CIGARETTES AAAAA
 {{/if}}
 
 {{if _.parasite}}
-b: AAAAA YOU'RE STILL NOT PRODUCTIVE WHILE EATING WE'RE SOCIETY-PARASITES AAAAA
+b: AAAAA T'ES TOUJOURS PAS PRODUCTIF EN MANGEANT ON EST DES PARASITES DE LA SOCIÉTÉ AAAAA
 {{/if}}
 
 {{if _.whitebread}}
-b: AAAAA YOU'RE EATING MORE WHITE BREAD AAAAA
+b: AAAAA TU MANGES ENCORE PLUS DE PAIN BLANC AAAAA
 {{/if}}
 
 ```
