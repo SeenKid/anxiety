@@ -472,7 +472,7 @@ h: Any other remarks, Captain Obvious?
 
 # act3_good_1_fail_revenge
 
-b: You need to have a healthier relationship with your emotions, rather than drown them wi--
+b: Tu dois avoir il relation saine avec tes émotions, plutôt que de les noyer wi--
 
 ```
 hong({body:"drink"});
@@ -494,7 +494,7 @@ bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 
 # act3_good_1_fail_harm
 
-b: So please, put the bottle down and let's--
+b: Alors s'il te plaît, pose cette bouteille et on y va--
 
 ```
 hong({body:"drink"});
@@ -519,11 +519,11 @@ bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 
 `bb({ eyes:"sad" });`
 
-b: please... don't...
+b: S'il te plaît... non...
 
-h: Your energy bar's looking awfully low there, wolf.
+h: Ta bars d'énergie paraît basse, loup.
 
-h: If I were you, I'd choose your next words very carefully.
+h: Si j'étais toi, je choisirais vos prochains mots avec soin..
 
 `bb({ eyes:"normal" });`
 
@@ -536,7 +536,7 @@ h: If I were you, I'd choose your next words very carefully.
 
 # act3_bad_2_jump
 
-b: So, go ahead and jump. See what I care.
+b: Alors, allons y et saute. Regarde ce qui m'inportre
 
 `hong({ eyes:"look_right", mouth:"normal", MOUTH_LOCK:true });`
 
@@ -547,14 +547,14 @@ hong({ eyes:"less_angry", mouth:"normal" });
 bb({ eyes:"ignore_oh_crap" });
 ```
 
-h: Okay then. Bottoms up.
+h: Ok donc. Bottoms up.
 
 ```
 bb({ mouth:"normal", eyes:"oh_crap" });
 Game.OVERRIDE_TEXT_SPEED = 2;
 ```
 
-b: WAIT NO THAT WAS REVERSE PSYCHOLOGY YOU WERE SUPPOSED TO DO THE *OPPOSITE* OF WHAT I SA--
+b: ATTEND NON, C'ÉTAIT DE LA PSYCHOLOGIE INVERSÉE, TU ÉTIAIS SUPPOSÉ FAIRE L' *OPPOSÉ* DE CE QUE J'AI DIT.--
 
 (#act3_bad_3)
 
@@ -564,13 +564,13 @@ b: WAIT NO THAT WAS REVERSE PSYCHOLOGY YOU WERE SUPPOSED TO DO THE *OPPOSITE* OF
 
 `bb({ eyes:"angry" });`
 
-b: You *are* putting yourself in danger. Your so-called friends *are* using you. And *you* are using your so-called friends.
+b: Tu "es" en train de te mettre en danger. Your so-called friends *are* using you. And *you* are using your so-called friends.
 
 `bb({ eyes:"sad" });`
 
-b: So please, human... why don't you believe me?!
+b: Alors s'il te plaît, humain... pourquoi tu ne me crois pas ?!?!
 
-h: Because you never believed in *me*.
+h: Parce que tu n'as jamais cru en *moi*.
 
 (#act3_bad_3)
 
@@ -585,7 +585,7 @@ b: Rather than hate the guard-wolves for trying to protect them! So why can't yo
 
 `bb({ eyes:"normal" });`
 
-h: Wrong ^fuck^ing answer.
+h: Mauvaise réponse ^fuck^ing.
 
 (#act3_bad_3)
 
