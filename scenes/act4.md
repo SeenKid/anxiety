@@ -430,7 +430,7 @@ h: The next five minutes are going to sound super cheesy, but let's fake it 'til
 hong({body:"hands_2", mouth:"normal"});
 ```
 
-h: Dear inner wolf... how are *you* feeling?
+h: Cher loup intérieur... comment tu te sent ?
 
 n2: TOTAL FEARS USED:
 
@@ -445,11 +445,11 @@ hong({body:"normal"});
 bb({eyes:"normal"});
 ```
 
-[I'm scared we'll be harmed.](#act4_harm)
+[J'ai peur qu'on ai mal..](#act4_harm)
 
-[I'm scared we'll be alone.](#act4_alone)
+[J'ai peur qu'on soit seuls.](#act4_alone)
 
-[I'm scared we're bad people.](#act4_bad)
+[J'ai peur qu'on soit de mauvaises personnes..](#act4_bad)
 
 # act4_harm
 
@@ -464,7 +464,7 @@ b: I want to protect your need for physical safety,
 
 `bb({eyes:"sad_d"})`
 
-b: But the *whole world* seems so dangerous. So full of tragedy and evil.
+b: Mais *le monde entier* semble si dangereux. Si pleine de tragédie et de mal.
 
 `bb({eyes:"sad"})`
 
