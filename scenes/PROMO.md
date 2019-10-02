@@ -14,7 +14,7 @@
 
 `clearText()`
 
-n3: Alors avant qu'on commence, comment est-ce que *tu* aimes lire?
+n3: Alors, avant qu'on ne commence, comment est-ce que *tu* aimes lire?
 
 `publish("show_options_bottom")`
 
@@ -71,7 +71,7 @@ sfx("rustle2");
 hong({body:"phone1", mouth:"neutral", eyes:"neutral"})
 ```
 
-n: TON TRAVAIL EST DE PROTÉGÉR TON HUMAIN DU *DANGER*
+n: TON TRAVAIL EST DE PROTÉGER TON HUMAIN DU *DANGER*
 
 `bb({eyes:"look", mouth:"small_lock", body:"fear"})`
 
@@ -82,17 +82,17 @@ bb({eyes:"normal", mouth:"normal", body:"normal"});
 hong({eyes:"annoyed"});
 ```
 
-h: Ouais je me demande pourquoi je ne m'asseois pas un moment et écoute mes pensées plus souvent.
+h: Ouais je me demande pourquoi je ne m'asseois pas un moment pour écouter mes pensées plus souvent.
 
 `hong({eyes:"neutral"});`
 
-n: VITE, AVERTIS LE D'UN *DANGER!*
+n: VITE, AVERTIS-LE D'UN *DANGER!*
 
 ```
 bb({eyes:"look"});
 ```
 
-[Oh non, regarde cette horible nouvelle!](#act1d_news)
+[Oh non, regarde cette horrible nouvelle!](#act1d_news)
 
 [Oh non, est-ce que ce tweet est à propos de *nous?*](#act1d_subtweet)
 
@@ -110,7 +110,7 @@ bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 1.8;
 ```
 
-b: LES CHATS NE PEUVENT PAS DIGÉRÉR LE LAIT ET ON EST DES PERSONNES HORRIBLES POUR AVOIR APPRÉCIÉ CELA
+b: LES CHATS NE PEUVENT PAS DIGÉRER LE LAIT ET ON EST DES PERSONNES HORRIBLES POUR AVOIR APPRÉCIÉ CELA
 
 (...200)
 
