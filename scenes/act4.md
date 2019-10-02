@@ -228,7 +228,7 @@ h: Qu'a t'on *appris*? J'*étais* stupide, mes "amis" *étaient* en train de me 
 {{/if}}
 
 {{if !_.INJURED}}
-[Ouais, n'ai pas a parler des dommages au foie.](#act4a_liver)
+[Ouais, sans parler des dommages au foie.](#act4a_liver)
 {{/if}}
 
 [Yeah, that *was* the worst-case scenario.](#act4a_worst)
@@ -239,7 +239,7 @@ h: Qu'a t'on *appris*? J'*étais* stupide, mes "amis" *étaient* en train de me 
 
 `hong({eyes:"annoyed_l", mouth:"narrow"});`
 
-h: Ouais. Je pense pas que mon assurance vie couvre le fait d'"être un ^crétin^".
+h: Ouais. Je pense pas que mon assurance-vie couvre le fait d'"être un ^crétin^".
 
 `hong({eyes:"annoyed", mouth:"normal"});`
 
@@ -338,11 +338,11 @@ h: But me fighting you *also* sucks, because it just makes you yell louder...
 
 `bb({eyes:"normal_r"})`
 
-b: Alors peut être...
+b: Alors peut-être...
 
 `bb({eyes:"normal"})`
 
-h: Alors nous n'avons pas a nous battre.
+h: Alors nous n'avons pas à nous battre.
 
 ```
 Game.FORCE_CANT_SKIP = true;
@@ -385,7 +385,7 @@ b: Je ne suis pas un grand méchant loup. Mais je ne suis pas non plus un chien 
 
 `bb({eyes:"sad_d"})`
 
-b: Je suis un chien battue.
+b: Je suis un chien battu.
 
 `bb({eyes:"sad"})`
 
@@ -408,15 +408,15 @@ Game.FORCE_CANT_SKIP = false;
 bb({body:"normal", mouth:"scream", eyes:"scream_sad"});
 ```
 
-b: Mais je ne veut pas etre un chien lâche! Je veut te protéger! Je veut etre un bon chien!
+b: Mais je ne veux pas être un chien lâche! Je veux te protéger! Je veux être un bon chien!
 
 `bb({eyes:"sad", mouth:"normal"});`
 
-b: Humain... vuet tu m'aider a apprivoiser ce chien?
+b: Humain... veux-tu m'aider à apprivoiser ce chien?
 
 `hong({eyes:"sad"})`
 
-h: Je... je veut essayer.
+h: Je... je veux essayer.
 
 `hong({eyes:"normal_l", body:"chin", mouth:"narrow"})`
 
@@ -430,7 +430,7 @@ h: The next five minutes are going to sound super cheesy, but let's fake it 'til
 hong({body:"hands_2", mouth:"normal"});
 ```
 
-h: Cher loup intérieur... comment tu te sent ?
+h: Cher loup intérieur... comment tu te sens ?
 
 n2: TOTAL FEARS USED:
 
@@ -464,7 +464,7 @@ b: I want to protect your need for physical safety,
 
 `bb({eyes:"sad_d"})`
 
-b: Mais *le monde entier* semble si dangereux. Si pleine de tragédie et de mal.
+b: Mais *le monde entier* semble si dangereux. Si plein de tragédie et de mal.
 
 `bb({eyes:"sad"})`
 
