@@ -788,32 +788,32 @@ h: Aw you big fuzzy-wuzzy panic-wolf.
 
 # act4_thanks_2
 
-h: Even if you over-react, I appreciate you looking out for my {{_.thanks_for}}.
+h: Même si tu surréagis, j'apprécie que tu prennes soin de {{_.thanks_for}}.
 
 `bb({ eyes:"annoyed" })`
 
-b: Wait... you're not just repeating "thank you" to avoid actually talking about these fears, are you?
+b: Attends... tu n'es pas juste en train de répéter "merci" pour éviter de vraiment parler de ces peurs, n'est-ce pas ?
 
 ```
 bb({ eyes:"normal" });
 hong({ eyes:"annoyed", body:"chin" });
 ```
 
-h: Well, stuff's complicated, and I don't always have answers ready.
+h: Eh bien, les choses sont compliquées, et je n'ai pas toujours les réponses clés en main.
 
 `hong({ eyes:"annoyed_l", body:"one_up" })`
 
-h: It's not like life gives you a list of 3 pre-made dialogue responses.
+h: Ce n'est pas comme si la vie te donnait une liste de 3 réponses pré-faites d'un dialogue.
 
 `hong({ eyes:"normal", mouth:"smile", body:"normal" })`
 
-h: But for now, at least I can at least say thanks.
+h: Mais pour le moment, je peux au moins te dire merci.
 
-b: Well, thank you too, for listening to me patiently.
+b: Eh bien, merci à toi aussi, pour m'écouter patiemment.
 
 `bb({ eyes:"closed" });`
 
-b: You small hairless flesh-mammal.
+b: Espèce de petit mammifère sans cheveux.
 
 (#act4_something_else)
 
