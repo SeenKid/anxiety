@@ -215,25 +215,25 @@ hong({body:"hold", eyes:"normal", mouth:"normal"});
 bb({eyes:"normal"});
 ```
 
-h: Donc que diable est la morale de l'histoire ?
+h: Donc, quelle est la morale de l'histoire ?
 
 `hong({body:"one_up", eyes:"annoyed"})`
 
-h: Qu'a t'on *appris*? J'*étais* stupide, mes "amis" *étaient* en train de me mainpuler, et on est presque *mort*.
+h: Qu'a-t-on *appris* ? J'*étais* stupide, mes "amis" *étaient* en train de me manipuler, et on est presque *mort*.
 
 `hong({body:"normal", eyes:"normal"})`
 
 {{if _.INJURED}}
-[Ouais, sans parler de la facture de l'hopital.](#act4a_bill)
+[Ouais, sans parler de la facture de l'hôpital.](#act4a_bill)
 {{/if}}
 
 {{if !_.INJURED}}
 [Ouais, sans parler des dommages au foie.](#act4a_liver)
 {{/if}}
 
-[Yeah, that *was* the worst-case scenario.](#act4a_worst)
+[Ouais, c'*était* le pire des scénarios possibles.](#act4a_worst)
 
-[Yeah, I was right.](#act4a_right)
+[Ouais, j'avais raison.](#act4a_right)
 
 # act4a_bill
 
