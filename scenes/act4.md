@@ -460,33 +460,33 @@ _.a4_fears_discussed += 1;
 
 `bb({eyes:"normal_d"})`
 
-b: I want to protect your need for physical safety,
+b: Je veux te protéger physiquement,
 
 `bb({eyes:"sad_d"})`
 
-b: Mais *le monde entier* semble si dangereux. Si plein de tragédie et de mal.
+b: Mais *le monde entier* semble si dangereux. Si plein de tragédies et de méchancetés.
 
 `bb({eyes:"sad"})`
 
 {{if _.a4_fears_discussed==1}}
-b: I dunno, enough of *me* choosing what to say next. What do *you* say, human?
+b: J'sais pas, assez de *moi* choisissant ce qui va être dit. Qu'est-ce que *tu* dis, humain ?
 {{/if}}
 
 {{if _.a4_fears_discussed==2}}
-b: Again, back to you, human. What do you think?
+b: De nouveau, retour sur toi, humain. Qu'est-ce que tu en penses ?
 {{/if}}
 
 {{if _.a4_fears_discussed==3}}
-b: More thoughts, human?
+b: D'autres idées, humain ?
 {{/if}}
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "h"`
 
-[You're right. So let's protect ourselves.](#act4_harm_skills)
+[Tu as raison. Protégeons-nous.](#act4_harm_skills)
 
-[Let's expose ourselves to *more* danger.](#act4_harm_exposure)
+[Mettons nous encore *plus* en danger.](#act4_harm_exposure)
 
-[Thank you.](#act4_thanks) `_.thanks_for = "physical safety";`
+[Merci.](#act4_thanks) `_.thanks_for = "physical safety";`
 
 # act4_harm_skills
 
