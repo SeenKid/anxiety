@@ -699,11 +699,11 @@ h: Désolé pour *quoi* ?
 
 `hong({ body:"normal", mouth:"angry", eyes:"less_angry" });`
 
-[I'm sorry I wasn't a good protector.](#act3_good_3_protector)
+[Je suis désolé, je n'ai pas été un bon protecteur.](#act3_good_3_protector)
 
-[I'm sorry I didn't respect you.](#act3_good_3_respect)
+[Je suis désolé, je ne t'ai pas respecté.](#act3_good_3_respect)
 
-[I'm sorry.](#act3_good_4)
+[Je suis désolé.](#act3_good_4)
 
 
 # act3_good_2q_not_already_apologized
