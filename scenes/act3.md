@@ -536,7 +536,7 @@ h: Si j'étais toi, je choisirais vos prochains mots avec soin..
 
 # act3_bad_2_jump
 
-b: Alors, allons y et saute. Regarde ce qui m'inportre
+b: Alors, vas-y et saute. Je m'en fiche.
 
 `hong({ eyes:"look_right", mouth:"normal", MOUTH_LOCK:true });`
 
@@ -554,7 +554,7 @@ bb({ mouth:"normal", eyes:"oh_crap" });
 Game.OVERRIDE_TEXT_SPEED = 2;
 ```
 
-b: ATTEND NON, C'ÉTAIT DE LA PSYCHOLOGIE INVERSÉE, TU ÉTIAIS SUPPOSÉ FAIRE L' *OPPOSÉ* DE CE QUE J'AI DIT.--
+b: ATTENDS ! NON, C'ÉTAIT DE LA PSYCHOLOGIE INVERSÉE, TU ÉTAIS SUPPOSÉ FAIRE L' *OPPOSÉ* DE CE QUE J'AI DI--
 
 (#act3_bad_3)
 
