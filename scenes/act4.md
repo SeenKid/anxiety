@@ -292,15 +292,15 @@ b: Bon... t'avais vu juste.
 
 `hong({eyes:"surprise"});`
 
-h: Hm?
+h: Hm ?
 
 `bb({eyes:"normal"});`
 
-b: I *was* the wolf who cried wolf. So when *actual* danger came, you – justifiably – didn't believe me.
+b: J'*étais* le loup qui criait au loup. Donc quand le *véritable* danger est arrivé, tu ne m'as - à juste titre - pas cru.
 
 `bb({eyes:"surprise_r"});`
 
-b: And yet, we survived!
+b: Et pourtant, on a survécu !
 
 (#act4b)
 
