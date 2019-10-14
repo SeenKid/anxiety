@@ -710,11 +710,11 @@ h: Désolé pour *quoi* ?
 
 `hong({ body:"normal", mouth:"angry", eyes:"angry" }, 0);`
 
-[I'm sorry I have a terrible human!](#act3_bad_2_terrible) `bb({mouth:"normal", eyes:"normal"})`
+[Je suis désolé, je suis un terrible humain !](#act3_bad_2_terrible) `bb({mouth:"normal", eyes:"normal"})`
 
-[I'm sorry I didn't respect you.](#act3_good_3_respect)
+[Je suis désolé, je ne t'ai pas respecté.](#act3_good_3_respect)
 
-[I'm sorry I hurt you.](#act3_good_3_hurt)
+[Je suis désolé, je t'ai blessé.](#act3_good_3_hurt)
 
 
 
