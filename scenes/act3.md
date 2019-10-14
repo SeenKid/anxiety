@@ -1059,7 +1059,7 @@ publish('hong-next');
 
 `publish('hong-next')`
 
-b: no...
+b: Non...
 
 (...501)
 
@@ -1078,7 +1078,7 @@ publish('hong-next');
 
 `publish('hong-next')`
 
-b: no no no
+b: Non non non
 
 (...501)
 
@@ -1146,7 +1146,7 @@ Game.FORCE_TEXT_Y = 325;
 Game.OVERRIDE_FONT_SIZE = 50;
 ```
 
-b: NO!
+b: NON !
 
 (...400)
 
