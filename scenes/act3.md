@@ -788,11 +788,11 @@ h: ...
 hong({ body:"stop", mouth:"stop", eyes:"blank" });
 ```
 
-h: Yeah, well, this was a dumb idea anyway.
+h: Ouais, bon, c'était une mauvaise idée de toute façon.
 
-h: I only did this to mess you up, and, well, I messed you up.
+h: J'ai uniquement fait ça pour t'embêter, et, bon bah, je t'ai embêté.
 
-h: Let's just call this round a tie, okay?
+h: Disons juste que c'est un ex æquo, ok ?
 
 ```
 bb({ mouth:"sorry", eyes:"sorry" });
@@ -801,11 +801,11 @@ bb({ MOUTH_LOCK:true });
 
 b: ...
 
-b: Okay.
+b: Ok.
 
-h: Okay.
+h: Ok.
 
-n: *TIE*
+n: *EX ÆQUO*
 
 `_.a3_ending = "walkaway";`
 
