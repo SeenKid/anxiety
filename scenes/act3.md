@@ -644,22 +644,22 @@ h: I don't feel anything at all.
 
 `bb({mouth:"sorry", eyes:"sorry_down"});`
 
-b: I was so obsessed with making sure nothing else hurt you, that I didn't realize *I* was creating the hurt.
+b: J'étais tellement obsédé à l'idée que rien ne te blesse, que je n'ai pas réalisé que *je* te blessais.
 
 ```
 bb({ eyes:"sorry"});
 hong({ body:"yell_2", mouth:"yell", eyes:"blank" });
 ```
 
-h: NO. S^HIT^.
+h: NON. TU DÉC-^ONNES^.
 
 `hong({ body:"yell_1" });`
 
-h: ^GODDAMN^. It really took you this long to finally figure it out?!
+h: ^BORDEL^. Il t'aura fallu si longtemps pour t'en rendre compte ?!
 
 `hong({ body:"cry", mouth:"cry", eyes:"blank" });`
 
-h: You could've saved us so much trouble, you big fluffy dumb^ass^. Why didn't you realize this sooner?...
+h: Tu aurais pu nous éviter tant de problèmes, espèce de grosse boule de poils ^imbécile^. Pourquoi ne l'as-tu pas réalisé plus tôt ?
 
 `_.apologized_for_hurt = true;`
 
