@@ -45,7 +45,7 @@ publish("act2",["dum",2]);
 publish("act2",["party_hong","next"]);
 ```
 
-h2: la... la fête est sympa...
+h2: La... la fête est sympa...
 
 ```
 publish("act2",["party_hong","next"]);
@@ -59,7 +59,7 @@ s: C'est vrai, mais ils suivent juste des incitations. Le *vrai* problème c'est
 publish("act2",["dee",3]);
 ```
 
-s: Qui retweeterai un reportage aussi épouvantable, et rendrai tous ses amis tristes ?
+s: Qui retweeterait un reportage aussi épouvantable, et rendrait tous ses amis tristes ?
 
 ```
 publish("act2",["party_hunter",1]);
@@ -85,7 +85,7 @@ publish("act2",["dee",2]);
 publish("act2",["party_hong","next"]);
 ```
 
-h2: s-salut...
+h2: S-salut...
 
 ```
 publish("act2",["party_hunter",1]);
@@ -93,14 +93,14 @@ publish("act2",["party_hong","next"]);
 publish("act2",["dum",3]);
 ```
 
-a: Ouais, complètement faux. Qui tomberai dans le panneau et retweeterait ça ?
+a: Ouais, complètement faux. Qui tomberait dans le panneau et retweeterait ça ?
 
 ```
 publish("act2",["dum",2]);
 publish("act2",["party_hong","next"]);
 ```
 
-h2: la... la fête est sympa...
+h2: La... la fête est sympa...
 
 ```
 publish("act2",["party_hong","next"]);
@@ -134,7 +134,7 @@ publish("act2",["dee",2]);
 publish("act2",["party_hong","next"]);
 ```
 
-h2: s-salut...
+h2: S-salut...
 
 ```
 publish("act2",["party_hunter",1]);
@@ -142,14 +142,14 @@ publish("act2",["party_hong","next"]);
 publish("act2",["dum",1]);
 ```
 
-a: Élabore ta thèse.
+a: Dis-m'en davantage.
 
 ```
 publish("act2",["dum",0]);
 publish("act2",["party_hong","next"]);
 ```
 
-h2: la... la fête est sympa...
+h2: La... la fête est sympa...
 
 ```
 publish("act2",["party_hong","next"]);
@@ -157,7 +157,7 @@ publish("act2",["party_hunter",0]);
 publish("act2",["dee",1]);
 ```
 
-s: Et bien, hier j'ai vu quelqu'un retweeter un GIF ou un chat buvait du lait.
+s: Et bien, hier j'ai vu quelqu'un retweeter un GIF où un chat buvait du lait.
 ```
 publish("act2",["dee",3]);
 ```
@@ -187,7 +187,7 @@ publish("act2",["dee",0]);
 publish("act2",["party_hong","next"]);
 ```
 
-h2: s-salut...
+h2: S-salut...
 
 ```
 publish("act2",["party_hunter",1]);
@@ -202,7 +202,7 @@ publish("act2",["dum",0]);
 publish("act2",["party_hong","next"]);
 ```
 
-h2: la... la fête est sympa...
+h2: La... la fête est sympa...
 
 ```
 publish("act2",["party_hong","next"]);
@@ -249,7 +249,7 @@ publish("act2",["dee",3]);
 
 s: Ouais je sais pas! Peut-être qu'ils pensent qu'un flirt ne peux remplir le vide dans leur coeur ?
 
-s: Arrete d'être aussi prude! Ouvre ton esprit, puis tes jambes !
+s: Arrête d'être aussi prude! Ouvre ton esprit, puis tes jambes !
 
 ```
 publish("act2",["party_hunter",1]);
@@ -269,7 +269,7 @@ publish("act2",["party_hunter",0]);
 publish("act2",["dee",3]);
 ```
 
-s: Ouais je sais pas! Pas si sexy que ça, mais ça aurait été une bonne prise!
+s: Ouais je sais pas! Pas si sexy que ça, mais ç'aurait été une bonne prise!
 
 ```
 publish("act2",["party_hunter",1]);
@@ -277,7 +277,7 @@ publish("act2",["dee",2]);
 publish("act2",["dum",3]);
 ```
 
-a: Attrapez les tous!™
+a: Attrapez-les tous!™
 
 (#act2-preamble-end)
 
@@ -331,7 +331,7 @@ _.a2_attack_1 = "alone";
 
 `bb({eyes:"suspect"})`
 
-b: Elles sont plus belles que nous, ce qui ve dire que si on ose même les *regarder*, alors--
+b: Elles sont plus belles que nous, ce qui ve dirute que si on ose même les *regarder*, alors--
 
 `bb({eyes:"shock", body:"two_up"})`
 
@@ -352,7 +352,7 @@ _.a2_attack_1 = "bad";
 
 `bb({body:"one_up", eyes:"normal_r"})`
 
-b: Au final, que peut on vraiment faire qui aie de l'importance? 
+b: Au final, que peut-on vraiment faire qui ait de l'importance? 
 
 `bb({body:"normal", eyes:"sad"})`
 
@@ -393,7 +393,7 @@ b: ...
 
 `bb({eyes:"suspect"})`
 
-b: Euh... est-ce que tu peux m'entendre, humain?
+b: Euh... est-ce-que tu peux m'entendre, humain?
 
 `bb({eyes:"normal", MOUTH_LOCK:true})`
 
@@ -410,11 +410,11 @@ b: JE DOIS T'AVERTIR À PROPOS...
 [de *PLUS* du même danger!](#act2b_louder)
 
 {{if _.a2_first_danger=="social"}}
-[d'un danger social *different*!](#act2b_different_social)
+[d'un danger social *différent*!](#act2b_different_social)
 {{/if}}
 
 {{if _.a2_first_danger=="perv" || _.a2_first_danger=="meaning"}}
-[d'un danger moral *different*!](#act2b_different_moral)
+[d'un danger moral *différent*!](#act2b_different_moral)
 {{/if}}
 
 [Tu ignores le danger! C'est dangereux!](#act2b_ignore)
