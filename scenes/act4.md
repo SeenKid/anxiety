@@ -819,22 +819,22 @@ b: You small hairless flesh-mammal.
 
 # act4_thanks_3
 
-h: Even if your yapping scares me, you're simply trying to protect my {{_.thanks_for}}.
+h: Mêmes si tes aboiements m'effraient, tu essaies simplement de protéger {{_.thanks_for}}.
 
 `bb({ eyes:"smile_r" });`
 
-b: Okay, if you keep flattering me like this, the internet's gonna get some weird ideas about us.
+b: Ok, si tu continues de me flatter comme ça, Internet va se faire des idées bizarres à propos de nous.
 
 ```
 bb({ eyes:"smile" });
 hong({ eyes:"annoyed" });
 ```
 
-h: C'mon, I'm just a vulnerable college-age kid and you're a big, scary wolf. What's the worst that cou--
+h: Oh allez, je suis juste un vulnérable collégien and tu es un grand et terrifiant loup. Qu'est-ce qui pourrait arriver de ma--
 
 `hong({ eyes:"normal", body:"point" });`
 
-h: Actually, do not answer that.
+h: En fait, n'y réponds pas.
 
 (#act4_something_else)
 
