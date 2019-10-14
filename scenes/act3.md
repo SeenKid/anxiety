@@ -49,7 +49,7 @@ publish("act3",["roofhunter",9]);
 publish("act3",["roofhong",2]);
 ```
 
-r: Je suis si reconnaissante de pouvoir le transmettre, et t'aider à tuer ta bête comme j'ai tué la mienne.
+r: Je suis si reconnaissante de pouvoir te le transmettre, et t'aider à tuer ta bête comme j'ai tué la mienne.
 
 ```
 publish("act3",["roofhunter",2]);
@@ -85,7 +85,7 @@ publish("act3",["roofhunter",11]);
 publish("act3",["roofhong",9]);
 ```
 
-h2: Ouais? Six étages plus bas?
+h2: Ouais ? Six étages plus bas ?
 
 ```
 publish("act3",["roofhunter",10]);
@@ -124,7 +124,7 @@ r: *Oh nooooon c'est dangereux, ne le fais paaaaas.*
 publish("act3",["roofhunter",22]);
 ```
 
-r: Mais c'est exactement pour ça que nous avons besoin de défier la mort ! Party hard! Carpe diem! Sniffer de la coke sur le ^cul^ d'une pute, #YOLO!
+r: Mais c'est exactement pour ça que nous avons besoin de défier la mort ! Party hard ! Carpe diem ! Sniffer de la coke sur le ^cul^ d'une ^pute^, #YOLO !
 
 ```
 publish("act3",["roofhunter",10]);
@@ -153,19 +153,19 @@ publish("act3",["roofhunter",6]);
 publish("act3",["dd",1]);
 ```
 
-r: Pardon, tu t'est fai avoir par cette mode McPleineconscience qui dit que se sentir mal c'est *bien?*
+r: Pardon, tu t'es fait avoir par cette mode McPleineconscience qui dit que se sentir mal c'est *bien ?*
 
 ```
 publish("act3",["roofhunter",17]);
 ```
 
-r: Le plaisir c'est l'opposé de la douleur. En ^putain^ de conséquence, tu peux utiliser le plaisir pour combattre la douleur !
+r: Le plaisir, c'est l'opposé de la douleur. En ^putain^ de conséquence, tu peux utiliser le plaisir pour combattre la douleur !
 
 ```
 publish("act3",["roofhunter",18]);
 ```
 
-r: Comment font ces pseudos-Bouddhistes de la Silicon Valley pour ne pas s'apercevoir de cette ^merde^ ?!
+r: Comment font ces pseudos-Bouddhistes de la Silicon Valley pour ne pas s'aperçevoir de cette ^merde^ ?!
 
 ```
 publish("act3",["roofhunter",6]);
