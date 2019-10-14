@@ -850,33 +850,33 @@ _.a4_fears_discussed += 1;
 
 `bb({ eyes:"sad_d" });`
 
-b: I want to make sure you fulfil that deep, human need to belong...
+b: Je veux être sûr que tu remplisses ce profond besoin d'être humain d'appartenance...
 
 `bb({ eyes:"sad_u" });`
 
-b: But I worry that if anyone ever knew us – the *real* us – we'd scare them all away.
+b: Mais je m'inquiètes que si quelqu'un nous connaissait - le *vrai* nous - nous les ferions fuir.
 
 `bb({ eyes:"sad" });`
 
 {{if _.a4_fears_discussed==1}}
-b: I dunno, enough of *me* choosing what to say next. What do *you* say, human?
+b: J'sais pas, assez de *moi* choisissant ce qui va être dit. Qu'est-ce que *tu* dis, humain ?
 {{/if}}
 
 {{if _.a4_fears_discussed==2}}
-b: Again, back to you, human. What do you think?
+b: De nouveau, retour sur toi, humain. Qu'est-ce que tu en penses ?
 {{/if}}
 
 {{if _.a4_fears_discussed==3}}
-b: More thoughts, human?
+b: D'autres idées, humain ?
 {{/if}}
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "h"`
 
-[I agree: let's work on our social life.](#act4_alone_skills)
+[Je suis d'accord : travaillons sur notre vie sociale.](#act4_alone_skills)
 
-[I think people like us. Let's find out?](#act4_alone_experiment)
+[Je pense que les gens nous aiment bien. Et si on vérifiait ?](#act4_alone_experiment)
 
-[Thank you.](#act4_thanks) `_.thanks_for = "social belonging";`
+[Merci.](#act4_thanks) `_.thanks_for = "mon appartenance sociale";`
 
 # act4_alone_skills
 
