@@ -711,11 +711,11 @@ b: Okay. But I've got no opposable thumbs, so you have to do the drawing.
 `bb({ body:"two_up", eyes:"angry_r" })`
 
 {{if _.INJURED}}
-b: For example: we jumped off a freaking *roof!*
+b: Par exemple : on a sauté d'un *toit !*
 {{/if}}
 
 {{if !_.INJURED}}
-b: For example: we almost jumped off a freaking *roof!*
+b: Par exemple : on a failli sauté d'un *toit !*
 {{/if}}
 
 ```
@@ -723,17 +723,17 @@ hong({ eyes:"annoyed" });
 bb({ body:"normal", eyes:"annoyed" });
 ```
 
-h: Nah you're right. One *can* go too far.
+h: Ouais, t'as raison. Ça *peut* aller trop loin.
 
 `hong({ eyes:"normal" });`
 
-h: But that's why, if we do exposure therapy, we'll start small, and make small steps upward.
+h: Mais c'est pour ça que, si nous pratiquons la thérapie d'exposition, on avancera petit à petit.
 
-h: Just before we hit *actual* danger, we stop.
+h: Juste avant de rencontrer le *véritable* danger, on s'arrête.
 
 `bb({ eyes:"annoyed_r", mouth:"narrow" });`
 
-b: Yeah I draw the line between hearing loud thunder, and standing in a storm with a tall pointy hat.
+b: Ouais, j'ai dessiné la ligne entre entendre un bruyant tonnerre, et être dans une tempête, avec un grand chapeau pointu.
 
 (#act4_something_else)
 
