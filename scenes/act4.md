@@ -518,34 +518,34 @@ b: Maybe, but...
 
 `bb({ eyes:"sad_d" })`
 
-b: There's so much to do, so much we need to fix about ourselves. What do we even *begin* with?
+b: Il y a tant à faire, tellement de choses qu'on doit réparer à props de nous. Par où on *commence* même ?
 
 `hong({ body:"shrug", eyes:"surprise" })`
 
-h: We're beginning right now.
+h: On est en train de commencer là.
 
 `bb({ eyes:"normal", mouth:"narrow" })`
 
-b: Eh?
+b: Hein ?
 
 ```
 bb({ body:"normal", mouth:"normal" });
 hong({ body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: We're practicing good communication right now. Which will help us detect danger better, with fewer false positives,
+h: On est en train de pratiquer une bonne communication là. Ce qui nous aidera à détecter mieux les dangers, avec moins de faux positifs,
 
 `hong({ eyes:"surprise" });`
 
-h: And *that* will help protect us from harm!
+h: Et *ça* nous protégera d'être blessé !
 
 `hong({ eyes:"normal", mouth:"normal" });`
 
-h: Therefore: this *is* self-defense training.
+h: Par conséquent : c'*est* un entraînement d'auto-défense.
 
 `bb({ eyes:"normal_r" })`
 
-b: Huh. I was expecting more of this:
+b: Huh. Je m'attendais plus à quelque chose du genre :
 
 ```
 Game.FORCE_CANT_SKIP = true;
