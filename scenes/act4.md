@@ -243,7 +243,7 @@ h: Ouais. Je pense pas que mon assurance-vie couvre le fait d'"être un ^crétin
 
 `hong({eyes:"annoyed", mouth:"normal"});`
 
-b: Et pourtant nous avons survécu!
+b: Et pourtant nous avons survécu !
 
 `hong({eyes:"normal"});`
 
