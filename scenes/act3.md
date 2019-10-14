@@ -744,15 +744,15 @@ b: I'm sorry.
 
 `bb({eyes:"sorry_down"});`
 
-b: I was supposed to be *your* loyal guard-dog, but I acted as if you were supposed to obey *me*.
+b: J'étais supposé être *ton* loyal chien protecteur, mais j'ai agi comme si tu étais sensé m'obéir à *moi*.
 
 `bb({eyes:"sorry_up"});`
 
-b: There's a difference between a protector and a prison warden, and I crossed the line.
+b: Il y a une différence entre être un protecteur et un gardien de prison, et j'ai dépassé les limites.
 
 `bb({eyes:"sorry_down"});`
 
-b: I'm sorry.
+b: Je suis désolé.
 
 (#act3_good_4)
 
