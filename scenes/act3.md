@@ -762,15 +762,15 @@ b: I'm sorry.
 
 `bb({eyes:"sorry_down"});`
 
-b: I was so obsessed with trying to protect you from being hurt, I never stopped to realize *I* was hurting you.
+b: J'étais si obsédé à l'idée de te protéger d'être blessé que je n'ai jamais réalisé que *je* te blessais.
 
 `bb({eyes:"sorry_up"});`
 
-b: I was a bad dog.
+b: J'ai été un mauvais chien.
 
 `bb({eyes:"sorry_down"});`
 
-b: I'm sorry.
+b: Je suis désolé.
 
 (#act3_good_4)
 
