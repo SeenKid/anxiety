@@ -674,35 +674,35 @@ b: D'aw.
 
 `bb({ eyes:"annoyed" })`
 
-b: We *just* saw what happens if you shut down your fear – you put yourself in *actually* dangerous situations.
+b: On vient *tout juste* de voir ce qui se passe si tu éteins ta peur - tu te mets *vraiment* dans des situations dangeureuses.
 
 `bb({ eyes:"angry_r", body:"one_up" })`
 
-b: Besides, won't *too* much desensitization turn us into psychopaths?
+b: Qui plus est, est-ce que *trop* de désensibilisation ne pas faire de nous des psychopathes ?
 
 `bb({ mouth:"scream", eyes:"scream", body:"two_up" })`
 
-b: Soon we'll give ourselves treats while watching snuff murder porn!
+b: Bientôt, on prendra des traitements tout en regardant des pornos snuff meurtriers !
 
 `hong({ eyes:"annoyed" })`
 
-h: I... think there's a line between that and the thunder.
+h: Je... pense qu'il y a une ligne entre ça et le tonnerre.
 
 `bb({ body:"normal", mouth:"normal", eyes:"suspect" })`
 
-b: But exactly *where*, human? *Where?!*
+b: Mais *où* exactement, humain ? *Où ?!*
 
 `hong({ eyes:"surprise", body:"one_up" })`
 
-h: I don't know. But *you* can help me!
+h: Je ne sais pas. Mais *tu* peux m'aider !
 
 `hong({ eyes:"normal", body:"normal" })`
 
-h: Working and negotiating with you, we'll draw that line.
+h: En travaillant et en négociant avec toi, nous dessinerons cette ligne.
 
 `bb({ body:"paw", mouth:"narrow", eyes:"closed" })`
 
-b: Okay. But I've got no opposable thumbs, so you have to do the drawing.
+b: Ok. Mais je n'ai pas de pouces opposables, donc tu devras faire le dessin.
 
 (#act4_something_else)
 
