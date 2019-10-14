@@ -276,11 +276,11 @@ h: ?
 
 b: Et pourtant...
 
-h: Hm?
+h: Hm ?
 
 `bb({eyes:"surprise"});`
 
-b: Nous avons survécu!
+b: Nous avons survécu !
 
 (#act4b)
 
