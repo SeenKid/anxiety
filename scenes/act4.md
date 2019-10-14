@@ -381,7 +381,7 @@ music('dontfight',{fade:5, volume:0.6});
 bb({eyes:"annoyed_d"});
 ```
 
-b: Je ne suis pas un grand méchant loup. Mais je ne suis pas non plus un chien de garde.
+b: Je ne suis pas un Grand Méchant Loup. Mais je ne suis pas non plus un chien protecteur.
 
 `bb({eyes:"sad_d"})`
 
@@ -389,7 +389,7 @@ b: Je suis un chien battu.
 
 `bb({eyes:"sad"})`
 
-b: We've been through rough stuff. Maybe trauma or neglect. That's why I sometimes over-react and go:
+b: On a traversé des trucs durs. Peut-être un traumatisme ou un délaissement. C'est pour ça que parfois, je surréagis et fait tout de suite :
 
 ```
 sfx("yaps", {volume:0.6});
@@ -408,15 +408,15 @@ Game.FORCE_CANT_SKIP = false;
 bb({body:"normal", mouth:"scream", eyes:"scream_sad"});
 ```
 
-b: Mais je ne veux pas être un chien lâche! Je veux te protéger! Je veux être un bon chien!
+b: Mais je ne *veux* pas être un chien lâche ! Je veux te protéger ! Je veux être un bon chien !
 
 `bb({eyes:"sad", mouth:"normal"});`
 
-b: Humain... veux-tu m'aider à apprivoiser ce chien?
+b: Humain... aideras-tu à apprivoiser ce loup ?
 
 `hong({eyes:"sad"})`
 
-h: Je... je veux essayer.
+h: Je... j'essaierai.
 
 `hong({eyes:"normal_l", body:"chin", mouth:"narrow"})`
 
@@ -424,19 +424,19 @@ h: Ok. Une bonne relation avec des émotions. Les relations ont besoin de commun
 
 `hong({eyes:"normal", body:"hands_1", mouth:"normal"})`
 
-h: The next five minutes are going to sound super cheesy, but let's fake it 'til we make it.
+h: Les cinq prochains minutes vont sonner super mielleuses, mais faisons semblant jusqu'à ce que nous y arrivons.
 
 ```
 hong({body:"hands_2", mouth:"normal"});
 ```
 
-h: Cher loup intérieur... comment tu te sens ?
+h: Cher loup intérieur... comment *tu* te sens ?
 
-n2: TOTAL FEARS USED:
+n2: TOTAL DES PEURS UTILISÉES :
 
-n2: *HARMED* {{_.attack_harm_total}}, *UNLOVED* {{_.attack_alone_total}}, *BAD PERSON* {{_.attack_bad_total}}
+n2: *BLESSÉ* {{_.attack_harm_total}}, *MALAIMÉ* {{_.attack_alone_total}}, *MAUVAISE PERSONNE* {{_.attack_bad_total}}
 
-n2: WHAT FEAR DO YOU WANT TO TALK ABOUT FIRST? (YOU CAN DO THE OTHERS LATER)
+n2: DE QUELLE PEUR VEUX-TU PARLER EN PREMIER ? (TU POURRAS CHOISIR LES AUTRES PLUS TARD)
 
 ```
 _.a4_fears_discussed = 0;
@@ -445,11 +445,11 @@ hong({body:"normal"});
 bb({eyes:"normal"});
 ```
 
-[J'ai peur qu'on ai mal..](#act4_harm)
+[J'ai peur qu'on soit blessés.](#act4_harm)
 
 [J'ai peur qu'on soit seuls.](#act4_alone)
 
-[J'ai peur qu'on soit de mauvaises personnes..](#act4_bad)
+[J'ai peur qu'on soit de mauvaises personnes.](#act4_bad)
 
 # act4_harm
 
