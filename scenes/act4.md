@@ -486,7 +486,7 @@ b: D'autres idées, humain ?
 
 [Mettons nous encore *plus* en danger.](#act4_harm_exposure)
 
-[Merci.](#act4_thanks) `_.thanks_for = "physical safety";`
+[Merci.](#act4_thanks) `_.thanks_for = "ma sécurité physique";`
 
 # act4_harm_skills
 
