@@ -883,7 +883,7 @@ publish("act3",["roofhunter",27]);
 
 r: Oh *allez*. Après tout ce que cet animal a fait pour toi, tu *abandonnes* juste ?
 
-r: C'est quoi le problème, gamin·e ? T'es *effrayé·e ?"
+r: C'est quoi le problème, gamin ? T'es *effrayé* ?
 
 ```
 publish('hong-next');
