@@ -472,7 +472,7 @@ h: Any other remarks, Captain Obvious?
 
 # act3_good_1_fail_revenge
 
-b: Tu dois avoir il relation saine avec tes émotions, plutôt que de les noyer wi--
+b: Tu dois avoir une relation plus saine avec tes émotions, plutôt que de les noyer av--
 
 ```
 hong({body:"drink"});
