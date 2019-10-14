@@ -564,7 +564,7 @@ b: ATTEND NON, C'ÉTAIT DE LA PSYCHOLOGIE INVERSÉE, TU ÉTIAIS SUPPOSÉ FAIRE L
 
 `bb({ eyes:"angry" });`
 
-b: Tu "es" en train de te mettre en danger. Your so-called friends *are* using you. And *you* are using your so-called friends.
+b: Tu *es* en train de te mettre en danger. Tes soi-disant amis *sont* en train de t'utiliser. Et *tu* utilises tes soi-disant amis.
 
 `bb({ eyes:"sad" });`
 
