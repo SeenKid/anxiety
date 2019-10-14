@@ -565,26 +565,26 @@ sfx("hiya");
 
 `bb({ eyes:"normal" });`
 
-h: True, there's no way to 100% protect ourselves...
+h: C'est vrai, il n'y a pas de moyen de nous protéger à 100%...
 
 `hong({ body:"one_up" });`
 
-h: But even a 1% improvement is still worth something, right?
+h: Mais même 1% d'amélioration est toujours quelque chose qui vaut le coup, n'est-ce pas ?
 
 ```
 bb({ eyes:"annoyed" });
 hong({ normal:"one_up" });
 ```
 
-b: You're seeing the glass as not 99% empty, but 1% full?
+b: Tu ne vois pas le verre à 99% rempli, mais à 1% rempli ?
 
 `bb({ eyes:"normal" });`
 
-h: Which is still worth something if you're stranded in the desert.
+h: Ce qui vaut toujours quelque chose si tu es dans le désert.
 
 `bb({ eyes:"closed" });`
 
-b: Well. Bottoms up, then.
+b: Bien. Bottoms up, alors.
 
 (#act4_something_else)
 
