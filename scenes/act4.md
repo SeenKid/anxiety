@@ -255,11 +255,11 @@ h: ?
 
 `bb({eyes:"normal_d"});`
 
-b: We definitely shaved a few years off our life expectancy...
+b: On a définitivement perdu quelques années d'espérance de vie...
 
 `bb({eyes:"surprise"});`
 
-b: But at least we still *have* a life expectancy! We survived!
+b: Mais au moins, on *a* toujours une espérance de vie ! On a survécu !
 
 ```
 hong({eyes:"surprise"});
