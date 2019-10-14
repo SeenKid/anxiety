@@ -881,26 +881,26 @@ publish("act3",["roofhunter",27]);
 
 `Game.FORCE_CANT_SKIP = false;`
 
-r: Oh *come on*. After all that animal's done to you, you're just *giving up?*
+r: Oh *allez*. Après tout ce que cet animal a fait pour toi, tu *abandonnes* juste ?
 
-r: What's the matter, kid? Are you *scared?*
+r: C'est quoi le problème, gamin ? T'es *effrayé* ?
 
 ```
 publish('hong-next');
 publish("act3",["roofhunter",26]);
 ```
 
-h2: Yes.
+h2: Oui.
 
-h2: I'm scared.
-
-`publish('hong-next')`
-
-h2: And that's okay!
+h2: J'ai peur.
 
 `publish('hong-next')`
 
-h2: It's okay to be scared.
+h2: Et ça va !
+
+`publish('hong-next')`
+
+h2: Ça va d'avoir peur.
 
 `publish('hong-next')`
 
@@ -969,7 +969,7 @@ publish("act3",["roofhunter",32]);
 publish("act3",["roofhunter",33]);
 ```
 
-r: Did they just lock the door?
+r: Est-ce qu'ils viennent de fermer la porte ?
 
 ```
 Game.clearAll();
