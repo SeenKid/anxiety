@@ -671,13 +671,13 @@ h: Tu aurais pu nous éviter tant de problèmes, espèce de grosse boule de poil
 
 `hong({ body:"normal", mouth:"angry", eyes:"look_right" });`
 
-h: ...you're *sorry.*
+h: ... tu es *désolé.*
 
 `hong({ eyes:"angry", MOUTH_LOCK:true });`
 
 h: ...
 
-h: Sorry for *what*?
+h: Désolé pour *quoi* ?
 
 (#act3_good_2q)
 
