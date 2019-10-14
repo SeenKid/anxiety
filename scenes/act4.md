@@ -658,7 +658,7 @@ h: Since you're a dog, it should work for you too, right? All mammals have the s
 
 # act4_harm_exposure_dog
 
-h: And I'll show you kindness and patience 'til you're domesticated into a cute lil' puppy.
+h: Et je serai tendre et patient jusqu'à ce que tu deviennes un mignon petit chiot domestiqué.
 
 `bb({ MOUTH_LOCK:true })`
 
@@ -666,7 +666,7 @@ b: ...
 
 `bb({ eyes:"sad", mouth:"smile" })`
 
-b: D'aw.
+b: Ooow.
 
 (#act4_something_else)
 
