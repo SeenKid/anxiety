@@ -722,19 +722,19 @@ h: Sorry for *what*?
 
 `bb({eyes:"sorry_down"});`
 
-b: It's my duty to warn you against *real* danger, but I kept barking at cars and the mailman.
+b: C'est mon devoir de te prévenir contre le *vrai* danger, mais je continue d'aboyer aux voitures et au facteur.
 
 `bb({eyes:"sorry_up"});`
 
-b: Barking at shadows. Barking so much.
+b: Aboyer aux ombres. Aboyer beaucoup.
 
 `bb({eyes:"sorry"});`
 
-b: It only makes sense that you'd want to muzzle me.
+b: C'est normal que tu veuilles me museler.
 
 `bb({eyes:"sorry_down"});`
 
-b: I'm sorry.
+b: Je suis désolé.
 
 (#act3_good_4)
 
