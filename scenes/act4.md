@@ -311,16 +311,16 @@ bb({eyes:"normal", mouth:"normal"});
 hong({eyes:"normal", mouth:"normal"});
 ```
 
-b: Despite everything, we're still here.
+b: Malgré tout, on est toujours là.
 
 `hong({eyes:"suspect"});`
 
 {{if _.INJURED}}
-h: You seem pretty calm considering we just had a near-death experience.
+h: Tu sembles plutôt calme, en considérant le fait que nous venons juste d'avoir une expérience de mort imminente.
 {{/if}}
 
 {{if !_.INJURED}}
-h: You seem pretty calm considering we just had a *near*-near-death experience.
+h: Tu sembles plutôt calme, en considérant le fait que nous venons juste d'avoir une expérience de mort *imminente* imminente.
 {{/if}}
 
 ```
@@ -328,21 +328,21 @@ hong({eyes:"normal"});
 bb({eyes:"annoyed_d", mouth:"narrow"});
 ```
 
-b: Well, it makes everything else less scary in comparison. It's also got me thinking.
+b: A vrai dire, ça rend tout moins flippant en comparaison. Et puis, ça me fait réfléchir.
 
 `bb({eyes:"normal", mouth:"normal"});`
 
-b: If me fighting you sucks, because it doesn't protect you...
+b: Si me battre contre toi craint, parce je ne te protège pas...
 
-h: But me fighting you *also* sucks, because it just makes you yell louder...
+h: Mais me battre contre toi craint *aussi*, parce que ça te fait juste crier plus fort...
 
 `bb({eyes:"normal_r"})`
 
-b: Alors peut-être...
+b: Alors peut-être que...
 
 `bb({eyes:"normal"})`
 
-h: Alors nous n'avons pas à nous battre.
+h: Alors peut-être que nous ne devons pas nous battre.
 
 ```
 Game.FORCE_CANT_SKIP = true;
