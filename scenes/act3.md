@@ -197,7 +197,7 @@ publish("act3",["roofhong",14]);
 publish("act3",["dd",2]);
 ```
 
-h2: Non, tu a tort.
+h2: Non, tu as tort.
 
 ```
 publish("act3",["roofhunter",13]);
