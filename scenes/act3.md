@@ -610,7 +610,7 @@ bb({ body:"dead" });
 
 (...999)
 
-h: *"The only thing to fear is fear itself."*
+h: *"La seule chose à craindre est la peur elle-même."*
 
 `hong({ body:"look_up", mouth:"happy", eyes:"blank" });`
 
@@ -618,21 +618,22 @@ h: *"Don't worry, be happy!"*
 
 `hong({ body:"normal", mouth:"normal", eyes:"normal" });`
 
-h: All the wise folk of our time agree: negative emotions are *bad!*
+h: Toute la sagesse populaire de notre époque est d'accord :
+les émotions négatives sont *mauvaises !*
 
 `hong({ eyes:"less_angry" });`
 
-h: Duh! That's why they're called *negative!*
+h: Sans blague ! C'est pour ça qu'elles sont appelées *négatives !*
 
-b: human... please...
+b: Humain... s'il te plaît...
 
 `hong({ eyes:"normal" });`
 
-h: A while back, I said: “I just want to be free from all this pain.”
+h: Il y a quelques temps, j'avais dit : "Je veux juste être libérée de toute cette soufrance."
 
-h: I got my wish. I no longer feel pain, or fear, or anxiety...
+h: J'ai réalisé mon vœu. Je ne ressens plus la douleur, la peur, ou l'anxiété...
 
-h: I don't feel anything at all.
+h: Je ne ressens plus rien du tout.
 
 `_.a3_ending = "jump";`
 
