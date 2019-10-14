@@ -579,13 +579,13 @@ h: Parce que tu n'as jamais cru en *moi*.
 
 `bb({ eyes:"angry" });`
 
-b: Other guard-wolves have humans who actually take time to patiently train them, to *learn* to work together,
+b: Les autres loups protecteurs ont des humains qui prennent patiemment le temps de les entraîner, d'*apprendre* à travailler ensemble,
 
-b: Rather than hate the guard-wolves for trying to protect them! So why can't you jus--
+b: Plutôt que haïr les loups protecteurs pour essayer de les protéger ! Alors pourquoi ne peux-tu pas jus--
 
 `bb({ eyes:"normal" });`
 
-h: Mauvaise réponse ^fuck^ing.
+h: ^Putain^ de mauvaise réponse.
 
 (#act3_bad_3)
 
