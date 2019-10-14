@@ -521,17 +521,17 @@ bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 
 b: S'il te plaît... non...
 
-h: Ta bars d'énergie paraît basse, loup.
+h: Ta barre d'énergie paraît terriblement basse, loup.
 
-h: Si j'étais toi, je choisirais vos prochains mots avec soin..
+h: Si j'étais toi, je choisirais tes prochains mots avec soin..
 
 `bb({ eyes:"normal" });`
 
-[Fine. I'm done protecting you.](#act3_bad_2_jump) `bb({ mouth:"ignore", eyes:"ignore" });`
+[Bien. J'en ai fini de te protéger](#act3_bad_2_jump) `bb({ mouth:"ignore", eyes:"ignore" });`
 
-[I was right all along.](#act3_bad_2_right)
+[J'avais raison tout du long.](#act3_bad_2_right)
 
-[I'm sorry.](#act3_good_2b) `bb({mouth:"sorry", eyes:"sorry_down"});`
+[Je suis désolé.](#act3_good_2b) `bb({mouth:"sorry", eyes:"sorry_down"});`
 
 
 # act3_bad_2_jump
