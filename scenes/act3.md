@@ -357,7 +357,7 @@ b: Humain, je t'en prie...
 
 `hong({ eyes:"look_right" });`
 
-h: Oh je suis*désolé* que Big Pharme n'approuve pas mon auto-médication.
+h: Oh je suis*désolé* que Big Pharma n'approuve pas mon auto-médication.
 
 h: Regarde ^connard^, on a tous un moyen de te faire fermer ta *putain* de gueule.
 
@@ -380,7 +380,7 @@ h: Je vais me lancer dans cette piscine.
 
 [Bon sang, c'est ça ,mes remerciements ?!](#act3_bad_1_insult) `bb({eyes:"angry"});`
 
-[Okay, je l'admet. J'ai merdé.](#act3_good_1) `bb({mouth:"sorry", eyes:"sorry_down"});`
+[Okay, je l'admets. J'ai merdé.](#act3_good_1) `bb({mouth:"sorry", eyes:"sorry_down"});`
 
 # act3_bad_1_harm
 
