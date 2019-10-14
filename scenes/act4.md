@@ -492,27 +492,27 @@ b: More thoughts, human?
 
 `bb({eyes:"look_down", body:"paw"})`
 
-b: But... how? I have fangs and claws, but I'm just a metaphor.
+b: Mais... comment ? J'ai des crocs et des griffres, mais je suis juste une métaphore.
 
 ```
 bb({ body:"normal", eyes:"normal" });
 hong({ body:"one_up", eyes:"surprise" });
 ```
 
-h: We could learn self-defense? Join a community that protects each other? Improve our general health & personal boundaries?
+h: On pourrait apprendre l'auto-défense ? Rejoindre une communauté qui se protège les uns les autres ? Améliorer notre santé générale & nos barrières personnelles ?
 
 ```
 bb({ eyes:"annoyed_r" });
 hong({ body:"normal", eyes:"normal" });
 ```
 
-b: Maybe, but...
+b: Peut-être, mais...
 
-[Where do we even start?](#act4_harm_skills_start)
+[Où est-ce qu'on peut même commencer ?](#act4_harm_skills_start)
 
-[What if they still don't work?](#act4_harm_skills_work)
+[Et si ça ne marche pas ?](#act4_harm_skills_work)
 
-[What if we go overboard on "safety"?](#act4_harm_skills_overboard)
+[Et si on exagère sur la "sécurité" ?](#act4_harm_skills_overboard)
 
 # act4_harm_skills_start
 
