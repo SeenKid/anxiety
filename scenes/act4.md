@@ -1010,7 +1010,7 @@ h: On pourrait essayer quelques expériences !
 
 `hong({ body:"chin" });`
 
-h: On pourrait aussi ping un ami pour sortir, reconnecter avec un vieux pote, ou même juste discuter avec un serveur.
+h: On pourrait aussi ping un ami pour sortir, reconnecter avec un vieux pote, ou même juste discuter avec un barista.
 
 `hong({ body:"normal" });`
 
@@ -1075,7 +1075,7 @@ h: Non.
 
 # act4_alone_experiment_cheap
 
-b: Dire "salut" au serveur ne mérite pas franchement une médaille d'or à la Nage Papillon des Olympiques Sociales.
+b: Dire "salut" au barista ne mérite pas franchement une médaille d'or au Crawl des Olympiques Sociales.
 
 ```
 hong({ body:"point", eyes:"surprise" });
@@ -1108,7 +1108,7 @@ h: *"Pas terrible !"*
 
 `bb({ eyes:"suspect_r" })`
 
-b: Maybe the barista just wants to make some dang coffee, not be an *experiment* to see if our social skills suck.
+b:  Maybe the barista just wants to make some dang coffee, not be an *experiment* to see if our social skills suck.
 
 `bb({ eyes:"annoyed" })`
 
