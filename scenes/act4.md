@@ -1190,21 +1190,21 @@ bb({eyes:"normal"});
 hong({body:"chin"});
 ```
 
-h: We could slowly build better habits, get our life more in line with what we value,
+h: On pourrait lentement établir de meilleures habitudes, être en plus adéquation avec ce qu'on valorise,
 
 `hong({body:"one_up"});`
 
-h: And if needed, we could get professional help – a therapist or counsellor.
+h: Et si besoin, on peut demander l'aide d'un professionnel - un thérapeute ou un conseiller.
 
 `hong({body:"normal"});`
 
-h: There's ways to fix us.
+h: Il y a des moyens de nous réparer.
 
-[What if we can't fix it all?](#act4_bad_fix_cant)
+[Et si on ne peut pas du tout nous réparer ?](#act4_bad_fix_cant)
 
-[What if we fix *too* much?](#act4_bad_fix_too_much)
+[Et si on nous répare "trop" ?](#act4_bad_fix_too_much)
 
-[We can't afford professional help.](#act4_bad_fix_afford)
+[On ne peut pas se permettre l'aide d'un professionnel.](#act4_bad_fix_afford)
 
 # act4_bad_fix_cant
 
