@@ -1257,35 +1257,35 @@ h: S'il te plaît, ne fait pas ça.
 
 `bb({ eyes:"angry_d" })`
 
-b: This feels sick to admit, but... some part of me *wants* to have this disorder.
+b: C'est fou à dire, mais... un part de moi *veut* avoir ce désordre.
 
 `bb({ eyes:"angry" })`
 
-b: I mean, without it, won't we be *boring?*
+b: Je veux dire, sans lui, ne serions-nous pas *ennuyeux ?*
 
 `bb({ eyes:"sad_r", body:"one_up" })`
 
-b: Without the disorder, won't our art become stale and bland?
+b: Sans le désordre, notre art ne serait-il pas éculé et insipide ?
 
 `bb({ eyes:"sad_u", body:"two_up" })`
 
-b: Without the disorder, won't we be unable to connect with our friends who have the disorder?
+b: Sans le désordre, ne serions-nous pas incapable de nous connecter avec nos amis qui ont ce désordre ?
 
 `bb({ eyes:"sad", body:"chest" })`
 
-b: If we're ever content with life, won't we stop driving ourselves to do great things?
+b: Si jamais nous étions content de la vie, ne cesserions-nous pas de faire des grandes choses ?
 
 `hong({ MOUTH_LOCK:true })`
 
 h: ...
 
-h: If we even fear... "running out of fears"...
+h: Si on a même peur... "d'échapper aux peurs"...
 
-h: I don't think we're gonna run out of fears.
+h: Je ne pense pas qu'on échapperait aux peurs.
 
 `bb({ eyes:"smile_u", body:"normal", mouth:"smile" })`
 
-b: Oh, yeah! Whew! What a relief!
+b: Oh, super ! Ouf ! Quel soulagement !
 
 (#act4_something_else)
 
