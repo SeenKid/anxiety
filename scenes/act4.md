@@ -1108,29 +1108,29 @@ h: *"Pas terrible !"*
 
 `bb({ eyes:"suspect_r" })`
 
-b:  Maybe the barista just wants to make some dang coffee, not be an *experiment* to see if our social skills suck.
+b: Peut-être qu'un barista veut préparer son fichu café, pas être une *expérience* pour voir si tes techniques sociales craignent.
 
 `bb({ eyes:"annoyed" })`
 
-h: Well, if it turns out we *are* being a burden...
+h: Ok, si finalement il semble qu'on *soit* un fardeau...
 
 ```
 hong({ eyes:"surprise" });
 bb({ eyes:"normal" });
 ```
 
-h: That's good to know, too!
+h: C'est aussi bon à savoir !
 
 `hong({ eyes:"normal" });`
 
-h: We can then learn how to pro-actively ask people what they're comfortable with, to know and respect others' boundaries.
+h: On peut alors apprendre comment demander de façon pro-active aux gens avec quoi ils sont confortables, connaître et respecter leurs limites.
 
 ```
 hong({ eyes:"annoyed_l", mouth:"narrow" });
 bb({ eyes:"annoyed", mouth:"smile" });
 ```
 
-h: Y'know, all that "inter-personal skills" ^crap^ we see in counselor brochures.
+h: T'sais, toutes ces ^merdes^ de "techniques inter-personnes" qu'on voit dans les brochures des conseillers.
 
 (#act4_something_else)
 
