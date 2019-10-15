@@ -1075,32 +1075,32 @@ h: Non.
 
 # act4_alone_experiment_cheap
 
-b: Saying "hi" to the barista isn't exactly gold-medal performance in the Social Butterfly Olympics.
+b: Dire "salut" au serveur ne mérite pas franchement une médaille d'or à la Nage Papillon des Olympiques Sociales.
 
 ```
 hong({ body:"point", eyes:"surprise" });
 bb({ eyes:"normal" });
 ```
 
-h: It is for *us!*
+h: Ça l'est pour *nous !*
 
 `hong({ body:"one_up", eyes:"annoyed" });`
 
-h: In the social arena, we're not even featherweight class, we're like... quark-weight.
+h: Dans l'arène sociale, on n'est même pas poids plume, on est plutôt... poids quark.
 
 `hong({ body:"normal", eyes:"normal" });`
 
-h: If we have to start with small, cheap wins, so be it. Gotta climb the 1st step before the 1000th step.
+h: Si on doit commencer par des petites, victoires bas de gamme, alors soit. Faut monter la 1ère marche avant de monter la 1000ème.
 
-b: Yeah! Maybe after saying "Hi", we can advance to saying...
+b: Ouais ! Peut-être qu'après avoir dit "Salut", on peut avancer en disant...
 
 `bb({ body:"two_up", mouth:"smile", eyes:"smile_u" });`
 
-b: *"How are you?"*
+b: *"Comment allez-vous ?"*
 
 `hong({ body:"shrug", mouth:"smile", eyes:"surprise_l" });`
 
-h: *"Not much!"*
+h: *"Pas terrible !"*
 
 (#act4_something_else)
 
