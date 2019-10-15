@@ -976,26 +976,26 @@ h: Et aussi... re: cette image mentale du rouge à lèvres... *ew ??*
 
 `bb({ eyes:"annoyed" });`
 
-h: We might fail. Actually, we *will* fail.
+h: On va peut-être échouer. En fait, on *va* échouer.
 
 ```
 bb({ eyes:"normal" });
 hong({ eyes:"surprise", body:"shrug" });
 ```
 
-h: And that's fine! Failing is how anyone learns anything new at first!
+h: Et c'est bon ! Échouer est la façon dont n'importe qui apprend quelque chose de nouveau au début !
 
 `hong({ body:"normal", eyes:"normal" });`
 
-h: So let's fail forward together, yeah?
+h: Alors, échouons ensemble, ok ?
 
 `bb({ eyes:"normal_r" });`
 
-b: Sure, I guess... worst-case scenario, we can just skip town and get a new identity.
+b: D'accord, j'imagine... dans le pire des cas, on peut juste fuir la ville et obtenir une nouvelle identité.
 
 `bb({ eyes:"normal" });`
 
-h: Yeah I think that only costs two bitcoins these days.
+h: Ouais, je pense que ça ne vaut que deux bitcoins ces temps-ci.
 
 (#act4_something_else)
 
