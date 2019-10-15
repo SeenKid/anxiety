@@ -916,29 +916,29 @@ b: Ça fait beaucoup d'options.  Mais, à propos "d'apprendre des techniques soc
 
 `bb({ eyes:"suspect" });`
 
-b: Aren't serial killers who can read their victims' emotions great at "empathy"?
+b: Est-ce que les tueurs en séries qui peuvent lire les émotions de leurs victimes ne sont pas fort en "empathie" ?
 
 `bb({ eyes:"annoyed" });`
 
-b: Didn't Charles Manson win friends and influence people?
+b: C'était bien Charles Manson qui s'était fait des amis et influencer des gens ?
 
 `hong({ eyes:"annoyed", body:"chin" });`
 
-h: No, you're right.
+h: Non, tu as raison.
 
-h: "Social skills" mean nothing if we don't genuinely care *for* people.
+h: "Techniques sociales" ne veut rien dire si tu ne prêtes pas vraiment attention *aux* gens.
 
 `hong({ body:"normal" });`
 
-h: Basically, just don't be a ^dick^.
+h: Pour faire simple, ne sois juste pas un ^enfoiré^.
 
 `bb({ eyes:"annoyed", mouth:"smile" });`
 
-b: That's a motivational poster caption right there.
+b: C'est un sous-titre de poster de motivation qu'on a là.
 
 `hong({ body:"shrug", mouth:"narrow" });`
 
-h: “Don't Be A ^Dick^™”
+h: “Ne Sois Pas Un ^Enfoiré^™”
 
 (#act4_something_else)
 
