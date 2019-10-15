@@ -885,32 +885,32 @@ bb({ eyes:"normal" });
 hong({ body:"chin" });
 ```
 
-h: We could practice skills like asking questions, listening and empathizing, being open and vulnerable, etc?
+h: Nous pourrions entraîner nos techniques à poser des questions, écouter et avoir de l'empathie, être ouvert et vulnéable, etc ?
 
 `hong({ eyes:"normal_l" });`
 
-h: Or make better social habits, like scheduling time with friends or regularly going to meetups?
+h: Ou avoir de meilleures habitudes sociales, comme prévoir du temps à passer avec des amis ou aller régulièrement à des rassemblements ?
 
 `hong({ body:"one_up" });`
 
-h: Could also learn to get more comfortable with rejection.
+h: On pourrait aussi apprendre à être plus à l'aise avec le rejet.
 
 `hong({ eyes:"normal" });`
 
-h: Or learn to know when people *aren't* rejecting us, they're just tired or have Resting ^Bitch^ Face.
+h: Ou apprendre à reconnaître quand les personnes *ne sont pas* en train de nous rejeter, mais qu'elles sont juste fatiguées ou ont une tronche de ^pétasse^ de base.
 
 ```
 hong({ body:"normal" });
 bb({ eyes:"annoyed_r" });
 ```
 
-b: That's a lot of options. But, about "learning social skills"...
+b: Ça fait beaucoup d'options.  Mais, à propos "d'apprendre des techniques sociales"...
 
-[Isn't that *manipulative?*](#act4_alone_skills_manipulative)
+[Est-ce que ça n'est pas *manipulateur ?*](#act4_alone_skills_manipulative)
 
-[Won't that make us *easier to manipulate?*](#act4_alone_skills_manipulated)
+[Est-ce que cela ne nous rendra pas *plus manipulable ?*](#act4_alone_skills_manipulated)
 
-[What if we still fail?](#act4_alone_skills_fail)
+[Et si on échoue toujours ?](#act4_alone_skills_fail)
 
 # act4_alone_skills_manipulative
 
