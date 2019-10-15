@@ -631,7 +631,7 @@ h: Je veux dire, disons qu'un chien est effrayé du tonnerre.
 
 `hong({ body:"hands_1" });`
 
-h: Une astuce que les dompteurs utilisent est de jouer un son de tonnerre à un volume faible, puis donne au chien un traitement pour rester calmer.
+h: Une astuce que les dompteurs utilisent est de jouer un son de tonnerre à un volume faible, puis donne au chien une friandise pour rester calmer.
 
 `hong({ body:"hands_2" });`
 
@@ -1028,11 +1028,11 @@ h: Je pense qu'on pourrait trouver qu'on est plus aimable que ce qu'on suspecte.
 
 `bb({ eyes:"sad" });`
 
-b: If we put on a shallow smile, we'll never really connect with anyone,
+b: Si on se force à sourire, on ne pourra jamais vraiment se connecter avec qui que ce soit,
 
 `bb({ eyes:"super_sad" });`
 
-b: *But* if we open up, other people will see all our messed-up insides!
+b: *Mais* si on s'ouvre, les gens verront qu'on est tout en désordre à l'intérieur !
 
 `hong({body:"chin", mouth:"narrow", MOUTH_LOCK:true})`
 
@@ -1043,32 +1043,32 @@ hong({body:"normal", mouth:"normal"});
 bb({eyes:"normal"});
 ```
 
-h: Roll over.
+h: Roule sur le dos.
 
-b: What.
+b: Quoi.
 
 `hong({body:"hands_1"})`
 
-h: When dogs want to show love and trust, they make themselves vulnerable by exposing their belly.
+h: Quand les chiens veulent montrer de l'amour et de la confiance, ils se mettent en position de vulnérabilité en exposant leur ventre.
 
 `hong({body:"one_up"})`
 
-h: Maybe we're not *yet* secure enough to be too vulnerable, but with enough training,
+h: Peut-être qu'on n'est pas *encore* assez sécurisé pour être trop vulnérable, mais avec assez d'entraînement,
 
 `hong({body:"normal", eyes:"surprise"})`
 
-h: One day we can show people the real us – all messed-up, all human.
+h: Un jour, on pourra montrer aux gens le véritable nous - tout en désordre, tout humain.
 
 ```
 hong({eyes:"normal"});
 bb({ eyes:"super_sad", mouth:"smile", body:"chest" });
 ```
 
-b: I'll roll over if you give me a treat.
+b: Je roulerai sur le dos si tu me donnes une friandise.
 
 `bb({ eyes:"normal", mouth:"normal" });`
 
-h: No.
+h: Non.
 
 (#act4_something_else)
 
