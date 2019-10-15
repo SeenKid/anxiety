@@ -1006,23 +1006,23 @@ hong({ body:"one_up" });
 bb({ eyes:"normal" });
 ```
 
-h: We could try some experiments!
+h: On pourrait essayer quelques expériences !
 
 `hong({ body:"chin" });`
 
-h: We could ping a friend to hang out, reconnect with an old pal, or even just chat with a barista.
+h: On pourrait aussi ping un ami pour sortir, reconnecter avec un vieux pote, ou même juste discuter avec un serveur.
 
 `hong({ body:"normal" });`
 
-h: I think we may find we're more likeable than we suspect.
+h: Je pense qu'on pourrait trouver qu'on est plus aimable que ce qu'on suspecte.
 
 `bb({ eyes:"annoyed" });`
 
-[What if these are small, cheap "wins"?](#act4_alone_experiment_cheap)
+[Et si ce sont des petites, "victoires" bas de gamme ?](#act4_alone_experiment_cheap)
 
-[What if this is a burden to others?](#act4_alone_experiment_burden)
+[Et si c'est un fardeau pour les autres ?](#act4_alone_experiment_burden)
 
-[But small talk isn't the *real* us!](#act4_alone_experiment_real_us)
+[Mais les petites discussions, ce n'est pas le *vrai* nous !](#act4_alone_experiment_real_us)
 
 # act4_alone_experiment_real_us
 
