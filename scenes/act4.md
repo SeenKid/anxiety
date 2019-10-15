@@ -1210,28 +1210,28 @@ h: Il y a des moyens de nous réparer.
 
 `hong({eyes:"annoyed"});`
 
-h: Nah, I guess you're right.
+h: Nah, j'imagine que tu as raison.
 
-h: We can't fix it all.
+h: On ne peut pas tout réparer.
 
 `bb({mouth:"scream", eyes:"scream_sad"});`
 
-b: Ahhh I knew it we'll always be broken!
+b: Ahhh je savais que ça serait toujours tout cassé !
 
 `hong({eyes:"surprise"});`
 
-h: But we can at least be *less* broken.
+h: Mais on peut au moins être *moins* cassé.
 
 ```
 bb({mouth:"normal", eyes:"annoyed"});
 hong({eyes:"sad", mouth:"smile"});
 ```
 
-h: Scars heal with time, but they never go away. And that's okay.
+h: Les cicatrices guérissent avec le temps, mais elles ne disparaissent jamais complètement. Et ça va.
 
 `bb({eyes:"annoyed_r"});`
 
-b: I guess. Besides,
+b: J'imagine. Qui plus est,
 
 ```
 Game.FORCE_TEXT_Y = 460;
@@ -1239,7 +1239,7 @@ Game.clearText();
 publish("act4-sexy", [true]);
 ```
 
-b: Scars are *sexy.*
+b: Les cicatrices sont *sexy.*
 
 ```
 Game.FORCE_TEXT_Y = -1;
@@ -1249,7 +1249,7 @@ bb({body:"chest", mouth:"smile_talk", MOUTH_LOCK:true, eyes:"sexy"}, 0);
 hong({eyes:"normal", mouth:"normal"}, 0);
 ```
 
-h: Please do not do that.
+h: S'il te plaît, ne fait pas ça.
 
 (#act4_something_else)
 
