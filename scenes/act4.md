@@ -924,7 +924,7 @@ b: C'était bien Charles Manson qui s'était fait des amis et influencer des gen
 
 `hong({ eyes:"annoyed", body:"chin" });`
 
-h: Non, tu as raison.
+h: Nah, tu as raison.
 
 h: "Techniques sociales" ne veut rien dire si tu ne prêtes pas vraiment attention *aux* gens.
 
@@ -946,29 +946,29 @@ h: “Ne Sois Pas Un ^Enfoiré^™”
 
 `bb({ eyes:"angry" })`
 
-b: We'll become a Welcome doormat, saying Please and Thank You as people wipe their feet on us!
+b: On va devenir un paillasson "Bienvenue", disant S'il vous plaît et Merci quand les gens s'essuieront sur nous !
 
 `bb({ mouth:"scream", eyes:"scream" })`
 
-b: We'll kiss so much butt, it'll look like we're wearing brown lipstick!
+b: On embrassera tellement de fesses qu'on aura l'impression d'avoir du rouge à lèvre marron !
 
 ```
 bb({ mouth:"normal", eyes:"normal" });
 hong( body:"chin" });
 ```
 
-h: Nah, you're right. "Social skills" can't be just about pleasing others, it's also got to be about setting *boundaries.*
+h: Nah, tu as raison. "Techniques sociales" ne peut pas juste être "faire plaisir aux autres", c'est aussi mettre des *limites.*
 
 `hong( body:"one_up" });`
 
-h: We can't invite others into our home, if we have no walls to hold up our home.
+h: On ne peut pas inviter les gens chez nous, s'il n'y a pas de murs pour maintenir notre chez nous.
 
 ```
 hong( eyes:"angry", mouth:"narrow" });
 bb( eyes:"annoyed", mouth:"smile" });
 ```
 
-h: Also... re: that lipstick mental image... *ew??*
+h: Et aussi... re: cette image mentale du rouge à lèvres... *ew ??*
 
 (#act4_something_else)
 
