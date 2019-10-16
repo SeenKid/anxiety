@@ -1370,29 +1370,29 @@ b: Attends.
 
 `bb({ eyes:"angry", body:"one_up" });`
 
-b: Do you think Martin Luther King would've said, "Shucks we can't sit in the front of the bus, let's just *accept* it?"
+b: Est-ce que tu penses que Martin Luther King aurait dit, "Zut alors ! On ne peut pas s'asseoir à l'avant du bus, on n'a qu'à l'*accepter*" ?
 
 `bb({ eyes:"angry_r", body:"two_up" });`
 
-b: Why does the Self-Help Industrial Complex think waving the white flag is some *profound wisdom?*
+b: Pourquoi le Complexe Industriel d'Auto-Assistance pense qu'agiter le drapeau blanc est une sorte de *sagesse profonde ?*
 
 `bb({ eyes:"annoyed", body:"normal" });`
 
-h: I think therapists mean "accept" bad things as in: acknowledging they exist and are hard to change,
+h: Je pense que les thérapistes disent "d'accepter" les mauvaises choses dans le sens : reconnaît qu'elles existent et sont difficiles à changer,
 
-h: But not necessarily giving up a commitment to change.
+h: Mais pas forcément abandonner un engagment pour changer.
 
 `bb({ eyes:"suspect" });`
 
-b: Then therapists should say *acknowledge*, not *accept*.
+b: Alors les thérapistes devraient dire *reconnaît*, pas *accepte*.
 
 `hong({ body:"chin", eyes:"annoyed" });`
 
-h: Yeah come to think of it, "accept" is kinda confusing.
+h: Ouais, en y repensant, "accepter" est perturbant.
 
 `bb({ eyes:"closed", mouth:"narrow" });`
 
-b: Well, I *acknowledge* that.
+b: Eh bien, je *reconnais* ça.
 
 (#act4_something_else)
 
