@@ -1453,30 +1453,30 @@ b: Je n'accepte pas "accepte".
 
 `bb({ eyes:"sad", body:"one_up" });`
 
-b: But we already *know* you shouldn't take me literally!
+b: Mais tu *sais* déjà que tu ne devrais pas me prendre au sens littéral !
 
 `bb({ eyes:"sad_u", body:"two_up" });`
 
-b: The whole *problem* is that I want to help you, but I suck at using words to do so!
+b: L'entièreté du *problème* réside dans le fait que je veuille t'aider, mais que je crains à utiliser les mots pour le faire !
 
 `bb({ eyes:"sad", body:"normal" });`
 
-h: I think therapists mean "accept" your emotions as in: "don't fight or ignore them."
+h: Je pense que les thérapistes disent "d'accepter" dans le sens : "ne les combats ou les ignore pas".
 
 `hong({ eyes:"surprise", body:"one_up" });`
 
-h: To listen to you, work *with* you, but not take what you say as 100% literal truth.
+h: T'écouter, travailler *avec* toi, mais ne pas prendre ce que tu dis comme la vérité 100% littéralement vraie.
 
 ```
 hong({ eyes:"normal", body:"normal" });
 bb({ eyes:"annoyed", mouth:"normal" });`
 ```
 
-b: Then therapists should say *that* instead of some vague confusing word like "accept".
+b: Alors ils devraient dire *ça* au lieu d'utiliser des mots problématiques comme "accepter".
 
 `hong({ body:"chin", eyes:"annoyed" });`
 
-h: I guess they suck at using words, too.
+h: J'imagine qu'ils craignent à utiliser des mots aussi..
 
 (#act4_something_else)
 
