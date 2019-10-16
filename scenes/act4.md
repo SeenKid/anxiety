@@ -1491,11 +1491,11 @@ hong({ body:"normal", mouth:"normal", eyes:"normal" });
 ```
 
 {{if _.a4_fears_discussed==1}}
-h: Anyway, anything else you wanna chat about?
+h: Quoi qu'il en soit, il y a autre chose dont tu voudrais discuter ?
 {{/if}}
 
 {{if _.a4_fears_discussed==2}}
-h: So, anything else on your heavy heart?
+h: Bon, tu as autre chose qui te pèse sur le coeur ?
 {{/if}}
 
 {{if _.a4_fears_discussed==3}}
@@ -1503,18 +1503,18 @@ h: So, anything else on your heavy heart?
 {{/if}}
 
 {{if _.a4_talked_about_harm!=true}}
-[I'm scared we'll be harmed.](#act4_harm)
+[J'ai peur que nous soyons blessés.](#act4_harm)
 {{/if}}
 
 {{if _.a4_talked_about_alone!=true}}
-[I'm scared we'll be alone.](#act4_alone)
+[J'ai peur que nous soyons seuls.](#act4_alone)
 {{/if}}
 
 {{if _.a4_talked_about_bad!=true}}
-[I'm scared we're bad people.](#act4_bad)
+[J'ai peur que nous soyons de mauvaises personnes.](#act4_bad)
 {{/if}}
 
-[Nah, I'm good for now.](#act4c_prelude)
+[Nah, c'est bon pour le moment.](#act4c_prelude)
 
 # act4_something_else_2
 
