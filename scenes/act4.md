@@ -1518,19 +1518,19 @@ h: Bon, tu as autre chose qui te pèse sur le coeur ?
 
 # act4_something_else_2
 
-h: Okay, I think we've talked about all our fears now.
+h: Ok, je pense qu'on a discuté de toutes nos peurs maintenant.
 
-b: Yes, there are only three fears.
+b: Oui, il y a uniquement trois peurs.
 
-h: Yup, exactly three.
+h: Ouaip, exactement trois.
 
-b: Convenient.
+b: Pratique.
 
 (#act4c)
 
 # act4c_prelude
 
-h: Good chat, team.
+h: Bonne conversation, coéquipier.
 
 (#act4c)
 
