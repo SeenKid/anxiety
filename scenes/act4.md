@@ -1551,28 +1551,28 @@ h: ...
 
 `bb({eyes:"annoyed_d"})`
 
-b: This isn't some *game*, you know.
+b: C'est pas un *jeu*, tu sais.
 
 `bb({eyes:"angry_d", body:"one_up"})`
 
-b: Building a healthy relationship with your emotions isn't as simple as clicking buttons on a screen.
+b: Construire une relation saine avec ses émotions n'est pas quelque chose d'aussi simple que de cliquer des boutons sur un écran.
 
 `bb({eyes:"sad", body:"normal"})`
 
-b: *Can* we really get along?
+b: *Peut*-on vraiment bien s'entendre ?
 
-b: *Can* we work together, as a team?
+b: *Peut*-on vraiment travailler ensemble, comme une équipe ?
 
 `hong({eyes:"sad", body:"one_up"})`
 
-h: Well,
+h: Eh bien,
 
 ```
 hong({eyes:"surprise_l"});
 bb({eyes:"normal"});
 ```
 
-a: E-excuse me...
+a: E-excuse moi...
 
 ```
 Game.clearText();
