@@ -1351,20 +1351,20 @@ bb({ eyes:"normal" });
 hong({ eyes:"normal_l", body:"one_up", mouth:"narrow" });
 ```
 
-h: I mean, that's what therapists say right? Accept all your emotions, even the negative ones?
+h: Je veux dire, c'est ce que disent les thérapeutes, pas vrai ? Accepte toutes émotions, mêmes les négatives ?
 
 ```
 bb({ eyes:"annoyed" });
 hong({ eyes:"normal", body:"normal", mouth:"normal" });
 ```
 
-b: Wait.
+b: Attends.
 
-["Accept" as in *give up*?](#act4_bad_accept_give_up)
+["Accepter" comme dans *abandonner* ?](#act4_bad_accept_give_up)
 
-["Accept" as in *approve*?](#act4_bad_accept_approve)
+["Accepter" comme dans *approuver* ?](#act4_bad_accept_approve)
 
-["Accept" as in *take literally*?](#act4_bad_accept_literally)
+["Accepter" comme dans *prendre littéralement* ?](#act4_bad_accept_literally)
 
 # act4_bad_accept_give_up
 
