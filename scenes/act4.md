@@ -1293,53 +1293,53 @@ b: Oh, super ! Ouf ! Quel soulagement !
 
 `bb({ body:"one_up", eyes:"sexy", mouth:"normal" })`
 
-b: "Doc, I'm anxious that I'm paying $100/hr just to hear you ask *how does that make you feel?*"
+b: "Doc', je suis anxieux du fait que je paie 100€/h juste pour vous entendre demander *qu'est-ce que ça vous fait ressentir ?*"
 
 `bb({ body:"paw", eyes:"closed", mouth:"narrow" })`
 
-b: "Mm-hmm. And how does that make you feel?"
+b: "Mm-hmm. Et qu'est-ce que ça vous fait ressentir ?"
 
 ```
 bb({ body:"normal", eyes:"normal", mouth:"normal" });
 hong({ eyes:"sad" });
 ```
 
-h: Nah, that's a totally reasonable worry.
+h: Nah, c'est une inquiétude tout à fait raisonnable.
 
 `hong({ eyes:"annoyed", mouth:"sad" });`
 
-h: And it genuinely sucks that mental healthcare isn't affordable for lots of folks.
+h: Et ça craint vraiment que la médecine mentale ne soit pas abordable pour beaucoup de gens.
 
 `hong({ eyes:"normal", mouth:"normal" });`
 
-h: Still, there are some cheap or free options:
+h: Malgré tout, il existe des options pas chères ou gratuites :
 
 `hong({ body:"chin" })`
 
-h: Support groups, online therapy, student/non-profit health centers...
+h: Groupes de soutien, thérapie en ligne, centres de soin étudiants/bénévoles...
 
 `hong({ body:"hands_1" })`
 
-h: Picking up a free meditation habit, watching videos on evidence-based mental health...
+h: Prendre l'habitude de faire de la méditation libre, regarder des vidéos de soins mentaux approuvées...
 
 `hong({ body:"hands_2" })`
 
-h: Borrowing a library book on Cognitive Behavioral Therapy or Acceptance & Commitment Therapy...
+h: Emprunter un livre à bibliothèque sur la Thérapie Cognitive Comportementale ou la Thérapie d'Acceptation et d'Engagement...
 
 `hong({ body:"one_up" })`
 
-h: There's a full list of resources at the end of this game!
+h: Il y a une liste remplie de ressources à la fin de ce jeu !
 
 ```
 hong({ body:"normal" });
 bb({ eyes:"annoyed", mouth:"narrow" });
 ```
 
-b: Well *that* fourth wall didn't last long.
+b: Eh bien, *ce* quatrième mur n'aura pas tenu longtemps.
 
 `hong({ body:"point" });`
 
-h: Some things are more important than narrative convention. Such as mental health.
+h: Certaines choses sont plus importantes que la convention narrative. Comme la santé mentale.
 
 (#act4_something_else)
 
