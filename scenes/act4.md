@@ -1032,7 +1032,7 @@ b: Si on se force à sourire, on ne pourra jamais vraiment se connecter avec qui
 
 `bb({ eyes:"super_sad" });`
 
-b: *Mais* si on s'ouvre, les gens verront qu'on est tout en désordre à l'intérieur !
+b: *Mais* si on s'ouvre, les gens verront qu'on est tout troublé à l'intérieur !
 
 `hong({body:"chin", mouth:"narrow", MOUTH_LOCK:true})`
 
@@ -1057,7 +1057,7 @@ h: Peut-être qu'on n'est pas *encore* assez sécurisé pour être trop vulnéra
 
 `hong({body:"normal", eyes:"surprise"})`
 
-h: Un jour, on pourra montrer aux gens le véritable nous - tout en désordre, tout humain.
+h: Un jour, on pourra montrer aux gens le véritable nous - tout troublé, tout humain.
 
 ```
 hong({eyes:"normal"});
@@ -1154,11 +1154,11 @@ b: Mais on a l'impression que tout au fond, on est fondamentalement... cassé.
 `bb({ body:"two_up", eyes:"angry" })`
 
 {{if _.INJURED}}
-b: Et ne me réponds pas qu'on *n'est pas* en désordre. On a sauté d'un *toit*.
+b: Et ne me réponds pas qu'on *n'est pas* troublé. On a sauté d'un *toit*.
 {{/if}}
 
 {{if !_.INJURED}}
-b: Et ne me réponds pas qu'on *n'est pas* en désordre. On a failli sauté d'un *toit*.
+b: Et ne me réponds pas qu'on *n'est pas* troublé. On a failli sauté d'un *toit*.
 {{/if}}
 
 `bb({ body:"normal", eyes:"sad" })`
@@ -1257,7 +1257,7 @@ h: S'il te plaît, ne fait pas ça.
 
 `bb({ eyes:"angry_d" })`
 
-b: C'est fou à dire, mais... un part de moi *veut* avoir ce désordre.
+b: C'est fou à dire, mais... un part de moi *veut* avoir ce trouble.
 
 `bb({ eyes:"angry" })`
 
@@ -1265,11 +1265,11 @@ b: Je veux dire, sans lui, ne serions-nous pas *ennuyeux ?*
 
 `bb({ eyes:"sad_r", body:"one_up" })`
 
-b: Sans le désordre, notre art ne serait-il pas éculé et insipide ?
+b: Sans le trouble, notre art ne serait-il pas éculé et insipide ?
 
 `bb({ eyes:"sad_u", body:"two_up" })`
 
-b: Sans le désordre, ne serions-nous pas incapable de nous connecter avec nos amis qui ont ce désordre ?
+b: Sans le trouble, ne serions-nous pas incapable de nous connecter avec nos amis qui ont ce trouble ?
 
 `bb({ eyes:"sad", body:"chest" })`
 
@@ -1400,52 +1400,52 @@ b: Eh bien, je *reconnais* ça.
 
 `bb({ eyes:"angry" });`
 
-b: Like it's *good* that we're broken or something? No!
+b: Comme si c'était *bon* d'être cassé ou quoi ? Non !
 
 `bb({ eyes:"angry_r", body:"one_up" });`
 
-b: All those dang Hollywood screenwriters who romanticize mental illness are full of crud!
+b: Tous ces polissons de scénaristes d'Hollywoord qui romantise la maladie mentale sont des faquins !
 
 `bb({ eyes:"angry", body:"two_up" });`
 
-b: Having a mental disorder *sucks!* It robs people of *lives!* Why should we "accept" that?!
+b: Avoir un trouble mental *craint !* Ça vole la *vie* des gens ! Pourquoi on devrait "accepter" ça ?!
 
 `bb({ body:"normal" });`
 
-h: I think therapists mean "accept" our emotions as in: be patient with them.
+h: Je pense que les thérapistes disent "d'accepter" nos émotions dans le sens : sois patient avec eux.
 
 ```
 hong({ body:"one_up" });
 bb({ eyes:"normal" });
 ```
 
-h: Like how struggling in quicksand makes you sink faster, and the solution is to patiently lie flat,
+h: Comme quand lutter dans les sables mouvants te font plonger plus vite, et que la solution est de s'allonger patiemment à plat,
 
 `hong({ eyes:"surprise" });`
 
 {{if _.INJURED}}
-h: Fighting against you, my fear, lead me to jump off a roof.
+h: Combattre contre toi, ma peur, m'a poussé à me jeter d'un toit.
 {{/if}}
 
 {{if !_.INJURED}}
-h: Fighting against you, my fear, almost lead me to jump off a roof.
+h: Combattre contre toi, ma peur, m'a presque poussé à me jeter d'un toit.
 {{/if}}
 
 `hong({ body:"normal", eyes:"normal" });`
 
-h: Instead, the solution is to do what we're doing now – not to fight, but to patiently be with each other.
+h: Au lieu de ça, la solution est de faire ce qu'on est en train de faire maintenant - ne pas se battre, mais être patient chacun avec l'autre.
 
 `bb({ eyes:"annoyed" });`
 
-b: Then they should say *that* instead of some problematic word like "accept".
+b: Alors ils devraient dire *ça* au lieu d'utiliser des mots problématiques comme "accepter".
 
 `hong({ body:"chin", eyes:"annoyed" });`
 
-h: Yeah come to think of it, "accept" kind of sucks.
+h: Ouais, en y repensant, "accepter" est perturbant.
 
 `bb({ eyes:"closed_annoyed", mouth:"narrow" });`
 
-b: I do not accept "accept".
+b: Je n'accepte pas "accepte".
 
 (#act4_something_else)
 
