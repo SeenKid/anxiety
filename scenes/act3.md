@@ -579,9 +579,9 @@ h: Parce que tu n'as jamais cru en *moi*.
 
 `bb({ eyes:"angry" });`
 
-b: Les autres loups protecteurs ont des humains qui prennent patiemment le temps de les entraîner, d'*apprendre* à travailler ensemble,
+b: Les autres loups de garde ont des humains qui prennent patiemment le temps de les entraîner, d'*apprendre* à travailler ensemble,
 
-b: Plutôt que haïr les loups protecteurs pour essayer de les protéger ! Alors pourquoi ne peux-tu pas jus--
+b: Plutôt que haïr les loups de garde pour essayer de les protéger ! Alors pourquoi ne peux-tu pas jus--
 
 `bb({ eyes:"normal" });`
 
@@ -745,7 +745,7 @@ b: Je suis désolé.
 
 `bb({eyes:"sorry_down"});`
 
-b: J'étais supposé être *ton* loyal chien protecteur, mais j'ai agi comme si tu étais sensé m'obéir à *moi*.
+b: J'étais supposé être *ton* loyal chien de garde, mais j'ai agi comme si tu étais sensé m'obéir à *moi*.
 
 `bb({eyes:"sorry_up"});`
 
