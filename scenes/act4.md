@@ -381,7 +381,7 @@ music('dontfight',{fade:5, volume:0.6});
 bb({eyes:"annoyed_d"});
 ```
 
-b: Je ne suis pas un Grand Méchant Loup. Mais je ne suis pas non plus un chien protecteur.
+b: Je ne suis pas un Grand Méchant Loup. Mais je ne suis pas non plus un chien de garde.
 
 `bb({eyes:"sad_d"})`
 
@@ -1758,7 +1758,7 @@ Game.WORDS_HEIGHT_BOTTOM = 195;
 publish("act4", ["alshire", 6]);
 ```
 
-s: RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN
+s: FUIT FUIT FUIT FUIT FUIT FUIT FUIT FUIT FUIT FUIT FUIT FUIT FUIT FUIT FUIT
 
 ```
 Game.clearText();
@@ -1785,18 +1785,18 @@ Game.WORDS_HEIGHT_BOTTOM = -1; /* reset */
 
 `publish("act4-jumpcut-hong");`
 
-h: Huh. That was weird. I wonder what was going on in their head.
+h: Huh. C'était bizarre.  Je me demande ce qui se passe dans sa tête.
 
 `publish("act4", ["hong_closer", 2]);`
 
-h: Anyway, you were saying?
+h: Qu'importe, tu disais ?
 
 ```
 publish("act4", ["hong_closer", 1]);
 publish("act4", ["bb_closer", 6]);
 ```
 
-b: Uh, I forget? Something about teams and work?
+b: Euh, j'ai oublié ? Quelque chose à propos d'équipes et de travail ?
 
 ```
 publish("act4", ["bb_closer", 0]);
@@ -1810,55 +1810,55 @@ publish("act4", ["hong_closer", 1]);
 publish("act4", ["bb_closer", 4]);
 ```
 
-b: They say you should "make peace" with your emotions, as if your emotions are *war criminals*.
+b: Ils disent que tu devrais "faire la paix" avec tes émotions, comme si tes émotions étaient des "criminels de guerre".
 
 `publish("act4", ["bb_closer", 7]);`
 
-b: But I want us to make *more* than mere peace! I want us to be *allies!*
+b: Mais je veux que nous soyons *plus* que simplement en paix ! Je veux que nous soyons *alliés !*
 
 `publish("act4", ["bb_closer", 3]);`
 
-b: I want to be a good guard-dog. Just like how hunger & thirst are alarms for your physical needs,
+b: Je veux être un bon chien de garde. De la même façon que la faim et la soif sont tes alertes pour tes besoins physiques,
 
 `publish("act4", ["bb_closer", 8]);`
 
-b: I want to be the alarm for your *psychological* needs – your needs for safety, belonging, goodness.
+b: Je veux être l'alarme pour tes besoins *psychologiques* - tes besoins pour la sécurité, l'appartenance et la bonté.
 
 `publish("act4", ["bb_closer", 1]);`
 
-b: But... I suck at my job, so I need you to train me.
+b: Mais... je crains à mon travail, alors j'ai besoin que tu me dresses.
 
 `publish("act4", ["bb_closer", 4]);`
 
-b: I'm not "always valid," nor "always irrational." I'm just... trying my best. So, please,
+b: Je ne suis ni "toujours valide", ni "toujours irrationnel". J'essaie juste... de faire de mon mieux. Alors, s'il te plaît,
 
 `publish("act4", ["bb_closer", 30]);`
 
-b: Help me help you!
+b: Aide moi à t'aider !
 
 `publish("act4", ["bb_closer", 6]);`
 
-b: Though, teaching an old dog new tricks *will* take a while. Maybe *years.*
+b: Malgré le fait qu'apprendre de nouveaux tours à un vieux chien *prendra* un bon moment. Peut-être des *années.*
 
 `publish("act4", ["bb_closer", 3]);`
 
-b: And sometimes I'll relapse, I'll slip into my old habits.
+b: Et parfois, je rechuterai, je retomberai dans mes vieilles habitudes.
 
 `publish("act4", ["bb_closer", 2]);`
 
-b: I'll bark at shadows. I'll scare you with words. I might even show you some intrusive images of... things.
+b: J'aboierai aux ombres. Je t'effrayerai avec des mots. Je pourrai même te montrer quelques images intrusives de... choses.
 
 `publish("act4", ["bb_closer", 9]);`
 
-b: I'm sorry! I'm a battered shelter dog! Battered dogs poop on your bed sometimes!
+b: Je suis désolé ! Je suis un chien battu ! Les chiens battus font caca sur ton lit parfois !
 
 `publish("act4", ["bb_closer", 4]);`
 
-b: Mais si tu es patient avec moi... et reste juste, assiez toi avec moi...
+b: Mais si tu es patient avec moi... que tu restes et t'asseoies avec moi...
 
 `publish("act4", ["bb_closer", 8]);`
 
-b: Peut-être que tu peux apprivoiser ce loup.
+b: Peut-être que tu pourras apprivoiser ce loup.
 
 `publish("act4", ["bb_closer", 0]);`
 
@@ -1868,11 +1868,11 @@ b: Peut-être que tu peux apprivoiser ce loup.
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "h"`
 
-[Good dog.](#act4f-pat-bb) `Game.OVERRIDE_CHOICE_SPEAKER = "h"; publish("act4", ["hong_closer", 2]);`
+[Bon chien.](#act4f-pat-bb) `Game.OVERRIDE_CHOICE_SPEAKER = "h"; publish("act4", ["hong_closer", 2]);`
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "b"`
 
-[Good human.](#act4f-pat-hong) `Game.OVERRIDE_CHOICE_SPEAKER = "b"; publish("act4", ["bb_closer", 8]);`
+[Bon humain.](#act4f-pat-hong) `Game.OVERRIDE_CHOICE_SPEAKER = "b"; publish("act4", ["bb_closer", 8]);`
 
 # act4f-pat-hong
 
