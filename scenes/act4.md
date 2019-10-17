@@ -1641,7 +1641,7 @@ publish("act4", ["hong_to_alshire", 0]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 3 : 1]);
 ```
 
-b: Attends humain, on est peut-être en train de les mettre mal à l'aise.
+b: Attends humain, on est en train de la mettre mal à l'aise.
 
 ```
 publish("act4", ["hong_to_alshire", 3]);
