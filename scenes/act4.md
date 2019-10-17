@@ -1680,18 +1680,18 @@ publish("act4", ["hong_to_alshire", 5]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 3 : 1]);
 ```
 
-b: Hang on human, they seem uncomfortable.
+b: Attends humain, ils ont l'air mal à l'aise.
 
 ```
 publish("act4", ["hong_to_alshire", 6]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 2 : 0]);
 ```
 
-h2: Ah, no pressure of course!
+h2: Ah, pas de pression, bien sûr !
 
 `publish("act4", ["hong_to_alshire", 4]);`
 
-h2: Just saying, you can sit here if you want to.
+h2: Juste pour dire, tu peux t'asseoir ici si tu veux.
 
 ```
 publish("act4", ["hong_to_alshire", 5]);
@@ -1699,15 +1699,15 @@ publish("act4", ["alshire", 4]);
 ```
 
 {{if _.TOP_FEAR=="harm"}}
-s: THEY'RE BEING *TOO* FRIENDLY! LIKE TED BUNDY, THE SERIAL KILLER!
+s: ILS SONT *TROP* AMICAUX ! COMME TED BUNDY, LE TUEUR EN SÉRIE !
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: THEY'RE JUST ACTING NICE! NO ONE *REALLY* WANTS TO BE CLOSE TO US!
+s: ILS FONT JUSTE SEMBLANT D'ÊTRE GENTILS ! PERSONNE NE VEUT *VRAIMENT* ÊTRE PROCHE DE NOUS !
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
-s: AHHH WE ALWAYS MAKE OTHERS FEEL AWKWARD! WE'RE A STAIN UPON THE EARTH!
+s: AHHH ON FAIT TOUJOURS SENTIR LES AUTRES GÊNÉS ! ON EST UNE TÂCHE SUR LA PLANÈTE TERRE !
 {{/if}}
 
 (#act4e)
