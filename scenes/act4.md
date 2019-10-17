@@ -1590,50 +1590,50 @@ music('campus', {volume:0.5, fade:1});
 
 `publish("act4", ["alshire", 0]);`
 
-a: W-wo-would you mind if I sat with you for lunch?
+a: Ç-ça ne te dérange pas si je m'asseois avec toi pour déjeuner ?
 
 `publish("act4", ["alshire", 1]);`
 
 {{if _.TOP_FEAR=="harm"}}
-s: *This* is your crush? Why are they sitting alone like a psycho serial killer?
+s: *C'est lui* ton coup de cœur ? Pourquoi est-il assis tout seul comme un tueur en série psychopathe ?
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: Asking your crush if you can sit with them? Do you know how *needy* we sound?!
+s: Demander à ton coup de coeur si tu peux t'asseoir avec lui ? Tu te rends comptes à quel point tu sembles être dans le *besoin* ?!
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
-s: *This* is your crush? We interrupted their peace and quiet! We're such a burden!
+s:  *C'est lui* ton coup de cœur ? On a interrompu sa paix et sa tranquilité ! Nous sommes tellement un fardeau !
 {{/if}}
 
 `publish("act4", ["alshire", 2]);`
 
-a: I- I mean- it's, it's okay if not, I just...
+a: J-je veux dire, ç-ça pose pas de problème sinon, je vais juste...
 
 `publish("act4", ["alshire", 3]);`
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "h2"`
 
-[Wait, didn't I see you at the party?](#act4d_recognition) `publish("act4", ["hong_to_alshire",1])`
+[Attends, je t'ai vu à la fête, non ?](#act4d_recognition) `publish("act4", ["hong_to_alshire",1])`
 
-[Yeah, of course! Come here.](#act4d_yes) `publish("act4", ["hong_to_alshire",2])`
+[Ouais, bien sûr ! Viens.](#act4d_yes) `publish("act4", ["hong_to_alshire",2])`
 
-[Sorry, I need alone time right now.](#act4d_no) `publish("act4", ["hong_to_alshire",8])`
+[Désolé, j'ai besoin d'un peu de temps seul là.](#act4d_no) `publish("act4", ["hong_to_alshire",8])`
 
 # act4d_recognition
 
 `publish("act4", ["hong_to_alshire",2]);`
 
-h2: Yeah you were on the couch! At the first party I went to...
+h2: Ouais, tu étais sur le canapé ! A la première fête où je suis allé...
 
 `publish("act4", ["hong_to_alshire",10]);`
 
 {{if _.a2_ending=="fight"}}
-h2: Where I had that panic attack and punched the host.
+h2: Où j'ai eu cette crise de panique et frappé l'hôte.
 {{/if}}
 
 {{if _.a2_ending=="flight"}}
-h2: Where I had that panic attack and ran out crying.
+h2: Où j'ai eu cette de panique et suis parti en pleurant.
 {{/if}}
 
 ```
@@ -1641,18 +1641,18 @@ publish("act4", ["hong_to_alshire", 0]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 3 : 1]);
 ```
 
-b: Hang on human, we may be making them uncomfortable.
+b: Attends humain, on est peut-être en train de les mettre mal à l'aise.
 
 ```
 publish("act4", ["hong_to_alshire", 3]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 2 : 0]);
 ```
 
-h2: Ah, I don't mean to put you on the spot!
+h2: Ah, je ne veux pas te mettre sur la selette !
 
 `publish("act4", ["hong_to_alshire",4]);`
 
-h2: Just remembering a friendly face, is all.
+h2: Juste me souvenir d'un visage amical, c'est tout.
 
 ```
 publish("act4", ["hong_to_alshire",5]);
@@ -1660,15 +1660,15 @@ publish("act4", ["alshire", 4]);
 ```
 
 {{if _.TOP_FEAR=="harm"}}
-s: AHHHHH I KNEW IT! THEY'RE A DANGEROUS PANIC-DRIVEN PSYCHO!
+s: AHHHHH JE LE SAVAIS ! CE SONT DE DANGEREUX PSYCHOPATES PANIQUÉS !
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: AAHHH THE FIRST IMPRESSION WE MADE WAS "WITNESSED MY TRAUMA"! THAT MEANS THEY HATE US!
+s: AAHHH LA PREMIÈRE IMPRESSION QU'ON A FAITE EST "ON A ÉTÉ TÉMOIN DE TON TRAUMA" ! ILS NOUS DÉTESTENT, C'EST SÛR !
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
-s: AAAHHH WE MADE SOMEONE REMEMBER A TRAUMATIC EVENT. OUR MERE PRESENCE HURTS OTHERS.
+s: AAAHHH ON A FAIT SE SOUVENIR À QUELQU'UN D'UN ÉVÈNEMENT TRAUMATISANT. NOTRE SIMPLE PRÉSENCE BLESSENT LES AUTRES.
 {{/if}}
 
 (#act4e)
@@ -1680,18 +1680,18 @@ publish("act4", ["hong_to_alshire", 5]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 3 : 1]);
 ```
 
-b: Hang on human, they seem uncomfortable.
+b: Attends humain, ils ont l'air mal à l'aise.
 
 ```
 publish("act4", ["hong_to_alshire", 6]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 2 : 0]);
 ```
 
-h2: Ah, no pressure of course!
+h2: Ah, pas de pression, bien sûr !
 
 `publish("act4", ["hong_to_alshire", 4]);`
 
-h2: Just saying, you can sit here if you want to.
+h2: Juste pour dire, tu peux t'asseoir ici si tu veux.
 
 ```
 publish("act4", ["hong_to_alshire", 5]);
@@ -1699,15 +1699,15 @@ publish("act4", ["alshire", 4]);
 ```
 
 {{if _.TOP_FEAR=="harm"}}
-s: THEY'RE BEING *TOO* FRIENDLY! LIKE TED BUNDY, THE SERIAL KILLER!
+s: ILS SONT *TROP* AMICAUX ! COMME TED BUNDY, LE TUEUR EN SÉRIE !
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: THEY'RE JUST ACTING NICE! NO ONE *REALLY* WANTS TO BE CLOSE TO US!
+s: ILS FONT JUSTE SEMBLANT D'ÊTRE GENTILS ! PERSONNE NE VEUT *VRAIMENT* ÊTRE PROCHE DE NOUS !
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
-s: AHHH WE ALWAYS MAKE OTHERS FEEL AWKWARD! WE'RE A STAIN UPON THE EARTH!
+s: AHHH ON FAIT TOUJOURS SENTIR LES AUTRES GÊNÉS ! ON EST UNE TÂCHE SUR LA PLANÈTE TERRE !
 {{/if}}
 
 (#act4e)
@@ -1719,18 +1719,18 @@ publish("act4", ["hong_to_alshire", 9]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 3 : 1]);
 ```
 
-b: Hang on human, we may be making them uncomfortable.
+b: Attends humain, on est peut-être en train de les mettre mal à l'aise.
 
 ```
 publish("act4", ["hong_to_alshire", 3]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 2 : 0]);
 ```
 
-h2: Ah, I don't mean to be rude!
+h2: Ah, je ne voulais pas être rude !
 
 `publish("act4", ["hong_to_alshire", 6]);`
 
-h2: I just need some time to process my emotions. Please don't take it as a personal rejection.
+h2: J'ai juste besoin de temps pour traiter mes émotions. S'il te plaît, ne le prends pas comme un rejet personnel.
 
 ```
 publish("act4", ["hong_to_alshire", 7]);
@@ -1738,15 +1738,15 @@ publish("act4", ["alshire", 4]);
 ```
 
 {{if _.TOP_FEAR=="harm"}}
-s: WHAT SICK, TWISTED THOUGHTS ARE THEY PROCESSING?! WHAT DARK DESIRES FILL THIS PSYCHO'S HEART?!
+s: QUELLES PENSÉES MALADES, TORDUES SONT-ILS EN TRAIN DE TRAITER ?! QUELS SOMBRES DESIRS REMPLISSENT CE CŒUR DE PSYCHOPATHE ?!
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: WE'VE BEEN PERSONALLY REJECTED! WE'LL NEVER BE LOVED!
+s: ON A ÉTÉ PERSONNELLEMENT REJETÉ ! ON NE SERA JAMAIS AIMÉ !
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
-s: WE INTERRUPTED THEIR EMOTIONAL PROCESSING! NOW THEY'LL BE TRAUMATIZED FOREVER AND IT'S ALL OUR FAULT!
+s: ON A INTERROMPU LEUR TRAITEMENT ÉMOTIONNEL ! MAINTENANT, ILS SERONT TRAUMATISÉS POUR TOUJOURS ET C'EST ENITIÈREMENT DE NOTRE FAUTE !
 {{/if}}
 
 (#act4e)
