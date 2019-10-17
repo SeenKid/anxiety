@@ -1624,16 +1624,16 @@ a: I- I mean- it's, it's okay if not, I just...
 
 `publish("act4", ["hong_to_alshire",2]);`
 
-h2: Yeah you were on the couch! At the first party I went to...
+h2: Ouais, tu étais sur le canapé ! A la première fête où je suis allé...
 
 `publish("act4", ["hong_to_alshire",10]);`
 
 {{if _.a2_ending=="fight"}}
-h2: Where I had that panic attack and punched the host.
+h2: Où j'ai eu cette crise de panique et frappé l'hôte.
 {{/if}}
 
 {{if _.a2_ending=="flight"}}
-h2: Where I had that panic attack and ran out crying.
+h2: Où j'ai eu cette de panique et suis parti en pleurant.
 {{/if}}
 
 ```
@@ -1641,18 +1641,18 @@ publish("act4", ["hong_to_alshire", 0]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 3 : 1]);
 ```
 
-b: Hang on human, we may be making them uncomfortable.
+b: Attends humain, on est en train de la mettre mal à l'aise.
 
 ```
 publish("act4", ["hong_to_alshire", 3]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 2 : 0]);
 ```
 
-h2: Ah, I don't mean to put you on the spot!
+h2: Ah, je ne veux pas te mettre sur la selette !
 
 `publish("act4", ["hong_to_alshire",4]);`
 
-h2: Just remembering a friendly face, is all.
+h2: Juste me souvenir d'un visage amical, c'est tout.
 
 ```
 publish("act4", ["hong_to_alshire",5]);
@@ -1660,15 +1660,15 @@ publish("act4", ["alshire", 4]);
 ```
 
 {{if _.TOP_FEAR=="harm"}}
-s: AHHHHH I KNEW IT! THEY'RE A DANGEROUS PANIC-DRIVEN PSYCHO!
+s: AHHHHH JE LE SAVAIS ! CE SONT DE DANGEREUX PSYCHOPATES PANIQUÉS !
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: AAHHH THE FIRST IMPRESSION WE MADE WAS "WITNESSED MY TRAUMA"! THAT MEANS THEY HATE US!
+s: AAHHH LA PREMIÈRE IMPRESSION QU'ON A FAITE EST "ON A ÉTÉ TÉMOIN DE TON TRAUMA" ! ILS NOUS DÉTESTENT, C'EST SÛR !
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
-s: AAAHHH WE MADE SOMEONE REMEMBER A TRAUMATIC EVENT. OUR MERE PRESENCE HURTS OTHERS.
+s: AAAHHH ON A FAIT SE SOUVENIR À QUELQU'UN D'UN ÉVÈNEMENT TRAUMATISANT. NOTRE SIMPLE PRÉSENCE BLESSENT LES AUTRES.
 {{/if}}
 
 (#act4e)
