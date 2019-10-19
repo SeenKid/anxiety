@@ -1417,39 +1417,43 @@ b: En parlant de fêtes... à propos de cette invitation ce week-end. Voici ma d
 
 # act1h
 
-b: We sh--
+b: On devr--
 
 ```
 bb({eyes:"wat", mouth:"small"});
 hong({body:"2_fuck"});
 ```
 
-h: *^FUCK^.*
+h: VA. *^FUCK^.*
+
+h: TE.
+
+h: FAIRE.
 
 `hong({body:"2_you"});`
 
-h: YOU.
+h: *^FOUTRE^.*
 
 (...500)
 
-b: w
+b: q
 
 (...1500)
 
 `bb({eyes:"wat_2"});`
 
-b: wha?
+b: quoi?
 
 `hong({body:"phone1", eyes:"anger", mouth:"anger"});`
 
-h: I'm going to say YES to that party,
+h: Je vais dire OUI à cette fête,
 
 {{if _.act1g=="go"}}
-h: NOT because you want me to, but because *I* want to.
+h: PAS parce que tu me le demandes, mais parce que *JE* le veux.
 {{/if}}
 
 {{if _.act1g=="dont"}}
-h: Precisely BECAUSE you don't want me to.
+h: Précisement PARCE QUE tu ne veux pas que j'y aille.
 {{/if}}
 
 ```
@@ -1457,14 +1461,14 @@ hong({body:"putaway"});
 sfx("rustle");
 ```
 
-h: You're NOT in control of me.
+h: Tu ne me contrôles PAS..
 
 ```
 sfx("rustle2");
 hong({body:"0_sammich", eyes:"0_annoyed", mouth:"0_neutral"});
 ```
 
-h: Now excuse me while I eat this delicious sandwich in ^goddamn^ peace.
+h: Maintenant, excuse moi pendant que je mange ce délicieux sandwich en paix, ^bordel^.
 
 `hong({body:"2_sammich_eat"});`
 
@@ -1502,11 +1506,11 @@ b: ..................
 
 `bb({mouth:"normal"});`
 
-[AHHHH WE'RE GONNA DIE](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
+[AHHHH ON VA TOUS MOURIR](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
 
-[AHHHH EVERYONE HATES US](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
+[AHHHH TOUT LE MONDE NOUS DÉTESTE](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
 
-[AHHHH WE'RE HORRIBLE PEOPLE](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
+[AHHHH ON EST DES GENS HORRIBLES](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
 
 # act1h_death
 
