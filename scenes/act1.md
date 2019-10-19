@@ -1230,7 +1230,7 @@ bb({mouth:"normal"});
 Game.FORCE_TEXT_DURATION = 2400;
 ```
 
-b: ♫ I wanna be, the ^slut^ti-est-
+b: ♫ Un jour je serai le meilleur ^baiseur^-
 
 (...500)
 
@@ -1239,7 +1239,7 @@ bb({eyes:"narrow", mouth:"small"});
 Game.FORCE_TEXT_DURATION = 2100;
 ```
 
-b: ♫ Like no one ever was-
+b: ♫ Je les ^niquerai^ sans répit-
 
 (...1500)
 
@@ -1248,7 +1248,7 @@ bb({eyes:"pretty"});
 Game.FORCE_TEXT_DURATION = 2300;
 ```
 
-b: ♫ Thighs n' ^ass^, voluptuous breast-
+b: ♫ Je ferai tout pour être séducteur-
 
 (...500)
 
@@ -1257,7 +1257,7 @@ bb({eyes:"fear", mouth:"normal"});
 Game.FORCE_TEXT_DURATION = 2000;
 ```
 
-b: ♫ with sweaty ^dick^ and balls!-
+b: ♫ Et jouir à l'infini !
 
 (...1000)
 
@@ -1266,7 +1266,7 @@ bb({eyes:"smile", mouth:"smile"});
 Game.FORCE_TEXT_DURATION = 1000;
 ```
 
-b: ♫ PERVY-MON! GOTTA CA-
+b: ♫ PERVERS-MON ! ATTRAPEZ-LES TO-
 
 ```
 Game.FORCE_CANT_SKIP = false;
@@ -1276,7 +1276,7 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Le truc, c'est qu'on est juste un·e manipulateur·rice pervers·e.
+b: Le truc, c'est qu'on est juste un manipulateur pervers.
 
 ```
 hong({mouth:"shock", eyes:"shock"});
