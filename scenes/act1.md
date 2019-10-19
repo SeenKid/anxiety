@@ -1294,15 +1294,15 @@ attack("18p", "bad");
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
 {{if _.whitebread}}
-b: They'll trap you in a well and force-feed you white bread to fatten you up so they can wear your skin like a suit!
+b: Ils vont te piéger dans un puits et te gaver de pains blancs pour te faire grossir, pour qu'ils puissent s'habiller avec ta peau comme vêtement !
 {{/if}}
 
 {{if _.parasite}}
-b: They'll bludgeon you with a pomodoro timer and say "YOU SHOULDA BEEN MORE PRODUCTIVE YOU PARASITE"
+b: Ils te matraqueront avec un minuteur Pomodoro et diront "T'AURAIS DU ÊTRE PLUS PRODUCTIF ESPÈCE DE PARASITE"
 {{/if}}
 
 {{if !_.whitebread && !_.parasite}}
-b: They'll tear your flesh to gory confetti, turn your entrails into streamers, and mix your blood into a punch bowl!
+b: They'll tear your flesh to gory confetti, turn your entrails into streamers, and mix your blood into a punch bowl! Ils déchiqueront ta chair en confettis gores, feront de tes entrailles des serpentins, et mélangerons ton sang dans un saladier à punch !
 {{/if}}
 
 {{if !_.whitebread && !_.parasite}}
