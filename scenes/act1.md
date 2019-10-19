@@ -1333,44 +1333,44 @@ h: ...
 
 (...500)
 
-h: i'm so sick of this game.
+h: J'en ai tellement marre de ce jeu.
 
 (...700)
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
 h:
-{{if _.fifteencigs}}"loneliness will kill us"... {{/if}}
-{{if _.parasite}}"we're a society-parasite"... {{/if}}
-{{if _.whitebread}}"don't eat that, it'll kill us"... {{/if}}
-{{if _.subtweet}}"they're talking behind our back"... {{/if}}
-{{if _.badnews}}"the world is burning"... {{/if}}
-{{if _.hookuphole}}"we'll die alone"... {{/if}}
-{{if _.serialkiller}}"they're a serial killer"... {{/if}}
-{{if _.catmilk}}"cats can't digest milk"... {{/if}}
-{{if _.pokemon}}a ^crappy^ parody song... {{/if}}
+{{if _.fifteencigs}}"la solitude va nous tuer"... {{/if}}
+{{if _.parasite}}"nous sommes un parasite social"... {{/if}}
+{{if _.whitebread}}"ne mange pas ça, ça va nous tuer"... {{/if}}
+{{if _.subtweet}}"ils parlent dans notre dos"... {{/if}}
+{{if _.badnews}}"le monde est en feu"... {{/if}}
+{{if _.hookuphole}}"on mourra seuls"... {{/if}}
+{{if _.serialkiller}}"ce sont des tueurs en série"... {{/if}}
+{{if _.catmilk}}"les chats ne peuvent pas digérer le lait"... {{/if}}
+{{if _.pokemon}}une chanson parodique ^merdique^... {{/if}}
 
-h: i just want to live my life.
+h: Je veux juste vivre ma vie.
 
-h: i just want to be free from all this... pain.
+h: Je veux juste être libérer de toute cette... souffrance.
 
 `bb({eyes:"look_sad"});`
 
-b: Hey... human...
+b: Hé... humain...
 
 `Game.OVERRIDE_TEXT_SPEED = 0.5;`
 
-b: It'll be okay.
+b: Ça ira.
 
 (...600)
 
 `bb({body:"point_heart", eyes:"look_sad_smile", mouth:"smile"});`
 
-b: As your loyal guard-wolf, I'll always keep an eye out for danger, and do my best to keep you safe.
+b: En tant que loyal loup protecteur, je garderai toujours un œil sur toi, et ferait mon mieux pour te protéger.
 
 `bb({body:"normal", eyes:"look_sad", mouth:"smile"});`
 
-b: I promise.
+b: Je le promets.
 
 (...600)
 
@@ -1379,29 +1379,29 @@ bb({body:"normal", eyes:"normal", mouth:"normal"});
 hong({body:"phone1", eyes:"neutral", mouth:"neutral"});
 ```
 
-h: Last app. Instagram. What you got?
+h: Dernière app. Instagram. Qu'est-ce qu'on a là ?
 
 `hong({eyes:"sad"});`
 
-h: It's... more party pictures.
+h: C'est... encore plus de photos de fêtes.
 
 `hong({mouth:"sad"});`
 
-h: Everyone looks so happy. Free from worry. Free from anxiety.
+h: Tout le monde a l'air si joyeux. Libre de soucis. Libre d'anxiété.
 
 `hong({mouth:"anger"});`
 
-h: God, why can't I be like them? Why can't I just be *normal?*
+h: Bon sang, pourquoi je ne peux pas être comme eux ? Pourquoi je ne peux juste pas être *normal ?*
 
 `bb({eyes:"normal_right"});`
 
-b: Speaking of parties, about this weekend's invite. Here's my FINAL decision:
+b: En parlant de fêtes... à propos de cette invitation ce week-end. Voici ma décision FINALE :
 
 `bb({eyes:"normal"});`
 
-[We should go.](#act1g_go) `Game.OVERRIDE_CHOICE_LINE=true`
+[On devrait y aller.](#act1g_go) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[We should not go.](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
+[On ne devrait pas y aller.](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act1g_go
 
