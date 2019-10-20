@@ -732,19 +732,19 @@ b: parce que ce sont de TRÈS GROS PERVERS DÉGOÛTANT
 
 `bb({body:"normal", mouth:"small", eyes:"suspect"})`
 
-b: BUTTERFLY EFFECT! You're using a non-biodegradable plastic cup?
+b: EFFET PAPILLON ! T'es en train d'utiliser un verre en plastique non-biodégradable ?
 
 `bb({body:"two_up", mouth:"normal", eyes:"shock"})`
 
-b: BAM, A LANDFILL LEAKS POISON AND KILLS A KID
+b: BAM, UNE FUITE DE POISON D'UNE DÉCHARGE ET TUE UN ENFANT
 
 `bb({body:"normal", mouth:"small", eyes:"suspect"})`
 
-b: You're sweating and your heart's pounding?
+b: T'es en train de transpirer et ton cœur bat très fort ?
 
 `bb({body:"scream_a_1"})`
 
-b: BAM, YOU BANKRUPT OUR HEALTHCARE SYSTEM AND MILLIONS DIE
+b: BAM, TU METS EN FAILLITE TON ASSURANCE SANTÉ ET DES MILLIONS DE GENS MEURENT
 
 `_.a2_attack_3 = "bad";`
 
