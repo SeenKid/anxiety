@@ -459,7 +459,7 @@ _.a2_hoodie_callback = "a quarantine";
 
 `bb({eyes:"suspect", body:"two_up", mouth:"normal"})`
 
-b: DON'T BE A CREEP. IT'S AGAINST THE LAW!
+b: SOIS PAS FLIPPANT. C'EST CONTRE LA LOI !
 
 `bb({eyes:"judge", body:"judge_1", mouth:"normal"})`
 
@@ -484,11 +484,11 @@ sfx("gravel");
 
 (...501)
 
-b: Creep Law, Section 74.5: (1) Any Person who checks out (a) those muscular shoulders (b) that bubble booty (2) shall be hereby known as
+b: Loi des Gens Flippants, Section 74.5: (1) N'importe qui mate (a) ces épaules musclées (b) ces fesses rebondies (2) doit être certifié par la présente comme
 
 `bb({eyes:"shock", body:"two_up", mouth:"normal"})`
 
-b: "A BIG DISGUSTING TRASH PERVERT"
+b: "UN GROS PERVERS DÉGUEULASSE"
 
 ```
 _.a2_second_danger = 'law';
@@ -502,23 +502,23 @@ _.a2_hoodie_callback = "the law";
 
 `bb({body:"two_up", mouth:"normal", eyes:"shock"})`
 
-b: Actually, even if you find a noble purpose in life, you can *still* mess everything up!
+b: En fait, même si tu trouves une noble but à ta vie, tu peux *toujours* tout faire foirer !
 
 `bb({body:"normal", mouth:"normal", eyes:"normal"})`
 
-b: Alfred Nobel wanted world peace and for cultures to understand each other. So he decided to make travel easier.
+b: Alfred Nobel voulait la paix dans le monde et que les cultures se comprennent entre elles. Donc il a décidé de simplifier les voyage.
 
 `bb({eyes:"normal_r"})`
 
-b: So he needed a way to cheaply create train tunnels. So he invented a new material called "dynamite"...
+b: Donc il devait trouver un moyen de créer des tunnels pour les trains pour pas cher. Alors, il a inventé un nouveau matériau appelé "dynamite"...
 
 `bb({body:"one_up", eyes:"normal"})`
 
-b: which was used in World War I to KILL MILLIONS OF PEOPLE
+b: qui était utilisé pendant la Première Guerre Mondiale pour TUER DES MILLIONS DE GENS
 
 `bb({body:"two_up", eyes:"shock"})`
 
-b: IT'S THE BUTTERFLY EFFECT, HUMAN! HOW MANY PEOPLE ARE YOU ACCIDENTALLY KILLING RIGHT NOW
+b: C'EST L'EFFET PAPILLON, HUMAIN ! COMBIEN DE GENS ES-TU ACCIDENTELLEMENT EN TRAIN DE TUER LÀ TOUT DE SUITE
 
 ```
 _.a2_second_danger = 'butterfly';
