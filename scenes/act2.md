@@ -1003,15 +1003,15 @@ attack("10p", "bad");
 
 `bb({body:"normal", mouth:"normal", eyes:"suspect"})`
 
-b: Native Americans are *actual people*, not some "noble savages" you can namedrop to make your fortune-cookie advice more *exotic*.
+b: Les natifs américains sont de *vrais gens*, pas des "nobles sauvages" dont tu peux balancer le nom pour rendre tes conseils de biscuits chinois plus *exotiques*.
 
 `bb({eyes:"suspect_r"})`
 
-b: You're reducing individual persons & complex cultures to a Hallmark card! That's "benevolent racism"! 
+b: Tu es en train de réduire des individus & des cultures complexes à une carte de voeux ! C'est du "racisme bienveillant" !
 
 `bb({body:"scream_b_1"})`
 
-b: STOP BEING RACIST YOU SQUINTY-EYED JERK
+b: ARRÊTE D'ÊTRE RACISTE ESPÈCE D'^ENFOIRÉ^ ÉTROIT D'ESPRIT
 
 ```
 hong({body:"attacked"});
