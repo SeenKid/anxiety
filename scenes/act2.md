@@ -590,15 +590,15 @@ _.a2_hoodie_callback = "Hitler";
 
 `bb({body:"normal", mouth:"normal", eyes:"suspect"})`
 
-b: You think you're safe just because you took the batteries out of the carbon monoxide detector?
+b: Tu penses que t'es en sécurité parce que tu as retiré les batteries du détecteur de monoxyde de carbone ?
 
 `bb({eyes:"suspect_r"})`
 
-b: You won't even smell the poison! You'll just get sleepy and then you'll--
+b: Tu ne sentiras même pas le poison ! Tu vas juste t'assoupir et après tu vas--
 
 `bb({body:"scream_c_1"})`
 
-b: DIEEEEEEEEEEEEEEEEEE
+b: MOURIIIIIIIIIIIIIIIIIIR
 
 ```
 _.a2_second_danger = 'ignore';
