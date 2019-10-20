@@ -1595,17 +1595,17 @@ n: *FINIS-LES*
 
 [{FIGHT: Punis ton téléphone super stressant !}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[{FLIGHT: Mets toi en boule et pleure !}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
+[{FLIGHT: Mets-toi en boule et pleure !}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act1i_phone
 
 `bb({mouth:"normal", eyes:"narrow"})`
 
-b: Your phone was giving you a panic attack!
+b: Ton téléphone était en train de te faire une crise de panique !
 
 `bb({eyes:"anger"})`
 
-b: Zuckerberg and Co are hijacking your mental health for venture capitalist money!
+b: Zuckerberg et Co sont en train de détourner ta santé mentale pour en faire de l'argent pour les investisseurs !
 
 ```
 bb({body:"fear", eyes:"fear"});
@@ -1613,7 +1613,7 @@ hong({body:"3_defeated2"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Punish your phone! Destroy it! Kill it!
+b: Punis ton téléphone ! Détruis-le ! Tue-le !
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 2.5;
@@ -1622,7 +1622,7 @@ hong({body:"3_defeated3"});
 _.act1_ending = "fight";
 ```
 
-b: KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL I--
+b: TUE-LE TUE-LE TUE-LE TUE-LE TUE-LE TUE-LE TUE-LE TUE-LE TUE-LE TUE-LE TUE-LE TUE-LE TUE-LE TUE-LE TUE-LE TUE-LE TUE-L--
 
 (#act1j)
 
@@ -1630,7 +1630,7 @@ b: KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL 
 
 `bb({eyes:"fear", mouth:"normal"})`
 
-b: The whole world is filled with danger!
+b: Le monde entier est rempli de dangers !
 
 ```
 bb({body:"fear"});
@@ -1638,7 +1638,7 @@ hong({body:"3_defeated2"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Do like the armadillo! Curl up into a ball for self-defense!
+b: Fais comme le tatoo ! Mets-toi en boule pour t'auto-protéger !
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 2.5;
@@ -1647,7 +1647,7 @@ hong({body:"3_defeated3"});
 _.act1_ending = "flight";
 ```
 
-b: CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CR-- 
+b: METS-TOI EN BOULE ET PLEURE METS-TOI EN BOULE ET PLEURE METS-TOI EN BOULE ET PLEURE METS-TOI EN BOULE ET PLE--
 
 (#act1j)
 
