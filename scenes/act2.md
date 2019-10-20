@@ -1025,35 +1025,35 @@ attack("10p", "bad");
 
 # act2e
 
-h: ^ASSDAMMIT^.
+h: ^BORDEL DE MERDE^.
 
 `hong({body:"yell", mouth:"yell"})`
 
-h: You know what? You're *irrational*.
+h: Tu sais quoi ? Tu es *irrationnel*.
 
-h: Everyone knows emotions are irrational! Especially fear!
+h: Tout le monde sait que les émotions sont irrationnelles ! Surtout la peur !
 
 `hong({body:"facepalm_2"})`
 
-h: You're a useless evolutionary leftover, like my appendix or wisdom teeth!
+h: T'es un inutile reste d'évolution, comme mon appendice ou mes dents de sagesse !
 
 `hong({body:"yell", mouth:"yell"})`
 
-h: ^Hell^, this whole wolf metaphor is stupid! You're just a bunch of neuro-chemicals in my head.
+h: ^Putain^, toute cette métaphore de loup est stupide ! T'es juste un tas de neuro-chimiques dans ma tête.
 
 `hong({body:"cross", mouth:"cross"})`
 
-h: So why should I listen to a worthless, irrational, non-existent piece of ^shit^ like you?!
+h: Alors pourquoi je devrais écouter une ^merde^ inutile, irrationnelle et non-existante comme toi ?!
 
 `bb({eyes:"sad", MOUTH_LOCK:true})`
 
 b: ...
 
-[Jeez, human. That's really hurtful.](#act2e_hurtful)
+[Sérieux, humain. C'est très blessant.](#act2e_hurtful)
 
-[I'm a feeling. Feelings are valid.](#act2e_valid)
+[Je suis un sentiment. Les sentiments sont valides.](#act2e_valid)
 
-[Human, we're *both* "just chemicals."](#act2e_rational)
+[Humain, on est *tous les deux* "juste un tas chimique."](#act2e_rational)
 
 # act2e_hurtful
 
