@@ -1080,23 +1080,23 @@ attack("10p", "harm");
 
 `bb({body:"normal", mouth:"normal", eyes:"normal_r"});`
 
-b: Your deepest motivations are dopamine, your richest joys are serotonin.
+b: Tes plus profondes motivations sont de la dopamines, tes joies les plus riches sont de la sérotonines.
 
 `bb({body:"one_up"});`
 
-b: Your memories are synaptic weights, your reason is fault-prone electrical signals.
+b: Tes souvenirs sont des poids synaptiques, ta raison est un ensemble de signaux électriques sujets aux fautes.
 
 `bb({eyes:"normal", body:"normal"});`
 
-b: So if me being "just chemicals" means *I'm* irrational... then that means *you're* irrational!
+b: Donc si parce que je suis "juste chimique" *je suis* irrationnel... alors ça veut dire que *tu es* irrationnel !
 
 `bb({body:"two_up", eyes:"shock"});`
 
-b: And if we're *both* irrational, then we'll *never* figure out how to be fulfilled and happy!
+b: Et si on *tous les deux* irrationnel, alors on n'arrivera *jamais* à trouver comment être entier et heureux !
 
 `bb({body:"scream_a_1"})`
 
-b: AHHH WE'RE BROKEN! SO BROKEN SO BROKEN SO BROKEN--
+b: AHHH ON EST CASSÉ ! TELLEMENT CASSÉ TELLEMENT CASSÉ TELLEMENT CASS--
 
 ```
 music(null);
