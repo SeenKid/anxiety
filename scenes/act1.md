@@ -1519,7 +1519,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH WE'RE GONNA DIE AAAAAAHHHHHHH
+b: AHHHH ON VA MOURIR AAAAAAHHHHHHH
 
 ```
 hong({body:"3_defeated1"});
@@ -1537,7 +1537,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH EVERYONE HATES US AAAAAAHHHHHHH
+b: AHHHH TOUT LE MONDE NOUS DÉTESTE AAAAAAHHHHHHH
 
 ```
 hong({body:"3_defeated1"});
@@ -1555,7 +1555,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH WE'RE HORRIBLE PEOPLE AAAAAAHHHHHHH
+b: AHHHH ON EST DES GENS HORRIBLES AAAAAAHHHHHHH
 
 ```
 hong({body:"3_defeated1"});
@@ -1573,29 +1573,29 @@ bb({mouth:"smile_lock", eyes:"smile", body:"normal"});
 music('battle', {volume:0.5});
 ```
 
-n: CONGRATULATIONS
+n: FÉLICITATIONS
 
 (...500)
 
-n: YOU'VE SUCCESSFULLY PROTECTED YOUR HUMAN'S PHYSICAL + SOCIAL + MORAL NEEDS
+n: TU AS PROTÉGÉ LES BESOINS PHYSIQUES + SOCIAUX + MORAUX DE TON HUMAIN AVEC SUCCÈS
 
-n: WHY, LOOK HOW GRATEFUL THEY ARE!
+n: REGARDE COMMENT ILS TE SONT RECONNAISSANTS !
 
 (...500)
 
-n: NOW THAT THEIR ENERGY IS ZERO, YOU CAN DIRECTLY CONTROL THEIR ACTIONS
+n: MAINTENANT QUE LEUR ÉNÉRGIE EST À ZÉRO, TU PEUX DIRECTEMENT CONTRÔLER LEURS ACTIONS
 
 `bb({mouth:"smile", eyes:"normal"});`
 
-n: PICK YOUR ENDING MOVE
+n: CHOISIS TA DERNIÈRE ACTION
 
 `bb({mouth:"small_lock", eyes:"fear"});`
 
-n: *FINISH THEM*
+n: *FINIS-LES*
 
-[{FIGHT: Punish your stressful phone!}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
+[{FIGHT: Punis ton téléphone super stressant !}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[{FLIGHT: Curl up in a ball and cry!}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
+[{FLIGHT: Mets toi en boule et pleure !}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act1i_phone
 
