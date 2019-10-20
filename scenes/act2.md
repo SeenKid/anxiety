@@ -975,19 +975,19 @@ attack("10p", "bad");
 
 `bb({body:"normal", mouth:"normal", eyes:"normal"})`
 
-b: You *need* to humbly see your own flaws in order to grow as a person!
+b: Tu *dois* regarder humblement tes propres défauts pour grandir en tant que personne !
 
 `bb({body:"two_up", eyes:"suspect"})`
 
-b: You can't spray air freshener over a moldy room! Covering up your flaws makes you worse in the long run.
+b: Tu ne peux pas mettre du spray pour rafraîchir l'air dans une salle toute moisie ! Couvrir tes défauts te rendent pire sur le long terme.
 
 `bb({body:"chest", mouth:"smile", eyes:"closed"})`
 
-b: Thankfully, I, as your loyal guard-wolf, can alert you to your flaws. And right now, it's-
+b: Heureusement, moi, en tant que loyal loup protecteur, je peux t'alerter de tes défauts.  Et là tout de suite, c'est-
 
 `bb({body:"scream_b_1"})`
 
-b: EVERYTHING. EVERYTHING IS WRONG
+b: TOUT. TOUT EST MAL
 
 ```
 hong({body:"attacked"});
