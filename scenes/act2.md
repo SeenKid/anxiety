@@ -756,15 +756,15 @@ b: BAM, TU METS EN FAILLITE TON ASSURANCE SANTÉ ET DES MILLIONS DE GENS MEURENT
 
 `bb({body:"normal", mouth:"small", eyes:"angry"})`
 
-b: These pleasure-zombies will stumble towards you mumbling,
+b: Ces zombies du plaisir boîteront lentement vers toi en marmonnant,
 
 `bb({body:"normal", mouth:"normal", eyes:"shock"})`
 
-b: LIIIIIKES. LIIIIIIIIIIKES.
+b: AIIIIIIIMES. AIIIIIIIMES.
 
 `bb({body:"scream_a_1"})`
 
-b: Then they'll BITE YOU and turn you into a BRAINLESS BRO and/or THOUGHTLESS THOT!
+b: Puis, ils te MORDRONT et te transformeront en POTE SANS CERVELLE et/ou UN COPULATEUR IDIOT !
 
 `_.a2_attack_3 = "bad";`
 
