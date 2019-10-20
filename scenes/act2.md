@@ -816,15 +816,15 @@ b: ON NE VERRAIT MÊME PAS LA MORT S'APPROCHER. ON S'ARRÊTERAIT JUSTE D'EXISTER
 
 `bb({body:"normal", mouth:"normal", eyes:"sad"})`
 
-b: What if we're just *fundamentally incapable* of ever being loved, or loving another?
+b: Et si on était juste *fondamentalement incapable* d'être aimé, ou d'aimé quelqu'un ?
 
 `bb({body:"normal", mouth:"small", eyes:"sad_r"})`
 
-b: What if something irreversibly broke inside of us a long time ago? Or never existed in us in the first place?
+b: Et si quelque chose était irréversiblement cassé à l'intérieur de nous il y a longtemps ? Ou n'a même jamais été ?
 
 `bb({body:"scream_a_1"})`
 
-b: AHH WE'RE BROKEN! SO BROKEN SO BROKEN SO BROKE--
+b: AHH ON EST CASSÉ ! TELLEMENT CASSÉ TELLEMENT CASSÉ TELLEMENT CASS--
 
 `_.a2_attack_3 = "alone";`
 
