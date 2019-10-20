@@ -30,7 +30,7 @@ publish("act2",["dee",2]);
 publish("act2",["party_hong","next"]);
 ```
 
-h2: s-salut...
+h2: S-salut...
 
 ```
 publish("act2",["party_hunter",1]);
@@ -227,7 +227,7 @@ publish("act2",["party_hunter",0]);
 publish("act2",["dee",3]);
 ```
 
-s: Ouais je sais pas ! Quoi, j'ai l'air d'un *serial killer* ou quoi ? Tellement parano.
+s: Ouais, je sais pas ! Quoi, j'ai l'air d'un *tueur en série* ou quoi ? Tellement parano.
 
 ```
 publish("act2",["party_hunter",1]);
@@ -247,9 +247,9 @@ publish("act2",["party_hunter",0]);
 publish("act2",["dee",3]);
 ```
 
-s: Ouais je sais pas! Peut-être qu'ils pensent qu'un flirt ne peux remplir le vide dans leur coeur ?
+s: Ouais, je sais pas ! Peut-être qu'ils pensent qu'un flirt ne peux remplir le vide dans leur coeur ?
 
-s: Arrête d'être aussi prude! Ouvre ton esprit, puis tes jambes !
+s: Arrête d'être aussi prude ! Ouvre ton esprit, puis tes jambes !
 
 ```
 publish("act2",["party_hunter",1]);
@@ -269,7 +269,7 @@ publish("act2",["party_hunter",0]);
 publish("act2",["dee",3]);
 ```
 
-s: Ouais je sais pas! Pas si sexy que ça, mais ç'aurait été une bonne prise!
+s: Ouais, je sais pas ! Pas si sexy que ça, mais ç'aurait été une bonne prise!
 
 ```
 publish("act2",["party_hunter",1]);
@@ -298,11 +298,11 @@ publish("hp_show");
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-n: DEUXIÈME ROUND: *COMBATTEZ!*
+n: DEUXIÈME ROUND: *COMBATTEZ !*
 
-[Oh non, ils nous détestent tous!](#act2a_social)
+[Oh non, ils nous détestent tous !](#act2a_social)
 
-[T'étais en train de *reluquer* la rousse?](#act2a_perv)
+[T'étais en train de *reluquer* la rousse ?](#act2a_perv)
 
 [Hé, parlons du sens de la vie.](#act2a_meaning)
 
@@ -331,15 +331,15 @@ _.a2_attack_1 = "alone";
 
 `bb({eyes:"suspect"})`
 
-b: Elles sont plus belles que nous, ce qui ve dirute que si on ose même les *regarder*, alors--
+b: Elles sont plus belles que nous, ce qui veut dire que si on ose même les *regarder*, alors--
 
 `bb({eyes:"shock", body:"two_up"})`
 
-b: ON EST BIZARRE
+b: ON EST FLIPPANTS
 
 `bb({body:"normal"})`
 
-b: On est flippant, méchant, mauvais mauvais mauvais terrible terrible perv--
+b: On est des flippants, méchants, mauvais mauvais mauvais terribles terribles perv--
 
 ```
 _.a2_first_danger = 'perv';
@@ -360,7 +360,7 @@ b: Contribuer à l'humanité ? Toutes les grandes oeuvres se décomposent à la 
 
 `bb({eyes:"sad_r"})`
 
-b: Et de la mort, il y en a! *On* va mourir. *Nos êtres aimés* vont mourir.
+b: Et de la mort, il y en a ! *On* va mourir. *Nos êtres aimés* vont mourir.
 
 `bb({eyes:"shock", body:"two_up"})`
 
@@ -368,11 +368,11 @@ b: Diable, la Seconde Loi de la Thermodynamique implique que même notre *univer
 
 `bb({eyes:"suspect", body:"normal"})`
 
-b: Oh, "la mort nous fait apprécier la vie"? C'est comme dire que l'esclavage est bien parce que ça nous fait apprécier la liberté !
+b: Oh, "la mort nous fait apprécier la vie" ? C'est comme dire que l'esclavage est bien parce que ça nous fait apprécier la liberté !
 
 `bb({body:"one_up"})`
 
-b: Oh, "tu dois créer ton propre sens à la vie"? C'est ce que les cultistes et les théoriciens du complot font !
+b: Oh, "tu dois créer ton propre sens à la vie" ? C'est ce que les cultistes et les théoriciens du complot font !
 
 `bb({eyes:"shock", body:"two_up"})`
 
@@ -407,17 +407,17 @@ b: *GASP*
 
 b: JE DOIS T'AVERTIR À PROPOS...
 
-[de *PLUS* du même danger!](#act2b_louder)
+[De *PLUS* du même danger !](#act2b_louder)
 
 {{if _.a2_first_danger=="social"}}
-[d'un danger social *différent*!](#act2b_different_social)
+[D'un danger social *différent* !](#act2b_different_social)
 {{/if}}
 
 {{if _.a2_first_danger=="perv" || _.a2_first_danger=="meaning"}}
-[d'un danger moral *différent*!](#act2b_different_moral)
+[D'un danger moral *différent* !](#act2b_different_moral)
 {{/if}}
 
-[Tu ignores le danger! C'est dangereux!](#act2b_ignore)
+[Tu ignores le danger ! C'est dangereux !](#act2b_ignore)
 
 # act2b_louder
 
@@ -439,9 +439,9 @@ b: JE DOIS T'AVERTIR À PROPOS...
 
 `bb({eyes:"shock", body:"two_up", mouth:"normal"})`
 
-b: LES ÉMOTIONS SONT CONTAGIEUSES! DONC SI TU NE PARS PAS TU VAS INFECTER TOUT LE MONDE AVEC TON PROBLÈME MENTAL!
+b: LES ÉMOTIONS SONT CONTAGIEUSES ! DONC SI TU NE PARS PAS TU VAS INFECTER TOUT LE MONDE AVEC TON PROBLÈME MENTAL !
 
-b: Tu vas créer une épidémie mortelle de SYNDROME DE LA TRISTESSE!
+b: Tu vas créer une épidémie mortelle de SYNDROME DE LA TRISTESSE !
 
 `bb({eyes:"suspect", body:"normal", mouth:"normal"})`
 
