@@ -673,15 +673,15 @@ b: JE DOIS T'AVERTIR À PROPOS DE...
 
 `bb({body:"normal", mouth:"normal", eyes:"shock"})`
 
-b: Actually, Netflix & food delivery isn't quarantined enough! We'd still infect the delivery person!
+b: En vrai, Netflix & la livraison de nourriture ne permettra d'être assez en quarantaine ! On pourra toujours infecté le livreur !
 
 `bb({body:"one_up", mouth:"small"})`
 
-b: We need to move to the Canadian Yukon territories, and have our food delivered by drone!
+b: Il faut qu'on déménage au Yukon au Canada, et qu'on se fasse livré la nourriture par drône !
 
 `bb({body:"two_up", mouth:"normal"})`
 
-b: And then they'd have to sterilize the drone to rid it of our SAD LUMP GERMS
+b: Et ensuite, ils devront stériliser leur drône pour retirer nos GERMES DE TAS DE TRISTESSE
 
 `_.a2_attack_3 = "alone";`
 
