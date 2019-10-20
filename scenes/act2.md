@@ -566,7 +566,7 @@ b: Des gens meurent de famines et de génocides *maintenant tout de suite* et no
 
 `bb({body:"point", eyes:"closed", mouth:"small"})`
 
-b: Une sage personne a un jour dit, "la seule chose qui permet au mal de triompher est l'inaction des hommes de bien".
+b: Une sage personne a un jour dit, "la seule chose qui permet au mal de triompher est l'inaction des Hommes de bien".
 
 `bb({body:"two_up", eyes:"shock", mouth:"normal"})`
 
@@ -776,15 +776,15 @@ b: Puis, ils te MORDRONT et te transformeront en POTE SANS CERVELLE et/ou UN COP
 
 `bb({body:"scream_a_1"})`
 
-b: THE NAZIS ARE GOOSE-STEPPING BACK ON THE STREETS RIGHT NOW
+b: LES NAZIS MARCHENT AU PAS DE L'OIE DANS LES RUES LÀ TOUT DE SUITE
 
 `bb({body:"one_up", mouth:"smile", eyes:"happy"})`
 
-b: Saying, *good thing those 'good folks' slacked off with stuff like 'relaxing' and 'self-care'!*
+b: En train de se dire, *heureusement que les 'bons Hommes' se relâchaient avec des trucs genre la 'détente' et 'la prise de soin de soi' !*
 
 `bb({body:"point", mouth:"smile", eyes:"happy_r"})`
 
-b: *Now our plans can go fourth, reich on schedule!*
+b: *Maintenant nos plans vont se dérouler sans problèmes, le Reich dans les délais !*
 
 `_.a2_attack_3 = "bad";`
 
