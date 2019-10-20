@@ -534,19 +534,19 @@ _.a2_hoodie_callback = "World War I";
 
 `bb({eyes:"normal_r", body:"point", mouth:"normal"})`
 
-b: Actually, you know what's worse than no-one liking you? *Everyone* liking you.
+b: En fait, tu sais ce qui est pire que le fait que personne ne t'aime ? Que *tout le monde* t'aime.
 
 `bb({body:"one_up", eyes:"suspect", mouth:"normal"})`
 
-b: That is, becoming one of *these* pleasure-chasing party animals.
+b: C'est-à-dire, devenir un de *ces* animaux de fête en chasse de plaisir.
 
 `bb({body:"normal", mouth:"small"})`
 
-b: A shallow life with shallow friends who only know the shallow you!
+b: Une vie superficielle avec des amis superficiels qui connaissent uniquement ton côté superficiel !
 
 `bb({body:"two_up", eyes:"shock", mouth:"normal"})`
 
-b: Human, we need to run away from these pleasure-zombies before they turn us into one of them!
+b: Humain, on doit fuir ces zombies du plaisir avant qu'ils nous transforme en l'un des leurs !
 
 ```
 _.a2_second_danger = 'zombies';
