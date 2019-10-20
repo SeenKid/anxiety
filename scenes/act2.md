@@ -714,13 +714,13 @@ sfx("gravel");
 
 (...501)
 
-b: The BIG DISGUSTING TRASH PERVERT shall be sentenced to 72 hours in one of those medieval public-humiliation devices
+b: Le GROS PERVERS DÉGOÛTANT devra être condamné à 72 heures dans un de ces dispositifs d'humiliation publique médiéval
 
-b: unless they're secretly *into* that sort of thing
+b: à moins qu'ils ne *penchent* secrètement dans de ce genre de trucs
 
 `bb({body:"scream_a_1"})`
 
-b: because they're a BIG DISGUSTING TRASH PERVERT
+b: parce que ce sont de TRÈS GROS PERVERS DÉGOÛTANT
 
 `_.a2_attack_3 = "bad";`
 
