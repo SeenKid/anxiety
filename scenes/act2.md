@@ -796,15 +796,15 @@ b: *Maintenant nos plans vont se dérouler sans problèmes, le Reich dans les d�
 
 `bb({body:"normal", mouth:"normal", eyes:"normal_r"})`
 
-b: Come to think about it, do we know if this building *has* a monoxide detector?!
+b: En y repensant, est-ce qu'on sait si le bâtiment *a* un détecteur de monoxyde ?!
 
 `bb({body:"two_up", mouth:"small", eyes:"normal"})`
 
-b: What if we're all being poisoned *RIGHT NOW?*
+b:  Et si on était en train d'être empoisonné *LÀ TOUT DE SUITE ?*
 
 `bb({body:"scream_a_1"})`
 
-b: WE WOULDN'T EVEN SEE DEATH APPROACH. WE'D JUST STOP EXISTING FOREVER AND EVER AND EV--
+b: ON NE VERRAIT MÊME PAS LA MORT S'APPROCHER. ON S'ARRÊTERAIT JUSTE D'EXISTER POUR TOUJOURS ET À JAMA--
 
 `_.a2_attack_3 = "harm";`
 
