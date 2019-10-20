@@ -935,31 +935,31 @@ h: *Je suis aimé. Je suis bon. Je suis intelligent. Je suis spécial.*
 
 [Mon Dieu, que c'est narcissique !](#act2d_narcissist)
 
-[T'sais que les affirmations ont été *réfutés* ?](#act2d_disproven)
+[T'sais que la technique des affirmations a été *réfutée* ?](#act2d_disproven)
 
-[OMG, ne donne pas de crédit à une quelconque histoire d'indigènes](#act2d_racist)
+[OMG, ne donne pas de crédit à une histoire random d'indigènes](#act2d_racist)
 
 # act2d_disproven
 
 `bb({body:"point", mouth:"normal", eyes:"closed"})`
 
-b: In fact, they actually *backfire* for people with low self-esteem! 
+b: A vrai dire, elle *se retourne* contre les gens avec peu d'estime de soi !
 
 `bb({body:"one_up", mouth:"small", eyes:"normal"})`
 
-b: It was a well-designed study – randomized controlled trial, experimenter was blinded as to who was in which group.
+b: C'était une bonne étude - avec essai contrôlé randomisé effectué en double aveugle
 
 `bb({body:"two_up", mouth:"small", eyes:"normal_r"})`
 
-b: Results: if you already had low self-esteem, being asked to repeat affirmations makes you feel *worse* than if you'd said nothing at all!
+b: Résultats : si tu as déjà une estime de soi basse, se répéter ce genre d'affirmations te fait sentir *pire* que si tu ne disais rien du tout !
 
 `bb({body:"point", mouth:"normal", eyes:"closed"})`
 
-b: Wood 2009, Psychological Science. Look it up on Google Scholar, human,
+b: Wood 2009, Psychological Science. Va voir sur Google Scholar, humain,
 
 `bb({body:"scream_b_1"})`
 
-b: THEN STOP SPREADING UNSCIENTIFIC FAKE NEWS
+b: ET ARRÊTE DE PROPAGER DES FAKE NEWS NON-SCIENTIFIQUES
 
 ```
 hong({body:"attacked"});
