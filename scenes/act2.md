@@ -1113,19 +1113,19 @@ attack("10p", "bad");
 
 `bb({body:"normal", mouth:"normal", eyes:"suspect"});`
 
-b: Hang on... "they" say that feelings are valid, that you should always accept your emotions.
+b: Attends... "ils" disent que les sentiments sont valides, que tu devrais toujours accepter tes émotions.
 
 `bb({eyes:"suspect_r"});`
 
-b: But "they" also say emotions are irrational, that emotions are not to be trusted.
+b: Mais "ils" disent aussi que les émotions sont irrationnelles, que les émotions ne sont pas dignes de confiances.
 
 `bb({eyes:"angry"});`
 
-b: Oh my gosh, "they" have been lying to us this whole time!
+b: Oh mon Dieu, "ils" nous ont menti pendant tout ce temps !
 
 `bb({body:"scream_a_1"})`
 
-b: "THEY" FEED US CONTRADICTIONS TO MAKE US DEPENDENT ON THE SELF-HELP INDUSTRIAL COMPLEX
+b: "ILS" NOUS NOURRISSENT DE CONTRADICTIONS POUR NOUS RENDRE DÉPÉNDANT DU COMPLEXE INDUSTRIEL DE L'AUTO-AIDE
 
 ```
 music(null);
