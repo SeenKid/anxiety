@@ -562,19 +562,19 @@ _.a2_hoodie_callback = "zombies";
 
 `bb({body:"two_up", eyes:"shock", mouth:"normal"})`
 
-b: People are dying in famines and genocides *right now* and we're just partying!
+b: Des gens meurent de famines et de génocides *maintenant tout de suite* et nous, on fait la fête !
 
 `bb({body:"point", eyes:"closed", mouth:"small"})`
 
-b: A wise person once said, "the only thing necessary for the triumph of evil is for good folks to do nothing."
+b: Une sage personne a un jour dit, "la seule chose qui permet au mal de triompher est l'inaction des hommes de bien".
 
 `bb({body:"two_up", eyes:"shock", mouth:"normal"})`
 
-b: WE'RE DOING NOTHING.
+b: ON EST EN TRAIN DE RIEN FAIRE.
 
 `bb({mouth:"small"})`
 
-b: BY PARTYING, WE'RE HELPING *HITLER*.
+b: EN FAISANT LA FÊTE, ON EST EN TRAIN D'AIDER *HITLER*.
 
 ```
 _.a2_second_danger = 'hitler';
