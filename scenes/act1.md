@@ -1424,7 +1424,7 @@ bb({eyes:"wat", mouth:"small"});
 hong({body:"2_fuck"});
 ```
 
-h: VA. *^FUCK^.*
+h: VA.
 
 h: TE.
 
