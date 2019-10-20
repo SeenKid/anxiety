@@ -896,48 +896,48 @@ attack("20p", _.a2_attack_3);
 
 (...1001)
 
-h: F^AAACK^!
+h: P^UUUUTAIN^ !
 
-h: F^ACK^ING F^ACK^-F^AKK^ITY *F^AAAAACK^*
+h: P^UTAIN^ DE P^UTAIN^ DE M^EEEEERDE^
 
 `bb({body:"two_up", mouth:"smile", eyes:"happy"});`
 
-b: Yay, human! I'm so happy you can hear me again!
+b: Ouais, humain ! Je suis trop content que tu m'entendes de nouveau !
 
 `bb({body:"normal", mouth:"small", eyes:"sad"})`
 
-b: Why were you ignoring me?
+b: Pourquoi tu m'ignorais ?
 
 `hong({body:"facepalm"})`
 
-h: Holy ^hell^, you absolute moron.
+h: Oh ^bordel^, espèce d'idiot.
 
 `hong({body:"facepalm_2"})`
 
-h: You know that Native American story?
+h: Tu connais cette histoire de natifs américains ?
 
-h: "There are two wolves inside you, one is hope, one is despair, which wolf wins? The one you feed."
+h: "Il y a deux loups à l'intérieur de toi, l'un est espoir, l'autre est désespoir, lequel des loups gagne ? Celui que tu nourris."
 
 ```
 hong({body:"facepalm_3"});
 bb({eyes:"normal"});
 ```
 
-h: I was trying to *starve* you, you sadistic ^asshole^!
+h: J'essayais de *t'affamer*, espèce de ^trou du cul^ sadique !
 
 `hong({body:"smile", mouth:"smile"})`
 
-h: Screw it, I'll do positive affirmations instead.
+h: Oh je m'en fiche, je ferai des affirmations positives à la place.
 
-h: *I am loved. I am good. I am smart. I am beautiful. I am special.*
+h: *Je suis aimé. Je suis bon. Je suis intelligent. Je suis spécial.*
 
 `bb({eyes:"suspect"});`
 
-[Golly, that's so narcissistic!](#act2d_narcissist)
+[Mon Dieu, que c'est narcissique !](#act2d_narcissist)
 
-[Y'know affirmations were *disproven?*](#act2d_disproven)
+[T'sais que les affirmations ont été *réfutés* ?](#act2d_disproven)
 
-[omg don't credit random stories to indigenous folk](#act2d_racist)
+[OMG, ne donne pas de crédit à une quelconque histoire d'indigènes](#act2d_racist)
 
 # act2d_disproven
 
