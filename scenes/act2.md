@@ -450,7 +450,7 @@ b: On doit se barrer d'ici et se mettre en quarantaine dans une petite pièce av
 ```
 _.a2_second_danger = 'netflix';
 _.a2_attack_2 = "alone";
-_.a2_hoodie_callback = "a quarantine";
+_.a2_hoodie_callback = "de quarantaine";
 ```
 
 (#act2c)
@@ -493,7 +493,7 @@ b: "UN GROS PERVERS DÉGUEULASSE"
 ```
 _.a2_second_danger = 'law';
 _.a2_attack_2 = "bad";
-_.a2_hoodie_callback = "the law";
+_.a2_hoodie_callback = "de la loi";
 ```
 
 (#act2c)
@@ -523,7 +523,7 @@ b: C'EST L'EFFET PAPILLON, HUMAIN ! COMBIEN DE GENS ES-TU ACCIDENTELLEMENT EN TR
 ```
 _.a2_second_danger = 'butterfly';
 _.a2_attack_2 = "bad";
-_.a2_hoodie_callback = "World War I";
+_.a2_hoodie_callback = "de la Première Guerre Mondiale";
 ```
 
 (#act2c)
@@ -551,7 +551,7 @@ b: Humain, on doit fuir ces zombies du plaisir avant qu'ils nous transforme en l
 ```
 _.a2_second_danger = 'zombies';
 _.a2_attack_2 = "alone";
-_.a2_hoodie_callback = "zombies";
+_.a2_hoodie_callback = "de zombies";
 ```
 
 (#act2c)
@@ -579,7 +579,7 @@ b: EN FAISANT LA FÊTE, ON EST EN TRAIN D'AIDER *HITLER*.
 ```
 _.a2_second_danger = 'hitler';
 _.a2_attack_2 = "bad";
-_.a2_hoodie_callback = "Hitler";
+_.a2_hoodie_callback = "d'Hitler";
 ```
 
 (#act2c)
@@ -603,7 +603,7 @@ b: MOURIIIIIIIIIIIIIIIIIIR
 ```
 _.a2_second_danger = 'ignore';
 _.a2_attack_2 = "harm";
-_.a2_hoodie_callback = "carbon monoxide";
+_.a2_hoodie_callback = "de monoxyde de carbone";
 ```
 
 (#act2c)
@@ -685,7 +685,7 @@ b: Et ensuite, ils devront stériliser leur drône pour retirer nos GERMES DE TA
 
 `_.a2_attack_3 = "alone";`
 
-`_.a2_hoodie_callback = "a quarantine";`
+`_.a2_hoodie_callback = "de quarantaine";`
 
 (#act2d)
 
@@ -724,7 +724,7 @@ b: parce que ce sont de TRÈS GROS PERVERS DÉGOÛTANT
 
 `_.a2_attack_3 = "bad";`
 
-`_.a2_hoodie_callback = "the law";`
+`_.a2_hoodie_callback = "de la loi";`
 
 (#act2d)
 
@@ -748,7 +748,7 @@ b: BAM, TU METS EN FAILLITE TON ASSURANCE SANTÉ ET DES MILLIONS DE GENS MEURENT
 
 `_.a2_attack_3 = "bad";`
 
-`_.a2_hoodie_callback = "the butterfly effect";`
+`_.a2_hoodie_callback = "de l'effet papillon";`
 
 (#act2d)
 
@@ -768,7 +768,7 @@ b: Puis, ils te MORDRONT et te transformeront en POTE SANS CERVELLE et/ou UN COP
 
 `_.a2_attack_3 = "bad";`
 
-`_.a2_hoodie_callback = "zombies";`
+`_.a2_hoodie_callback = "de zombies";`
 
 (#act2d)
 
@@ -788,7 +788,7 @@ b: *Maintenant nos plans vont se dérouler sans problèmes, le Reich dans les d�
 
 `_.a2_attack_3 = "bad";`
 
-`_.a2_hoodie_callback = "Hitler";`
+`_.a2_hoodie_callback = "d'Hitler";`
 
 (#act2d)
 
@@ -808,7 +808,7 @@ b: ON NE VERRAIT MÊME PAS LA MORT S'APPROCHER. ON S'ARRÊTERAIT JUSTE D'EXISTER
 
 `_.a2_attack_3 = "harm";`
 
-`_.a2_hoodie_callback = "carbon monoxide";`
+`_.a2_hoodie_callback = "de monoxyde de carbone";`
 
 (#act2d)
 
@@ -868,7 +868,7 @@ b: AHHH ON EST EN TRAIN DE MOURIR ! ON MEURT ON MEURT ON ME--
 
 `_.a2_attack_3 = "harm";`
 
-`_.a2_hoodie_callback = "punch bowls";`
+`_.a2_hoodie_callback = "de bols de punch";`
 
 (#act2d)
 
@@ -1144,62 +1144,62 @@ attack("10p", "harm");
 
 h: ...
 
-h: I hate this. God it hurts so much I *hate* this.
+h: Je déteste ça. Dieu que ça fait mal tellement je *déteste* ça.
 
-h: I can't appease you. I can't ignore you. I can't fight you. 
+h: Je ne peux pas t'apaiser. Je ne peux pas t'ignorer. Je ne peux pas te combattre.
 
 `bb({eyes:"suspect"});`
 
-h: No matter what I do, I can't seem to get rid of yo--
+h: Qu'importe ce que je fais, je ne peux pas me débarrasser de to--
 
 `bb({body:"cry_1"});`
 
-b: Well maybe you're NOT *SUPPOSED* TO GET RID OF ME.
+b: Eh bien peut-être que tu N'ES PAS *SENSÉ* TE DÉBARASSER DE MOI.
 
 `bb({body:"cry_2"});`
 
-b: How do you think *I* feel, human?!
+b: Comment tu penses que *je* me sens, humain ?!
 
 `bb({body:"cry_4", mouth:"cry", eyes:"cry"})`
 
-b: I'm trying my best to be your guard-dog, but you keep seeing me as some Big Bad Wolf!
+b: Je fais de mon mieux pour être ton chien de garde, mais tu continues de me voir comme le Grand Méchant Loup !
 
-b: So I try even *harder* to alert you to danger! *More* danger! *Different* danger!
+b: Alors j'essaie encore plus *dur* de t'alerter du danger ! *Plus* de dangers ! *Différents* dangers !
 
 `bb({eyes:"cry_2"})`
 
-b: But no matter how hard I try to protect you, you *still* think I'm your enemy!
+b: Mais qu'importe à quel point j'essaie de te protéger, tu penses *toujours* que je suis ton ennemi !
 
 `bb({body:"cry_5"});`
 
-b: What am I doing wrong?!
+b: Qu'est-ce que je fais de mal ?!
 
 `bb({body:"cry_2"});`
 
-b: I *know* I suck at my job. But I'm *trying*, human!
+b: Je *sais* que je crains dans mon boulot. Mais j'*essaie*, humain !
 
 `bb({body:"cry_3"});`
 
-b: ...I'm trying.
+b: ... j'essaie.
 
 `bb({body:"cry_6", mouth:"right", eyes:"cry_r_1"});`
 
-b: You don't have to heed my warnings, or agree with me, or even *like* me.
+b: Tu n'es pas obligé de tenir compte de mes avertissements, ou être d'accord avec moi, ou même *m'aimer*.
 
 `bb({eyes:"cry_r_2"});`
 
-b: I just... all I want is for you to be patient with me.
+b: Je veux juste... Tout ce que je veux c'est que tu sois patient avec moi.
 
 `bb({eyes:"cry_r_3"});`
 
-b: I just want for you to sit with me for a while, instead of turning away and--
+b: Je veux juste que tu t'asseois avec un moi pendant un moment, au lieu de te détourner et--
 
 ```
 bb({eyes:"cry_r_4"});
 hong({body:"listen"});
 ```
 
-r: Hey.
+r: Hé.
 
 ```
 hong({body:"look"});
@@ -1216,21 +1216,21 @@ publish("act2",["party_hunter",2]);
 Game.WORDS_HEIGHT_BOTTOM = 230;
 ```
 
-r: Looks like you're caught in a fight with yourself, kid.
+r: On dirait que tu es pris dans une bataille avec toi-même, petit.
 
 ```
 publish("act2",["party_hunter",3]);
 publish("act2",["party_hong",13]);
 ```
 
-h2: Was it that obvious?
+h2: Ça se voyait tant que ça ?
 
 ```
 publish("act2",["party_hunter",4]);
 publish("act2",["party_hong",14]);
 ```
 
-r: You were, uh, mumbling at your hoodie about {{_.a2_hoodie_callback}} or something.
+r: Tu étais en train de, euh, murmurer à ton sweat à propos {{_.a2_hoodie_callback}} ou quelque chose.
 
 ```
 publish("act2",["party_hunter",13]);
@@ -1246,7 +1246,7 @@ setTimeout(function(){
 },801);
 ```
 
-h2: oh god i'm such a mess.
+h2: Oh bon sang, je suis si lamentable.
 
 ```
 publish("act2",["party_hunter",7]);
@@ -1254,7 +1254,7 @@ publish("act2",["party_hong",18]);
 sfx("squeak");
 ```
 
-r: Hey. You're not alone, friend. Anxiety's super common.
+r: Hé. T'es pas seul, l'ami. L'anxiété est super commun.
 
 ```
 publish("act2",["party_hunter",5]);
@@ -1262,38 +1262,38 @@ publish("act2",["party_hong",19]);
 ```
 
 {{if _.act1_ending=="fight"}}
-r: Heck, just yesterday, I heard someone on campus had a nervous breakdown and smashed their phone!
+r: Tiens, juste hier, j'ai entendu que quelqu'un a pété un plomb et explosé son téléphone !
 {{/if}}
 
 {{if _.act1_ending=="flight"}}
-r: Heck, just yesterday, I heard someone curled up into an armadillo ball and cried in public!
+r: Tiens, juste hier, j'ai entendu que quelqu'un s'est mis en boule comme un tatoo et a pleuré en public !
 {{/if}}
 
 ```
 publish("act2",["party_hunter",2]);
 ```
 
-r: Listen: I know what it's like to have that animal in your head.
+r: Écoute : je sais ce que c'est que d'avoir un animal dans ta tête.
 
 ```
 publish("act2",["party_hunter",8]);
 ```
 
-r: We *all* do. That's why I throw these parties every weekend, to forget our worries, forget that animal.
+r: On le sait *tous*. C'est pourquoi j'organise ces fêtes chaque week-end, pour oublier nos inquiétudes, oublier l'animal.
 
 ```
 publish("act2",["party_hunter",9]);
 publish("act2",["party_hong",20]);
 ```
 
-h2: but my anxiety...
+h2: Mais mon anxiété...
 
 ```
 publish("act2",["party_hunter",2]);
 publish("act2",["party_hong",21]);
 ```
 
-r: Don't worry, kid. I used to be like you. But then I found a little trick to get that negative voice to shut up forever...
+r: T'inquiètes pas, petit. J'étais comme toi avant. Mais j'ai trouvé une petite astuce pour faire taire à jamais cette voix négative...
 
 ```
 publish("act2",["party_hunter",3]);
@@ -1323,14 +1323,14 @@ sfx("rustle2");
 publish("act2",["party_hunter",11]);
 ```
 
-r: My own specialty blend. It's a bit stronger than... well, anything legal really.
+r: Mon mélange spécial ! C'est un peu plus fort que... eh bien, tout ce qui est légal en fait.
 
 ```
 publish("act2",["party_hunter",12]);
 publish("act2",["party_hong",24]);
 ```
 
-r: Bottoms up, ^bee-yatch^!
+r: Bottoms up, ^bââ-taard^!
 
 ```
 hong({body:"hold"});
@@ -1343,11 +1343,11 @@ publish("hp_show");
 
 (...3500)
 
-[Oh my God.](#act2g_1) `Game.OVERRIDE_CHOICE_LINE=true`
+[Oh mon Dieu.](#act2g_1) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[This is a bad coping mechanism.](#act2g_2) `Game.OVERRIDE_CHOICE_LINE=true`
+[C'est une mauvaise mécanique de copie.](#act2g_2) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[Don't take drinks from strangers.](#act2g_3) `Game.OVERRIDE_CHOICE_LINE=true`
+[Ne prends pas ces boissons d'inconnus.](#act2g_3) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act2g_1
 
