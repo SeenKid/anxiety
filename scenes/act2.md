@@ -856,15 +856,15 @@ b: AHH ON EST CASSÉ ! TELLEMENT CASSÉ TELLEMENT CASSÉ TELLEMENT CASS--
 
 `bb({body:"normal", mouth:"normal", eyes:"normal"})`
 
-b: I'm not being irrational. People *do* drug punch bowls. That is an actual thing that actually happens.
+b: Je ne suis pas irrationnel. Les gens droguent *vraiment* les bols de punch. C'est un truc qui se fait vraiment.
 
 `bb({eyes:"suspect"})`
 
-b: Human, does your head hurt? Are your limbs limp? I think we're dying.
+b: Humain, est-ce que ta tête te fait mal ? Tes membres sont-ils mous ? Je pense qu'on est en train de mourir.
 
 `bb({body:"scream_a_1"})`
 
-b: AHHH WE'RE DYING! WE'RE DYING WE'RE DYING WE'RE DYI--
+b: AHHH ON EST EN TRAIN DE MOURIR ! ON MEURT ON MEURT ON ME--
 
 `_.a2_attack_3 = "harm";`
 
