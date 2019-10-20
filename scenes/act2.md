@@ -834,19 +834,19 @@ b: AHH ON EST CASSÉ ! TELLEMENT CASSÉ TELLEMENT CASSÉ TELLEMENT CASS--
 
 `bb({body:"normal", mouth:"normal", eyes:"normal"})`
 
-b: What if we're just *fundamentally rotten?*
+b: Et si on était juste *fondamentalement pourris ?*
 
 `bb({body:"one_up", eyes:"sad"})`
 
-b: Others have an inner drive to do goodness, but we only do "good" out of guilt or shame, if at all.
+b: Les autres ont cette pulsion intérieur de faire le bien, mais nous, on fait le "bien" uniquement par culpabilité ou honte, voire pas du tout.
 
 `bb({body:"normal", mouth:"small", eyes:"sad_r"})`
 
-b: What if it's in our nature to hurt others? What if we can't be anything *other* than a burden to those close to us?
+b: Et si c'était dans notre nature de blesser les autres ? Et si on ne pouvait être rien *d'autre* qu'un fardeau pour ceux proche de nous ?
 
 `bb({body:"scream_a_1"})`
 
-b: AHH WE'RE BROKEN! SO BROKEN SO BROKEN SO BROKE--
+b: AHH ON EST CASSÉ ! TELLEMENT CASSÉ TELLEMENT CASSÉ TELLEMENT CASS--
 
 `_.a2_attack_3 = "bad";`
 
