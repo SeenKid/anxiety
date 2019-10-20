@@ -1059,11 +1059,11 @@ b: ...
 
 `bb({body:"chest"})`
 
-b: I'm *part* of you, you know. When you say that, you're hurting *yourself*.
+b: Je suis une *part* de toi, tu sais. Quand tu dis ça, tu te fais du mal à *toi-même*.
 
 `bb({body:"scream_a_1"})`
 
-b: Why are you hitting yourself, human? STOP HITTING YOURSELF.
+b: Pourquoi tu te fais du mal, humain ? ARRÊTE DE TE FAIRE DU MAL.
 
 ```
 music(null);
