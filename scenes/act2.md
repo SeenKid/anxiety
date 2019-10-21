@@ -1382,34 +1382,34 @@ hong({body:"forward", mouth:"forward"});
 bb({body:"frazzled", mouth:"frazzled", eyes:"frazzled"});
 ```
 
-h: Mmm, what an exquisite palette!
+h: Mmm, quelle palette exquise !
 
-h: A full-bodied flavor of "shut your mind up," with a subtle aftertaste of "never feel anything ever again"!
+h: Une saveur corsée de "ferme-la conscience", avec un subtile arrière-goût de "ne plus jamais rien ressentir de nouveau" !
 
-b: This is bad, human. This is really, really bad.
+b: C'est mal, humain. C'est vraiment, vraiment mal.
 
-[This is *actually* how addiction starts.](#act2h_opt1) `Game.OVERRIDE_CHOICE_LINE=true`
+[C'est *vraiment* comme ça que l'addiction commence.](#act2h_opt1) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[I *knew* the host was deeply messed up!](#act2h_opt3) `Game.OVERRIDE_CHOICE_LINE=true`
+[Je *savais* que l'hôte était profondément taré !](#act2h_opt3) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[Also, they could have drugged that!](#act2h_opt2) `Game.OVERRIDE_CHOICE_LINE=true`
+[Et aussi, ils ont pu avoir drogué ça !](#act2h_opt2) `Game.OVERRIDE_CHOICE_LINE=true`
 
 
 # act2h_opt1
 
-b: This is *actu*--
+b: C'est *vraim*-- This is *actu*--
 
 (#act2h)
 
 # act2h_opt2
 
-b: Also, they co--
+b: Et aussi, ils ont pu avo--
 
 (#act2h)
 
 # act2h_opt3
 
-b: I *knew* th--
+b: Je *savais* qu--
 
 (#act2h)
 
