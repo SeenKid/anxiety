@@ -506,7 +506,7 @@ b: En fait, même si tu trouves une noble but à ta vie, tu peux *toujours* tout
 
 `bb({body:"normal", mouth:"normal", eyes:"normal"})`
 
-b: Alfred Nobel voulait la paix dans le monde et que les cultures se comprennent entre elles. Donc il a décidé de simplifier les voyage.
+b: Alfred Nobel voulait la paix dans le monde et que les cultures se comprennent entre elles. Donc il a décidé de simplifier les voyages.
 
 `bb({eyes:"normal_r"})`
 
@@ -716,11 +716,11 @@ sfx("gravel");
 
 b: Le GROS PERVERS DÉGOÛTANT devra être condamné à 72 heures dans un de ces dispositifs d'humiliation publique médiéval
 
-b: à moins qu'ils ne *penchent* secrètement dans de ce genre de trucs
+b: à moins qu'ils ne *penchent* secrètement dans ce genre de trucs
 
 `bb({body:"scream_a_1"})`
 
-b: parce que ce sont de TRÈS GROS PERVERS DÉGOÛTANT
+b: parce que ce sont de TRÈS GROS PERVERS DÉGOÛTANTS
 
 `_.a2_attack_3 = "bad";`
 
@@ -816,7 +816,7 @@ b: ON NE VERRAIT MÊME PAS LA MORT S'APPROCHER. ON S'ARRÊTERAIT JUSTE D'EXISTER
 
 `bb({body:"normal", mouth:"normal", eyes:"sad"})`
 
-b: Et si on était juste *fondamentalement incapable* d'être aimé, ou d'aimé quelqu'un ?
+b: Et si on était juste *fondamentalement incapable* d'être aimé, ou d'aimer quelqu'un ?
 
 `bb({body:"normal", mouth:"small", eyes:"sad_r"})`
 
@@ -842,7 +842,7 @@ b: Les autres ont cette pulsion intérieur de faire le bien, mais nous, on fait 
 
 `bb({body:"normal", mouth:"small", eyes:"sad_r"})`
 
-b: Et si c'était dans notre nature de blesser les autres ? Et si on ne pouvait être rien *d'autre* qu'un fardeau pour ceux proche de nous ?
+b: Et si c'était dans notre nature de blesser les autres ? Et si on ne pouvait être rien *d'autre* qu'un fardeau pour ceux proches de nous ?
 
 `bb({body:"scream_a_1"})`
 
@@ -1386,7 +1386,7 @@ h: Mmm, what an exquisite palette!
 
 h: A full-bodied flavor of "shut your mind up," with a subtle aftertaste of "never feel anything ever again"!
 
-b: This is bad, human. This is really, really bad.
+b: C'est mal, humain. C'est vraiment, vraiment mal.
 
 [This is *actually* how addiction starts.](#act2h_opt1) `Game.OVERRIDE_CHOICE_LINE=true`
 
@@ -1430,13 +1430,13 @@ bb({body:"panicked", mouth:"panicked", eyes:"panicked"});
 
 h: Delicious, *and* cheaper than therapy!
 
-b: HUMAN PLEASE STOP
+b: HUMAIN ARRETE S'IL TE PLAIT
 
 h: Hehehe!
 
-h: And what are *you* gonna do about it, ^asshole^?
+h: Et qu'est ce que *tu* va faire de ça, ^Trou du cul^?
 
-b: I'm so sorry, human.
+b: Je suis tellement désolé, Humain.
 
 b: I'm going to have to use my SPECIAL ATTACK
 
@@ -1503,7 +1503,7 @@ setTimeout(function(){
 
 (...2500)
 
-h: WHAT THE ^HELL^ WAS THAT
+h: QU'EST CE QUE C'EST QUE CE ^BORDEL^.
 
 b: I'm sorry. I needed to show you the consequences.
 
