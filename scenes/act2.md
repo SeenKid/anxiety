@@ -1549,15 +1549,15 @@ b: FRAPPE-LES FRAPPE-LES FRAPPE-LES FRAPPE-LES FRAPPE-LES FRAPPE-LES FRAPPE-LES 
 
 # act2j_flight
 
-b: I *knew* all these partygoers were deeply messed up. They all dull their pain with horrible things!
+b: Je *savais* que tout ces fêtards étaient tous tarés. Ils engourdissent leur douleur avec d'horribles choses !
 
 `bb({ body:"yell_1" });`
 
-b: And they're tricking you into doing the same thing! They're corrupting you! We need to get out!
+b: Et ils te piégaient pour faire la même chose ! Ils sont en train de te corrompre ! On doit partir !
 
 `bb({ body:"final_1" });`
 
-b: GET OUT GET OUT GET OUT GET OUT GET OUT GET OUT GET OUT GET OUT GET OUT GET OU--
+b: SORS D'ICI SORS D'ICI SORS D'ICI SORS D'ICI SORS D'ICI SORS D'ICI SORS D'ICI SORS D'ICI SORS D'IC--
 
 `_.a2_ending = "flight";`
 
