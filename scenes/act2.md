@@ -1531,17 +1531,17 @@ n: *FINIS LE*
 
 `bb({ eyes:"angry" });`
 
-b: That psychopath was taking advantage of you.
+b: Ce psychopathe était en train de prendre l'avantage sur toi.
 
-b: They were trying to corrupt you, make you as messed up as they are!
+b: Ils voulaient te corrompre, te rendre aussi taré qu'ils le sont !
 
 `bb({ body:"yell_angry_1" });`
 
-b: Punch that jerk! Knock their friggin' lights out!
+b: Frappe cet enfoiré ! Mets-le KO !
 
 `bb({ body:"final_1" });`
 
-b: PUNCH THEM PUNCH THEM PUNCH THEM PUNCH THEM PUNCH THEM PUNCH THEM PUNCH THEM PUNCH THE--
+b: FRAPPE-LES FRAPPE-LES FRAPPE-LES FRAPPE-LES FRAPPE-LES FRAPPE-LES FRAPPE-LES FRAPPE-LES FRAP--
 
 `_.a2_ending = "fight";`
 
