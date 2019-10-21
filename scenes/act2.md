@@ -1428,17 +1428,17 @@ hong({body:"back", mouth:"back"});
 bb({body:"panicked", mouth:"panicked", eyes:"panicked"});
 ```
 
-h: Delicious, *and* cheaper than therapy!
+h: Délicieux, *et* moins cher que la thérapie !
 
-b: HUMAN PLEASE STOP
+b: HUMAIN S'IL TE PLAÎT ARRÊTE
 
-h: Hehehe!
+h: Héhéhé !
 
-h: And what are *you* gonna do about it, ^asshole^?
+h: Et qu'est-ce que *tu* vas faire à propos de ça, ^trou du cul^ ?
 
-b: I'm so sorry, human.
+b: Je suis vraiment désolé, humain.
 
-b: I'm going to have to use my SPECIAL ATTACK
+b: Je vais utiliser mon ATTAQUE SPÉCIALE
 
 ```
 bb({body:"special_a"});
@@ -1465,9 +1465,9 @@ hong({body:"forward", mouth:"forward"});
 sfx("charging");
 ```
 
-h: What's this ^crap^?
+h: C'est quoi cette ^merde^ ?
 
-h: You're gonna yap more stupid *words* at me to--
+h: Tu vas encore m'aboyer plus de *mots* stupid--
 
 ```
 bb({body:"special_c"});
@@ -1503,29 +1503,29 @@ setTimeout(function(){
 
 (...2500)
 
-h: WHAT THE ^HELL^ WAS THAT
+h: C'ÉTAIT QUOI CE ^BORDEL^ ?
 
-b: I'm sorry. I needed to show you the consequences.
+b: Je suis désolé. Je devais te montrer les conséquences.
 
 {{if _.SPECIAL_ATTACK=="harm"}}
-h: I COULD *SEE* MY OWN CORPSE. I COULD *FEEL* THE SENSATION OF BEING ACTUALLY DEAD.
+h: JE POUVAIS  *VOIR* MON PROPRE CORPS. JE POUVAIS *SENTIR* LA SENSATION D'ÊTRE VRAIMENT MORT.
 {{/if}}
 
 {{if _.SPECIAL_ATTACK=="alone"}}
-h: I COULD *SEE* EVERYONE'S LOOK OF DISGUST. I COULD *HEAR* ALL THE THINGS THEY SAID.
+h: JE POUVAIS *VOIR* LE REGARD DE DÉGOÛT DE TOUT LE MONDE. JE POUVAIS *ENTENDRE* TOUTES LES CHOSES QU'ILS DISAIENT.
 {{/if}}
 
 {{if _.SPECIAL_ATTACK=="bad"}}
-h: I COULD *HEAR* THE CRUNCHING OF RIBS. I COULD *TASTE* THE BLOOD IN THE AIR.
+h: JE POUVAIS *ENTENDRE* LE BROIEMENT DES CÔTES. JE POUVAIS *GOÛTER* LE SANG DANS L'AIR.
 {{/if}}
 
-b: I'm sorry, human.
+b: Je suis désolé, humain.
 
-n: *FINISH THEM*
+n: *FINIS LE*
 
-[{FIGHT: Punch the host.}](#act2j_fight) `Game.OVERRIDE_CHOICE_LINE=true`
+[{FIGHT: Frappe l'hôte.}](#act2j_fight) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[{FLIGHT: Let's get out of here.}](#act2j_flight) `Game.OVERRIDE_CHOICE_LINE=true`
+[{FLIGHT: Partons d'ici tout de suite.}](#act2j_flight) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act2j_fight
 
