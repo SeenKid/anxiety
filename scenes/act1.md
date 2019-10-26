@@ -1352,7 +1352,7 @@ h:
 
 h: Je veux juste vivre ma vie.
 
-h: Je veux juste être libérer de toute cette... souffrance.
+h: Je veux juste être libéré de toute cette... souffrance.
 
 `bb({eyes:"look_sad"});`
 
