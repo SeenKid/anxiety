@@ -1586,7 +1586,7 @@ publish("act2",["party_hunter",14]);
 Game.WORDS_HEIGHT_BOTTOM = 230;
 ```
 
-r: You alright, kid?
+r: Ça va, petit ?
 
 `publish("act2",["party_hunter",13]);`
 
@@ -1618,7 +1618,7 @@ publish("act2",["dee",6]);
 publish("act2",["dum",6]);
 ```
 
-r: Y-you...
+r: T-tu...
 
 ```
 publish("act2",["party_hunter",23]);
@@ -1628,22 +1628,22 @@ publish("act2",["dum",5]);
 music('party1', {volume:0.6, fade:6});
 ```
 
-r: are *kinky*.
+r: es *vicieux*.
 
-r: I like that. Come to my party next weekend, cutie.
+r: J'aime ça. Viens à ma fête la semaine prochaine, mon mignon.
 
 ```
 publish("act2",["party_hunter",19]);
 publish("act2",["party_hong",36]);
 ```
 
-h2: ok bye, ciao, adios, au revoir
+h2: ok au revoir, ciao, adios, bye
 
-r: The animal might have won today, but come back, and I'll mix something even stronger for you!
+r: L'animal a peut-être gagné aujourd'hui, mais reviens, et je te préparerai quelque chose d'encore plus fort !
 
 h2: sayōnara, auf wiedersehen, zài jiàn, shalom
 
-r: You and me, kid, we'll show that beast who's boss!
+r: Toi et moi, gamin, on va montre à cette bête qui est le patron !
 
 (#act2k_end)
 
@@ -1651,23 +1651,23 @@ r: You and me, kid, we'll show that beast who's boss!
 
 `publish("act2",["party_hong",36]);`
 
-h2: ok sorry i have to run
+h2: ok désolé je dois partir
 
 `publish("act2",["party_hunter",16]);`
 
-r: ^Damn^ it. The animal won today, huh?
+r: Fais ^chier^. La bête a gagné aujourd'hui, hein ?
 
 `publish("act2",["party_hunter",15]);`
 
-h2: no no, just, uh, gotta run a marathon. gotta go fast.
+h2: non non, juste, euh, j'dois courrir un marathon. "gotta go fast".
 
 `publish("act2",["party_hunter",19]);`
 
-r: Come to my party next weekend, cutie. I'll mix something even stronger for you.
+r: Viens à ma fête la semaine prochaine, mon mignon. Je te mélangerai un truc encore plus fort.
 
-h2: ok thanks gonna run run run run run
+h2: ok merci faut que j'coure coure coure coure coure
 
-r: You and me, kid, we'll show that beast who's boss!
+r: Toi et moi, gamin, on va montrer à cette bête qui est le patron !
 
 (#act2k_end)
 
