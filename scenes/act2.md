@@ -1690,13 +1690,13 @@ sfx("whoosh");
 
 (...1000)
 
-b: Human! Are you okay?!
+b: Humain ! Ça va ?!
 
 ```
 publish("act2", ["act2_end","next"]);
 ```
 
-b: Gosh, that was *close.* We really could've--
+b: Bon sang, c'était *juste.* On aurait p--
 
 ```
 Game.clearText();
@@ -1714,11 +1714,11 @@ sfx("hit");
 
 (...1000)
 
-h: I'm coming back to the party next weekend.
+h: Je retournerai à la fête la semaine prochaine.
 
-h: The next time we fight, I'm not just going to *defeat* you...
+h: La prochaine fois qu'on se battra, je ne pas juste te *vaincre*...
 
-h: I'm going to ^fuck^ing *kill* you.
+h: Je vais te ^putain^ de tuer.
 
 ```
 Game.clearText();
