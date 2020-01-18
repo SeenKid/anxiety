@@ -396,6 +396,8 @@ sfx("yaps", {volume:0.6});
 bb({body:"yap_1"});
 Game.FORCE_CANT_SKIP = true;
 Game.WORDS_HEIGHT_BOTTOM = 215;
+Game.FORCE_TEXT_DURATION = 90;
+Game.FORCE_NO_VOICE = true;
 ```
 
 b: YAP YAP YAP YAP YAP
@@ -1321,10 +1323,12 @@ h: Groupes de soutien, thérapie en ligne, centres de soin étudiants/bénévole
 `hong({ body:"hands_1" })`
 
 h: Prendre l'habitude de faire de la méditation libre, regarder des vidéos de soins mentaux approuvées...
+# new english version : Building habits like meditation, sleeping well, chatting regularly with friends, learning new things...
 
 `hong({ body:"hands_2" })`
 
 h: Emprunter un livre à bibliothèque sur la Thérapie Cognitive Comportementale ou la Thérapie d'Acceptation et d'Engagement...
+# new english version : Going to a library to borrow workbooks for evidence-based psychotherapies...
 
 `hong({ body:"one_up" })`
 
@@ -1986,6 +1990,8 @@ publish("act4", ["hong_closer", 6]);
 sfx("yaps", {volume:0.6});
 Game.FORCE_CANT_SKIP = true;
 Game.WORDS_HEIGHT_BOTTOM = 205;
+Game.FORCE_TEXT_DURATION = 90;
+Game.FORCE_NO_VOICE = true;
 ```
 
 b: YAP YAP YAP YAP YAP
