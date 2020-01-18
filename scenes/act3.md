@@ -153,23 +153,20 @@ publish("act3",["roofhunter",6]);
 publish("act3",["dd",1]);
 ```
 
-r: Pardon, tu t'es fait avoir par cette mode McPleineconscience qui dit que se sentir mal c'est *bien ?*
-# new english version : I'm sorry, did you fall for that McMindfulness propaganda that claims feeling bad is *good?*
+r: Pardon, tu t'es fait avoir par cette propagande McPleineconscience qui dit que se sentir mal c'est *bien ?*
 
 ```
 publish("act3",["roofhunter",17]);
 ```
 
 
-r: Le plaisir, c'est l'opposé de la douleur. En ^putain^ de conséquence, tu peux utiliser le plaisir pour combattre la douleur !
-# new english version : The ^assholes^ who run this world give the rest of *us* anxiety and depression,
+r: Ce sont les ^connards^ qui dirigent ce monde qui *nous* rendent anxieux et dépressifs,
 
 ```
 publish("act3",["roofhunter",18]);
 ```
 
-r: Comment font ces pseudos-Bouddhistes de la Silicon Valley pour ne pas s'aperçevoir de cette ^merde^ ?!
-# new english version : Then make TED Talks to tell us to "accept" being ^fucked^ over, and "embrace" that sadistic demon in our heads!
+r: Puis font des TED Talks pour nous dire "d'accepter" d'être ^baisés^ et de "faire la paix" avec ce démon sadique dans nos têtes !
 
 ```
 publish("act3",["roofhunter",6]);
