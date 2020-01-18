@@ -1404,7 +1404,7 @@ b: Comme si c'était *bon* d'être cassé ou quoi ? Non !
 
 `bb({ eyes:"angry_r", body:"one_up" });`
 
-b: Tous ces polissons de scénaristes d'Hollywoord qui romantise la maladie mentale sont des faquins !
+b: Tous ces polissons de scénaristes d'Hollywoord qui romantise la maladie mentale sont plein de crotte !
 
 `bb({ eyes:"angry", body:"two_up" });`
 
@@ -1633,7 +1633,7 @@ h2: Où j'ai eu cette crise de panique et frappé l'hôte.
 {{/if}}
 
 {{if _.a2_ending=="flight"}}
-h2: Où j'ai eu cette de panique et suis parti en pleurant.
+h2: Où j'ai eu cette crise de panique et suis parti en pleurant.
 {{/if}}
 
 ```
