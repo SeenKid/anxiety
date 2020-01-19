@@ -4,22 +4,22 @@
 
 ## Domaine public
 
-Nicky Case et Monplaisir dédient par la présente l'ensemble de leur travail sur ce jeu au domaine public, sous la licence [Creative Commons Zero](https://creativecommons.org/choose/zero/).
+Nicky Case et Monplaisir dédient par la présente l'ensemble de leur travail sur ce jeu au domaine public, sous la licence [Creative Commons Zero](https://creativecommons.org/choose/zero/).   
 Ça veut dire que vous pouvez *tout* remixer et réutiliser dans l'ensemble de l'art / du code / de la musique compris dans ce jeu pour *n'importe quel* usage, y compris pour un usage commercial !
 
-**Q :** Est-ce que je dois nommer des créateurs ?
+**Q :** Est-ce que je dois nommer des créateurs ?   
 **R :** Vous n'y êtes pas *légalement* obligé·e, mais ce serait vraiment sympa ! <3
 
-**Q :** Légalement parlant, est-ce que je peux dire que c'est *moi* qui ai fait ça ?
+**Q :** Légalement parlant, est-ce que je peux dire que c'est *moi* qui ai fait ça ?   
 **R :** Oui, tout comme vous pouvez dire que c'est vous qui avez écrit Frankenstein de Mary Shelley, ou affirmer que vous avez 13 tétons.
 
-**Q :** Est-ce que je peux poster ce jeu sur d'autres sites ?
+**Q :** Est-ce que je peux poster ce jeu sur d'autres sites ?   
 **R :** Peut-être. Même si c'est complètement légal du point de vue du copyright, beaucoup de sites ont leurs propres politiques pour ce qui est de poster le travail d'autres gens *sans* modifications significatives même lorsqu'il est open source/dans le domaine public. (Mais si c'est de votre propre site qu'il s'agit, alors oui, s'il vous plaît, dirigez vos lecteurs vers ce jeu !)
 
-**Q :** Est-ce que je peux vendre un portage de ce jeu ?
+**Q :** Est-ce que je peux vendre un portage de ce jeu ?   
 **R :** Oui ! Mais pour éviter toute confusion, je vous recommande de rappeler que votre jeu est un "Portage fait par les fans", et de *laisser un lien vers cette déclaration qui dit que j'autorise explicitement les remix commerciaux* (Par exemple, voici [un portage sur Steam d'un autre de mes jeux !](https://store.steampowered.com/app/1103210/We_Become_What_We_Behold_FanMade_Port/)) L'objectif est de vous éviter des accusations de vol de la part de gens qui ne sauraient pas que je fais toujours mes projets en open-source + les mets dans le domaine public.
 
-**Q :** Est-ce que je peux transformer ce jeu en un simulateur de séduction entre l'humain·e et le loup ?
+**Q :** Est-ce que je peux transformer ce jeu en un simulateur de séduction entre l'humain·e et le loup ?   
 **R :** euh
 
 
@@ -138,7 +138,8 @@ Du coup, je vous recommande fortement de collaborer avec d'autres gens en ligne 
 
 Traduisez tous les fichiers Markdown qui se trouvent dans le dossier `/scenes`. (à peu près 9000 mots) J'utilise personnellement [MacDown](https://macdown.uranusjr.com/) (seulement disponible sur Mac), mais il y a [tout un tas d'autres éditeurs Markdown gratuits et open-source](https://opensource.com/article/18/11/markdown-editors).
 
-**IL Y A DES RÈGLES SUR CE QU'IL FAUT ET NE FAUT PAS TRADUIRE.** C'est sûrement mieux si je vous le montre avec des exemples. Excusez mon français horrible... _(NdT : les images suivantes ont été créées par l'auteur lui-même, pas par l'équipe de traduction)_
+**IL Y A DES RÈGLES SUR CE QU'IL FAUT ET NE FAUT PAS TRADUIRE.** C'est sûrement mieux si je vous le montre avec des exemples. Excusez mon français horrible...   
+_(NdT : les images suivantes ont été créées par l'auteur lui-même, pas par l'équipe de traduction)_
 
 Anglais d'origine :
 
