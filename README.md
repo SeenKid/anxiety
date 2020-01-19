@@ -7,7 +7,7 @@
 Nicky Case et Monplaisir dédient par la présente l'ensemble de leur travail sur ce jeu au domaine public, sous la licence [Creative Commons Zero](https://creativecommons.org/choose/zero/).   
 Ça veut dire que vous pouvez *tout* remixer et réutiliser dans l'ensemble de l'art / du code / de la musique compris dans ce jeu pour *n'importe quel* usage, y compris pour un usage commercial !
 
-**Q :** Est-ce que je dois nommer des créateurs ?   
+**Q :** Est-ce que je dois nommer les créateurs ?   
 **R :** Vous n'y êtes pas *légalement* obligé·e, mais ce serait vraiment sympa ! <3
 
 **Q :** Légalement parlant, est-ce que je peux dire que c'est *moi* qui ai fait ça ?   
@@ -153,97 +153,96 @@ Comme vous pouvez le constater, il ne *faut pas* tout traduire.
 
 **Traduisez seulement :**
 
-* Anything after a letter + colon. This changes a dialogue *spoken*. "h:" is hong the human, "b:" is beebee the wolf, etc.
-* Anything in the square brackets of `[words words words](#section_name)`. This changes the dialogue *choices.*
+* Tout ce qui suit une lettre + deux-points. Ça change le dialogue *prononcé*. "h:" c'est pour hong l'humain·e, "b:" c'est pour beebee le loup, etc.
+* Tout ce qui est entre crochets dans les trucs qui ressemblent à ça : `[machin machin machin](#nom_d_une_section)`. Ça change les dialogues de *choix.*
 
-**Do NOT translate:**
+**Ne traduisez PAS :**
 
-* Anything within ``` `code({with:"backticks",like:"this"});` ```. This is the code that runs between dialogue lines.
-* Anything within ``` {{ these brackets either }} ```. These allow for changes in dialogue based on previous choices (see example above).
-* Any line that starts with a `#`. That's a section name.
-* The part in the *round* brackets in `[words words words](#section_name)`. That's the name of the section you'll go to if you select that dialogue choice.
+* Tout ce qui est contenu dans du ``` `code({avec:"des guillemets",comme:"ceci"});` ```. Ça, c'est le code qui est exécuté entre deux répliques.
+* Tout ce qui est contenu dans ``` {{ ces crochets }} ```. Ils permettent de changer des trucs dans les dialogues en fonction de choix précédents (voir l'exemple au-dessus).
+* Toute ligne qui commencerait par un `#`. Il s'agit d'un nom de section.
+* La partie entre *parenthèses* dans les trucs qui ressemblent à ça : `[machin machin machin](#nom_d_une_section)`. Il s'agit du nom de la section à laquelle læ joueur·se rend s'iel fait ce choix-là.
 
-**Suggestions:**
+**Suggestions :**
 
-* Try *NOT* to make any translated line go too much longer than the original. Otherwise dialogue may go off-screen. Paraphrase or cut words if you have to.
-* Use asterisks for `*emphasis*`. This will italicize the words in the dialogue! (This is standard Markdown syntax)
-* Try to keep pronouns gender-neutral (e.g. English's singular "they") for referring to characters or the player. If your target language doesn't allow that, then flip a coin for each character's gender, or something.
+* Essayez de ne *PAS* rendre une réplique traduite beaucoup plus longue que l'originale. Si vous faites ça, il se pourrait que des parties du dialogue se retrouvent en dehors de l'écran. Paraphrasez ou coupez des mots si jamais c'est nécessaire.
+* Utilisez des astériques pour `*détacher*` des mots. Ça les affichera en italique dans le dialogue ! (C'est de la syntaxe Markdown standard)
+* Essayez de garder des pronoms neutres en genre (par ex. le "they" singulier en anglais) pour faire référence aux personnages ou au/à la joueur·se. Si la langue que vous ciblez ne vous permet pas ça, alors lancez une pièce pour le genre de chaque personnage, ou un truc du style.
 
-Oh but of *course* that's not all the rules! Two more rules, for swear words:
+Oh mais bien *sûr* que ce n'est pas fini pour les règles ! En voici deux autres, pour les jurons :
 
-Original English:
+Anglais d'origine :
 
 ![](misc/swear_english.png)
 
-Excusez mon français:
+"Excusez mon français" (_NdT : Toujours pareil, c'est pas de nous_) :
 
 ![](misc/swear_french.png)
 
-**Rules for translating swears:**
+**Règles pour la traduction des jurons :**
 
-* Put all swear words in `^fucking^ carat symbols`. This is so they can be replaced with @#&!✩@ in the Cuss-Free Mode.
-* Beebee the wolf (almost) never swears. They swear a couple times in the perverted Pokémon parody song but that's it. Otherwise, they say "Heck" and "Dang".
+* Mettez tous les jurons entre des `^putains^ de circonflexes`. Comme ça ils seront remplacés par des @#&!✩@ en Mode Sans-Jurons.
+* Beebee le loup ne jure (presque) jamais. Il jure deux ou trois fois dans la chanson parodique perverse sur l'air de Pokémon mais c'est tout. Sinon, il dit "Punaise" et "Merle".
 
-**One more dumb rule: Don't translate any words within #pounds#.**
+**Une règle idiote supplémentaire : Ne traduisez aucun mot qui se trouverait entre des #croisillons#.**
 
-Like so. English:
+Comme ceci. En anglais :
 
 ![](misc/hash_english.png)
 
-French:
+Et en français (_NdT : Vous connaissez la chanson._) :
 
 ![](misc/hash_french.png)
 
-This was a bad system I have made.
+C'est un système que j'ai bricolé un peu à l'arrache.
 
-P.S: To jump around different scenes, type `Game.debug()` into the Javascript console.
-If you hover over a gray box on the left, you'll see a sidebar that lets you jump to any scene.
-(Note: this make break stuff!) You can also uncomment the lines in `main.js` to test out the game
-starting from different chapters.
+P.S. : Pour sauter d'une scène à l'autre, tapez `Game.debug()` dans la console Javascript.   
+Si vous survolez une boîte grise sur la gauche, vous verrez une barre latérale qui vous permettra de sauter à n'importe quelle scène.   
+(Note : ça cassera des trucs !) Vous pouvez aussi décommenter des lignes dans `main.js` pour tester le démarrage du jeu depuis différents chapitres.
 
-### Step 4:
+### Étape 4 :
 
-Translate `index.html`. (about 70 words) There's further instructions in that file itself. (Feel free to add yourself + your collaborators as translators in the top-left corner!)
+Traduisez `index.html`. (70 mots environ) Il y a davantage d'instructions dans ce fichier lui-même. (N'hésitez pas à vous ajouter vous-même + vos collaborateurs en tant que traducteurs·rices dans le coin en haut à gauche !)
 
-This translates some UI, and helps search engines + social networks understand the page is in your target language.
+Ça sert à traduire une partie de l'interface, et aide les moteurs de recherche + les réseaux sociaux à comprendre que cette page est dans votre langue cible.
 
-### Step 5:
+### Étape 5 :
 
-Translate the images. This step sucks. You can use an image-editing program like MS Paint or [GIMP](https://www.gimp.org).
+Traduisez les images. Cette étape est chiante. Vous pouvez utiliser un logiciel d'édition d'images comme MS Paint ou [GIMP](https://www.gimp.org).
 
-If you don't feel like re-drawing text, [you can find open-source "handwritten" fonts on Google Fonts](https://fonts.google.com/?category=Handwriting). (I used [Sniglet](https://www.theleagueofmoveabletype.com/sniglet) for some text)
+Si vous n'avez pas la foi de redessiner du texte, [vous pouvez trouver des polices "manuscrites" open-source sur Google Fonts](https://fonts.google.com/?category=Handwriting). (J'ai utilisé [Sniglet](https://www.theleagueofmoveabletype.com/sniglet) pour certaines parties du texte)
 
-Images to translate: (about 70 words)
+Images à traduire : (70 mots environ)
 
-* `sharing/thumb.png` (so when folks share your game on social media, the thumbnail's in your language! in the same folder, I put a `thumb_no_words.png` image to help you make a new thumbnail.)
+* `sharing/thumb.png` (comme ça, quand les gens partageront votre jeu sur les réseaux sociaux, la miniature sera dans votre langue ! dans le même dossier, j'ai mis une image appelée  `thumb_no_words.png` pour vous aider à faire une nouvelle miniature.)
 * `sprites/about/cc0.png`
 * `sprites/about/replay.png`
 * `sprites/act4/callback.png`
 * `sprites/credits/end_message.png`
-* `sprites/credits/screens.png` (feel free to add yourself in closing credits as a translator)
+* `sprites/credits/screens.png` (n'hésitez pas à vous ajouter dans les crédits de fin en tant que traducteur·rice)
 * `sprites/credits/starring.png`
 * `sprites/credits/thanks.png`
 * `sprites/intermission/youwin.png`
-* `sprites/intro/intro_logo.png` (feel free to add yourself in opening credits as a translator)
+* `sprites/intro/intro_logo.png` (n'hésitez pas à vous ajouter dans les crédits de début en tant que traducteur·rice)
 * `sprites/ui/fear_captions.png`
 * `sprites/ui/preloader.png`
 
-### Step 6:
+### Étape 6 :
 
-Your translated game is DONE! Now you just need to put it online. You can follow [Github Pages's instructions](https://pages.github.com) for free hosting. (it's the same way I'm hosting my game)
+Votre jeu traduit est PRÊT ! Maintenant vous avez juste à le mettre en ligne. Vous pouvez suivre [les instructions de Github Pages](https://pages.github.com) pour avoir un hébergement gratuit. (c'est comme ça que j'héberge ma version)
 
-### (OPTIONAL STEP):
+### (ÉTAPE FACULTATIVE) :
 
-This game also has a link to a list of Mental Health Tips & Resources, [on a different webpage](https://ncase.me/mental-health). It's not part of the "main" game, but it may still be valuable to make accessible in more languages.
+Ce jeu possède également un lien vers une liste de Ressources & Astuces sur la santé mentale, [sur une page différente](https://ncase.me/mental-health). Celle-ci ne fait pas partie du jeu "principal", mais ça pourrait tout de même en valoir la peine de la rendre accessible en davantage de langues.
 
-[The repo & instructions for translating that are here!](https://github.com/ncase/mental-health)
+[Le dépot & les instructions pour traduire ça se trouvent ici !](https://github.com/ncase/mental-health)
 
-### Step 7: TELL ME YOU ARE *DONE* 🎉🎉🎉
+### Étape 7 : PRÉVENEZ-MOI QUE VOUS AVEZ *FINI* 🎉🎉🎉
 
-Email me at ![](misc/email.png) so I know you're done!
+Envoyez-moi un mail à l'adresse ![](misc/email.png) pour que je sache que vous avez fini !
 
-Do ***NOT*** send a Pull Request to *this* repo, because that will change the *original* game. I will, however, edit the original game to have a link to your translation!
+N'envoyez ***PAS*** une Pull Request sur *ce* dépôt, parce que ça changerait le jeu *d'origine*. J'éditerai, cependant, le jeu d'origine pour qu'il y ait un lien vers votre traduction !
 
-I'm usually busy and/or bad at email, so it'll take me a while to get around to it, but if I don't respond for a week, ping me again!
+Je suis souvent occupé et/ou mauvais pour tout ce qui concerne les mails, donc ça me prendra un moment avant de le faire, mais si je ne réponds pas pendant toute une semaine, relancez-moi !
 
-Thank you you're the beeeeeest 💖🐺💖
+Merci vous êtes les meilleuuuuuuuuuuur·e·s 💖🐺💖
