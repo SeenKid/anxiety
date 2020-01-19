@@ -109,7 +109,7 @@ B Cavello, EmilyKate McDonough, Glen Chiacchieri, Mikayla Hutchinson, Monica Sri
 
 ## Comment traduire
 
-**TRADUCTIONS TERMINÉES:**
+**TRADUCTIONS TERMINÉES :**
 [Русский](https://notdotteam.github.io/anxiety/),
 [Português do Brasil](https://lucasgcb.github.io/anxiety/),
 [Deutsch](https://jonasreich.github.io/anxiety/),
