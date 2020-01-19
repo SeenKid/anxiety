@@ -1,156 +1,156 @@
 ![](https://ncase.me/anxiety/sharing/banner.png)
 
-# [Play the interactive story here!](https://ncase.me/anxiety/)
+# [Jouez à l'histoire interactive ici !](https://nathsom.github.io/anxiety)
 
-## Public Domain
+## Domaine public
 
-Nicky Case and Monplaisir hereby dedicate all their work for this game to the public domain, under [Creative Commons Zero](https://creativecommons.org/choose/zero/).
-That means: you can remix and reuse *any* of the original art / code / music in this game for *any* purpose, even commercial use!
+Nicky Case et Monplaisir dédient par la présente l'ensemble de leur travail sur ce jeu au domaine public, sous la licence [Creative Commons Zero](https://creativecommons.org/choose/zero/).
+Ça veut dire que vous pouvez *tout* remixer et réutiliser dans l'ensemble de l'art / du code / de la musique compris dans ce jeu pour *n'importe quel* usage, y compris pour un usage commercial !
 
-**Q:** Do I have to give attribution?    
-**A:** You're not *legally* required to, but it's highly appreciated! <3
+**Q :** Est-ce que je dois nommer des créateurs ?
+**R :** Vous n'y êtes pas *légalement* obligé·e, mais ce serait vraiment sympa ! <3
 
-**Q:** Legally speaking, can I claim *I* made this?    
-**A:** Yes, the same way you're legally allowed to claim to have written Mary Shelley's Frankenstein, or claim you have 13 nipples.
+**Q :** Légalement parlant, est-ce que je peux dire que c'est *moi* qui ai fait ça ?
+**R :** Oui, tout comme vous pouvez dire que c'est vous qui avez écrit Frankenstein de Mary Shelley, ou affirmer que vous avez 13 tétons.
 
-**Q:** Can I post this game on other sites?    
-**A:** Maybe. Though it's completely legal copyright-wise, many sites have their own policies against posting other people's public domain/open source work *without* significant modifications. (But if it's your own site, then by all means, please mirror this game!)
+**Q :** Est-ce que je peux poster ce jeu sur d'autres sites ?
+**R :** Peut-être. Même si c'est complètement légal du point de vue du copyright, beaucoup de sites ont leurs propres politiques pour ce qui est de poster le travail d'autres gens *sans* modifications significatives même lorsqu'il est open source/dans le domaine public. (Mais si c'est de votre propre site qu'il s'agit, alors oui, s'il vous plaît, dirigez vos lecteurs vers ce jeu !)
 
-**Q:** Can I sell a port of this game?    
-**A:** Yes! But to avoid confusion, I recommend labeling your game as "Fan-Made Port", and *link to this statement saying I'm explicitly allowing commercial remixes*. (Example: [a Steam port of another one of my games!](https://store.steampowered.com/app/1103210/We_Become_What_We_Behold_FanMade_Port/)) This is to avoid accusations of theft from folks who weren't aware I always open-source + public-domain my projects.
+**Q :** Est-ce que je peux vendre un portage de ce jeu ?
+**R :** Oui ! Mais pour éviter toute confusion, je vous recommande de rappeler que votre jeu est un "Portage fait par les fans", et de *laisser un lien vers cette déclaration qui dit que j'autorise explicitement les remix commerciaux* (Par exemple, voici [un portage sur Steam d'un autre de mes jeux !](https://store.steampowered.com/app/1103210/We_Become_What_We_Behold_FanMade_Port/)) L'objectif est de vous éviter des accusations de vol de la part de gens qui ne sauraient pas que je fais toujours mes projets en open-source + les mets dans le domaine public.
 
-**Q:** Can I turn this game into a dating sim between the human and wolf?   
-**A:** uh
+**Q :** Est-ce que je peux transformer ce jeu en un simulateur de séduction entre l'humain·e et le loup ?
+**R :** euh
 
 
-## Full Credits
+## Crédits
 
-Art / Code / Writing by [Nicky Case](https://ncase.me/)
+Art / Code / Écriture par [Nicky Case](https://ncase.me/)
 
-Music by [Monplaisir](https://loyaltyfreakmusic.com)
+Musique par [Monplaisir](https://loyaltyfreakmusic.com)
 
-Extra code by [Spacie](https://spacie.me)
+Code supplémentaire par [Spacie](https://spacie.me)
 
-**Sound Effects from FreeSound.org (Creative Commons)**
+**Effets sonores provenant de FreeSound.org (Creative Commons)**
 
-* [Intro Scream](https://freesound.org/people/analogchill/sounds/35716/) by MaderaDelEste Films
-* [Dramatic Hit](https://freesound.org/people/qubodup/sounds/222517/) by qubodup
-* [Nature Ambience](https://freesound.org/people/michorvath/sounds/427601/) by michorvath
-* [Grass Footstep 1](https://freesound.org/people/morganpurkis/sounds/384651/) by morganpurkis
-* [Grass Footstep 2](https://freesound.org/people/morganpurkis/sounds/384643/) by morganpurkis
-* [Eating a Sandwich](https://freesound.org/people/dleverett/sounds/441906/) by dleverett
-* [Search a Bag](https://freesound.org/people/Tristan_Lohengrin/sounds/233441/) by Tristan\_Lohengrin
-* [Whoosh](https://freesound.org/people/crackles04/sounds/369698/) by crackles04
-* [Empty Room Ambience](https://freesound.org/people/kyles/sounds/451616/) by kyles
-* [Ball Bounce](https://freesound.org/people/13GPanska_Lakota_Jan/sounds/378355/) by 13GPanska\_Lakota\_Jan
-* [Faucet](https://freesound.org/people/calivintage/sounds/95709/) by calivintage
-* [Pop](https://freesound.org/people/onikage22/sounds/240566/) by onikage22
-* [Angry Scream](https://freesound.org/people/cdrk/sounds/21324/) by cdrk
-* [Dirty Explosion](https://freesound.org/people/Link-Boy/sounds/156615/) by Link-Boy
-* [Clothes Rustle](https://freesound.org/people/leonelmail/sounds/427866/) by leonelmail
-* [Typewriter](https://freesound.org/people/tams_kp/sounds/43559/) by tams\_kp
-* [Yelp](https://freesound.org/people/J%C3%BAliaLN/sounds/382990/) by JúliaLN
-* [Tension Building](https://freesound.org/people/benjaminharveydesign/sounds/316649/) by benjaminharveydesign
-* [Short Fart](https://freesound.org/people/DSISStudios/sounds/241000/) by DSISStudios
-* [Party Crowd](https://freesound.org/people/kyles/sounds/453925/) by kyles
-* [Party Music](https://freesound.org/people/djfroyd/sounds/324779/) by djfroyd
-* [Party Crowd 2](https://freesound.org/people/Adam_N/sounds/346687/) by Adam\_N
-* [Party Music 2](https://freesound.org/people/djfroyd/sounds/325155/) by djfroyd
-* [Vinyl Scratch](https://freesound.org/people/filmsndfx/sounds/369673/) by filmsndfx
-* [Jacob's Ladder](https://freesound.org/people/bethanyjodenton/sounds/466477/) by bethanyjodenton
-* [Yap Yap Yap](https://freesound.org/people/Robinhood76/sounds/327813/) by Robinhood76
-* [Door Close](https://freesound.org/people/InspectorJ/sounds/411791/) by InspectorJ
-* [Door Lock](https://freesound.org/people/Fabrizio84/sounds/458013/) by Fabrizio84
-* [Judge Gravel](https://freesound.org/people/qubodup/sounds/215164/) by qubodup
-* [Bottles Clinking](https://freesound.org/people/HDM2013/sounds/179438/) by HDM2013
-* [Drinking](https://freesound.org/people/georgisound/sounds/369293/) by georgisound
-* [Concrete Footsteps](https://freesound.org/people/harrietniamh/sounds/219673/) by harrietniamh
-* [Slide Whistle](https://freesound.org/people/sheepfilms/sounds/432546/) by sheepfilms
-* [Ambulance Siren](https://freesound.org/people/sofialomba/sounds/469413/) by sofialomba
-* [Distant Ambulance Sirens](https://freesound.org/people/ivolipa/sounds/337099/) by ivolipa
-* [ICU Room](https://freesound.org/people/chaffron/sounds/132074/) by chaffron
-* [EMT Radio](https://freesound.org/people/relwin/sounds/397087/) by relwin
-* [Inside A Driving Truck](https://freesound.org/people/RutgerMuller/sounds/50910/) by RutgerMuller
-* [Karate HI-YA](https://freesound.org/people/AmeAngelofSin/sounds/326888/) by AmeAngelofSin
-* [Canned Sitcom Laughter](https://freesound.org/people/Kinoton/sounds/371562/) by Kinoton
-* [Clap 1](https://freesound.org/people/InspectorJ/sounds/404542/) by InspectorJ
-* [Clap 2](https://freesound.org/people/InspectorJ/sounds/404539/) by InspectorJ
-* [Clap 3](https://freesound.org/people/InspectorJ/sounds/404541/) by InspectorJ
-* [Duck Quack](https://freesound.org/people/qubodup/sounds/442820/) by qubodup
-* [Glass Breaking](https://freesound.org/people/Samgd14/sounds/355340/) by Samgd14
-* [Bottle on Concrete](https://freesound.org/people/13GPanska_Gorbusinova_Anna/sounds/377986/) by 13GPanska\_Gorbusinova\_Anna
-* [Cartoon Running](https://freesound.org/people/Mountain852/sounds/365830/) by Mountain852
+* [Intro Scream](https://freesound.org/people/analogchill/sounds/35716/) par MaderaDelEste Films
+* [Dramatic Hit](https://freesound.org/people/qubodup/sounds/222517/) par qubodup
+* [Nature Ambience](https://freesound.org/people/michorvath/sounds/427601/) par michorvath
+* [Grass Footstep 1](https://freesound.org/people/morganpurkis/sounds/384651/) par morganpurkis
+* [Grass Footstep 2](https://freesound.org/people/morganpurkis/sounds/384643/) par morganpurkis
+* [Eating a Sandwich](https://freesound.org/people/dleverett/sounds/441906/) par dleverett
+* [Search a Bag](https://freesound.org/people/Tristan_Lohengrin/sounds/233441/) par Tristan\_Lohengrin
+* [Whoosh](https://freesound.org/people/crackles04/sounds/369698/) par crackles04
+* [Empty Room Ambience](https://freesound.org/people/kyles/sounds/451616/) par kyles
+* [Ball Bounce](https://freesound.org/people/13GPanska_Lakota_Jan/sounds/378355/) par 13GPanska\_Lakota\_Jan
+* [Faucet](https://freesound.org/people/calivintage/sounds/95709/) par calivintage
+* [Pop](https://freesound.org/people/onikage22/sounds/240566/) par onikage22
+* [Angry Scream](https://freesound.org/people/cdrk/sounds/21324/) par cdrk
+* [Dirty Explosion](https://freesound.org/people/Link-Boy/sounds/156615/) par Link-Boy
+* [Clothes Rustle](https://freesound.org/people/leonelmail/sounds/427866/) par leonelmail
+* [Typewriter](https://freesound.org/people/tams_kp/sounds/43559/) par tams\_kp
+* [Yelp](https://freesound.org/people/J%C3%BAliaLN/sounds/382990/) par JúliaLN
+* [Tension Building](https://freesound.org/people/benjaminharveydesign/sounds/316649/) par benjaminharveydesign
+* [Short Fart](https://freesound.org/people/DSISStudios/sounds/241000/) par DSISStudios
+* [Party Crowd](https://freesound.org/people/kyles/sounds/453925/) par kyles
+* [Party Music](https://freesound.org/people/djfroyd/sounds/324779/) par djfroyd
+* [Party Crowd 2](https://freesound.org/people/Adam_N/sounds/346687/) par Adam\_N
+* [Party Music 2](https://freesound.org/people/djfroyd/sounds/325155/) par djfroyd
+* [Vinyl Scratch](https://freesound.org/people/filmsndfx/sounds/369673/) par filmsndfx
+* [Jacob's Ladder](https://freesound.org/people/bethanyjodenton/sounds/466477/) par bethanyjodenton
+* [Yap Yap Yap](https://freesound.org/people/Robinhood76/sounds/327813/) par Robinhood76
+* [Door Close](https://freesound.org/people/InspectorJ/sounds/411791/) par InspectorJ
+* [Door Lock](https://freesound.org/people/Fabrizio84/sounds/458013/) par Fabrizio84
+* [Judge Gravel](https://freesound.org/people/qubodup/sounds/215164/) par qubodup
+* [Bottles Clinking](https://freesound.org/people/HDM2013/sounds/179438/) par HDM2013
+* [Drinking](https://freesound.org/people/georgisound/sounds/369293/) par georgisound
+* [Concrete Footsteps](https://freesound.org/people/harrietniamh/sounds/219673/) par harrietniamh
+* [Slide Whistle](https://freesound.org/people/sheepfilms/sounds/432546/) par sheepfilms
+* [Ambulance Siren](https://freesound.org/people/sofialomba/sounds/469413/) par sofialomba
+* [Distant Ambulance Sirens](https://freesound.org/people/ivolipa/sounds/337099/) par ivolipa
+* [ICU Room](https://freesound.org/people/chaffron/sounds/132074/) par chaffron
+* [EMT Radio](https://freesound.org/people/relwin/sounds/397087/) par relwin
+* [Inside A Driving Truck](https://freesound.org/people/RutgerMuller/sounds/50910/) par RutgerMuller
+* [Karate HI-YA](https://freesound.org/people/AmeAngelofSin/sounds/326888/) par AmeAngelofSin
+* [Canned Sitcom Laughter](https://freesound.org/people/Kinoton/sounds/371562/) par Kinoton
+* [Clap 1](https://freesound.org/people/InspectorJ/sounds/404542/) par InspectorJ
+* [Clap 2](https://freesound.org/people/InspectorJ/sounds/404539/) par InspectorJ
+* [Clap 3](https://freesound.org/people/InspectorJ/sounds/404541/) par InspectorJ
+* [Duck Quack](https://freesound.org/people/qubodup/sounds/442820/) par qubodup
+* [Glass Breaking](https://freesound.org/people/Samgd14/sounds/355340/) par Samgd14
+* [Bottle on Concrete](https://freesound.org/people/13GPanska_Gorbusinova_Anna/sounds/377986/) par 13GPanska\_Gorbusinova\_Anna
+* [Cartoon Running](https://freesound.org/people/Mountain852/sounds/365830/) par Mountain852
 
-**Sound Effects from Kenney.nl (All Creative Commons Zero)**
+**Effets sonores provenant de Kenney.nl (Tous sous Creative Commons Zero)**
 
 * [Digital Audio Pack](https://kenney.nl/assets/digital-audio)
 * [RPG Audio Pack](https://kenney.nl/assets/rpg-audio)
 * [UI Audio Pack](https://kenney.nl/assets/ui-audio)
 
-**Copyrighted Sounds That I Really Hope Count As Fair Use:**
+**Bandes sonores sous copyright dont j'espère vraiment que mon usage compte comme *Fair Use* :**
 
-* The Pokémon theme song is © The Pokémon Company. I used a ~22s  instrumental clip for a parody song about Tinder.
-* The "Hadouken!" sound is © Capcom. I used it as parody for the anxiety wolf's Special Attack.
+* La bande sonore de Pokémon est © déposé par The Pokémon Company. Je l'ai utilisée en tant que clip instrumental d'à peu près 22 secondes pour une chanson parodique sur Tinder.
+* Le "Hadouken!" est © déposé par Capcom. Je l'ai utilisé de manière parodique pour l'Attaque Spéciale du loup-anxiété.
 
 
-**Open Source Libraries**
+**Bibliothèques Open Source**
 
-* [Howler.js](https://howlerjs.com/) by James Simpsson for sounds
-* [MinPubSub](https://github.com/daniellmb/MinPubSub) by Daniel Lamb for pub/sub
-* [RSVP.js](https://github.com/tildeio/rsvp.js/) by Tilde for promises
-* [Simple Sharing Buttons](https://simplesharingbuttons.com/) by Stefan Bohacek
-* [Ceaser](https://matthewlein.com/tools/ceaser) by Matthew Lein for CSS animation
+* [Howler.js](https://howlerjs.com/) par James Simpsson pour le son
+* [MinPubSub](https://github.com/daniellmb/MinPubSub) par Daniel Lamb pour le _pub/sub_
+* [RSVP.js](https://github.com/tildeio/rsvp.js/) par Tilde pour les _promises_
+* [Simple Sharing Buttons](https://simplesharingbuttons.com/) par Stefan Bohacek
+* [Ceaser](https://matthewlein.com/tools/ceaser) par Matthew Lein pour les animations en CSS
 
-**Thank you to my playtesters!**
+**Merci à mes testeurs !**
 
 B Cavello, EmilyKate McDonough, Glen Chiacchieri, Mikayla Hutchinson, Monica Srivastava, Rowan, Srini Kadamati
 
-**And of course, thank you to the generous support of [my fans on Patreon.](https://www.patreon.com/ncase)** Luv y'all <3
+**Et bien sûr, merci à [mes fans sur Patreon](https://www.patreon.com/ncase) pour leur généreux soutien.** J'vous aime tous <3
 
-## How To Translate
+## Comment traduire
 
-**TRANSLATIONS COMPLETE:** 
+**TRADUCTIONS TERMINÉES:**
 [Русский](https://notdotteam.github.io/anxiety/),
 [Português do Brasil](https://lucasgcb.github.io/anxiety/),
 [Deutsch](https://jonasreich.github.io/anxiety/),
 [Español (Europeo)](https://jorgeygari.github.io/anxiety/),
 [Español (Latino)](https://fantasmashy.github.io/anxiety-Es-La/)
 
-Okay. I super, super seriously apologize in advance.
+Okay. Je suis vraiment, vraiment désolé d'avance.
 
-Translating this thing will *suck.*
+Traduire ce truc, ça va être la *merde*.
 
-Thus, I highly recommend collaborating online on a translation! There's about 9,000 words to translate, the rules of what to translate or not are a bit weird, and you'll need to edit some images. But if you're still up for it...
+Du coup, je vous recommande fortement de collaborer avec d'autres gens en ligne si vous comptez faire une traduction ! Il y a à peu près 9000 mots à traduire, les règles au sujet de ce qu'il faut/ne faut pas traduire sont un peu bizarres, et vous aurez besoin d'éditer quelques images. Mais si vous y tenez quand même...
 
-### Step 0:
+### Étape 0 :
 
-[Check the existing issues](https://github.com/ncase/anxiety/issues?utf8=✓&q=is%3Aissue+is%3Aopen+translation) to see if everyone else has already started your desired translation. If someone already started, go help them! :)
+[Allez voir dans les tickets existants](https://github.com/ncase/anxiety/issues?utf8=✓&q=is%3Aissue+is%3Aopen+translation) pour voir si quelqu'un d'autre n'a pas déjà commencé la traduction que vous souhaitez faire. Si quelqu'un l'a déjà entamée, allez l'aider ! :)
 
-### Step 1:
+### Étape 1 :
 
-[Make a fork](https://help.github.com/en/articles/fork-a-repo) on Github!
+[Faites un fork](https://help.github.com/en/articles/fork-a-repo) sur Github!
 
-### Step 2:
+### Étape 2 :
 
-*POST A GITHUB ISSUE WITH A LINK TO YOUR FORK.* This will let folks a) know a translation is in process, and b) let *you* find collaborators for the translation process!
+*POSTEZ UN TICKET SUR GITHUB AVEC UN LIEN VERS VOTRE FORK.* Comme ça les gens a) sauront qu'une traduction est en cours, et b) *vous* permettront d'avoir des collaborateurs dans le processus de traduction !
 
-### Step 3:
+### Étape 3 :
 
-Translate all the Markdown files in `/scenes`. (about 9000 words) Personally I use [MacDown](https://macdown.uranusjr.com/) (Mac only), but there's [a whole bunch of other free open-source Markdown editors](https://opensource.com/article/18/11/markdown-editors).
+Traduisez tous les fichiers Markdown qui se trouvent dans le dossier `/scenes`. (à peu près 9000 mots) J'utilise personnellement [MacDown](https://macdown.uranusjr.com/) (seulement disponible sur Mac), mais il y a [tout un tas d'autres éditeurs Markdown gratuits et open-source](https://opensource.com/article/18/11/markdown-editors).
 
-**THERE ARE RULES OF WHAT TO TRANSLATE OR NOT.** It's probably best to show it with examples. Excuse my terrible French...
+**IL Y A DES RÈGLES SUR CE QU'IL FAUT ET NE FAUT PAS TRADUIRE.** C'est sûrement mieux si je vous le montre avec des exemples. Excusez mon français horrible... _(NdT : les images suivantes ont été créées par l'auteur lui-même, pas par l'équipe de traduction)_
 
-Original English:
+Anglais d'origine :
 
 ![](misc/english.png)
 
-Translated to "Nicky's Attempt At French":
+Traduit vers "La Tentative de Nicky d'écrire en français" :
 
 ![](misc/french.png)
 
-As you can see, you *don't* translate everything.
+Comme vous pouvez le constater, il ne *faut pas* tout traduire.
 
-**Just translate:**
+**Traduisez seulement :**
 
 * Anything after a letter + colon. This changes a dialogue *spoken*. "h:" is hong the human, "b:" is beebee the wolf, etc.
 * Anything in the square brackets of `[words words words](#section_name)`. This changes the dialogue *choices.*
@@ -246,6 +246,3 @@ Do ***NOT*** send a Pull Request to *this* repo, because that will change the *o
 I'm usually busy and/or bad at email, so it'll take me a while to get around to it, but if I don't respond for a week, ping me again!
 
 Thank you you're the beeeeeest 💖🐺💖
-
-
-
