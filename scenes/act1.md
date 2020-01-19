@@ -28,13 +28,13 @@ h: Oh ! Encore ?
 
 `hong({eyes:"0_neutral"})`
 
-n: TON TRAVAIL EST DE PROTÉGER TON HUMAIN DU *DANGER*
+n: TON TRAVAIL EST DE PROTÉGER TON HUMAIN·E DU *DANGER*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: EN FAIT, RIEN QUE L'ACTION DE JOUER DE NOUVEAU À CE JEU LE MET EN *DANGER*
+n: EN FAIT, RIEN QUE L'ACTION DE JOUER DE NOUVEAU À CE JEU LÆ MET EN *DANGER*
 
-n: VITE, PRÉVIENS-LE !
+n: VITE, PRÉVIENS-LÆ !
 
 ```
 sfx("squeak");
@@ -190,13 +190,13 @@ h: Oh cool, mon loup est de retour. Faaaaantastique.
 
 `hong({eyes:"0_neutral"})`
 
-n: TON TRAVAIL EST DE PROTÉGER TON HUMAIN DU *DANGER*
+n: TON TRAVAIL EST DE PROTÉGER TON HUMAIN·E DU *DANGER*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: EN FAIT, CE SANDWICH LE MET EN *DANGER*, JUSTE MAINTENANT, LÀ
+n: EN FAIT, CE SANDWICH LÆ MET EN *DANGER*, JUSTE MAINTENANT, LÀ
 
-n: VITE, PRÉVIENS-LE !
+n: VITE, PRÉVIENS-LÆ !
 
 ```
 sfx("squeak");
@@ -260,7 +260,7 @@ publish("hp_show");
 
 `_.fifteencigs = true`
 
-n: TU AS UTILISÉ *PEUR DE NE PAS ÊTRE AIMÉ*
+n: TU AS UTILISÉ *PEUR DE NE PAS ÊTRE AIMÉ·E*
 
 (#act1b)
 
@@ -349,7 +349,7 @@ n: C'EST SUPER EFFICACE
 
 `bb({mouth:"smile", eyes:"smile"});`
 
-b: Tu vois, humain ? Je suis ton fidèle loup protecteur !
+b: Tu vois, humain·e ? Je suis ton fidèle loup protecteur !
 
 `bb({body:"pride_talk"});`
 
@@ -357,13 +357,13 @@ b: Aie confiance en tes intuitions ! Tes pensées sont toujours justifiées !
 
 `bb({body:"pride"});`
 
-n: METS LA JAUGE D'ÉNERGIE DE TON HUMAIN À ZÉRO
+n: METS LA JAUGE D'ÉNERGIE DE TON HUMAIN·E À ZÉRO
 
 n: POUR PROTÉGER SES BESOINS PHYSIQUES + SOCIAUX + MORAUX, TU PEUX UTILISER :
 
-n: LA PEUR D'*ÊTRE BLESSÉ* #harm#
+n: LA PEUR D'*ÊTRE BLESSÉ·E* #harm#
 
-n: LA PEUR D'*ÊTRE DÉLAISSÉ* #alone#
+n: LA PEUR D'*ÊTRE DÉLAISSÉ·E* #alone#
 
 n: ET LA PEUR D'*ÊTRE UNE MAUVAISE PERSONNE* #bad#
 
@@ -390,7 +390,7 @@ sfx("rustle2");
 hong({body:"phone1", mouth:"neutral", eyes:"neutral"})
 ```
 
-n: PROTÉGE TON HUMAIN
+n: PROTÉGE TON HUMAIN·E
 
 n: DU MONDE. DES AUTRES. DE LUI-MÊME.
 
@@ -439,7 +439,7 @@ b: Dans ce cas !
 # act1c_loner
 
 {{if _.fifteencigs}}
-b: Quinze cigarettes par jour, humain ! Quinze !
+b: Quinze cigarettes par jour, humain·e ! Quinze !
 {{/if}}
 
 {{if !_.fifteencigs}}
@@ -486,7 +486,7 @@ h: BIEN. Si ça peut te faire taire, ok.
 h: Je vais dire oui.
 
 {{if _.whalepoop}}
-b: De la crotte de baleine, humain ! De la crotte de baleine !
+b: De la crotte de baleine, humain·e ! De la crotte de baleine !
 {{/if}}
 
 `_.partyinvite="yes"`
@@ -1298,15 +1298,15 @@ b: Ils vont te piéger dans un puits et te gaver de pain blanc pour te faire gro
 {{/if}}
 
 {{if _.parasite}}
-b: Ils te matraqueront avec un minuteur et te diront "T'AURAIS DU ÊTRE PLUS PRODUCTIF ESPÈCE DE PARASITE"
+b: Ils te matraqueront avec un minuteur et te diront "T'AURAIS DU ÊTRE PLUS PRODUCTIF·VE ESPÈCE DE PARASITE"
 {{/if}}
 
 {{if !_.whitebread && !_.parasite}}
-b: They'll tear your flesh to gory confetti, turn your entrails into streamers, and mix your blood into a punch bowl! Ils déchiqueront ta chair en confettis gores, feront de tes entrailles des serpentins, et mélangerons ton sang dans un saladier à punch !
+b: Ils déchiquetteront ta chair en confettis gores, feront de tes entrailles des serpentins, et mélangeront ton sang dans un saladier à punch !
 {{/if}}
 
 {{if !_.whitebread && !_.parasite}}
-b: How's THAT for a party invite?!
+b: Et ÇA, c'est comment comme invitation ?!
 {{/if}}
 
 ```
@@ -1341,22 +1341,22 @@ h: J'en ai tellement marre de ce jeu.
 
 h:
 {{if _.fifteencigs}}"la solitude va nous tuer"... {{/if}}
-{{if _.parasite}}"nous sommes un parasite social"... {{/if}}
+{{if _.parasite}}"on est un parasite social"... {{/if}}
 {{if _.whitebread}}"ne mange pas ça, ça va nous tuer"... {{/if}}
 {{if _.subtweet}}"ils parlent dans notre dos"... {{/if}}
 {{if _.badnews}}"le monde est en feu"... {{/if}}
-{{if _.hookuphole}}"on va mourir seul"... {{/if}}
-{{if _.serialkiller}}"c'est un tueur en série"... {{/if}}
+{{if _.hookuphole}}"on va mourir seul·e"... {{/if}}
+{{if _.serialkiller}}"c'est un·e tueur·se en série"... {{/if}}
 {{if _.catmilk}}"les chats ne peuvent pas digérer le lait"... {{/if}}
 {{if _.pokemon}}une chanson parodique ^merdique^... {{/if}}
 
 h: Je veux juste vivre ma vie.
 
-h: Je veux juste être libéré de toute cette... souffrance.
+h: Je veux juste être libéré·e de toute cette... souffrance.
 
 `bb({eyes:"look_sad"});`
 
-b: Hé... humain...
+b: Hé... humain·e...
 
 `Game.OVERRIDE_TEXT_SPEED = 0.5;`
 
@@ -1395,7 +1395,7 @@ h: Bon sang, pourquoi est-ce que je ne peux pas être comme eux ? Pourquoi je ne
 
 `bb({eyes:"normal_right"});`
 
-b: En parlant de fêtes... à propos de cette invitation ce week-end. Voici ma décision FINALE :
+b: En parlant de fête... à propos de cette invitation pour ce week-end. Voici ma décision FINALE :
 
 `bb({eyes:"normal"});`
 
@@ -1577,13 +1577,13 @@ n: FÉLICITATIONS
 
 (...500)
 
-n: TU AS PROTÉGÉ LES BESOINS PHYSIQUES + SOCIAUX + MORAUX DE TON HUMAIN AVEC SUCCÈS
+n: TU AS PROTÉGÉ LES BESOINS PHYSIQUES + SOCIAUX + MORAUX DE TON HUMAIN·E AVEC SUCCÈS
 
 n: REGARDE COMMENT IEL T'EST RECONNAISSANT·E !
 
 (...500)
 
-n: MAINTENANT QUE SON ÉNÉRGIE EST À ZÉRO, TU PEUX DIRECTEMENT CONTRÔLER SES ACTIONS
+n: MAINTENANT QUE SON ÉNERGIE EST À ZÉRO, TU PEUX DIRECTEMENT CONTRÔLER SES ACTIONS
 
 `bb({mouth:"smile", eyes:"normal"});`
 
@@ -1591,7 +1591,7 @@ n: CHOISIS TA DERNIÈRE ACTION
 
 `bb({mouth:"small_lock", eyes:"fear"});`
 
-n: *FINIS-LE*
+n: *FINIS-LÆ*
 
 [{FIGHT: Punis ton téléphone super stressant !}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
 
