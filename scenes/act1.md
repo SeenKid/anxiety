@@ -216,7 +216,7 @@ n4: (LAISSE _TON_ ANXIÉTÉ SORTIR ET JOUER ! CHOISIS CE QUI RESSEMBLE LE PLUS �
 
 [On mange tout seul le midi ! Encore !](#act1a_alone) `bb({body:"squeeze_talk"})`
 
-[Pendant qu'on mange, on n'est pas productif !](#act1a_productive) `bb({body:"squeeze_talk"})`
+[Pendant qu'on mange, on n'est pas produc !](#act1a_productive) `bb({body:"squeeze_talk"})`
 
 [Ce pain blanc est mauvais pour notre santé !](#act1a_bread) `bb({body:"squeeze_talk"})`
 
@@ -545,7 +545,7 @@ b: La seule chose qu'on fait, c'est pleurer dans notre coin en nous disant que r
 {{/if}}
 
 {{if _.parasite}}
-b: La seule chose qu'on fait pendant une fête, c'est nous inquiéter de la façon dont on pourrait être productif à la place.
+b: La seule chose qu'on fait pendant une fête, c'est nous inquiéter de la façon dont on pourrait être productif·ve à la place.
 {{/if}}
 
 {{if _.whitebread}}

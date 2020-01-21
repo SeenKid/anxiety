@@ -208,18 +208,18 @@ hong({body:"sigh_2"});
 bb({eyes:"look_down"});
 ```
 
-h: *sigh*
+h: *soupir*
 
 ```
 hong({body:"hold", eyes:"normal", mouth:"normal"});
 bb({eyes:"normal"});
 ```
 
-h: Donc, quelle est la morale de l'histoire ?
+h: Donc, c'est quoi, la morale de l'histoire ?
 
 `hong({body:"one_up", eyes:"annoyed"})`
 
-h: Qu'a-t-on *appris* ? J'*étais* stupide, mes "amis" *étaient* en train de me manipuler, et on est presque *mort*.
+h: Qu'est-ce qu'on a *appris* ? J'*ai été* stupide, mes "amis" *étaient* en train de me manipuler, et on est presque *mort·e*.
 
 `hong({body:"normal", eyes:"normal"})`
 
@@ -228,12 +228,12 @@ h: Qu'a-t-on *appris* ? J'*étais* stupide, mes "amis" *étaient* en train de me
 {{/if}}
 
 {{if !_.INJURED}}
-[Ouais, sans parler des dommages au foie.](#act4a_liver)
+[Ouais, sans parler des dégâts qu'on a pris au foie.](#act4a_liver)
 {{/if}}
 
 [Ouais, c'*était* le pire des scénarios possibles.](#act4a_worst)
 
-[Ouais, j'avais raison.](#act4a_right)
+[Ouais, j'avais raison, hein.](#act4a_right)
 
 # act4a_bill
 
@@ -316,11 +316,11 @@ b: Malgré tout, on est toujours là.
 `hong({eyes:"suspect"});`
 
 {{if _.INJURED}}
-h: Tu sembles plutôt calme, en considérant le fait que nous venons juste d'avoir une expérience de mort imminente.
+h: Tu sembles plutôt calme, compte tenu du fait que nous venons juste d'avoir une expérience de mort imminente.
 {{/if}}
 
 {{if !_.INJURED}}
-h: Tu sembles plutôt calme, en considérant le fait que nous venons juste d'avoir une expérience de mort *imminente* imminente.
+h: Tu sembles plutôt calme, compte tenu du fait que nous venons juste d'avoir une *expérience* d'expérience de mort imminente *imminente*.
 {{/if}}
 
 ```
@@ -328,13 +328,13 @@ hong({eyes:"normal"});
 bb({eyes:"annoyed_d", mouth:"narrow"});
 ```
 
-b: A vrai dire, ça rend tout moins flippant en comparaison. Et puis, ça me fait réfléchir.
+b: À vrai dire, ça rend tout moins flippant en comparaison. Et puis, ça m'a fait réfléchir.
 
 `bb({eyes:"normal", mouth:"normal"});`
 
-b: Si me battre contre toi craint, parce je ne te protège pas...
+b: Si me battre contre toi craint, parce je ne te protège pas lorsque je le fais...
 
-h: Mais me battre contre toi craint *aussi*, parce que ça te fait juste crier plus fort...
+h: Et que me battre contre toi craint *aussi*, parce que ça te fait juste crier plus fort...
 
 `bb({eyes:"normal_r"})`
 
@@ -342,7 +342,7 @@ b: Alors peut-être que...
 
 `bb({eyes:"normal"})`
 
-h: Alors peut-être que nous ne devons pas nous battre.
+h: Alors peut-être que nous ne devons juste pas nous battre.
 
 ```
 Game.FORCE_CANT_SKIP = true;
@@ -389,7 +389,7 @@ b: Je suis un chien battu.
 
 `bb({eyes:"sad"})`
 
-b: On a traversé des trucs durs. Peut-être un traumatisme ou un délaissement. C'est pour ça que parfois, je surréagis et fait tout de suite :
+b: On a traversé des trucs durs. Peut-être un traumatisme ou un délaissement. C'est pour ça que parfois, je surréagis et fais tout de suite :
 
 ```
 sfx("yaps", {volume:0.6});
@@ -400,7 +400,7 @@ Game.FORCE_TEXT_DURATION = 90;
 Game.FORCE_NO_VOICE = true;
 ```
 
-b: YAP YAP YAP YAP YAP
+b: OUAH OUAH OUAH OUAH OUAH
 
 (...1884)
 
@@ -414,29 +414,29 @@ b: Mais je ne *veux* pas être un chien lâche ! Je veux te protéger ! Je veux 
 
 `bb({eyes:"sad", mouth:"normal"});`
 
-b: Humain... aideras-tu à apprivoiser ce loup ?
+b: Humain·e... m'aideras-tu à apprivoiser ce loup que je suis ?
 
 `hong({eyes:"sad"})`
 
-h: Je... j'essaierai.
+h: Je... je vais essayer.
 
 `hong({eyes:"normal_l", body:"chin", mouth:"narrow"})`
 
-h: Ok. Une bonne relation avec des émotions. Les relations ont besoin de communication. Bon, communiquons.
+h: Ok. Une bonne relation avec tes émotions. Les relations ont besoin de communication. Bon, communiquons.
 
 `hong({eyes:"normal", body:"hands_1", mouth:"normal"})`
 
-h: Les cinq prochains minutes vont sonner super mielleuses, mais faisons semblant jusqu'à ce que nous y arrivons.
+h: Les cinq prochaines minutes vont sonner super mielleuses, mais il faut qu'on fasse semblant jusqu'à y arriver.
 
 ```
 hong({body:"hands_2", mouth:"normal"});
 ```
 
-h: Cher loup intérieur... comment *tu* te sens ?
+h: Cher loup intérieur... comment est-ce que *tu* te sens ?
 
 n2: TOTAL DES PEURS UTILISÉES :
 
-n2: *BLESSÉ* {{_.attack_harm_total}}, *MALAIMÉ* {{_.attack_alone_total}}, *MAUVAISE PERSONNE* {{_.attack_bad_total}}
+n2: *BLESSÉ·E* {{_.attack_harm_total}}, *MAL-AIMÉ·E* {{_.attack_alone_total}}, *MAUVAISE PERSONNE* {{_.attack_bad_total}}
 
 n2: DE QUELLE PEUR VEUX-TU PARLER EN PREMIER ? (TU POURRAS CHOISIR LES AUTRES PLUS TARD)
 
@@ -447,11 +447,11 @@ hong({body:"normal"});
 bb({eyes:"normal"});
 ```
 
-[J'ai peur qu'on soit blessés.](#act4_harm)
+[J'ai peur qu'on soit blessé·e.](#act4_harm)
 
-[J'ai peur qu'on soit seuls.](#act4_alone)
+[J'ai peur qu'on soit seul·e.](#act4_alone)
 
-[J'ai peur qu'on soit de mauvaises personnes.](#act4_bad)
+[J'ai peur qu'on soit une mauvaise personne.](#act4_bad)
 
 # act4_harm
 
@@ -471,22 +471,22 @@ b: Mais *le monde entier* semble si dangereux. Si plein de tragédies et de méc
 `bb({eyes:"sad"})`
 
 {{if _.a4_fears_discussed==1}}
-b: J'sais pas, assez de *moi* choisissant ce qui va être dit. Qu'est-ce que *tu* dis, humain ?
+b: J'ai assez parlé, ce n'est pas qu'à moi de choisir le sujet. Qu'est-ce que *tu* penses, humain·e ?
 {{/if}}
 
 {{if _.a4_fears_discussed==2}}
-b: De nouveau, retour sur toi, humain. Qu'est-ce que tu en penses ?
+b: Retour à toi encore une fois, humain·e. Qu'est-ce que tu en penses ?
 {{/if}}
 
 {{if _.a4_fears_discussed==3}}
-b: D'autres idées, humain ?
+b: D'autres idées, humain·e ?
 {{/if}}
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "h"`
 
 [Tu as raison. Protégeons-nous.](#act4_harm_skills)
 
-[Mettons nous encore *plus* en danger.](#act4_harm_exposure)
+[Mettons-nous encore *plus* en danger.](#act4_harm_exposure)
 
 [Merci.](#act4_thanks) `_.thanks_for = "ma sécurité physique";`
 
@@ -494,14 +494,14 @@ b: D'autres idées, humain ?
 
 `bb({eyes:"look_down", body:"paw"})`
 
-b: Mais... comment ? J'ai des crocs et des griffres, mais je suis juste une métaphore.
+b: Mais... comment ? J'ai des crocs et des griffes, mais je suis juste une métaphore.
 
 ```
 bb({ body:"normal", eyes:"normal" });
 hong({ body:"one_up", eyes:"surprise" });
 ```
 
-h: On pourrait apprendre l'auto-défense ? Rejoindre une communauté qui se protège les uns les autres ? Améliorer notre santé générale & nos barrières personnelles ?
+h: On pourrait apprendre l'auto-défense ? Rejoindre une communauté où les gens se protègent les uns les autres ? Améliorer notre santé générale & nos barrières personnelles ?
 
 ```
 bb({ eyes:"annoyed_r" });
@@ -510,21 +510,21 @@ hong({ body:"normal", eyes:"normal" });
 
 b: Peut-être, mais...
 
-[Où est-ce qu'on peut même commencer ?](#act4_harm_skills_start)
+[Par où est-ce qu'on commence, déjà ?](#act4_harm_skills_start)
 
-[Et si ça ne marche pas ?](#act4_harm_skills_work)
+[Et si ça ne marchait pas ?](#act4_harm_skills_work)
 
-[Et si on exagère sur la "sécurité" ?](#act4_harm_skills_overboard)
+[Et si ça marchait *trop bien* ?](#act4_harm_skills_overboard)
 
 # act4_harm_skills_start
 
 `bb({ eyes:"sad_d" })`
 
-b: Il y a tant à faire, tellement de choses qu'on doit réparer à props de nous. Par où on *commence* même ?
+b: Il y a tant à faire, tellement de choses qu'on doit réparer en nous. Par où est-ce qu'on *commence*, déjà ?
 
 `hong({ body:"shrug", eyes:"surprise" })`
 
-h: On est en train de commencer là.
+h: On est en train de commencer, là.
 
 `bb({ eyes:"normal", mouth:"narrow" })`
 
@@ -535,11 +535,11 @@ bb({ body:"normal", mouth:"normal" });
 hong({ body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: On est en train de pratiquer une bonne communication là. Ce qui nous aidera à détecter mieux les dangers, avec moins de faux positifs,
+h: On est en train de pratiquer une bonne communication, là. Ça nous aidera à mieux détecter les dangers, avec moins de faux positifs,
 
 `hong({ eyes:"surprise" });`
 
-h: Et *ça* nous protégera d'être blessé !
+h: Et *ça*, ça nous protégera d'être blessé·e !
 
 `hong({ eyes:"normal", mouth:"normal" });`
 
@@ -567,18 +567,18 @@ sfx("hiya");
 
 `bb({ eyes:"normal" });`
 
-h: C'est vrai, il n'y a pas de moyen de nous protéger à 100%...
+h: C'est vrai, il n'y a aucun moyen de nous protéger à 100 %...
 
 `hong({ body:"one_up" });`
 
-h: Mais même 1% d'amélioration est toujours quelque chose qui vaut le coup, n'est-ce pas ?
+h: Mais même 1 % d'amélioration, ça vaut le coup, non ?
 
 ```
 bb({ eyes:"annoyed" });
 hong({ normal:"one_up" });
 ```
 
-b: Tu ne vois pas le verre à 99% rempli, mais à 1% rempli ?
+b: Tu ne vois pas le verre à 99 % vide, mais à 1 % rempli ?
 
 `bb({ eyes:"normal" });`
 
@@ -586,7 +586,7 @@ h: Ce qui vaut toujours quelque chose si tu es dans le désert.
 
 `bb({ eyes:"closed" });`
 
-b: Bien. Bottoms up, alors.
+b: Bien. Cul sec, alors.
 
 (#act4_something_else)
 
@@ -594,26 +594,26 @@ b: Bien. Bottoms up, alors.
 
 `bb({ body:"chest", eyes:"annoyed" })`
 
-b: Je veux dire, la raison principale pour laquelle tu as ignoré mes avertissements était parce que *j'ai* trop exagéré avec la sécurité !
+b: Je veux dire, la raison principale pour laquelle tu as ignoré mes avertissements était parce que *j'avais* trop exagéré avec la sécurité !
 
 `bb({ body:"normal", eyes:"normal" })`
 
-h: Hum oui, tu as raison. Nous devons faire de la sécurité avec modération. Tout avec modération.
+h: Hum oui, tu as raison. Nous devons faire attention à nous avec modération. Tout faire avec modération.
 
 `bb({ eyes:"suspect" })`
 
-b: Désolé, *TOUT* avec modération ?
+b: Attends, *TOUT* faire avec modération ?
 
 `hong({ eyes:"annoyed" })`
 
-h: *Un nombre modéré de choses* avec modération.
+h: Faire *un nombre modéré de choses* avec modération.
 
 ```
 bb({ eyes:"closed" });
 hong({ eyes:"normal" });
 ```
 
-b: Merci de rendre tes déclarations récursivement auto-consistantes.
+b: Merci de rendre tes déclarations récursivement cohérentes avec elles-mêmes.
 
 (#act4_something_else)
 
@@ -629,11 +629,11 @@ bb({ mouth:"narrow", eyes:"suspect" });
 hong({ body:"one_up" });
 ```
 
-h: Je veux dire, disons qu'un chien est effrayé du tonnerre.
+h: Je veux dire, disons qu'un chien a peur du tonnerre.
 
 `hong({ body:"hands_1" });`
 
-h: Une astuce que les dompteurs utilisent est de jouer un son de tonnerre à un volume faible, puis donne au chien une friandise pour rester calmer.
+h: Une astuce que les dompteurs utilisent est de jouer un son de tonnerre à un volume faible, puis de donner au chien une friandise pour qu'il reste calme.
 
 `hong({ body:"hands_2" });`
 
@@ -648,7 +648,7 @@ h: Ça s'appelle la thérapie d'exposition !
 
 `hong({ body:"point", eyes:"normal" });`
 
-h: Vu que tu es un chien, ça devrait marcher aussi, non ? Tous les mammifères ont cette même réponse de "combattre ou fuir".
+h: Vu que tu es un chien, ça devrait marcher aussi, non ? Tous les mammifères ont cette même réponse de "combat ou fuite".
 
 `hong({ body:"normal" });`
 
@@ -676,35 +676,35 @@ b: Ooow.
 
 `bb({ eyes:"annoyed" })`
 
-b: On vient *tout juste* de voir ce qui se passe si tu éteins ta peur - tu te mets *vraiment* dans des situations dangeureuses.
+b: On vient *tout juste* de voir ce qui se passe si tu éteins ta peur - tu te mets *vraiment* dans des situations dangereuses.
 
 `bb({ eyes:"angry_r", body:"one_up" })`
 
-b: Qui plus est, est-ce que *trop* de désensibilisation ne pas faire de nous des psychopathes ?
+b: Qui plus est, est-ce que *trop* de désensibilisation ne risque pas de faire de nous un·e psychopathe ?
 
 `bb({ mouth:"scream", eyes:"scream", body:"two_up" })`
 
-b: Bientôt, on prendra des traitements tout en regardant des pornos snuff meurtriers !
+b: Bientôt, on prendra des traitements tout en regardant des pornos snuff à base de meurtre !
 
 `hong({ eyes:"annoyed" })`
 
-h: Je... pense qu'il y a une ligne entre ça et le tonnerre.
+h: Je... pense qu'il y a une certaine distance entre le tonnerre et ça.
 
 `bb({ body:"normal", mouth:"normal", eyes:"suspect" })`
 
-b: Mais *où* exactement, humain ? *Où ?!*
+b: Mais *quelle* distance exactement, humain ? *Laquelle ?!*
 
 `hong({ eyes:"surprise", body:"one_up" })`
 
-h: Je ne sais pas. Mais *tu* peux m'aider !
+h: Je ne sais pas. Mais *toi*, tu peux m'aider !
 
 `hong({ eyes:"normal", body:"normal" })`
 
-h: En travaillant et en négociant avec toi, nous dessinerons cette ligne.
+h: En travaillant et en négociant avec toi, nous trouverons cette distance.
 
 `bb({ body:"paw", mouth:"narrow", eyes:"closed" })`
 
-b: Ok. Mais je n'ai pas de pouces opposables, donc tu devras faire le dessin.
+b: Ok. Mais je n'ai pas de pouces opposables, donc tu devras mesurer toi-même.
 
 (#act4_something_else)
 
@@ -717,7 +717,7 @@ b: Par exemple : on a sauté d'un *toit !*
 {{/if}}
 
 {{if !_.INJURED}}
-b: Par exemple : on a failli sauté d'un *toit !*
+b: Par exemple : on a failli sauter d'un *toit !*
 {{/if}}
 
 ```
@@ -729,13 +729,13 @@ h: Ouais, t'as raison. Ça *peut* aller trop loin.
 
 `hong({ eyes:"normal" });`
 
-h: Mais c'est pour ça que, si nous pratiquons la thérapie d'exposition, on avancera petit à petit.
+h: Mais c'est pour ça que, si on pratique la thérapie d'exposition, on avancera petit à petit.
 
 h: Juste avant de rencontrer le *véritable* danger, on s'arrête.
 
 `bb({ eyes:"annoyed_r", mouth:"narrow" });`
 
-b: Ouais, j'ai dessiné la ligne entre entendre un bruyant tonnerre, et être dans une tempête, avec un grand chapeau pointu.
+b: Ouais, je mets la ligne entre entendre un bruyant tonnerre, et se tenir dans une tempête avec un grand chapeau pointu.
 
 (#act4_something_else)
 
@@ -794,28 +794,28 @@ h: Même si tu surréagis, j'apprécie que tu prennes soin de {{_.thanks_for}}.
 
 `bb({ eyes:"annoyed" })`
 
-b: Attends... tu n'es pas juste en train de répéter "merci" pour éviter de vraiment parler de ces peurs, n'est-ce pas ?
+b: Attends... tu n'es pas juste en train de répéter "merci" pour éviter de vraiment parler de tes peurs, n'est-ce pas ?
 
 ```
 bb({ eyes:"normal" });
 hong({ eyes:"annoyed", body:"chin" });
 ```
 
-h: Eh bien, les choses sont compliquées, et je n'ai pas toujours les réponses clés en main.
+h: Eh bien, les choses sont compliquées, et je n'ai pas toujours les réponses clés-en-main.
 
 `hong({ eyes:"annoyed_l", body:"one_up" })`
 
-h: Ce n'est pas comme si la vie te donnait une liste de 3 réponses pré-faites d'un dialogue.
+h: Ce n'est pas comme si la vie te donnait une liste de 3 réponses pré-faites à un dialogue.
 
 `hong({ eyes:"normal", mouth:"smile", body:"normal" })`
 
 h: Mais pour le moment, je peux au moins te dire merci.
 
-b: Eh bien, merci à toi aussi, pour m'écouter patiemment.
+b: Eh bien, merci à toi aussi, merci de m'écouter patiemment.
 
 `bb({ eyes:"closed" });`
 
-b: Espèce de petit mammifère sans cheveux.
+b: Espèce de petit mammifère sans poils.
 
 (#act4_something_else)
 
@@ -832,11 +832,11 @@ bb({ eyes:"smile" });
 hong({ eyes:"annoyed" });
 ```
 
-h: Oh allez, je suis juste un vulnérable collégien and tu es un grand et terrifiant loup. Qu'est-ce qui pourrait arriver de ma--
+h: Oh allez, je suis juste un collégien vulnérable et tu es un grand loup terrifiant. Qu'est-ce qui pourrait arriver de ma--
 
 `hong({ eyes:"normal", body:"point" });`
 
-h: En fait, n'y réponds pas.
+h: En fait, ne réponds pas.
 
 (#act4_something_else)
 
