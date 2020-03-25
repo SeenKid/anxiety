@@ -14,7 +14,7 @@
 
 `clearText()`
 
-n3: Alors, avant qu'on ne commence, comment est-ce que *tu* aimes lire?
+n3: Alors, avant qu'on ne commence, comment est-ce que *tu* aimes lire ?
 
 `publish("show_options_bottom")`
 
@@ -31,7 +31,7 @@ clearText();
 
 `publish("intro-to-game-2")`
 
-n2: CECI EST UN HUMAIN
+n2: CECI EST UN·E HUMAIN·E
 (...600)
 
 `clearText()`
@@ -50,7 +50,7 @@ music('battle', {volume:0.5});
 
 (...300)
 
-n: ET CECI EST L'ANXIÉTÉ DE L'HUMAIN
+n: ET CECI EST L'ANXIÉTÉ DE L'HUMAIN·E
 
 n: _TU_ ES L'ANXIÉTÉ
 
@@ -71,32 +71,32 @@ sfx("rustle2");
 hong({body:"phone1", mouth:"neutral", eyes:"neutral"})
 ```
 
-n: TON TRAVAIL EST DE PROTÉGER TON HUMAIN DU *DANGER*
+n: TON TRAVAIL EST DE PROTÉGER TON HUMAIN·E DU *DANGER*
 
 `bb({eyes:"look", mouth:"small_lock", body:"fear"})`
 
-b: Gasp! Tu procrastines sur Twitter! Encore!
+b: Gasp ! Tu procrastines sur Twitter ! Encore !
 
 ```
 bb({eyes:"normal", mouth:"normal", body:"normal"});
 hong({eyes:"annoyed"});
 ```
 
-h: Ouais je me demande pourquoi je ne m'asseois pas un moment pour écouter mes pensées plus souvent.
+h: Ouais, je me demande pourquoi je ne m'asseois pas pour écouter mes pensées plus souvent.
 
 `hong({eyes:"neutral"});`
 
-n: VITE, AVERTIS-LE D'UN *DANGER!*
+n: VITE, AVERTIS-LÆ D'UN *DANGER!*
 
 ```
 bb({eyes:"look"});
 ```
 
-[Oh non, regarde cette horrible nouvelle!](#act1d_news)
+[Oh non, regarde cette horrible nouvelle !](#act1d_news)
 
-[Oh non, est-ce que ce tweet est à propos de *nous?*](#act1d_subtweet)
+[Oh non, est-ce que ce tweet est à propos de *nous ?*](#act1d_subtweet)
 
-[Hé, un GIF d'un chat qui boit du lait!](#act1d_milk)
+[Hé, un GIF d'un chat qui boit du lait !](#act1d_milk)
 
 # act1d_milk
 
@@ -110,7 +110,7 @@ bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 1.8;
 ```
 
-b: LES CHATS NE PEUVENT PAS DIGÉRER LE LAIT ET ON EST DES PERSONNES HORRIBLES POUR AVOIR APPRÉCIÉ CELA
+b: LES CHATS NE PEUVENT PAS DIGÉRER LE LAIT ET ON EST DES PERSONNES HORRIBLES POUR AVOIR APPRÉCIÉ ÇA
 
 (...200)
 
@@ -119,6 +119,3 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 attack("20p", "bad");
 publish("hp_show");
 ```
-
-
-
