@@ -20,6 +20,8 @@ SceneSetup.act1 = function(){
 	_.attack_harm_ch1 = 0;
 	_.attack_alone_ch1 = 0;
 	_.attack_bad_ch1 = 0;
+	// 0 : neutral, 1 : male, 2 : female
+	_.gender = Math.floor((Math.random() * 3) + 1);
 
 	// Background
 	var bg = new BG_Anxiety();
