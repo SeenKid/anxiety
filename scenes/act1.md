@@ -227,7 +227,7 @@ bb({body:"normal", mouth:"small", eyes:"narrow"});
 hong({body:"0_sammich"});
 ```
 
-b: Tu savais pas que rester seul est aussi toxique que fumer 15 cigarettes par jour ?-
+b: Tu savais que rester tout·e seul·e, c'est aussi toxique que fumer 15 cigarettes par jour ?-
 
 `Game.OVERRIDE_TEXT_SPEED = 2;`
 
