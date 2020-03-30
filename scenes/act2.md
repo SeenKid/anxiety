@@ -25,6 +25,17 @@ publish("act2",["dee",3]);
 
 s: Mais as-tu *vu* ce "reportage" à propos de cette chose horrible qui s'est passée quelque part?
 
+{{if _.gender==0}}
+h2: Je ne devrais pas dire cette ligne, mais je suis angoissé·e.
+{{/if}}
+{{if _.gender==1}}
+h2: Je ne devrais pas dire cette ligne, mais je suis angoissé.
+{{/if}}
+{{if _.gender==2}}
+h2: Je ne devrais pas dire cette ligne, mais je suis angoissée.
+{{/if}}
+
+
 ```
 publish("act2",["dee",2]);
 publish("act2",["party_hong","next"]);
