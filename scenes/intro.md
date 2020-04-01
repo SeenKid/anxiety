@@ -19,15 +19,15 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="act2"}}
-[_CONTINUER_ : La Fête](#act2) `publish("LOAD_GAME", ["act2"]); Game.OVERRIDE_CHOICE_LINE=true;`
+[_CONTINUER_: La Fête](#act2) `publish("LOAD_GAME", ["act2"]); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="act3"}}
-[_CONTINUER_ : L'autre Fête](#act3) `publish("LOAD_GAME", ["act3"]); Game.OVERRIDE_CHOICE_LINE=true;`
+[_CONTINUER_: L'autre Fête](#act3) `publish("LOAD_GAME", ["act3"]); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="act4"}}
-[_CONTINUER_ : L'autre Sandwich](#act4) `publish("LOAD_GAME", ["act4"]); Game.OVERRIDE_CHOICE_LINE=true;`
+[_CONTINUER_: L'autre Sandwich](#act4) `publish("LOAD_GAME", ["act4"]); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="replay"}}
@@ -35,7 +35,7 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="replay"}}
-[#play1# REJOUER ! #play2#](#intro-start) `publish("intro-to-game-1"); Game.OVERRIDE_CHOICE_LINE=true;`
+[#play1# REJOUER! #play2#](#intro-start) `publish("intro-to-game-1"); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE}}
@@ -92,15 +92,15 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 
 `clearText()`
 
-n3: Bienvenue ! Ceci n'est pas vraiment un "jeu", mais plutôt une histoire interactive. J'espère que t'aimes lire, pigeon !
+n3: Bienvenue&nbsp;! Ceci n'est pas vraiment un "jeu," mais plutôt une histoire interactive. J'espère que t'aimes lire, sucka!
 
-n3: Alors, avant de commencer, comment est-ce que *tu* préfères lire ?
+n3: Alors, avant de commencer, comment préfères-*tu* lire ?
 
 `publish("show_options_bottom")`
 
 # intro-start-2
 
-n3: Super ! Note : tu peux changer tes réglages à tout moment avec l'icone ⚙ en bas. Aussi, le jeu sauvegarde automatiquement après chaque chapitre !
+n3: Super! Note: tu peux changer tes réglages à tout moment avec l'icone ⚙ en bas. Aussi, le jeu sauvegarde automatiquement après chaque chapitre!
 
 n3: Et maintenant, commençons notre histoire...
 
