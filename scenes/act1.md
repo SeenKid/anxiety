@@ -28,12 +28,12 @@ h: Oh ! Encore ?
 
 `hong({eyes:"0_neutral"})`
 
-n: TON TRAVAIL EST DE PROTÉGER TON {{if _.gender==0}}HUMAIN·E{{/if}}{{if _.gender==1}}HUMAIN{{/if}}{{if _.gender==2}}HUMAINE{{/if}} DU *DANGER*
+n: TON TRAVAIL EST DE PROTÉGER TON HUMAIN·E DU *DANGER*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
 {{if _.gender==0}}
-n: EN FAIT, RIEN QUE L'ACTION DE JOUER DE NOUVEAU À CE JEU LE·A MET EN *DANGER*
+n: EN FAIT, RIEN QUE L'ACTION DE JOUER DE NOUVEAU À CE JEU LÆ MET EN *DANGER*
 {{/if}}
 {{if _.gender==1}}
 n: EN FAIT, RIEN QUE L'ACTION DE JOUER DE NOUVEAU À CE JEU LE MET EN *DANGER*
@@ -43,7 +43,7 @@ n: EN FAIT, RIEN QUE L'ACTION DE JOUER DE NOUVEAU À CE JEU LA MET EN *DANGER*
 {{/if}}
 
 {{if _.gender==0}}
-n: VITE, PRÉVIENS-LE·A !
+n: VITE, PRÉVIENS-LÆ !
 {{/if}}
 {{if _.gender==1}}
 n: VITE, PRÉVIENS-LE !
@@ -58,15 +58,7 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-{{if _.gender==0}}
 b: Humain·e ! Écoute, on est en danger ! Læ joueur·se...
-{{/if}}
-{{if _.gender==1}}
-b: Humain ! Écoute, on est en danger ! Læ joueur·se...
-{{/if}}
-{{if _.gender==2}}
-b: Humaine ! Écoute, on est en danger ! Læ joueur·se...
-{{/if}}
 
 [...va nous torturer à nouveau !](#act1_replay_torture)
 
@@ -214,20 +206,12 @@ h: Oh cool, mon loup est de retour. Faaaaantastique.
 
 `hong({eyes:"0_neutral"})`
 
-{{if _.gender==0}}
 n: TON TRAVAIL EST DE PROTÉGER TON HUMAIN·E DU *DANGER*
-{{/if}}
-{{if _.gender==1}}
-n: TON TRAVAIL EST DE PROTÉGER TON HUMAIN DU *DANGER*
-{{/if}}
-{{if _.gender==2}}
-n: TON TRAVAIL EST DE PROTÉGER TON HUMAINE DU *DANGER*
-{{/if}}
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
 {{if _.gender==0}}
-n: EN FAIT, CE SANDWICH LE·A MET EN *DANGER*, JUSTE MAINTENANT, LÀ
+n: EN FAIT, CE SANDWICH LÆ MET EN *DANGER*, JUSTE MAINTENANT, LÀ
 {{/if}}
 {{if _.gender==1}}
 n: EN FAIT, CE SANDWICH LE MET EN *DANGER*, JUSTE MAINTENANT, LÀ
@@ -237,7 +221,7 @@ n: EN FAIT, CE SANDWICH LA MET EN *DANGER*, JUSTE MAINTENANT, LÀ
 {{/if}}
 
 {{if _.gender==0}}
-n: VITE, PRÉVIENS-LE·A !
+n: VITE, PRÉVIENS-LÆ !
 {{/if}}
 {{if _.gender==1}}
 n: VITE, PRÉVIENS-LE !
@@ -252,15 +236,7 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-{{if _.gender==0}}
-b: Humain·e ! Écoute, on est en danger ! Le danger est...
-{{/if}}
-{{if _.gender==1}}
 b: Humain ! Écoute, on est en danger ! Le danger est...
-{{/if}}
-{{if _.gender==2}}
-b: Humaine ! Écoute, on est en danger ! Le danger est...
-{{/if}}
 
 `bb({body:"squeeze"})`
 
@@ -270,9 +246,9 @@ n4: (LAISSE _TON_ ANXIÉTÉ SORTIR ET JOUER ! CHOISIS CE QUI RESSEMBLE LE PLUS �
 
 # act1_normal_choice
 
-[On mange {{if _.gender==0}}tout·e seul·e{{/if}}{{if _.gender==1}}tout seul{{/if}}{{if _.gender==2}}toute seule{{/if}} le midi ! Encore !](#act1a_alone) `bb({body:"squeeze_talk"})`
+[On mange tout seul le midi ! Encore !](#act1a_alone) `bb({body:"squeeze_talk"})`
 
-[Pendant qu'on mange, on n'est pas {{if _.gender==0}}productif·ve{{/if}}{{if _.gender==1}}productif{{/if}}{{if _.gender==2}}productive{{/if}} !](#act1a_productive) `bb({body:"squeeze_talk"})`
+[Pendant qu'on mange, on n'est pas produc !](#act1a_productive) `bb({body:"squeeze_talk"})`
 
 [Ce pain blanc est mauvais pour notre santé !](#act1a_bread) `bb({body:"squeeze_talk"})`
 
@@ -283,7 +259,7 @@ bb({body:"normal", mouth:"small", eyes:"narrow"});
 hong({body:"0_sammich"});
 ```
 
-b: Tu savais pas que rester {{if _.gender==0}}seul·e{{/if}}{{if _.gender==1}}seul{{/if}}{{if _.gender==2}}seule{{/if}} est aussi toxique que fumer 15 cigarettes par jour ?-
+b: Tu savais que rester {{if _.gender==0}}tout·e seul·e{{/if}}{{if _.gender==1}}tout seul{{/if}}{{if _.gender==2}}toute seule{{/if}}, c'est aussi toxique que fumer 15 cigarettes par jour ?-
 
 `Game.OVERRIDE_TEXT_SPEED = 2;`
 
