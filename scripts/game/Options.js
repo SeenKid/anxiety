@@ -201,12 +201,15 @@ Loader.addSounds([
 
 	});
 
-	$("#options_ok").onclick = function(){
+	subscribe("show_gender_options_bottom", function(){
+		genderOptionsDOM.style.top = "447px";
+		sfx("ui_show_choice", {volume:0.4});
+	});
 
+	$("#options_ok").onclick = function(){
 		if(!ALREADY_DID_INTRO){
 			sfx("ui_click");
 			publish("cut_options_bottom");
-			ALREADY_DID_INTRO = true;
 		}else{
 			publish("hide_options");
 		}
@@ -218,7 +221,13 @@ Loader.addSounds([
 	};
 
 	$("#gender_options_ok").onclick = function(){
-		publish("hide_gender_options");
+		if(!ALREADY_DID_INTRO){
+			sfx("ui_click");
+			publish("cut_gender_options_bottom");
+			ALREADY_DID_INTRO = true;
+		}else{
+			publish("hide_gender_options");
+		}
 	};
 
 	subscribe("cut_options_bottom", function(){
@@ -229,11 +238,18 @@ Loader.addSounds([
 		},100);
 
 		// Total hack, but whatever
+		Game.goto("intro-start-gender");
+	});
+
+	subscribe("cut_gender_options_bottom", function(){
+		genderOptionsDOM.style.display = "none";
+		genderOptionsDOM.style.top = "";
+		setTimeout(function(){
+			genderOptionsDOM.style.display = "block";
+		},100);
+
 		Game.goto("intro-start-2");
-
-		// Double total hack
 		publish("show_tabs");
-
 	});
 
 	subscribe("hide_tabs", function(){
@@ -247,7 +263,6 @@ Loader.addSounds([
 
 
 	subscribe("show_options", function(){
-
 		ALREADY_DID_INTRO = true;
 		optionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
 
