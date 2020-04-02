@@ -96,7 +96,13 @@ Game.start = function(){
 	window._ = {}; // global var, reset
 
 	_.gender = 0;
+	_.tossing = false;
+
 	_.setGender = function(g){
+		if (_.tossing) {
+			return;
+		}
+
 		const g_preview = $("#gender_preview");
 		switch (g) {
 			case 0:
@@ -112,14 +118,46 @@ Game.start = function(){
 		_.gender = g;
 	};
 
-	$("#g_undefined").onclick = function(){ _.setGender(0); };
-	$("#lg_undefined").onclick = function(){ _.setGender(0); };
+	$("#g_toss").checked = false;
+	$("#g_undefined").checked = true;
 
-	$("#g_male").onclick = function(){ _.setGender(1); };
-	$("#lg_male").onclick = function(){ _.setGender(1); };
+	_.toggleTossing = function(){
+		const g_preview = $("#gender_preview");
+		const g_undefined = $("#g_undefined");
+		const g_male = $("#g_male");
+		const g_female = $("#g_female");
+		const d_tosswith0 = $("#d_tosswith0");
 
-	$("#g_female").onclick = function(){ _.setGender(2); };
-	$("#lg_female").onclick = function(){ _.setGender(2); };
+		if (_.tossing) {
+			_.tossing = false;
+			g_undefined.removeAttribute("disabled");
+			g_male.removeAttribute("disabled");
+		 	g_female.removeAttribute("disabled");
+
+			g_undefined.checked = true;
+			g_preview.innerHTML = "indéfini";
+
+			d_tosswith0.style.visibility = "hidden";
+		} else {
+			_.tossing = true;
+		 	g_undefined.setAttribute("disabled", "");
+			g_undefined.checked = false;
+			g_male.setAttribute("disabled", "");
+			g_male.checked = false;
+			g_female.setAttribute("disabled", "");
+			g_female.checked = false;
+
+		 	g_preview.innerHTML = "???";
+
+			d_tosswith0.style.visibility = "visible";
+		}
+	};
+
+	$("#g_undefined").onchange = function(){ _.setGender(0); };
+	$("#g_male").onchange = function(){ _.setGender(1); };
+	$("#g_female").onchange = function(){ _.setGender(2); };
+
+	$("#g_toss").onchange = _.toggleTossing;
 };
 
 var last_frame = Date.now();

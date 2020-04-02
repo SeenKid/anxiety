@@ -637,6 +637,14 @@ AJOUTÉ PAR LA TRADUCTION FRANCOPHONE : OPTIONS DE GENRE
 	flex-grow: 1;
 }
 
+#g_toss:focus {
+	outline: none;
+}
+
+#d_tosswith0 {
+	visibility: hidden;
+}
+
 /******************************************************************************************************
 
 DIALOGUEZ
