@@ -18,11 +18,11 @@ publish("show_stats");
 
 n2: PEURS CE ROUND:
 
-i: #harm# *ÊTRE BLESSÉ·E:* {{_.INTERMISSION_STAGE==1 ? _.attack_harm_ch1 : _.attack_harm_ch2}}
+i: #harm# *ÊTRE BLESSÉ·E :* {{_.INTERMISSION_STAGE==1 ? _.attack_harm_ch1 : _.attack_harm_ch2}}
 
-i: #alone# *ÊTRE MAL-AIMÉ·E:* {{_.INTERMISSION_STAGE==1 ? _.attack_alone_ch1 : _.attack_alone_ch2}}
+i: #alone# *ÊTRE MAL-AIMÉ·E :* {{_.INTERMISSION_STAGE==1 ? _.attack_alone_ch1 : _.attack_alone_ch2}}
 
-i: #bad# *ÊTRE UNE MAUVAISE PERSONNE:* {{_.INTERMISSION_STAGE==1 ? _.attack_bad_ch1 : _.attack_bad_ch2}}
+i: #bad# *ÊTRE UNE MAUVAISE PERSONNE :* {{_.INTERMISSION_STAGE==1 ? _.attack_bad_ch1 : _.attack_bad_ch2}}
 
 
 ```
@@ -31,7 +31,7 @@ Game.FORCE_CANT_SKIP = false;
 Game.CLICK_TO_ADVANCE = true;
 ```
 
-n5: (Jeu sauvegardé automatiquement! Tu peux quitter pour reprendre plus tard)
+n5: (Jeu sauvegardé automatiquement ! Tu peux quitter pour reprendre plus tard)
 
 ```
 Game.clearAll();
