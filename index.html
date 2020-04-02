@@ -3,24 +3,24 @@
 <head>
 
 	<!-- THE BIG META -->
-	<title>Adventures With Anxiety!</title>
+	<title>Aventures avec l'Anxiété !</title>
 	<meta name="description" content="Un jeu-histoire à propos d'un·e humain·e et de son anxiété. Vous êtes l'anxiété." />
 	<link rel="icon" type="image/png" href="favicon.png">
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@ncasenmare">
-	<meta name="twitter:title" content="Adventures With Anxiety!">
+	<meta name="twitter:title" content="Aventures avec l'Anxiété !">
 	<meta name="twitter:description" content="Un jeu-histoire à propos d'un·e humain·e et de son anxiété. Vous êtes l'anxiété.">
 	<meta name="twitter:image" content="https://ncase.me/anxiety/sharing/thumb.png">
 
 	<!-- Open Graph data -->
-	<meta property="og:title" content="Adventures With Anxiety!">  <!-- TRANSLATE: content -->
+	<meta property="og:title" content="Aventures avec l'Anxiété !">  <!-- TRANSLATE: content -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://ncase.me/anxiety/">
 	<meta property="og:image" content="https://ncase.me/anxiety/sharing/thumb.png">
 	<meta property="og:description" content="Un jeu-histoire à propos d'un·e humain·e et de son anxiété. Vous êtes l'anxiété.">
-	<meta property="og:site_name" content="Adventures With Anxiety!">
+	<meta property="og:site_name" content="Aventures avec l'Anxiété !">
 
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="styles/game.css">
@@ -75,7 +75,7 @@
 	<!-- Paused Screen -->
 	<div id="paused">
 		<div>
-			en pause
+			pause
 			<div>cliquez n'importe où pour continuer à paniquer</div>
 		</div>
 	</div>
@@ -93,7 +93,7 @@
 
 		<!-- TRANSLATE THIS -->
 		<p style="margin-top: 0.6em;">
-			<i style="color:#ff4040">Adventures With Anxiety</i> parle, eh bien, de l'anxiété.
+			<i style="color:#ff4040">Aventures avec l'Anxiété</i> parle, eh bien, de l'anxiété.
 		</p>
 		<p>
 			Mais j'ai fait ce jeu <i>pour</i> les gens souffrant de troubles anxieux, comme moi.
@@ -171,7 +171,30 @@
 			<div>Volume&nbsp;:</div>
 			<input id="volume_slider" type="range" min=0 max=1 value=1 step="0.01"/>
 		</span>
+		<div id="show_gender_options">
+			options de genre
+		</div>
 		<div id="options_ok">
+			ok <div class="mini-icon" pic="ok" style="top: 3px;"></div>
+		</div>
+	</div>
+
+	<!-- AJOUTÉ PAR LA TRADUCTION FRANCOPHONE : OPTIONS DE GENRE -->
+	<div id="gender_options">
+		<div>Genre&nbsp;: <span id="gender_preview">indéfini</span></div>
+		<ul id="gender_radio_group">
+			<li>
+				<input type="radio" id="g_undefined" name="gender" value="g_undefined">
+				<label id="lg_undefined" for="g_undefined">&nbsp;?</label>
+			</li><li>
+				<input type="radio" id="g_male" name="gender" value="g_male">
+				<label id="lg_male" for="g_male">&nbsp;M</label>
+			</li><li>
+				<input type="radio" id="g_female" name="gender" value="g_female">
+				<label id="lg_female" for="g_female">&nbsp;F</label>
+			</li>
+		</ul>
+		<div id="gender_options_ok">
 			ok <div class="mini-icon" pic="ok" style="top: 3px;"></div>
 		</div>
 	</div>
@@ -200,7 +223,7 @@ Musique par
 Code supplémentaire par
 <a href="https://spacie.me/" target="_blank">Spacie</a>
 <br>
-<a href="https://github.com/ncase/anxiety#full-credits" target="_blank">Crédits complets</a>
+<a href="https://github.com/NathSoM/anxiety#full-credits" target="_blank">Crédits complets</a>
 <br><br>
 Vous êtes sur la traduction en français (en cours) par
 <a href="https://github.com/NathSoM/anxiety/graphs/contributors" target="_blank">NathSoM & contributeurs</a>
@@ -221,7 +244,7 @@ Autres traductions de fans&nbsp;!
 <br>
 ...
 <br>
-<a href="https://github.com/ncase/anxiety#how-to-translate" target="_blank">En proposer une autre&nbsp;?</a>
+<a href="https://github.com/NathSoM/anxiety#how-to-translate" target="_blank">En proposer une autre&nbsp;?</a>
 
 </div>
 
@@ -229,15 +252,15 @@ Autres traductions de fans&nbsp;!
 <img src="sprites/about/cc0.png" height="30" style="opacity:0.7"/>
 <br>
 Vous êtes déjà autorisé·e à réutiliser &amp; remixer ça pour n'importe quel usage&nbsp;!
-<a href="https://github.com/ncase/anxiety#public-domain" target="_blank">(hein&nbsp;?)</a>
+<a href="https://github.com/NathSoM/anxiety#public-domain" target="_blank">(hein&nbsp;?)</a>
 <br>
-<a href="https://github.com/ncase/anxiety" target="_blank">Obtenez le code source complet</a>
+<a href="https://github.com/NathSoM/anxiety" target="_blank">Obtenez le code source complet</a>
 </div>
 
 <div class="corner-text" id="topright">
 Partager sur une appli à anxiété&nbsp;:
 <span id="sharing_title">
-	Adventures With Anxiety!
+	Aventures avec l'Anxiété !
 </span>
 <span id="sharing_desc">
 	Je viens de jouer à cette histoire interactive qui parle d'un·e humain·e et de son anxiété&nbsp;! On y *joue* l'anxiété. 😱 <!-- TRANSLATE -- >

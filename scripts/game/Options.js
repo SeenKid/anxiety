@@ -8,6 +8,7 @@ Loader.addSounds([
 (function(){
 
 	var optionsDOM = $("#options");
+	var genderOptionsDOM = $("#gender_options");
 	var text_speed_slider = $("#text_speed_slider");
 	var text_speed_preview = $("#text_speed_preview");
 	var volume_slider = $("#volume_slider");
@@ -69,10 +70,10 @@ Loader.addSounds([
 
 		click_to_advance.style.display = "block";
 		blinkCTA();
-		
+
 	});
 	subscribe("hide_click_to_advance", function(){
-		
+
 		click_to_advance.style.display = "none";
 
 		if(currentBlinkingInterval) clearInterval(currentBlinkingInterval);
@@ -145,7 +146,7 @@ Loader.addSounds([
 		div.innerHTML = "";
 
 		// What's the dialogue?
-		var dialogue = Game.TEXT_SPEED<80 ? "Cette vitesse" : "Cette lenteur";
+		var dialogue = Game.TEXT_SPEED<80 ? "À cette vitesse" : "Avec cette lenteur";
 
 		// Put in the text
 		var span, chr;
@@ -187,7 +188,7 @@ Loader.addSounds([
 
 		ALREADY_DID_INTRO = false;
 		optionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
-		
+
 		optionsDOM.style.top = "447px";
 		_clearAllTimeouts();
 		text_speed_preview.innerHTML = "";
@@ -210,6 +211,14 @@ Loader.addSounds([
 			publish("hide_options");
 		}
 
+	};
+
+	$("#show_gender_options").onclick = function(){
+		publish("show_gender_options");
+	};
+
+	$("#gender_options_ok").onclick = function(){
+		publish("hide_gender_options");
 	};
 
 	subscribe("cut_options_bottom", function(){
@@ -242,17 +251,36 @@ Loader.addSounds([
 		ALREADY_DID_INTRO = true;
 		optionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
 
+		$("#show_gender_options").style.display = "inline-block";
+
 		optionsDOM.style.top = "200px";
 		Options.showing = true;
 		Game.pause();
 		Howler.mute(false); // hack
 	});
 
-	subscribe("hide_options", function(){	
-		sfx("ui_click");	
+	subscribe("show_gender_options", function(){
+		ALREADY_DID_INTRO = true;
+		genderOptionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
+
+		genderOptionsDOM.style.top = "200px";
+
+		sfx("ui_click");
+		optionsDOM.style.top = "";
+	});
+
+	subscribe("hide_options", function(){
+		sfx("ui_click");
 		optionsDOM.style.top = "";
 		Options.showing = false;
 		Game.onUnpause();
+	});
+
+	subscribe("hide_gender_options", function(){
+		sfx("ui_click");
+		genderOptionsDOM.style.top = "";
+
+		optionsDOM.style.top = "200px";
 	});
 
 })();

@@ -214,9 +214,9 @@ n4: (LAISSE _TON_ ANXIÉTÉ SORTIR ET JOUER ! CHOISIS CE QUI RESSEMBLE LE PLUS �
 
 # act1_normal_choice
 
-[On mange tout seul le midi ! Encore !](#act1a_alone) `bb({body:"squeeze_talk"})`
+[On mange tout·e seul·e le midi ! Encore !](#act1a_alone) `bb({body:"squeeze_talk"})`
 
-[Pendant qu'on mange, on n'est pas produc !](#act1a_productive) `bb({body:"squeeze_talk"})`
+[Pendant qu'on mange, on n'est pas productif·ve !](#act1a_productive) `bb({body:"squeeze_talk"})`
 
 [Ce pain blanc est mauvais pour notre santé !](#act1a_bread) `bb({body:"squeeze_talk"})`
 
@@ -275,7 +275,7 @@ b: Sors ton ordinateur portable et travaille *maintenant* !
 
 `hong({eyes:"0_annoyed"})`
 
-h: Hum, je préfèrerais ne pas mettre de miettes sur mon cla--
+h: Hum, je préférerais ne pas mettre de miettes sur mon cla--
 
 ```
 bb({mouth:"normal", eyes:"fear"});
