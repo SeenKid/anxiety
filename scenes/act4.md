@@ -1471,7 +1471,7 @@ h: Ça veut dire que tu dois t'écouter, travailler *avec* toi-même, mais pas p
 
 ```
 hong({ eyes:"normal", body:"normal" });
-bb({ eyes:"annoyed", mouth:"normal" });`
+bb({ eyes:"annoyed", mouth:"normal" });
 ```
 
 b: Alors ils devraient dire *ça* au lieu d'utiliser des mots problématiques comme "accepter".

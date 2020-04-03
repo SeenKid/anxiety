@@ -38,12 +38,14 @@ publish("act3",["roofhong",6]);
 ```
 
 h2: Plus précisément, les endroits cognés sont mes amygdales gauche et droite.
+
 ```
 publish("act3",["roofhunter",8]);
 publish("act3",["roofhong",5]);
 ```
 
 r: Tu me rappelles moi quand j'étais plus jeune. À l'époque où j'étais tourmenté·e par l'animal dans ma tête.
+
 ```
 publish("act3",["roofhunter",9]);
 publish("act3",["roofhong",2]);

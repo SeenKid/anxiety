@@ -158,11 +158,13 @@ publish("act2",["dee",1]);
 ```
 
 s: Eh bien, hier j'ai vu quelqu'un retweeter un GIF où un chat buvait du lait.
+
 ```
 publish("act2",["dee",3]);
 ```
 
 s: Ils ne peuvent pas digérer cette ^merde^ ! Qui retweeterait de la *cruauté animale* comme ça ?
+
 ```
 publish("act2",["party_hunter",1]);
 publish("act2",["dee",2]);
