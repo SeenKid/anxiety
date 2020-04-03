@@ -67,7 +67,7 @@ Game.parseSceneMarkdown = function(md){
 	var sections = md.split(/\n\#\s*/);
 	sections.shift();
 	sections.forEach(function(section){
-		
+
 		var split_index = section.indexOf("\n\n");
 		var id = section.slice(0, split_index).toLocaleLowerCase();
 		var text = section.slice(split_index+2);
@@ -76,7 +76,7 @@ Game.parseSceneMarkdown = function(md){
 		text = text.trim();
 		var lines = text.split("\n\n");
 		for(var i=0; i<lines.length; i++) lines[i]=lines[i].trim(); // trim it all!
-		
+
 		// New section
 		Game.sections[id] = {
 			id: id,
@@ -94,6 +94,70 @@ Game.parseSceneMarkdown = function(md){
 Game.start = function(){
 	Game.FORCE_CANT_SKIP = false; // for the replay
 	window._ = {}; // global var, reset
+
+	_.gender = 0;
+	_.tossing = false;
+
+	_.setGender = function(g){
+		if (_.tossing) {
+			return;
+		}
+
+		const g_preview = $("#gender_preview");
+		switch (g) {
+			case 0:
+				g_preview.innerHTML = "indéfini";
+				break;
+			case 1:
+				g_preview.innerHTML = "masculin";
+				break;
+			case 2:
+				g_preview.innerHTML = "féminin";
+		}
+
+		_.gender = g;
+	};
+
+	$("#g_toss").checked = false;
+	$("#g_undefined").checked = true;
+
+	_.toggleTossing = function(){
+		const g_preview = $("#gender_preview");
+		const g_undefined = $("#g_undefined");
+		const g_male = $("#g_male");
+		const g_female = $("#g_female");
+		const d_tosswith0 = $("#d_tosswith0");
+
+		if (_.tossing) {
+			_.tossing = false;
+			g_undefined.removeAttribute("disabled");
+			g_male.removeAttribute("disabled");
+		 	g_female.removeAttribute("disabled");
+
+			g_undefined.checked = true;
+			g_preview.innerHTML = "indéfini";
+
+			d_tosswith0.style.visibility = "hidden";
+		} else {
+			_.tossing = true;
+		 	g_undefined.setAttribute("disabled", "");
+			g_undefined.checked = false;
+			g_male.setAttribute("disabled", "");
+			g_male.checked = false;
+			g_female.setAttribute("disabled", "");
+			g_female.checked = false;
+
+		 	g_preview.innerHTML = "???";
+
+			d_tosswith0.style.visibility = "visible";
+		}
+	};
+
+	$("#g_undefined").onchange = function(){ _.setGender(0); };
+	$("#g_male").onchange = function(){ _.setGender(1); };
+	$("#g_female").onchange = function(){ _.setGender(2); };
+
+	$("#g_toss").onchange = _.toggleTossing;
 };
 
 var last_frame = Date.now();
@@ -142,7 +206,7 @@ Game.pause = function(){
 	$("#paused").setAttribute("modal", (Options.showing||About.showing||ContentNotes.showing) ? "yes" : "no" );
 
 	publish("GAME_PAUSED");
-	
+
 };
 window.addEventListener("blur", Game.pause);
 Game.onUnpause = function(){
@@ -157,6 +221,7 @@ Game.onUnpause = function(){
 };
 Game.pausedDOM.onclick = function(e){
 	if(Options.showing){
+		publish("hide_gender_options");
 		publish("hide_options");
 	}else if(About.showing){
 		$("#close_about").onclick();
@@ -599,7 +664,7 @@ Game.executeText = function(line){
 				// Is it an emphasized word?
 				var reggie = /\*(.*)\*/;
 				var word = dialogueWords[i];
-				if(reggie.test(word)){ 
+				if(reggie.test(word)){
 					word = "<i>" + word.match(reggie)[1].trim() + "</i>";
 				}
 
@@ -734,7 +799,7 @@ Game.OVERRIDE_CHOICE_LINE = false;
 Game.OVERRIDE_CHOICE_SPEAKER = null;
 Game.OVERRIDE_FONT_SIZE = false;
 Game.executeChoice = function(line){
-	
+
 	var choiceText = line.match(/\[([^\]]*)\]/)[1].trim();
 	var choiceID = line.match(/\(\#([^\)]*)\)/);
 	var THERE_IS_NO_CHOICE;
@@ -827,27 +892,27 @@ Game.executeChoice = function(line){
 		setTimeout(function(){
 			var choiceHeight = div.getBoundingClientRect().height;
 			if(choiceHeight>40) div.style.fontSize = "18px";
-			// And if still too much???		
+			// And if still too much???
 			setTimeout(function(){
 				var choiceHeight = div.getBoundingClientRect().height;
 				if(choiceHeight>40) div.style.fontSize = "17px";
-				// And if still too much???		
+				// And if still too much???
 				setTimeout(function(){
 					var choiceHeight = div.getBoundingClientRect().height;
 					if(choiceHeight>40) div.style.fontSize = "16px";
-					// And if still too much???		
+					// And if still too much???
 					setTimeout(function(){
 						var choiceHeight = div.getBoundingClientRect().height;
 						if(choiceHeight>40) div.style.fontSize = "15px";
-						// And if still too much???		
+						// And if still too much???
 						setTimeout(function(){
 							var choiceHeight = div.getBoundingClientRect().height;
 							if(choiceHeight>40) div.style.fontSize = "14px";
-							// And if still too much???		
+							// And if still too much???
 							setTimeout(function(){
 								var choiceHeight = div.getBoundingClientRect().height;
 								if(choiceHeight>40) div.style.fontSize = "13px";
-								// And if still too much???		
+								// And if still too much???
 								setTimeout(function(){
 									var choiceHeight = div.getBoundingClientRect().height;
 									if(choiceHeight>40) div.style.fontSize = "12px";
@@ -858,7 +923,7 @@ Game.executeChoice = function(line){
 				},1);
 			},1);
 		},1);
-		
+
 	}
 	Game.OVERRIDE_FONT_SIZE = false;
 
@@ -886,7 +951,7 @@ Game.executeCode = function(line){
 
 // Execute wait! Just wait.
 Game.executeWait = function(line){
-	
+
 	// Get integer from (...NN)
 	var waitTime = parseInt(line.match(/^\(\.\.\.(\d+)\)/)[1].trim());
 
@@ -903,7 +968,7 @@ Game.executeWait = function(line){
 		}
 
 	}
-	
+
 	// Delayed promise
 	return new RSVP.Promise(function(resolve){
 		Game.setTimeout(resolve, waitTime);
@@ -985,7 +1050,7 @@ Game.parseLine = function(line){
 			lookForIfs = true;
 
 		}
-		
+
 	}
 
 	// Evaluate {{expressions}}, if any
@@ -1023,7 +1088,7 @@ Game.parseLine = function(line){
 			lookForExpressions = true;
 
 		}
-		
+
 	}
 
 	// Return line!
@@ -1044,7 +1109,7 @@ Game.context = Game.canvas.getContext("2d");
 // A blank scene
 Game.scene = null;
 Game.resetScene = function(){
-	
+
 	// Kill all of previous scene
 	if(Game.scene){
 		Game.scene.children.forEach(function(child){
@@ -1081,7 +1146,7 @@ Game.updateCanvas = function(delta){
 	ctx.scale(2, 2);
 
 	// Update/Draw all kids
-	
+
 	for(const child of Game.scene.children) child.draw(ctx, delta);
 
 
@@ -1119,4 +1184,3 @@ if(queryParams.c){
 	doCuss.innerHTML = ".hide-if-cuss-free{ display:inline; }";
 	document.body.appendChild(doCuss);
 }
-

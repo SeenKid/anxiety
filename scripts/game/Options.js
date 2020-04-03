@@ -8,6 +8,7 @@ Loader.addSounds([
 (function(){
 
 	var optionsDOM = $("#options");
+	var genderOptionsDOM = $("#gender_options");
 	var text_speed_slider = $("#text_speed_slider");
 	var text_speed_preview = $("#text_speed_preview");
 	var volume_slider = $("#volume_slider");
@@ -26,7 +27,7 @@ Loader.addSounds([
 			HOW_MANY_PROMPTS = 1;
 		}
 		Game.CLICK_TO_ADVANCE = !Game.CLICK_TO_ADVANCE;
-		text_automatic_toggle.innerHTML = Game.CLICK_TO_ADVANCE ? "on click" : "automatically";
+		text_automatic_toggle.innerHTML = Game.CLICK_TO_ADVANCE ? "en cliquant" : "automatique";
 
 		// Sound
 		sfx( Game.CLICK_TO_ADVANCE ? "ui_button2" : "ui_button1");
@@ -69,10 +70,10 @@ Loader.addSounds([
 
 		click_to_advance.style.display = "block";
 		blinkCTA();
-		
+
 	});
 	subscribe("hide_click_to_advance", function(){
-		
+
 		click_to_advance.style.display = "none";
 
 		if(currentBlinkingInterval) clearInterval(currentBlinkingInterval);
@@ -145,7 +146,7 @@ Loader.addSounds([
 		div.innerHTML = "";
 
 		// What's the dialogue?
-		var dialogue = Game.TEXT_SPEED<80 ? "Speak this fast" : "Speak this slow";
+		var dialogue = Game.TEXT_SPEED<80 ? "À cette vitesse" : "Avec cette lenteur";
 
 		// Put in the text
 		var span, chr;
@@ -187,7 +188,7 @@ Loader.addSounds([
 
 		ALREADY_DID_INTRO = false;
 		optionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
-		
+
 		optionsDOM.style.top = "447px";
 		_clearAllTimeouts();
 		text_speed_preview.innerHTML = "";
@@ -200,16 +201,33 @@ Loader.addSounds([
 
 	});
 
-	$("#options_ok").onclick = function(){
+	subscribe("show_gender_options_bottom", function(){
+		genderOptionsDOM.style.top = "420px";
+		sfx("ui_show_choice", {volume:0.4});
+	});
 
+	$("#options_ok").onclick = function(){
 		if(!ALREADY_DID_INTRO){
 			sfx("ui_click");
 			publish("cut_options_bottom");
-			ALREADY_DID_INTRO = true;
 		}else{
 			publish("hide_options");
 		}
 
+	};
+
+	$("#show_gender_options").onclick = function(){
+		publish("show_gender_options");
+	};
+
+	$("#gender_options_ok").onclick = function(){
+		if(!ALREADY_DID_INTRO){
+			sfx("ui_click");
+			publish("cut_gender_options_bottom");
+			ALREADY_DID_INTRO = true;
+		}else{
+			publish("hide_gender_options");
+		}
 	};
 
 	subscribe("cut_options_bottom", function(){
@@ -220,11 +238,18 @@ Loader.addSounds([
 		},100);
 
 		// Total hack, but whatever
+		Game.goto("intro-start-gender");
+	});
+
+	subscribe("cut_gender_options_bottom", function(){
+		genderOptionsDOM.style.display = "none";
+		genderOptionsDOM.style.top = "";
+		setTimeout(function(){
+			genderOptionsDOM.style.display = "block";
+		},100);
+
 		Game.goto("intro-start-2");
-
-		// Double total hack
 		publish("show_tabs");
-
 	});
 
 	subscribe("hide_tabs", function(){
@@ -238,9 +263,10 @@ Loader.addSounds([
 
 
 	subscribe("show_options", function(){
-
 		ALREADY_DID_INTRO = true;
 		optionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
+
+		$("#show_gender_options").style.display = "inline-block";
 
 		optionsDOM.style.top = "200px";
 		Options.showing = true;
@@ -248,11 +274,28 @@ Loader.addSounds([
 		Howler.mute(false); // hack
 	});
 
-	subscribe("hide_options", function(){	
-		sfx("ui_click");	
+	subscribe("show_gender_options", function(){
+		ALREADY_DID_INTRO = true;
+		genderOptionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
+
+		genderOptionsDOM.style.top = "200px";
+
+		sfx("ui_click");
+		optionsDOM.style.top = "";
+	});
+
+	subscribe("hide_options", function(){
+		sfx("ui_click");
 		optionsDOM.style.top = "";
 		Options.showing = false;
 		Game.onUnpause();
+	});
+
+	subscribe("hide_gender_options", function(){
+		sfx("ui_click");
+		genderOptionsDOM.style.top = "";
+
+		optionsDOM.style.top = "200px";
 	});
 
 })();

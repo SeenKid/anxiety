@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+
 	<!-- THE BIG META -->
-	<title>Adventures With Anxiety!</title>  <!-- TRANSLATE -->
-	<meta name="description" content="A story-game about a human and their anxiety. You play as the anxiety." />  <!-- TRANSLATE: content -->
+	<title>Aventures avec l'Anxiété !</title>
+	<meta name="description" content="Un jeu-histoire à propos d'un·e humain·e et de son anxiété. Vous êtes l'anxiété." />
 	<link rel="icon" type="image/png" href="favicon.png">
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@ncasenmare">
-	<meta name="twitter:title" content="Adventures With Anxiety!">  <!-- TRANSLATE: content -->
-	<meta name="twitter:description" content="A story-game about a human and their anxiety. You play as the anxiety.">  <!-- TRANSLATE: content -->
+	<meta name="twitter:title" content="Aventures avec l'Anxiété !">
+	<meta name="twitter:description" content="Un jeu-histoire à propos d'un·e humain·e et de son anxiété. Vous êtes l'anxiété.">
 	<meta name="twitter:image" content="https://ncase.me/anxiety/sharing/thumb.png">
 
 	<!-- Open Graph data -->
-	<meta property="og:title" content="Adventures With Anxiety!">  <!-- TRANSLATE: content -->
+	<meta property="og:title" content="Aventures avec l'Anxiété !">  <!-- TRANSLATE: content -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://ncase.me/anxiety/">
 	<meta property="og:image" content="https://ncase.me/anxiety/sharing/thumb.png">
-	<meta property="og:description" content="A story-game about a human and their anxiety. You play as the anxiety.">  <!-- TRANSLATE: content -->
-	<meta property="og:site_name" content="Adventures With Anxiety!">  <!-- TRANSLATE: content -->
-	
+	<meta property="og:description" content="Un jeu-histoire à propos d'un·e humain·e et de son anxiété. Vous êtes l'anxiété.">
+	<meta property="og:site_name" content="Aventures avec l'Anxiété !">
+
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="styles/game.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,7 +34,7 @@
 <!-- - - - - - - - - - - - - - - - - - -->
 
 <div id="game_container">
-	
+
 	<!-- The main game -->
 	<canvas id="game_canvas"></canvas>
 	<div id="game_words"></div>
@@ -46,10 +46,10 @@
 		<span id="cta_text1">
 			<div class="mini-icon" pic="click" style="top:3px;"></div>
 			<span id="instructions_if_not_mobile">
-				click or spacebar <!-- TRANSLATE THIS -->
+				clic ou barre d'espace
 			</span>
 			<span id="instructions_if_mobile" style="display:none">
-				tap anywhere <!-- TRANSLATE THIS -->
+				tapez/cliquez n'importe où
 			</span>
 		</span>
 		<span id="cta_text2">
@@ -75,9 +75,8 @@
 	<!-- Paused Screen -->
 	<div id="paused">
 		<div>
-			<!-- TRANSLATE THIS -->
-			paused
-			<div>click anywhere to keep freaking out</div>
+			pause
+			<div>cliquez n'importe où pour continuer à paniquer</div>
 		</div>
 	</div>
 
@@ -94,22 +93,22 @@
 
 		<!-- TRANSLATE THIS -->
 		<p style="margin-top: 0.6em;">
-			<i style="color:#ff4040">Adventures With Anxiety</i> is about, well, anxiety.
+			<i style="color:#ff4040">Aventures avec l'Anxiété</i> parle, eh bien, de l'anxiété.
 		</p>
 		<p>
-			But I've made this <i>for</i> folks with anxiety disorder, like myself.
-			I hope it can help you see – with humor – how anxiety works.
-			And, just maybe, reduce the fear of fear itself.
+			Mais j'ai fait ce jeu <i>pour</i> les gens souffrant de troubles anxieux, comme moi.
+			J'espère qu'il pourra vous aider à comprendre – avec humour – comment l'anxiété fonctionne.
+			Et, peut-être, qu'il diminuera votre peur de la peur elle-même.
 		</p>
 		<p>
-			There's also badly-drawn stick figures and a hyperactive wolf.
-			Enjoy!
+			Il y a aussi des bonshommes en fil-de-fer mal dessinés et un loup hyperactif.
+			Amusez-vous bien&nbsp;!
 		</p>
 		<p style="color:#999; font-size: 16px; line-height: 1.3em;">
-			other notes: alcohol abuse, sexuality<span class="hide-if-cuss-free">, a @✩$!load of swearing</span>
+			Autres notes&nbsp;: abus d'alcool, sexualité<span class="hide-if-cuss-free">, une tonne de jurons</span>
 		</p>
 		<p>
-			<a target="_blank" href="https://ncase.me/mental-health/">mental health tips &amp; resources</a>
+			<a target="_blank" href="mental-health.html">Ressources sur la santé mentale</a>
 			&#x1f517;
 		</p>
 		<div id="cn_ok" onclick="publish('hide_cn');" style="float:none">
@@ -121,32 +120,30 @@
 	<!-- ABOUT -->
 	<div id="about"><!-- about=yes-->
 		<div id="about_words">
-		
-			<!-- TRANSLATE THIS -->
+
 			<div style="font-size: 40px; margin-top: 42px; line-height: 30px;">
-				mental health
-				<a href="https://ncase.me/mental-health/" target="_blank">resources</a>
+				santé mentale
+				<a href="mental-health.html" target="_blank">ressources</a>
 			</div>
 
 			<div style="margin-top: 26px; color: #999;">
-				&mdash; or &mdash;
+				&mdash; ou &mdash;
 			</div>
-			
+
 			<div style="font-size: 25px; text-align: left; width: 170px;
 						margin-left: 165px; line-height: 25px; margin-top: 31px;">
-				
-				<!-- TRANSLATE ALL THIS -->
 				<div>
-					play more of
-					<a href="https://ncase.me" target="_blank">my shtuff</a>
+					jouez à d'autres de
+					<a href="https://ncase.me" target="_blank">mes trucs</a>
 				</div>
 				<div style="margin-top: 32px;">
-					throw coins<br>at me
-					<a href="https://www.patreon.com/ncase" target="_blank">on Patreon</a>
+					balancez-moi<br>des pièces
+					<a href="https://www.patreon.com/ncase" target="_blank">sur Patreon</a>
 				</div>
 				<div style="margin-top: 28px;">
-					please your ear-holes with Monplaisir's
-					<a href="https://chezmonplaisir.bandcamp.com/album/anxiety" target="_blank">original soundtrack</a>
+					apaisez vos tympans avec la
+					<a href="https://chezmonplaisir.bandcamp.com/album/anxiety" target="_blank">bande-son originale</a>
+					de Monplaisir.
 				</div>
 
 			</div>
@@ -166,17 +163,45 @@
 			<input id="text_speed_slider" type="range" min=0 value=0.5 max=1 step="0.01"/>
 		</div>
 		<div style="float: right; width: 135px; height: 63px;">
-			<!-- TRANSLATE THIS -->
-			And advance
-			<div id="text_automatic_toggle">on click</div>
+			Progression
+			<div id="text_automatic_toggle">en cliquant</div>
 		</div>
 		<div style="clear:both"></div>
 		<span id="volume_options">
-			<div>Volume:</div> <!-- TRANSLATE -->
+			<div>Volume&nbsp;:</div>
 			<input id="volume_slider" type="range" min=0 max=1 value=1 step="0.01"/>
 		</span>
+		<div id="show_gender_options">
+			options de genre
+		</div>
 		<div id="options_ok">
-			ok <div class="mini-icon" pic="ok" style="top: 3px;"></div> <!-- TRANSLATE -->
+			ok <div class="mini-icon" pic="ok" style="top: 3px;"></div>
+		</div>
+	</div>
+
+	<!-- AJOUTÉ PAR LA TRADUCTION FRANCOPHONE : OPTIONS DE GENRE -->
+	<div id="gender_options">
+		<div>Genre&nbsp;: <span id="gender_preview">indéfini</span></div>
+		<ul id="gender_radio_group">
+			<li>
+				<input type="radio" id="g_undefined" name="gender" value="g_undefined" checked>
+				<label for="g_undefined">&nbsp;?</label>
+			</li><li>
+				<input type="radio" id="g_male" name="gender" value="g_male">
+				<label for="g_male">&nbsp;M</label>
+			</li><li>
+				<input type="radio" id="g_female" name="gender" value="g_female">
+				<label for="g_female">&nbsp;F</label>
+			</li>
+		</ul>
+		<input type="checkbox" id="g_toss" />
+		<label for="g_toss">Lancer une pièce</label>
+		<div id="d_tosswith0">
+			<input type="checkbox" id="g_tosswith0" />
+			<label for="g_tosswith0">"Indéfini" est une possibilité</label>
+		</div>
+		<div id="gender_options_ok">
+			ok <div class="mini-icon" pic="ok" style="top: 3px;"></div>
 		</div>
 	</div>
 
@@ -195,19 +220,21 @@
 <!-- TRANSLATE ALL OF THIS -->
 
 <div class="corner-text" id="topleft">
-Created by
+Créé par
 <a href="https://ncase.me/" target="_blank">Nicky Case</a>
 <br>
-Music by
+Musique par
 <a href="https://loyaltyfreakmusic.com" target="_blank">Monplaisir</a>
 <br>
-Extra code by
+Code supplémentaire par
 <a href="https://spacie.me/" target="_blank">Spacie</a>
 <br>
-<a href="https://github.com/ncase/anxiety#full-credits" target="_blank">Full credits</a>
+<a href="https://github.com/NathSoM/anxiety#full-credits" target="_blank">Crédits complets</a>
 <br><br>
-
-Fan-Made Translations!
+Vous êtes sur la traduction en français (en cours) par
+<a href="https://github.com/NathSoM/anxiety/graphs/contributors" target="_blank">NathSoM & contributeurs</a>
+<br><br>
+Autres traductions de fans&nbsp;!
 <br>
 <a href="//notdotteam.github.io/anxiety/">Русский</a>
 <br>
@@ -223,25 +250,26 @@ Fan-Made Translations!
 <br>
 ...
 <br>
-<a href="https://github.com/ncase/anxiety#how-to-translate" target="_blank">(make your own?)</a>
+<a href="https://github.com/NathSoM/anxiety#how-to-translate" target="_blank">En proposer une autre&nbsp;?</a>
+
 </div>
 
 <div class="corner-text" id="bottomleft">
 <img src="sprites/about/cc0.png" height="30" style="opacity:0.7"/>
 <br>
-You're already free to reuse &amp; remix this for any use!
-<a href="https://github.com/ncase/anxiety#public-domain" target="_blank">(huh?)</a>
+Vous êtes déjà autorisé·e à réutiliser &amp; remixer ça pour n'importe quel usage&nbsp;!
+<a href="https://github.com/NathSoM/anxiety#public-domain" target="_blank">(hein&nbsp;?)</a>
 <br>
-<a href="https://github.com/ncase/anxiety" target="_blank">Get the full source code</a>
+<a href="https://github.com/NathSoM/anxiety" target="_blank">Obtenez le code source complet</a>
 </div>
 
 <div class="corner-text" id="topright">
-Share on an anxiety-app:
+Partager sur une appli à anxiété&nbsp;:
 <span id="sharing_title">
-	Adventures With Anxiety!
+	Aventures avec l'Anxiété !
 </span>
 <span id="sharing_desc">
-	I just played this story-game about a human and their anxiety! You play *as* the anxiety. 😱
+	Je viens de jouer à cette histoire interactive qui parle d'un·e humain·e et de son anxiété&nbsp;! On y *joue* l'anxiété. 😱 <!-- TRANSLATE -- >
 </span>
 <div id="share">
 	<a id="share_link_fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fncase.me%2Fanxiety%2F" target="_blank" class="no_deco">
@@ -257,16 +285,16 @@ Share on an anxiety-app:
 	</a>
 </div>
 <br>
-For your sharing pleasure:<br>
-<a href="sharing" target="_blank">Videos &amp; Thumbnails</a>
+Pour votre plaisir de partager&nbsp;:<br>
+<a href="sharing" target="_blank">Vidéos &amp; Miniatures</a>
 </div>
 
 <div class="corner-text" id="bottomright">
-<a href="https://ncase.me/mental-health/" target="_blank">Mental Health Tips &amp; Resources</a>
+<a href="mental-health.html" target="_blank">Conseils et ressources pour votre santé mentale</a>
 <span class="hide-if-cuss-free">
 	<br><br>
-	<a href="?c=1">Cuss-Free Mode</a><br>
-	(for educators who want to avoid an awkward PTA meeting)
+	<a href="?c=1">Mode sans-jurons</a><br>
+	(pour les éducateurs qui souhaiteraient éviter une entrevue gênante avec des parents)
 </span>
 </div>
 

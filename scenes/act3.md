@@ -6,7 +6,7 @@ Game.WORDS_HEIGHT_BOTTOM = 205;
 sfx("cheers");
 ```
 
-r: Cheers!
+r: Santé !
 
 ```
 publish("act3",["roofhunter",1]);
@@ -23,41 +23,39 @@ publish("act3",["roofhunter",3]);
 publish("act3",["roofhong",3]);
 ```
 
-h2: *Ah* that hits the spot.
+h2: *Ah* ça cogne bien là où il faut.
 
 ```
 publish("act3",["roofhunter",2]);
 publish("act3",["roofhong",2]);
 ```
 
-r: You know, kid...
+r: Tu sais, gamin·e...
 
 ```
 publish("act3",["roofhunter",3]);
 publish("act3",["roofhong",6]);
 ```
 
-h2: Specifically, the spots hit are my left and right amygdala.
-
+h2: Plus précisément, les endroits cognés sont mes amygdales gauche et droite.
 ```
 publish("act3",["roofhunter",8]);
 publish("act3",["roofhong",5]);
 ```
 
-r: You remind me of myself when I was younger. Back when I was tormented by the animal in my head.
-
+r: Tu me rappelles moi quand j'étais plus jeune. À l'époque où j'étais tourmenté·e par l'animal dans ma tête.
 ```
 publish("act3",["roofhunter",9]);
 publish("act3",["roofhong",2]);
 ```
 
-r: I'm so grateful I can pay it forward, and help you kill the beast the way I killed mine.
+r: Je suis tellement reconnaissant·e de pouvoir te le transmettre, et de t'aider à tuer ta bête comme j'ai tué la mienne.
 
 ```
 publish("act3",["roofhunter",2]);
 ```
 
-r: Hey, quick question: truth or da--
+r: Hé, question rapide : action ou véri--
 
 ```
 publish("act3",["roofhunter",3]);
@@ -65,7 +63,7 @@ publish("act3",["roofhong",7]);
 publish("act3-alpha", ["dizzyhong",0]);
 ```
 
-h2: DARE!
+h2: ACTION !
 
 ```
 publish("act3-alpha", ["dizzyhong",1]);
@@ -73,29 +71,28 @@ publish("act3",["roofhunter",10]);
 publish("act3",["roofhong",2]);
 ```
 
-r: Haha! Good.
+r: Haha ! Bien.
 
 ```
 publish("act3",["roofhunter",21]);
 publish("act3",["roofhong",4]);
 ```
 
-r: Ok. You see that baby-blue swimming pool down there?
-
+r: Ok. Tu vois cette piscine bleu clair en bas ?
 ```
 publish("act3-alpha", ["dizzyhong",0]);
 publish("act3",["roofhunter",11]);
 publish("act3",["roofhong",9]);
 ```
 
-h2: Yeah? Six floors down?
+h2: Ouais ? Six étages plus bas ?
 
 ```
 publish("act3",["roofhunter",10]);
 publish("act3",["roofhong",8]);
 ```
 
-r: Jump in.
+r: Saute dedans.
 
 ```
 publish("act3",["roofhunter",11]);
@@ -108,39 +105,39 @@ h2: ...
 publish("act3",["roofhong",11]);
 ```
 
-h2: Wait, what?
+h2: Attends, quoi ?
 
 ```
 publish("act3",["roofhong",10]);
 publish("act3",["roofhunter",2]);
 ```
 
-r: The animal's started whining, hasn't it?
+r: L'animal a commencé à gémir, n'est-ce pas ?
 
 ```
 publish("act3",["roofhunter",23]);
 ```
 
-r: *Oh nooooo it's dangerous, don't do iiiiit.*
+r: *Oh nooooon c'est dangereux, ne le fais paaaaas.*
 
 ```
 publish("act3",["roofhunter",22]);
 ```
 
-r: But that's exactly why we need death-defying thrills! Party hard! Carpe diem! Snort coke off a hooker's ^ass^, #YOLO!
+r: Mais c'est exactement pour ça que nous avons besoin de défier la mort ! *Party hard !* Carpe diem ! Sniffer de la coke sur le ^cul^ d'une ^pute^, #YOLO !
 
 ```
 publish("act3",["roofhunter",10]);
 ```
 
-r: Show that animal we don't give two *^dick^s* about its ^bitch^ing! Jump in.
+r: Montre à cet animal qu'on s'en bat les *^couilles^* de ses *^putains^* de râlements ! Saute.
 
 ```
 publish("act3",["roofhunter",11]);
 publish("act3",["roofhong",13]);
 ```
 
-h2: Uh, but sometimes, um... fear has a point...
+h2: Euh, mais des fois, hum... il se peut que la peur ait raison...
 
 ```
 publish("act3",["roofhunter",5]);
@@ -156,43 +153,44 @@ publish("act3",["roofhunter",6]);
 publish("act3",["dd",1]);
 ```
 
-r: I'm sorry, did you fall for that McMindfulness propaganda that claims feeling bad is *good?*
+r: Pardon, tu t'es fait avoir par cette propagande McPleineconscience qui dit que se sentir mal c'est *bien ?*
 
 ```
 publish("act3",["roofhunter",17]);
 ```
 
-r: The ^assholes^ who run this world give the rest of *us* anxiety and depression,
+
+r: Ce sont les ^connards^ qui dirigent ce monde qui *nous* rendent anxieux et dépressifs,
 
 ```
 publish("act3",["roofhunter",18]);
 ```
 
-r: Then make TED Talks to tell us to "accept" being ^fucked^ over, and "embrace" that sadistic demon in our heads!
+r: Puis font des TED Talks pour nous dire "d'accepter" que l'on est ^baisés^ et de "faire la paix" avec ce démon sadique dans nos têtes !
 
 ```
 publish("act3",["roofhunter",6]);
 ```
 
-r: Kid, I know that *you* know that animal *hurts* people like us. It *tortures* people like us.
+r: Gamin·e, je sais que *tu* sais que cet animal fait *souffrir* les gens comme nous. Il *torture* les gens comme nous.
 
 ```
 publish("act3",["roofhunter",19]);
 ```
 
-r: It's not our friend. It's a rabid beast, which either needs to be *tranquilized*,
+r: Ce n'est pas notre ami. C'est une bête enragée, qui doit soit être *tranquillisée*,
 
 ```
 publish("act3",["roofhunter",20]);
 ```
 
-r: Or have a *bullet put in its skull*.
+r: Soit *se prendre une balle dans le crâne*.
 
 ```
 publish("act3",["roofhunter",27]);
 ```
 
-r: Otherwise, you're going to let it win.
+r: Sinon, tu vas la laisser gagner.
 
 ```
 publish("act3",["roofhunter",31]);
@@ -200,7 +198,7 @@ publish("act3",["roofhong",14]);
 publish("act3",["dd",2]);
 ```
 
-h2: No. You're wrong.
+h2: Non, tu as tort.
 
 ```
 publish("act3",["roofhunter",13]);
@@ -210,7 +208,7 @@ music('battle_dark', {volume:1.0}, function(){
 });
 ```
 
-h2: I'm not going to let it win.
+h2: Je ne la laisserai pas gagner.
 
 ```
 publish("act3",["roofhunter",25]);
@@ -219,7 +217,7 @@ publish("act3-alpha", ["transition",1]);
 publish("act3",["dd",6]);
 ```
 
-r: ^Fuck^ yeah! I believe in you, babe! Kill it! <3
+r: ^Fuck^ yeah ! Je crois en toi, bébé ! Bute-la ! <3
 
 (#act3a)
 
@@ -240,13 +238,13 @@ _.act3_bb_body = 1;
 publish("hp_show");
 ```
 
-b: no no no no no no
+b: non non non non non non
 
-n: THIS CHAPTER HAS TWO POSSIBLE ENDINGS. ONE IS *VERY, VERY BAD.*
+n: CE CHAPITRE A DEUX FINS POSSIBLES. L'UNE DES DEUX EST *VRAIMENT, VRAIMENT MAUVAISE.*
 
-b: NO NO NO NO NO NO NO NO NO NO NO NO NO NO
+b: NON NON NON NON NON NON NON NON NON NON NON NON NON NON
 
-n: CHOOSE WISELY. PROTECT YOUR HUMAN
+n: CHOISIS SAGEMENT. PROTÈGE TON HUMAIN·E
 
 `bb({ eyes:"oh_crap", mouth:"normal_talk", MOUTH_LOCK:true });`
 
@@ -254,18 +252,18 @@ b: AAAAAAAAAAAAAAAAAA
 
 `bb({ mouth:"normal" });`
 
-n: GOOD LUCK
+n: BONNE CHANCE
 
 ```
 Game.clearText();
 bb({ eyes:"start" });
 ```
 
-[Human, you could actually DIE here!](#act3a_harm) `Game.OVERRIDE_CHOICE_LINE=true`
+[Humain·e, tu pourrais vraiment MOURIR là !](#act3a_harm) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[This is stupid and self-destructive!](#act3a_bad) `Game.OVERRIDE_CHOICE_LINE=true`
+[Ce serait stupide et auto-destructeur !](#act3a_bad) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[These sickos aren't really your friends!](#act3a_alone) `Game.OVERRIDE_CHOICE_LINE=true`
+[Ces malades ne sont pas vraiment tes amis !](#act3a_alone) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act3a_harm
 
@@ -279,7 +277,7 @@ b: H--
 
 `bb({ MOUTH_LOCK:true, mouth:"normal_talk" });`
 
-b: T--
+b: C--
 
 (#act3a_after)
 
@@ -287,7 +285,7 @@ b: T--
 
 `bb({ MOUTH_LOCK:true, mouth:"normal_talk" });`
 
-b: T--
+b: C--
 
 (#act3a_after)
 
@@ -307,9 +305,9 @@ hong({ body:"normal" });
 bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 ```
 
-h: You know, I might've believed you... if you hadn't tried that a zillion times before.
+h: Tu sais, j'aurais pu te croire... Si t'avais pas déjà essayé ça un million de fois.
 
-h: You're the wolf who cried wolf.
+h: Tu es le loup qui a crié au loup.
 
 ```
 bb({ eyes:"sad" });
@@ -354,43 +352,42 @@ hong({ body:"normal" });
 bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 ```
 
-h: You tried that too.
+h: T'as déjà essayé ça.
 
-b: human, please...
+b: Humain·e, je t'en prie...
 
 `hong({ eyes:"look_right" });`
 
-h: Oh I'm *sorry* Big Pharma doesn't approve of my self-medication.
+h: Oh je suis *désolé* que Big Pharma n'approuve pas mon auto-médication.
 
-h: Look ^asshole^, we *all* have a way of shutting you the ^fuck^ up.
+h: Regarde ^connard^, on a tous un moyen de te faire fermer ta *putain* de gueule.
 
 `hong({ body:"look_up", eyes:"look_up" });`
 
-h: Some people throw themselves into work.
-
+h: Certains se lancent dans le travail à corps perdu.
 `hong({ body:"look_down", eyes:"look_down" });`
 
-h: Some people throw themselves into sex, drugs, and refreshing their Facebook feed.
+h: Certains se lancent dans le sexe, la drogue, et le rafraîchissement de leur flux Facebook.
 
 `hong({ body:"normal", eyes:"look_right" });`
 
-h: Some people throw themselves into other people. 
+h: Certains s'élancent vers d'autres gens.
 
 `hong({ eyes:"angry" });`
 
-h: I'm going to throw myself into that swimming pool.
+h: Moi, je vais me lancer dans cette piscine.
 
-[You're drunk and it's SIX FLOORS DOWN](#act3_bad_1_harm)
+[Tu es sous alcool et c'est SIX ÉTAGES PLUS BAS](#act3_bad_1_harm)
 
-[Dang it, this is the thanks I get?!](#act3_bad_1_insult) `bb({eyes:"angry"});`
+[Bon sang, c'est ça mes remerciements ?!](#act3_bad_1_insult) `bb({eyes:"angry"});`
 
-[Okay, I admit it. I messed up.](#act3_good_1) `bb({mouth:"sorry", eyes:"sorry_down"});`
+[Okay, je l'admets. J'ai merdé.](#act3_good_1) `bb({mouth:"sorry", eyes:"sorry_down"});`
 
 # act3_bad_1_harm
 
-b: Even if you land in the water, the surface tension will crack your ribs and give you a concussion *at the least!*
+b: Même si tu atterris dans l'eau, la tension de surface va *au moins* te briser les côtes et te donner une commotion !
 
-h: Eh.
+h: Meh.
 
 ```
 hong({body:"drink"});
@@ -406,7 +403,7 @@ hong({ body:"normal", mouth:"angry", eyes:"angry" });
 bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 ```
 
-h: I saw a Russian guy do this on YouTube once.
+h: J'ai vu un mec russe faire ça sur Youtube une fois.
 
 (#act3_bad_2)
 
@@ -414,13 +411,13 @@ h: I saw a Russian guy do this on YouTube once.
 
 `hong({ eyes:"look_right" });`
 
-h: I- Excuse me, the *thanks?*
+h: Je- Excuse moi, tes *remerciements ?*
 
 `bb({ eyes:"angry" });`
 
-b: This is exactly why I *exist!* Because humans can't be trusted to protect themselves!
+b: C'est exactement pour ça que j'*existe !* Parce qu'on ne peut pas faire confiance aux humains pour se protéger d'eux-mêmes !
 
-b: I've been trying to protect your stupid butt all my life and now you're just going t--
+b: J'ai passé ma vie à essayer de protéger ton stupide derrière et maintenant tu vas just--
 
 ```
 hong({body:"drink"});
@@ -442,11 +439,11 @@ bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 
 `hong({ body:"laugh_1" })``
 
-h: heh.
+h: Heh.
 
 `hong({ body:"laugh_2" })``
 
-h: hahahaha
+h: Hahahaha
 
 `hong({ body:"laugh_3" })``
 
@@ -457,26 +454,26 @@ bb({ eyes:"sorry"});
 hong({ body:"yell_1", mouth:"yell", eyes:"blank" });
 ```
 
-h: Oh WOW is that the biggest *^fuck^ing* understatement of the century!
+h: Oh WOW ! C'est le plus gros *^putain^* d'euphémisme du siècle !
 
 `hong({ body:"yell_2" });`
 
-h: Yeah, you rotting pile of blood-coated ^shit^! You messed the ^fuck^ up!
+h: Ouais, tas de ^merde^ ensanglanté ! T'as vraiment bien foiré ton coup !
 
 `hong({ body:"normal", mouth:"angry", eyes:"angry" });`
 
-h: Any other remarks, Captain Obvious?
+h: D'autres remarques, Captain Obvious ?
 
-[But revenge on me isn't the answer!](#act3_good_1_fail_revenge) `bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });`
+[Mais te venger de moi n'est pas la solution !](#act3_good_1_fail_revenge) `bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });`
 
-[But this time I'm *actually* right!](#act3_good_1_fail_harm) `bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });`
+[Mais cette fois, j'ai *vraiment* raison !](#act3_good_1_fail_harm) `bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });`
 
-[I've hurt you.](#act3_good_2a)
+[Je t'ai blessé·e.](#act3_good_2a)
 
 
 # act3_good_1_fail_revenge
 
-b: You need to have a healthier relationship with your emotions, rather than drown them wi--
+b: Tu dois avoir une relation plus saine avec tes émotions, plutôt que de les noyer av--
 
 ```
 hong({body:"drink"});
@@ -498,7 +495,7 @@ bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 
 # act3_good_1_fail_harm
 
-b: So please, put the bottle down and let's--
+b: Alors s'il te plaît, pose cette bouteille et on y va--
 
 ```
 hong({body:"drink"});
@@ -523,24 +520,24 @@ bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 
 `bb({ eyes:"sad" });`
 
-b: please... don't...
+b: S'il te plaît... non...
 
-h: Your energy bar's looking awfully low there, wolf.
+h: Ta barre d'énergie me semble terriblement basse, loup.
 
-h: If I were you, I'd choose your next words very carefully.
+h: Si j'étais toi, je choisirais tes prochains mots avec soin...
 
 `bb({ eyes:"normal" });`
 
-[Fine. I'm done protecting you.](#act3_bad_2_jump) `bb({ mouth:"ignore", eyes:"ignore" });`
+[Bien. J'en ai fini de te protéger.](#act3_bad_2_jump) `bb({ mouth:"ignore", eyes:"ignore" });`
 
-[I was right all along.](#act3_bad_2_right)
+[J'avais raison tout du long.](#act3_bad_2_right)
 
-[I'm sorry.](#act3_good_2b) `bb({mouth:"sorry", eyes:"sorry_down"});`
+[Je suis désolé.](#act3_good_2b) `bb({mouth:"sorry", eyes:"sorry_down"});`
 
 
 # act3_bad_2_jump
 
-b: So, go ahead and jump. See what I care.
+b: Alors, vas-y et saute. Je m'en fiche.
 
 `hong({ eyes:"look_right", mouth:"normal", MOUTH_LOCK:true });`
 
@@ -551,14 +548,14 @@ hong({ eyes:"less_angry", mouth:"normal" });
 bb({ eyes:"ignore_oh_crap" });
 ```
 
-h: Okay then. Bottoms up.
+h: Ok donc. Cul sec.
 
 ```
 bb({ mouth:"normal", eyes:"oh_crap" });
 Game.OVERRIDE_TEXT_SPEED = 2;
 ```
 
-b: WAIT NO THAT WAS REVERSE PSYCHOLOGY YOU WERE SUPPOSED TO DO THE *OPPOSITE* OF WHAT I SA--
+b: ATTENDS ! NON, C'ÉTAIT DE LA PSYCHOLOGIE INVERSÉE, TU ÉTAIS SUPPOSÉ FAIRE L'*OPPOSÉ* DE CE QUE JE TE DI--
 
 (#act3_bad_3)
 
@@ -568,13 +565,13 @@ b: WAIT NO THAT WAS REVERSE PSYCHOLOGY YOU WERE SUPPOSED TO DO THE *OPPOSITE* OF
 
 `bb({ eyes:"angry" });`
 
-b: You *are* putting yourself in danger. Your so-called friends *are* using you. And *you* are using your so-called friends.
+b: Tu *es* en train de te mettre en danger. Tes soi-disant amis *sont* en train de t'utiliser. Et *tu* utilises tes soi-disant amis.
 
 `bb({ eyes:"sad" });`
 
-b: So please, human... why don't you believe me?!
+b: Alors s'il te plaît, humain·e... pourquoi est-ce que tu ne me crois pas ?!?!
 
-h: Because you never believed in *me*.
+h: Parce que tu n'as jamais cru en *moi*.
 
 (#act3_bad_3)
 
@@ -583,13 +580,13 @@ h: Because you never believed in *me*.
 
 `bb({ eyes:"angry" });`
 
-b: Other guard-wolves have humans who actually take time to patiently train them, to *learn* to work together,
+b: Les autres loups de garde ont des humains qui prennent patiemment le temps de les entraîner, d'*apprendre* à travailler ensemble,
 
-b: Rather than hate the guard-wolves for trying to protect them! So why can't you jus--
+b: Plutôt que haïr les loups de garde alors qu'ils essaient seulement de les protéger ! Alors pourquoi est-ce que tu ne peux pas jus--
 
 `bb({ eyes:"normal" });`
 
-h: Wrong ^fuck^ing answer.
+h: Mauvaise réponse, ^enculé^.
 
 (#act3_bad_3)
 
@@ -614,7 +611,7 @@ bb({ body:"dead" });
 
 (...999)
 
-h: *"The only thing to fear is fear itself."*
+h: *"La seule chose à craindre est la peur elle-même."*
 
 `hong({ body:"look_up", mouth:"happy", eyes:"blank" });`
 
@@ -622,21 +619,22 @@ h: *"Don't worry, be happy!"*
 
 `hong({ body:"normal", mouth:"normal", eyes:"normal" });`
 
-h: All the wise folk of our time agree: negative emotions are *bad!*
+h: Toute la sagesse populaire de notre époque est d'accord :
+les émotions négatives sont *mauvaises !*
 
 `hong({ eyes:"less_angry" });`
 
-h: Duh! That's why they're called *negative!*
+h: Sans blague ! C'est pour ça qu'on les appelle les émotions *négatives !*
 
-b: human... please...
+b: Humain·e... s'il te plaît...
 
 `hong({ eyes:"normal" });`
 
-h: A while back, I said: “I just want to be free from all this pain.”
+h: Il y a quelques temps, j'avais dit : "Je veux juste être libéré·e de toute cette soufrance."
 
-h: I got my wish. I no longer feel pain, or fear, or anxiety...
+h: J'ai réalisé mon vœu. Je ne ressens plus la douleur, la peur, ou l'anxiété...
 
-h: I don't feel anything at all.
+h: Je ne ressens plus rien du tout.
 
 `_.a3_ending = "jump";`
 
@@ -648,22 +646,22 @@ h: I don't feel anything at all.
 
 `bb({mouth:"sorry", eyes:"sorry_down"});`
 
-b: I was so obsessed with making sure nothing else hurt you, that I didn't realize *I* was creating the hurt.
+b: J'étais tellement obsédé à l'idée que rien ne te blesse, que je n'ai pas réalisé que *je* te blessais.
 
 ```
 bb({ eyes:"sorry"});
 hong({ body:"yell_2", mouth:"yell", eyes:"blank" });
 ```
 
-h: NO. S^HIT^.
+h: NON. TU DÉC-^ONNES^.
 
 `hong({ body:"yell_1" });`
 
-h: ^GODDAMN^. It really took you this long to finally figure it out?!
+h: ^BORDEL^. Il t'aura fallu si longtemps pour t'en rendre compte ?!
 
 `hong({ body:"cry", mouth:"cry", eyes:"blank" });`
 
-h: You could've saved us so much trouble, you big fluffy dumb^ass^. Why didn't you realize this sooner?...
+h: T'aurais pu nous éviter tant de problèmes, espèce de grosse boule de poils ^imbécile^. Pourquoi est-ce que tu ne l'as pas réalisé plus tôt ?
 
 `_.apologized_for_hurt = true;`
 
@@ -675,13 +673,13 @@ h: You could've saved us so much trouble, you big fluffy dumb^ass^. Why didn't y
 
 `hong({ body:"normal", mouth:"angry", eyes:"look_right" });`
 
-h: ...you're *sorry.*
+h: ... tu es *désolé.*
 
 `hong({ eyes:"angry", MOUTH_LOCK:true });`
 
 h: ...
 
-h: Sorry for *what*?
+h: Désolé pour *quoi* ?
 
 (#act3_good_2q)
 
@@ -703,22 +701,22 @@ h: Sorry for *what*?
 
 `hong({ body:"normal", mouth:"angry", eyes:"less_angry" });`
 
-[I'm sorry I wasn't a good protector.](#act3_good_3_protector)
+[Je suis désolé, je n'ai pas été un bon protecteur.](#act3_good_3_protector)
 
-[I'm sorry I didn't respect you.](#act3_good_3_respect)
+[Je suis désolé, je ne t'ai pas respecté.](#act3_good_3_respect)
 
-[I'm sorry.](#act3_good_4)
+[Je suis désolé.](#act3_good_4)
 
 
 # act3_good_2q_not_already_apologized
 
 `hong({ body:"normal", mouth:"angry", eyes:"angry" }, 0);`
 
-[I'm sorry I have a terrible human!](#act3_bad_2_terrible) `bb({mouth:"normal", eyes:"normal"})`
+[Je suis désolé, je suis un horrible être humain !](#act3_bad_2_terrible) `bb({mouth:"normal", eyes:"normal"})`
 
-[I'm sorry I didn't respect you.](#act3_good_3_respect)
+[Je suis désolé, je ne t'ai pas respecté.](#act3_good_3_respect)
 
-[I'm sorry I hurt you.](#act3_good_3_hurt)
+[Je suis désolé, je t'ai blessé.](#act3_good_3_hurt)
 
 
 
@@ -726,19 +724,19 @@ h: Sorry for *what*?
 
 `bb({eyes:"sorry_down"});`
 
-b: It's my duty to warn you against *real* danger, but I kept barking at cars and the mailman.
+b: C'est mon devoir de te prévenir contre le *vrai* danger, mais je continue d'aboyer aux voitures et au facteur.
 
 `bb({eyes:"sorry_up"});`
 
-b: Barking at shadows. Barking so much.
+b: D'aboyer aux ombres. D'aboyer beaucoup.
 
 `bb({eyes:"sorry"});`
 
-b: It only makes sense that you'd want to muzzle me.
+b: C'est normal que tu veuilles me museler.
 
 `bb({eyes:"sorry_down"});`
 
-b: I'm sorry.
+b: Je suis désolé.
 
 (#act3_good_4)
 
@@ -748,15 +746,15 @@ b: I'm sorry.
 
 `bb({eyes:"sorry_down"});`
 
-b: I was supposed to be *your* loyal guard-dog, but I acted as if you were supposed to obey *me*.
+b: J'étais supposé être *ton* chien de garde loyal jusqu'au bout, mais j'ai agi comme si *tu* étais censé·e m'obéir à *moi*.
 
 `bb({eyes:"sorry_up"});`
 
-b: There's a difference between a protector and a prison warden, and I crossed the line.
+b: Il y a une différence entre être un protecteur et un gardien de prison, et j'ai dépassé les limites.
 
 `bb({eyes:"sorry_down"});`
 
-b: I'm sorry.
+b: Je suis désolé.
 
 (#act3_good_4)
 
@@ -766,15 +764,15 @@ b: I'm sorry.
 
 `bb({eyes:"sorry_down"});`
 
-b: I was so obsessed with trying to protect you from being hurt, I never stopped to realize *I* was hurting you.
+b: J'étais si obsédé à l'idée de te protéger d'être blessé que je n'ai jamais réalisé que *je* te blessais.
 
 `bb({eyes:"sorry_up"});`
 
-b: I was a bad dog.
+b: J'ai été un mauvais chien.
 
 `bb({eyes:"sorry_down"});`
 
-b: I'm sorry.
+b: Je suis désolé.
 
 (#act3_good_4)
 
@@ -792,11 +790,11 @@ h: ...
 hong({ body:"stop", mouth:"stop", eyes:"blank" });
 ```
 
-h: Yeah, well, this was a dumb idea anyway.
+h: Ouais, bon, c'était une mauvaise idée de toute façon.
 
-h: I only did this to mess you up, and, well, I messed you up.
+h: J'ai uniquement fait ça pour t'embêter, et, bon bah, je t'ai embêté.
 
-h: Let's just call this round a tie, okay?
+h: Disons juste qu'on est ex æquo, ok ?
 
 ```
 bb({ mouth:"sorry", eyes:"sorry" });
@@ -805,11 +803,11 @@ bb({ MOUTH_LOCK:true });
 
 b: ...
 
-b: Okay.
+b: Ok.
 
-h: Okay.
+h: Ok.
 
-n: *TIE*
+n: *EX ÆQUO*
 
 `_.a3_ending = "walkaway";`
 
@@ -885,26 +883,26 @@ publish("act3",["roofhunter",27]);
 
 `Game.FORCE_CANT_SKIP = false;`
 
-r: Oh *come on*. After all that animal's done to you, you're just *giving up?*
+r: Oh *allez*. Après tout ce que cet animal a fait pour toi, tu *abandonnes* ?
 
-r: What's the matter, kid? Are you *scared?*
+r: C'est quoi le problème, gamin·e ? Tu as *peur* ?
 
 ```
 publish('hong-next');
 publish("act3",["roofhunter",26]);
 ```
 
-h2: Yes.
+h2: Oui.
 
-h2: I'm scared.
-
-`publish('hong-next')`
-
-h2: And that's okay!
+h2: J'ai peur.
 
 `publish('hong-next')`
 
-h2: It's okay to be scared.
+h2: Et ça va !
+
+`publish('hong-next')`
+
+h2: Ça va d'avoir peur.
 
 `publish('hong-next')`
 
@@ -973,7 +971,7 @@ publish("act3",["roofhunter",32]);
 publish("act3",["roofhunter",33]);
 ```
 
-r: Did they just lock the door?
+r: Est-ce qu'ils viennent de fermer la porte ?
 
 ```
 Game.clearAll();
@@ -1063,7 +1061,7 @@ publish('hong-next');
 
 `publish('hong-next')`
 
-b: no...
+b: Non...
 
 (...501)
 
@@ -1082,7 +1080,7 @@ publish('hong-next');
 
 `publish('hong-next')`
 
-b: no no no
+b: Non non non
 
 (...501)
 
@@ -1150,7 +1148,7 @@ Game.FORCE_TEXT_Y = 325;
 Game.OVERRIDE_FONT_SIZE = 50;
 ```
 
-b: NO!
+b: NON !
 
 (...400)
 
