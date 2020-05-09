@@ -202,7 +202,7 @@ Loader.addSounds([
 	});
 
 	subscribe("show_gender_options_bottom", function(){
-		genderOptionsDOM.style.top = "420px";
+		genderOptionsDOM.style.top = "405px";
 		sfx("ui_show_choice", {volume:0.4});
 	});
 

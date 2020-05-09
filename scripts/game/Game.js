@@ -96,13 +96,8 @@ Game.start = function(){
 	window._ = {}; // global var, reset
 
 	_.gender = 0;
-	_.tossing = false;
 
 	_.setGender = function(g){
-		if (_.tossing) {
-			return;
-		}
-
 		const g_preview = $("#gender_preview");
 		switch (g) {
 			case 0:
@@ -118,46 +113,44 @@ Game.start = function(){
 		_.gender = g;
 	};
 
-	$("#g_toss").checked = false;
 	$("#g_neutral").checked = true;
 
-	_.toggleTossing = function(){
+	$("#gender_options_toss").onclick = function(){
+		sfx("ui_click");
+
 		const g_preview = $("#gender_preview");
 		const g_neutral = $("#g_neutral");
 		const g_male = $("#g_male");
 		const g_female = $("#g_female");
-		const d_tosswith0 = $("#d_tosswith0");
 
-		if (_.tossing) {
-			_.tossing = false;
-			g_neutral.removeAttribute("disabled");
-			g_male.removeAttribute("disabled");
-		 	g_female.removeAttribute("disabled");
+		const prev_gender = _.gender;
 
-			g_neutral.checked = true;
-			g_preview.innerHTML = "neutre";
+		do {
+			if ($("#g_tosswith0").checked) {
+				_.setGender(Math.round(Math.random() * 2));
+			} else {
+				_.setGender(Math.round(Math.random() + 1));
+			}
+		} while (_.gender == prev_gender);
 
-			d_tosswith0.style.visibility = "hidden";
-		} else {
-			_.tossing = true;
-		 	g_neutral.setAttribute("disabled", "");
+		if (_.gender == 1) {
 			g_neutral.checked = false;
-			g_male.setAttribute("disabled", "");
-			g_male.checked = false;
-			g_female.setAttribute("disabled", "");
+			g_male.checked = true;
 			g_female.checked = false;
-
-		 	g_preview.innerHTML = "???";
-
-			d_tosswith0.style.visibility = "visible";
+		} else if (_.gender == 2) {
+			g_neutral.checked = false;
+			g_male.checked = false;
+			g_female.checked = true;
+		} else {
+			g_neutral.checked = true;
+			g_male.checked = false;
+			g_female.checked = false;
 		}
 	};
 
 	$("#g_neutral").onchange = function(){ _.setGender(0); };
 	$("#g_male").onchange = function(){ _.setGender(1); };
 	$("#g_female").onchange = function(){ _.setGender(2); };
-
-	$("#g_toss").onchange = _.toggleTossing;
 };
 
 var last_frame = Date.now();
