@@ -1061,7 +1061,7 @@ Game.parseLine = function(line){
 			var condition = fullConditional.match(/\{\{if\s+([^\{\}]*)\}\}/)[1];
 
 			// Extract the inside text
-			var insideText = fullConditional.match(/\}\}([^\{\}]*)\{\{/)[1].trim()+" ";
+			var insideText = fullConditional.match(/\}\}(.*)\{\{\/if/)[1].trim()+" ";
 
 			// Eval condition!
 			var conditionIsTrue = false;

@@ -439,22 +439,22 @@ b: Dans ce cas !
 # act1c_loner
 
 {{if _.fifteencigs}}
-b: Quinze cigarettes par jour, {{l_human}} ! Quinze !
+b: Quinze cigarettes par jour, {{l_human}} ! Quinze !
 {{/if}}
 
-{{if !_.fifteencigs}}
+{{if !_.fifteencigs}}
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 {{/if}}
 
-{{if !_.fifteencigs}}
+{{if !_.fifteencigs}}
 b: Et personne ne viendra à nos funérailles, on jettera nos cendres dans l'océan, on sera {{eaten}} par une baleine,
 {{/if}}
 
-{{if !_.fifteencigs}}
+{{if !_.fifteencigs}}
 b: et on deviendra de la CROTTE DE BALEINE !
 {{/if}}
 
-{{if !_.fifteencigs}} `_.whalepoop = true` {{/if}}
+{{if !_.fifteencigs}} `_.whalepoop = true` {{/if}}
 
 (...500)
 
@@ -467,7 +467,7 @@ attack("18p", "alone");
 
 `bb({eyes:"normal"});`
 
-{{if !_.fifteencigs}}
+{{if !_.fifteencigs}}
 b: Donc ouais, on devrait aller à cette fête !
 {{/if}}
 
@@ -509,7 +509,7 @@ b: ou même pire... du PAIN BLANC
 b: On va faire une overdose de méthamphétamines et de pain blanc, notre cadavre ne rentrera pas dans le four crématoire !
 {{/if}}
 
-{{if !_.whitebread}}
+{{if !_.whitebread}}
 b: On va faire une telle overdose de médicaments que l'embaumeur se demandera pourquoi notre cadavre est *déjà* embaumé !
 {{/if}}
 
@@ -1302,11 +1302,11 @@ b: Iel va te piéger dans un puits et te gaver de pain blanc pour te faire gross
 b: Iel te matraquera avec un minuteur et te dira "T'AURAIS DÛ ÊTRE PLUS {{u_productive}} ESPÈCE DE PARASITE"
 {{/if}}
 
-{{if !_.whitebread && !_.parasite}}
+{{if !_.whitebread && !_.parasite}}
 b: Iel va déchiqueter ta chair en confettis gores, fera des serpentins avec tes entrailles, et mélangera ton sang dans un saladier à punch !
 {{/if}}
 
-{{if !_.whitebread && !_.parasite}}
+{{if !_.whitebread && !_.parasite}}
 b: Et ÇA, c'est comment comme invitation ?!
 {{/if}}
 
