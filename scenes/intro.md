@@ -100,13 +100,13 @@ n3: Alors, avant de commencer, comment est-ce que *tu* préfères lire ?
 
 # intro-start-gender
 
-n3: Cool ! Ah, au fait, comment est-ce que tu voudrais que l'humain·e soit genré·e dans le jeu ?
+n3: Cool ! Ah, au fait, comment est-ce que tu voudrais être genré·e par le jeu ?
 
 `publish("show_gender_options_bottom")`
 
 # intro-start-2
 
-n3: Super ! Note : tu peux changer tes réglages à tout moment avec l'icone ⚙ en bas. Aussi, le jeu sauvegarde automatiquement après chaque chapitre !
+n3: Super ! Note : tu peux changer tes réglages à tout moment avec l'icone ⚙ en bas. Le jeu sauvegarde aussi automatiquement après chaque chapitre !
 
 n3: Et maintenant, commençons notre histoire...
 
