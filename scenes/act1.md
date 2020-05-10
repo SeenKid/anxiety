@@ -422,7 +422,7 @@ n3: Comment souhaites-tu que l'hôte de la fête soit genré·e ?
 
 # act1c-host
 
-b: Mais ce·tte taré·e organise une fête *chaque* semaine ?
+b: Mais {{that_weirdo}} organise une fête *chaque* semaine ?
 
 `bb({eyes:"uncertain_right"});`
 
@@ -569,7 +569,7 @@ h: Héhé, je me demande bien pourquoi.
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-b: Donc si on y va, on va læ mettre mal à l'aise, mais si on rejette son invitation, on va aussi l'incommoder !
+b: Donc si on y va, on va {{host_cpronoun}} mettre mal à l'aise, mais si on rejette son invitation, on va aussi l'incommoder !
 
 `bb({body:"fear", eyes:"fear"});`
 
@@ -810,7 +810,7 @@ bb({eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Iel comptait sur notre présence et maintenant, on trahit sa confiance ? Tu veux mourir {{alone}} ?!
+b: {{host_spronoun}} comptait sur notre présence et maintenant, on trahit sa confiance ? Tu veux mourir {{alone}} ?!
 
 {{if _.fifteencigs}}
 b: QUINZE. CIGARETTES.
@@ -918,7 +918,7 @@ h: J'aurais peut-être pas dû dire non à l'invitation ?
 
 b: Tout le monde comptait sur nous !
 
-b: ...les laisser tout seuls pour qu'ils aient une bonne fête sans {{an}} horrible et dégoûtant {{if _.whitebread}}{{eater}} de pain blanc{{/if}} {{lost}} comme no--
+b: ...les laisser tout seuls pour qu'ils aient une bonne fête sans {{an}} {{if _.whitebread}}{{eater}} de pain blanc{{/if}} {{lost}} horrible et {{disgusting}} comme no--
 
 
 ```
@@ -1301,15 +1301,15 @@ attack("18p", "bad");
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
 {{if _.whitebread}}
-b: Iel va te piéger dans un puits et te gaver de pain blanc pour te faire grossir, pour pouvoir s'habiller avec ta peau !
+b: Ton match va te piéger dans un puits et te gaver de pain blanc pour te faire grossir, pour pouvoir s'habiller avec ta peau !
 {{/if}}
 
 {{if _.parasite}}
-b: Iel te matraquera avec un minuteur et te dira "T'AURAIS DÛ ÊTRE PLUS {{u_productive}} ESPÈCE DE PARASITE"
+b: Ton match te matraquera avec un minuteur et te dira "T'AURAIS DÛ ÊTRE PLUS {{u_productive}} ESPÈCE DE PARASITE"
 {{/if}}
 
 {{if !_.whitebread && !_.parasite}}
-b: Iel va déchiqueter ta chair en confettis gores, fera des serpentins avec tes entrailles, et mélangera ton sang dans un saladier à punch !
+b: Ton match va déchiqueter ta chair en confettis gores, fera des serpentins avec tes entrailles, et mélangera ton sang dans un saladier à punch !
 {{/if}}
 
 {{if !_.whitebread && !_.parasite}}
@@ -1353,7 +1353,7 @@ h:
 {{if _.subtweet}}"ils parlent dans notre dos"... {{/if}}
 {{if _.badnews}}"le monde est en feu"... {{/if}}
 {{if _.hookuphole}}"on va mourir {{alone}}"... {{/if}}
-{{if _.serialkiller}}"c'est un·e tueur·se en série"... {{/if}}
+{{if _.serialkiller}}"c'est un tueur en série"... {{/if}}
 {{if _.catmilk}}"les chats ne peuvent pas digérer le lait"... {{/if}}
 {{if _.pokemon}}une chanson parodique ^merdique^... {{/if}}
 

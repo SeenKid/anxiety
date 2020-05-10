@@ -132,6 +132,7 @@ Game.start = function(){
 		acknowledging=_.gender==1?'RECONNAISSANT':_.gender==2?'RECONNAISSANTE':'RECONNAISSANT·E';
 		alone_bis=_.gender==1?'DÉLAISSÉ':_.gender==2?'DÉLAISSÉE':'DÉLAISSÉ·E';
 		an=_.gender==1?'un':_.gender==2?'une':'un·e';
+		disgusting=_.gender==1?'dégoûtant':_.gender==2?'dégoûtante':'dégoûtant·e';
 		eaten=_.gender==1?'mangé':_.gender==2?'mangée':'mangé·e';
 		eater=_.gender==1?'mangeur':_.gender==2?'mangeuse':'mangeur·se';
 		freed=_.gender==1?'libéré':_.gender==2?'libérée':'libéré·e';
@@ -161,6 +162,10 @@ Game.start = function(){
 
 		_.hostGender = g;
 		localStorage.setItem('host_gender', g);
+
+		that_weirdo=_.hostGender==1?'ce taré':_.hostGender==2?'cette tarée':'ce·tte taré·e';
+		host_cpronoun=_.hostGender==1?'le':_.hostGender==2?'la':'læ';
+		host_spronoun=_.hostGender==1?'Il':_.hostGender==2?'Elle':'Iel';
 	};
 
 	const storedGender = localStorage.getItem('gender');
