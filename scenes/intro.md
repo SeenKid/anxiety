@@ -102,7 +102,7 @@ n3: Alors, avant de commencer, comment est-ce que *tu* préfères lire ?
 
 n3: Cool ! Ah, au fait, comment est-ce que tu voudrais être genré·e par le jeu ?
 
-`publish("show_gender_options_bottom")`
+`publish("show_player_gender_options_bottom")`
 
 # intro-start-2
 

@@ -99,7 +99,7 @@ Game.start = function(){
 	window._ = {}; // global var, reset
 
 	_.setGender = function(g){
-		const g_preview = $("#gender_preview");
+		const g_preview = $("#player_gender_preview");
 		switch (g) {
 			case 0:
 				g_preview.innerHTML = "neutre";
@@ -146,21 +146,36 @@ Game.start = function(){
 		sociopath=_.gender==1?'manipulateur pervers':_.gender==2?'manipulatrice perverse':'manipulateur·trice pervers·e';
 	};
 
+	_.setHostGender = function(g){
+		const g_preview = $("#host_gender_preview");
+		switch (g) {
+			case 0:
+				g_preview.innerHTML = "neutre";
+				break;
+			case 1:
+				g_preview.innerHTML = "masculin";
+				break;
+			case 2:
+				g_preview.innerHTML = "féminin";
+		}
+
+		_.hostGender = g;
+		localStorage.setItem('host_gender', g);
+	};
+
 	const storedGender = localStorage.getItem('gender');
 	_.setGender(Genders.includes(storedGender) ? parseInt(storedGender, 10) : 0);
 
-	$("#g_neutral").checked = true;
+	const storedHostGender = localStorage.getItem('host_gender');
+	_.setHostGender(Genders.includes(storedHostGender) ? parseInt(storedHostGender, 10) : 0);
 
-	$("#gender_options_toss").onclick = function(){
+	$("#g_neutral").checked = true;
+	$("#hg_neutral").checked = true;
+
+	$("#player_gender_options_toss").onclick = function(){
 		sfx("ui_click");
 
-		const g_preview = $("#gender_preview");
-		const g_neutral = $("#g_neutral");
-		const g_male = $("#g_male");
-		const g_female = $("#g_female");
-
 		const prev_gender = _.gender;
-
 		do {
 			if ($("#g_tosswith0").checked) {
 				_.setGender(Math.round(Math.random() * 2));
@@ -169,24 +184,31 @@ Game.start = function(){
 			}
 		} while (_.gender == prev_gender);
 
-		if (_.gender == 1) {
-			g_neutral.checked = false;
-			g_male.checked = true;
-			g_female.checked = false;
-		} else if (_.gender == 2) {
-			g_neutral.checked = false;
-			g_male.checked = false;
-			g_female.checked = true;
-		} else {
-			g_neutral.checked = true;
-			g_male.checked = false;
-			g_female.checked = false;
-		}
+		update_player_gender_menu();
+	};
+
+	$("#host_gender_options_toss").onclick = function(){
+		sfx("ui_click");
+
+		const prev_gender = _.hostGender;
+		do {
+			if ($("#hg_tosswith0").checked) {
+				_.setHostGender(Math.round(Math.random() * 2));
+			} else {
+				_.setHostGender(Math.round(Math.random() + 1));
+			}
+		} while (_.hostGender == prev_gender);
+
+		update_host_gender_menu();
 	};
 
 	$("#g_neutral").onchange = function(){ _.setGender(0); };
 	$("#g_male").onchange = function(){ _.setGender(1); };
 	$("#g_female").onchange = function(){ _.setGender(2); };
+
+	$("#hg_neutral").onchange = function(){ _.setHostGender(0); };
+	$("#hg_male").onchange = function(){ _.setHostGender(1); };
+	$("#hg_female").onchange = function(){ _.setHostGender(2); };
 };
 
 var last_frame = Date.now();
@@ -250,7 +272,8 @@ Game.onUnpause = function(){
 };
 Game.pausedDOM.onclick = function(e){
 	if(Options.showing){
-		publish("hide_gender_options");
+		publish("hide_player_gender_options");
+		publish("hide_host_gender_options");
 		publish("hide_options");
 	}else if(About.showing){
 		$("#close_about").onclick();

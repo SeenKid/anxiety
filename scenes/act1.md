@@ -416,6 +416,12 @@ h: Hum. Mon flux Facebook annonce une fête ce week-end.
 
 `bb({eyes:"uncertain"});`
 
+n3: Comment souhaites-tu que l'hôte de la fête soit genré·e ?
+
+`publish("show_host_gender_options_bottom")`
+
+# act1c-host
+
 b: Mais ce·tte taré·e organise une fête *chaque* semaine ?
 
 `bb({eyes:"uncertain_right"});`
@@ -605,7 +611,7 @@ h: Il se passe quoi sur Twitter ?
 
 [Oh non, regarde cette horrible info !](#act1d_news)
 
-[Oh non, est-ce que ça parlerait pas secrètement de *nous* ?](#act1d_subtweet)
+[Oh non, est-ce que c'est *nous* que ce tweet vise ?](#act1d_subtweet)
 
 [Hé, un gif de chat qui boit du lait !](#act1d_milk)
 
