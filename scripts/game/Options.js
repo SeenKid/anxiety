@@ -202,6 +202,28 @@ Loader.addSounds([
 	});
 
 	subscribe("show_gender_options_bottom", function(){
+		const g_neutral = $("#g_neutral");
+		const g_male = $("#g_male");
+		const g_female = $("#g_female");
+		const g_preview = $("#gender_preview");
+
+		if (_.gender == 1) {
+			g_neutral.checked = false;
+			g_male.checked = true;
+			g_female.checked = false;
+			g_preview.innerHTML = "masculin";
+		} else if (_.gender == 2) {
+			g_neutral.checked = false;
+			g_male.checked = false;
+			g_female.checked = true;
+			g_preview.innerHTML = "féminin";
+		} else {
+			g_neutral.checked = true;
+			g_male.checked = false;
+			g_female.checked = false;
+			g_preview.innerHTML = "neutre";
+		}
+
 		genderOptionsDOM.style.top = "405px";
 		sfx("ui_show_choice", {volume:0.4});
 	});
@@ -277,6 +299,28 @@ Loader.addSounds([
 	subscribe("show_gender_options", function(){
 		ALREADY_DID_INTRO = true;
 		genderOptionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
+
+		const g_neutral = $("#g_neutral");
+		const g_male = $("#g_male");
+		const g_female = $("#g_female");
+		const g_preview = $("#gender_preview");
+
+		if (_.gender == 1) {
+			g_neutral.checked = false;
+			g_male.checked = true;
+			g_female.checked = false;
+			g_preview.innerHTML = "masculin";
+		} else if (_.gender == 2) {
+			g_neutral.checked = false;
+			g_male.checked = false;
+			g_female.checked = true;
+			g_preview.innerHTML = "féminin";
+		} else {
+			g_neutral.checked = true;
+			g_male.checked = false;
+			g_female.checked = false;
+			g_preview.innerHTML = "neutre";
+		}
 
 		genderOptionsDOM.style.top = "200px";
 

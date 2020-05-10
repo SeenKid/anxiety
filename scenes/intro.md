@@ -116,7 +116,7 @@ n3: Et maintenant, commençons notre histoire...
 
 `publish("intro-to-game-2")`
 
-n2: CECI EST UN·E HUMAIN·E
+n2: CECI EST {{if _.gender==0}}UN·E HUMAIN·E{{/if}}{{if _.gender==1}}UN HUMAIN{{/if}}{{if _.gender==2}}UNE HUMAINE{{/if}}
 
 (...600)
 

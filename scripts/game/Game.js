@@ -1,4 +1,5 @@
 window._ = {};
+_.gender = 0;
 window.Game = {};
 
 Game.sections = {};
@@ -91,11 +92,11 @@ Game.parseSceneMarkdown = function(md){
 // SCENE MANAGEMENT ////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
+const Genders = [ '0', '1', '2' ];
+
 Game.start = function(){
 	Game.FORCE_CANT_SKIP = false; // for the replay
 	window._ = {}; // global var, reset
-
-	_.gender = 0;
 
 	_.setGender = function(g){
 		const g_preview = $("#gender_preview");
@@ -111,7 +112,42 @@ Game.start = function(){
 		}
 
 		_.gender = g;
+		localStorage.setItem('gender', g);
+
+		human=_.gender==1?'Humain':_.gender==2?'Humaine':'Humain·e';
+		u_human=human.toUpperCase();
+		l_human=human.toLowerCase();
+
+		spronoun=_.gender==1?'Il':_.gender==2?'Elle':'Iel';
+		u_spronoun=spronoun.toUpperCase();
+
+		cpronoun=_.gender==1?'Le':_.gender==2?'La':'Læ';
+		u_cpronoun=cpronoun.toUpperCase();
+
+		alone=_.gender==1?'tout seul':_.gender==2?'toute seule':'tout·e seul·e';
+		u_alone=alone.toUpperCase();
+		productive=_.gender==1?'productif':_.gender==2?'productive':'productif·ve';
+		u_productive=productive.toUpperCase();
+
+		acknowledging=_.gender==1?'RECONNAISSANT':_.gender==2?'RECONNAISSANTE':'RECONNAISSANT·E';
+		alone_bis=_.gender==1?'DÉLAISSÉ':_.gender==2?'DÉLAISSÉE':'DÉLAISSÉ·E';
+		an=_.gender==1?'un':_.gender==2?'une':'un·e';
+		eaten=_.gender==1?'mangé':_.gender==2?'mangée':'mangé·e';
+		eater=_.gender==1?'mangeur':_.gender==2?'mangeuse':'mangeur·se';
+		freed=_.gender==1?'libéré':_.gender==2?'libérée':'libéré·e';
+		harmed=_.gender==1?'BLESSÉ':_.gender==2?'BLESSÉE':'BLESSÉ·E';
+		idiot=_.gender==1?'idiot':_.gender==2?'idiote':'idiot·e';
+		invited=_.gender==1?'invité':_.gender==2?'invitée':'invité·e';
+		lost=_.gender==1?'paumé':_.gender==2?'paumée':'paumé·e';
+		loved=_.gender==1?'AIMÉ':_.gender==2?'AIMÉE':'AIMÉ·E';
+		normal=_.gender==1?'normal':_.gender==2?'normale':'normal·e';
+		of_self=_.gender==1?'DE LUI-MÊME':_.gender==2?'D\'ELLE-MÊME':'D\'IEL-MÊME';
+		player=_.gender==1?'joueur':_.gender==2?'joueuse':'joueur·se';
+		sociopath=_.gender==1?'manipulateur pervers':_.gender==2?'manipulatrice perverse':'manipulateur·trice pervers·e';
 	};
+
+	const storedGender = localStorage.getItem('gender');
+	_.setGender(Genders.includes(storedGender) ? parseInt(storedGender, 10) : 0);
 
 	$("#g_neutral").checked = true;
 
