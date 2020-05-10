@@ -35,12 +35,12 @@ const update_host_gender_menu = function() {
 	const g_female = $("#hg_female");
 	const g_preview = $("#host_gender_preview");
 
-	if (_.gender == 1) {
+	if (_.hostGender == 1) {
 		g_neutral.checked = false;
 		g_male.checked = true;
 		g_female.checked = false;
 		g_preview.innerHTML = "masculin";
-	} else if (_.gender == 2) {
+	} else if (_.hostGender == 2) {
 		g_neutral.checked = false;
 		g_male.checked = false;
 		g_female.checked = true;
