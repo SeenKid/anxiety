@@ -1,7 +1,6 @@
 ![](https://ncase.me/anxiety/sharing/banner.png)
 
-# [Jouez à l'histoire interactive ici !](https://nathsom.github.io/anxiety)
-Ca marche pas car c'est pas le bon lien et le jeu sur NathSoM.github.io est outdaté de plusieurs mois
+# [Jouez à l'histoire interactive ici !](https://nathsom.github.io/)
 
 ## Domaine public
 
