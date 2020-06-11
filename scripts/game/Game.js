@@ -98,15 +98,19 @@ Game.start = function(){
 	Game.FORCE_CANT_SKIP = false; // for the replay
 	window._ = {}; // global var, reset
 
-	_.g_act1 = {
-		human: ['Humain·e', 'Humain', 'Humaine'],
-		spronoun: ['Iel', 'Il', 'Elle'],
-		cpronoun: ['Læ', 'Le', 'La'],
-		alone: ['tout·e seul·e', 'tout seul', 'toute seule'],
-		productive: ['productif·ve', 'productif', 'productive'],
-		acknowledging: ['RECONNAISSANT·E', 'RECONNAISSANT', 'RECONNAISSANTE'],
-		alone_bis: ['DÉLAISSÉ·E', 'DÉLAISSÉ', 'DÉLAISSÉE'],
+	_.g_acts = {
 		an: ['un·e', 'un', 'une'],
+		cpronoun: ['Læ', 'Le', 'La'],
+		human: ['Humain·e', 'Humain', 'Humaine'],
+		loved: ['aimé·e', 'aimé', 'aimée'],
+		spronoun: ['Iel', 'Il', 'Elle'],
+		spronounplural: ['Iels', 'Ils', 'Elles'],
+	};
+
+	_.g_act1 = {
+		alone: ['tout·e seul·e', 'tout seul', 'toute seule'],
+		alone_bis: ['DÉLAISSÉ·E', 'DÉLAISSÉ', 'DÉLAISSÉE'],
+		acknowledging: ['RECONNAISSANT·E', 'RECONNAISSANT', 'RECONNAISSANTE'],
 		disgusting: ['dégoûtant·e', 'dégoûtant', 'dégoûtante'],
 		eaten: ['mangé·e', 'mangé', 'mangée'],
 		eater: ['mangeur·se', 'mangeur', 'mangeuse'],
@@ -115,12 +119,51 @@ Game.start = function(){
 		idiot: ['idiot·e', 'idiot', 'idiote'],
 		invited: ['invité·e', 'invité', 'invitée'],
 		lost: ['paumé·e', 'paumé', 'paumée'],
-		loved: ['AIMÉ·E', 'AIMÉ', 'AIMÉE'],
 		normal: ['normal·e', 'normal', 'normale'],
 		of_self: ['D\'IEL-MÊME', 'DE LUI-MÊME', 'D\'ELLE-MÊME'],
 		player: ['joueur·se', 'joueur', 'joueuse'],
-		sociopath: ['manipulateur pervers', 'manipulatrice perverse', 'manipulateur·trice pervers·e']
+		productive: ['productif·ve', 'productif', 'productive'],
+		sociopath: ['manipulateur·trice pervers·e', 'manipulateur pervers', 'manipulatrice perverse'],
+
+		// Host
+		that_weirdo: ['ce·tte taré·e', 'ce taré', 'cette tarée']
 	};
+
+	_.g_act2 = {
+		broken: ['CASSÉ·E', 'CASSÉ', 'CASSÉE'],
+		confined: ['confiné·e', 'confiné', 'confinée'],
+		cutie: ['ma·on mignon·ne', 'mon mignon', 'ma mignonne'],
+		dead: ['MORT·E', 'MORT', 'MORTE'],
+		forced: ['obligé·e', 'obligé', 'obligée'],
+		friend: ['ami·e', 'ami', 'amie'],
+		full: ['plein·e', 'plein', 'pleine'],
+		happy: ['heureux·se', 'heureux', 'heureuse'],
+		irrational: ['irrationnel·le', 'irrationnel', 'irrationnelle'],
+		kiddo: ['gamin·e', 'gamin', 'gamine'],
+		kind: ['gentil·le', 'gentil', 'gentille'],
+		little_one: ['petit·e', 'petit', 'petite'],
+		mad: ['taré·e', 'taré', 'tarée'],
+		meant_to: ['CENSÉ·E', 'CENSÉ', 'CENSÉE'],
+		patient: ['patient·e', 'patient', 'patiente'],
+		pervert: ['pervers·e', 'pervers', 'perverse'],
+		pervert_bis: ['GROS·SE PERVERS·E DÉGOÛTANT·E', 'GROS PERVERS DÉGOÛTANT', 'GROSSE PERVERSE DÉGOÛTANTE'],
+		pleasure_zombie: ['ESCLAVE DE L\'HÉDONISME', 'CHAROGNARD SANS CERVELLE', 'COPULATRICE STUPIDE'],
+		poisoned: ['empoisonné·e', 'empoisonné', 'empoisonnée'],
+		rotten: ['pourri·e', 'pourri', 'pourrie'],
+		scary: ['FLIPPANT·E', 'FLIPPANT', 'FLIPPANTE'],
+		smart: ['intelligent·e', 'intelligent', 'intelligente'],
+		sorry: ['désolé·e', 'désolé', 'désolée'],
+		special: ['spécial·e', 'spécial', 'spéciale'],
+		taken: ['pris·e', 'pris', 'prise'],
+		vicious: ['vicieux·se', 'vicieux', 'vicieuse'],
+
+		// Host
+		bastard: ['enfoiré·e', 'enfoiré', 'enfoirée'],
+		pretty: ['beaux·lles', 'beaux', 'belles'],
+		redhead: ['roux·sse', 'roux', 'rousse'],
+		than_host: ['qu\'iel', 'que lui', 'qu\'elle'],
+		that: ['Ce·tte', 'Ce', 'Cette']
+	}
 
 	_.setGender = function(g){
 		const g_preview = $("#player_gender_preview");
@@ -138,15 +181,21 @@ Game.start = function(){
 		_.gender = g;
 		localStorage.setItem('gender', g);
 
-		human=_.g_act1.human[g];
+		cpronoun=_.g_acts.cpronoun[g];
+		u_cpronoun=cpronoun.toUpperCase();
+
+		human=_.g_acts.human[g];
 		u_human=human.toUpperCase();
 		l_human=human.toLowerCase();
 
-		spronoun=_.g_act1.spronoun[g];
-		u_spronoun=spronoun.toUpperCase();
+		loved=_.g_acts.loved[g];
+		u_loved=loved.toUpperCase();
 
-		cpronoun=_.g_act1.cpronoun[g];
-		u_cpronoun=cpronoun.toUpperCase();
+		spronoun=_.g_acts.spronoun[g];
+		u_spronoun=spronoun.toUpperCase();
+		l_spronoun=spronoun.toLowerCase();
+
+		an=_.g_acts.an[g];
 
 		alone=_.g_act1.alone[g];
 		u_alone=alone.toUpperCase();
@@ -155,7 +204,6 @@ Game.start = function(){
 
 		acknowledging=_.g_act1.acknowledging[g];
 		alone_bis=_.g_act1.alone_bis[g];
-		an=_.g_act1.an[g];
 		disgusting=_.g_act1.disgusting[g];
 		eaten=_.g_act1.eaten[g];
 		eater=_.g_act1.eater[g];
@@ -164,11 +212,39 @@ Game.start = function(){
 		idiot=_.g_act1.idiot[g];
 		invited=_.g_act1.invited[g];
 		lost=_.g_act1.lost[g];
-		loved=_.g_act1.loved[g];
 		normal=_.g_act1.normal[g];
 		of_self=_.g_act1.of_self[g];
 		player=_.g_act1.player[g];
 		sociopath=_.g_act1.sociopath[g];
+
+		scary=_.g_act2.scary[g];
+		u_scary=scary.toUpperCase();
+		l_scary=scary.toLowerCase();
+
+		broken=_.g_act2.broken[g];
+		confined=_.g_act2.confined[g];
+		cutie=_.g_act2.cutie[g];
+		dead=_.g_act2.dead[g];
+		forced=_.g_act2.forced[g];
+		friend=_.g_act2.friend[g];
+		full=_.g_act2.full[g];
+		happy=_.g_act2.happy[g];
+		irrational=_.g_act2.irrational[g];
+		kiddo=_.g_act2.kiddo[g];
+		kind=_.g_act2.kind[g];
+		little_one=_.g_act2.little_one[g];
+		mad=_.g_act2.mad[g];
+		meant_to=_.g_act2.meant_to[g];
+		patient=_.g_act2.patient[g];
+		pervert=_.g_act2.pervert[g];
+		pervert_bis=_.g_act2.pervert_bis[g];
+		pleasure_zombie=_.g_act2.pleasure_zombie[g];
+		rotten=_.g_act2.rotten[g];
+		smart=_.g_act2.smart[g];
+		sorry=_.g_act2.sorry[g];
+		special=_.g_act2.special[g];
+		taken=_.g_act2.taken[g];
+		vicious=_.g_act2.vicious[g];
 	};
 
 	_.setHostGender = function(g){
@@ -187,9 +263,22 @@ Game.start = function(){
 		_.hostGender = g;
 		localStorage.setItem('host_gender', g);
 
-		that_weirdo=_.hostGender==1?'ce taré':_.hostGender==2?'cette tarée':'ce·tte taré·e';
-		host_cpronoun=_.hostGender==1?'le':_.hostGender==2?'la':'læ';
-		host_spronoun=_.hostGender==1?'Il':_.hostGender==2?'Elle':'Iel';
+		host_cpronoun=_.g_acts.cpronoun[g];
+		host_ucpronoun=host_cpronoun.toUpperCase();
+		host_lcpronoun=host_cpronoun.toLowerCase();
+
+		host_spronoun=_.g_acts.spronoun[g];
+		host_lspronoun=host_spronoun.toLowerCase();
+
+		host_spronounplural=_.g_acts.spronounplural[g];
+
+		that_weirdo=_.g_act1.that_weirdo[g];
+
+		bastard=_.g_act2.bastard[g];
+		pretty=_.g_act2.pretty[g];
+		redhead=_.g_act2.redhead[g];
+		than_host=_.g_act2.than_host[g];
+		that = _.g_act2.that[g];
 	};
 
 	const storedGender = localStorage.getItem('gender');

@@ -260,7 +260,7 @@ publish("hp_show");
 
 `_.fifteencigs = true`
 
-n: TU AS UTILISÉ *PEUR DE NE PAS ÊTRE {{loved}}*
+n: TU AS UTILISÉ *PEUR DE NE PAS ÊTRE {{u_loved}}*
 
 (#act1b)
 
