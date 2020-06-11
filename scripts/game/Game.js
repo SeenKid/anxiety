@@ -267,9 +267,10 @@ Game.start = function(){
 		host_ucpronoun=host_cpronoun.toUpperCase();
 		host_lcpronoun=host_cpronoun.toLowerCase();
 
-		host_spronoun=_.g_acts.spronoun[g];
-		host_lspronoun=host_spronoun.toLowerCase();
+		that = _.g_act2.that[g];
+		l_that = that.toLowerCase();
 
+		host_spronoun=_.g_acts.spronoun[g];
 		host_spronounplural=_.g_acts.spronounplural[g];
 
 		that_weirdo=_.g_act1.that_weirdo[g];
@@ -278,7 +279,6 @@ Game.start = function(){
 		pretty=_.g_act2.pretty[g];
 		redhead=_.g_act2.redhead[g];
 		than_host=_.g_act2.than_host[g];
-		that = _.g_act2.that[g];
 	};
 
 	const storedGender = localStorage.getItem('gender');

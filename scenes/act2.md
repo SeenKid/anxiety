@@ -1539,7 +1539,7 @@ b: {{host_spronoun}} voulait te corrompre, te rendre aussi {{mad}} {{than_host}}
 
 `bb({ body:"yell_angry_1" });`
 
-b: Frappe {{host_lspronoun}} {{bastard}} ! Mets-{{host_lcpronoun}} KO !
+b: Frappe {{l_that}} {{bastard}} ! Mets-{{host_lcpronoun}} KO !
 
 `bb({ body:"final_1" });`
 
