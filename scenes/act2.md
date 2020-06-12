@@ -395,7 +395,7 @@ b: ...
 
 `bb({eyes:"suspect"})`
 
-b: Euh... est-ce-que tu m'entends, {{human}} ?
+b: Euh... est-ce-que tu m'entends, {{l_human}} ?
 
 `bb({eyes:"normal", MOUTH_LOCK:true})`
 
@@ -716,7 +716,7 @@ sfx("gravel");
 
 (...501)
 
-b: {{cpronoun}} {{pervert_bis}} devra être condamné·e à 72 heures dans un de ces dispositifs d'humiliation publique médiévaux
+b: {{cpronoun}} {{pervert_bis}} devra être {{condemned}} à 72 heures dans un de ces dispositifs d'humiliation publique médiévaux
 
 b: à moins qu'en fait ce ne soit son *genre de trucs*
 
@@ -937,7 +937,7 @@ h: *Je suis {{loved}}. Je suis {{kind}}. Je suis {{smart}}. Je suis {{special}}.
 
 [Mon Dieu, que c'est narcissique !](#act2d_narcissist)
 
-[Tu sais que cette technique d'affirmations a été *prouvée comme inefficace* ?](#act2d_disproven)
+[Tu sais que cette technique a été *prouvée comme inefficace* ?](#act2d_disproven)
 
 [OMG, n'associe pas les amérindiens à une histoire random comme ça !](#act2d_racist)
 
@@ -1156,7 +1156,7 @@ h: Qu'importe ce que je fais, je ne peux pas me débarrasser de to--
 
 `bb({body:"cry_1"});`
 
-b: Eh bien peut-être que tu N'ES PAS *{{meant_to}}* TE DÉBARRASSER DE MOI.
+b: Eh bien peut-être que tu N'ES PAS *{{u_meant_to}}* TE DÉBARRASSER DE MOI.
 
 `bb({body:"cry_2"});`
 
@@ -1523,7 +1523,7 @@ h: JE POUVAIS *ENTENDRE* LE BROIEMENT DES CÔTES. JE POUVAIS *GOÛTER* LE SANG D
 
 b: Je suis désolé, {{l_human}}.
 
-n: *FINIS-LÆ*
+n: *FINIS-{{u_cpronoun}}*
 
 [{COMBATTRE : Frappe l'hôte.}](#act2j_fight) `Game.OVERRIDE_CHOICE_LINE=true`
 
@@ -1588,7 +1588,7 @@ publish("act2",["party_hunter",14]);
 Game.WORDS_HEIGHT_BOTTOM = 230;
 ```
 
-r: Ça va, petit·e ?
+r: Ça va, {{little_one}} ?
 
 `publish("act2",["party_hunter",13]);`
 
@@ -1645,7 +1645,7 @@ r: L'animal a peut-être gagné aujourd'hui, mais reviens, et je te préparerai 
 
 h2: sayōnara, auf wiedersehen, zài jiàn, shalom
 
-r: Toi et moi, {{kiddo}}, on va montrer à cette bête qui est le patron !
+r: Toi et moi, {{l_kiddo}}, on va montrer à cette bête qui est le patron !
 
 (#act2k_end)
 
@@ -1669,7 +1669,7 @@ r: Viens à ma fête la semaine prochaine, {{cutie}}. Je te mélangerai un truc 
 
 h2: ok merci faut que j'coure coure coure coure coure
 
-r: Toi et moi, {{kiddo}}, on va montrer à cette bête qui c'est le patron !
+r: Toi et moi, {{l_kiddo}}, on va montrer à cette bête qui c'est le patron !
 
 (#act2k_end)
 

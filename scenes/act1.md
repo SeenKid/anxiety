@@ -361,7 +361,7 @@ n: METS LA JAUGE D'ÉNERGIE DE TON {{u_human}} À ZÉRO
 
 n: POUR PROTÉGER SES BESOINS PHYSIQUES + SOCIAUX + MORAUX, TU PEUX UTILISER :
 
-n: LA PEUR D'ÊTRE *{{harmed}}* #harm#
+n: LA PEUR D'ÊTRE *{{u_harmed}}* #harm#
 
 n: LA PEUR D'ÊTRE *{{alone_bis}}* #alone#
 
@@ -1600,9 +1600,9 @@ n: CHOISIS TA DERNIÈRE ACTION
 
 n: *FINIS-{{u_cpronoun}}*
 
-[{FIGHT: Punis ton téléphone super stressant !}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
+[{COMBATTRE : Punis ton téléphone super stressant !}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[{FLIGHT: Mets-toi en boule et pleure !}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
+[{FUIR : Mets-toi en boule et pleure !}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act1i_phone
 
