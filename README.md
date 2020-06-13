@@ -1,6 +1,6 @@
 ![](https://ncase.me/anxiety/sharing/banner.png)
 
-# [Jouez à l'histoire interactive ici !](https://nathsom.github.io/anxiety)
+# [Jouez à l'histoire interactive ici !](https://nathsom.github.io/)
 
 ## Domaine public
 
@@ -115,7 +115,8 @@ B Cavello, EmilyKate McDonough, Glen Chiacchieri, Mikayla Hutchinson, Monica Sri
 [Deutsch](https://jonasreich.github.io/anxiety/),
 [Español (Europeo)](https://jorgeygari.github.io/anxiety/),
 [Español (Latino)](https://fantasmashy.github.io/anxiety-Es-La/),
-[中文](https://z-lyen.github.io/anxiety/)
+[中文](https://z-lyen.github.io/anxiety/),
+[中文（臺灣）](https://audreyt.github.io/anxiety/),
 
 Okay. Je suis vraiment, vraiment désolé d'avance.
 

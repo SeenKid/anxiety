@@ -1,4 +1,5 @@
 window._ = {};
+_.gender = 0;
 window.Game = {};
 
 Game.sections = {};
@@ -91,22 +92,115 @@ Game.parseSceneMarkdown = function(md){
 // SCENE MANAGEMENT ////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
+const Genders = [ '0', '1', '2' ];
+
 Game.start = function(){
 	Game.FORCE_CANT_SKIP = false; // for the replay
 	window._ = {}; // global var, reset
 
-	_.gender = 0;
-	_.tossing = false;
+	_.g_acts = {
+		acknowledging: ['reconnaissant·e', 'reconnaissant', 'reconnaissante'],
+		alone: ['tout·e seul·e', 'tout seul', 'toute seule'],
+		an: ['un·e', 'un', 'une'],
+		broken: ['cassé·e', 'cassé', 'cassée'],
+		cpronoun: ['Læ', 'Le', 'La'],
+		dead: ['mort·e', 'mort', 'morte'],
+		freed: ['libéré·e', 'libéré', 'libérée'],
+		harmed: ['blessé·e', 'blessé', 'blessée'],
+		human: ['Humain·e', 'Humain', 'Humaine'],
+		kiddo: ['Gamin·e', 'Gamin', 'Gamine'],
+		kind: ['gentil·le', 'gentil', 'gentille'],
+		loved: ['aimé·e', 'aimé', 'aimée'],
+		meant_to: ['censé·e', 'censé', 'censée'],
+		patient: ['patient·e', 'patient', 'patiente'],
+		sorry: ['Désolé·e', 'Désolé', 'Désolée'],
+		spronoun: ['Iel', 'Il', 'Elle'],
+		spronounplural: ['Iels', 'Ils', 'Elles'],
+
+		// Host
+		killer: ['tueur·se en série', 'tueur en série', 'tueuse en série']
+	};
+
+	_.g_act1 = {
+		alone_bis: ['DÉLAISSÉ·E', 'DÉLAISSÉ', 'DÉLAISSÉE'],
+		disgusting: ['dégoûtant·e', 'dégoûtant', 'dégoûtante'],
+		eaten: ['mangé·e', 'mangé', 'mangée'],
+		eater: ['mangeur·se', 'mangeur', 'mangeuse'],
+		idiot: ['idiot·e', 'idiot', 'idiote'],
+		invited: ['invité·e', 'invité', 'invitée'],
+		lost: ['paumé·e', 'paumé', 'paumée'],
+		normal: ['normal·e', 'normal', 'normale'],
+		of_self: ['D\'IEL-MÊME', 'DE LUI-MÊME', 'D\'ELLE-MÊME'],
+		player: ['joueur·se', 'joueur', 'joueuse'],
+		productive: ['productif·ve', 'productif', 'productive'],
+		sociopath: ['manipulateur·trice pervers·e', 'manipulateur pervers', 'manipulatrice perverse'],
+		used: ['utilisé·e', 'utilisé', 'utilisée'],
+
+		// Host
+		that_weirdo: ['ce·tte taré·e', 'ce taré', 'cette tarée']
+	};
+
+	_.g_act2 = {
+		condemned: ['condamné·e', 'condamné', 'condamnée'],
+		confined: ['confiné·e', 'confiné', 'confinée'],
+		cutie: ['ma·on mignon·ne', 'mon mignon', 'ma mignonne'],
+		forced: ['obligé·e', 'obligé', 'obligée'],
+		friend: ['ami·e', 'ami', 'amie'],
+		full: ['plein·e', 'plein', 'pleine'],
+		happy: ['heureux·se', 'heureux', 'heureuse'],
+		irrational: ['irrationnel·le', 'irrationnel', 'irrationnelle'],
+		little_one: ['petit·e', 'petit', 'petite'],
+		mad: ['taré·e', 'taré', 'tarée'],
+		pervert: ['pervers·e', 'pervers', 'perverse'],
+		pervert_bis: ['GROS·SE PERVERS·E DÉGOÛTANT·E', 'GROS PERVERS DÉGOÛTANT', 'GROSSE PERVERSE DÉGOÛTANTE'],
+		pleasure_zombie: ['ESCLAVE DE L\'HÉDONISME', 'CHAROGNARD SANS CERVELLE', 'COPULATRICE STUPIDE'],
+		poisoned: ['empoisonné·e', 'empoisonné', 'empoisonnée'],
+		rotten: ['pourri·e', 'pourri', 'pourrie'],
+		scary: ['FLIPPANT·E', 'FLIPPANT', 'FLIPPANTE'],
+		smart: ['intelligent·e', 'intelligent', 'intelligente'],
+		special: ['spécial·e', 'spécial', 'spéciale'],
+		taken: ['pris·e', 'pris', 'prise'],
+		vicious: ['vicieux·se', 'vicieux', 'vicieuse'],
+
+		// Host
+		bastard: ['enfoiré·e', 'enfoiré', 'enfoirée'],
+		pretty: ['beaux·lles', 'beaux', 'belles'],
+		redhead: ['roux·sse', 'roux', 'rousse'],
+		than_host: ['qu\'iel', 'que lui', 'qu\'elle'],
+		that: ['Ce·tte', 'Ce', 'Cette']
+	};
+
+	_.g_act3 = {
+		respected: ['respecté·e', 'respecté', 'respectée'],
+
+		// Host
+		tormented: ['tourmenté·e', 'tourmenté', 'tourmentée']
+	};
+
+	_.g_act4 = {
+		all_human: ['tout·e humain·e', 'tout humain', 'toute humaine'],
+		confident: ['sûr·e', 'sûr', 'sûre'],
+		content: ['content·e', 'content', 'contente'],
+		gone: ['parti·e', 'parti', 'partie'],
+		impolite: ['malpoli·e', 'malpoli', 'malpolie'],
+		open: ['ouvert·e', 'ouvert', 'ouverte'],
+		psycho: ['UN·E DANGEREUX·SE PSYCHOPATHE PANIQUÉ·E', 'UN DANGEREUX PSYCHOPATHE PANIQUÉ', 'UNE DANGEREUSE PSYCHOPATHE PANIQUÉE'],
+		student: ['étudiant·e', 'étudiant', 'étudiante'],
+		traumatized: ['TRAUMATISÉ·E', 'TRAUMATISÉ', 'TRAUMATISÉE'],
+		troubled: ['tout·e troublé·e', 'tout troublé', 'toute troublée'],
+		went: ['allé·e', 'allé', 'allée'],
+
+		// Crush (Host)
+		rejected: ['REJETÉ·E', 'REJETÉ', 'REJETÉE'],
+		seen: ['vu·e', 'vu', 'vue'],
+		sit: ['assis·e', 'assis', 'assise']
+	};
 
 	_.setGender = function(g){
-		if (_.tossing) {
-			return;
-		}
-
-		const g_preview = $("#gender_preview");
+		const g_preview = $("#player_gender_preview");
 		switch (g) {
 			case 0:
-				g_preview.innerHTML = "indéfini";
+				g_preview.innerHTML = "neutre";
 				break;
 			case 1:
 				g_preview.innerHTML = "masculin";
@@ -116,48 +210,206 @@ Game.start = function(){
 		}
 
 		_.gender = g;
+		localStorage.setItem('gender', g);
+
+		acknowledging=_.g_acts.acknowledging[g].toUpperCase();
+
+		alone=_.g_acts.alone[g];
+		u_alone=alone.toUpperCase();
+
+		an=_.g_acts.an[g];
+		u_an=an.toUpperCase();
+
+		broken=_.g_acts.broken[g];
+		u_broken=broken.toUpperCase();
+
+		cpronoun=_.g_acts.cpronoun[g];
+		u_cpronoun=cpronoun.toUpperCase();
+
+		dead=_.g_acts.dead[g];
+		u_dead=dead.toUpperCase();
+
+		harmed=_.g_acts.harmed[g];
+		u_harmed=harmed.toUpperCase();
+
+		human=_.g_acts.human[g];
+		u_human=human.toUpperCase();
+		l_human=human.toLowerCase();
+
+		kiddo=_.g_acts.kiddo[g];
+		l_kiddo=kiddo.toLowerCase();
+
+		kind=_.g_acts.kind[g];
+		u_kind=kind.toUpperCase();
+
+		loved=_.g_acts.loved[g];
+		u_loved=loved.toUpperCase();
+
+		meant_to=_.g_acts.meant_to[g];
+		u_meant_to=meant_to.toUpperCase();
+
+		sorry=_.g_acts.sorry[g];
+		l_sorry=sorry.toLowerCase();
+
+		spronoun=_.g_acts.spronoun[g];
+		u_spronoun=spronoun.toUpperCase();
+		l_spronoun=spronoun.toLowerCase();
+
+		freed=_.g_acts.freed[g];
+		patient=_.g_acts.patient[g];
+
+		productive=_.g_act1.productive[g];
+		u_productive=productive.toUpperCase();
+
+		alone_bis=_.g_act1.alone_bis[g];
+		disgusting=_.g_act1.disgusting[g];
+		eaten=_.g_act1.eaten[g];
+		eater=_.g_act1.eater[g];
+		idiot=_.g_act1.idiot[g];
+		invited=_.g_act1.invited[g];
+		lost=_.g_act1.lost[g];
+		normal=_.g_act1.normal[g];
+		of_self=_.g_act1.of_self[g];
+		player=_.g_act1.player[g];
+		sociopath=_.g_act1.sociopath[g];
+		used=_.g_act1.used[g];
+
+		scary=_.g_act2.scary[g];
+		u_scary=scary.toUpperCase();
+		l_scary=scary.toLowerCase();
+
+		condemned=_.g_act2.condemned[g];
+		confined=_.g_act2.confined[g];
+		cutie=_.g_act2.cutie[g];
+		forced=_.g_act2.forced[g];
+		friend=_.g_act2.friend[g];
+		full=_.g_act2.full[g];
+		happy=_.g_act2.happy[g];
+		irrational=_.g_act2.irrational[g];
+		little_one=_.g_act2.little_one[g];
+		mad=_.g_act2.mad[g];
+		pervert=_.g_act2.pervert[g];
+		pervert_bis=_.g_act2.pervert_bis[g];
+		pleasure_zombie=_.g_act2.pleasure_zombie[g];
+		rotten=_.g_act2.rotten[g];
+		smart=_.g_act2.smart[g];
+		special=_.g_act2.special[g];
+		taken=_.g_act2.taken[g];
+		vicious=_.g_act2.vicious[g];
+
+		respected=_.g_act3.respected[g];
+
+		all_human=_.g_act4.all_human[g];
+		confident=_.g_act4.confident[g];
+		content=_.g_act4.content[g];
+		gone=_.g_act4.gone[g];
+		impolite=_.g_act4.impolite[g];
+		g_open=_.g_act4.open[g];
+		psycho=_.g_act4.psycho[g];
+		student=_.g_act4.student[g];
+		traumatized=_.g_act4.traumatized[g];
+		troubled=_.g_act4.troubled[g];
+		went=_.g_act4.went[g];
 	};
 
-	$("#g_toss").checked = false;
-	$("#g_undefined").checked = true;
-
-	_.toggleTossing = function(){
-		const g_preview = $("#gender_preview");
-		const g_undefined = $("#g_undefined");
-		const g_male = $("#g_male");
-		const g_female = $("#g_female");
-		const d_tosswith0 = $("#d_tosswith0");
-
-		if (_.tossing) {
-			_.tossing = false;
-			g_undefined.removeAttribute("disabled");
-			g_male.removeAttribute("disabled");
-		 	g_female.removeAttribute("disabled");
-
-			g_undefined.checked = true;
-			g_preview.innerHTML = "indéfini";
-
-			d_tosswith0.style.visibility = "hidden";
-		} else {
-			_.tossing = true;
-		 	g_undefined.setAttribute("disabled", "");
-			g_undefined.checked = false;
-			g_male.setAttribute("disabled", "");
-			g_male.checked = false;
-			g_female.setAttribute("disabled", "");
-			g_female.checked = false;
-
-		 	g_preview.innerHTML = "???";
-
-			d_tosswith0.style.visibility = "visible";
+	_.setHostGender = function(g){
+		const g_preview = $("#host_gender_preview");
+		switch (g) {
+			case 0:
+				g_preview.innerHTML = "neutre";
+				break;
+			case 1:
+				g_preview.innerHTML = "masculin";
+				break;
+			case 2:
+				g_preview.innerHTML = "féminin";
 		}
+
+		_.hostGender = g;
+		localStorage.setItem('host_gender', g);
+
+		host_an=_.g_acts.an[g];
+		host_uan=host_an.toUpperCase();
+
+		host_cpronoun=_.g_acts.cpronoun[g];
+		host_ucpronoun=host_cpronoun.toUpperCase();
+		host_lcpronoun=host_cpronoun.toLowerCase();
+
+		host_spronoun=_.g_acts.spronoun[g];
+		host_uspronoun=host_spronoun.toUpperCase();
+		host_lspronoun=host_spronoun.toLowerCase();
+
+		killer=_.g_acts.killer[g];
+		u_killer=killer.toUpperCase();
+
+		host_acknowledging=_.g_acts.acknowledging[g];
+		host_alone=_.g_acts.alone[g];
+		host_loved=_.g_acts.loved[g].toUpperCase();
+		host_spronounplural=_.g_acts.spronounplural[g];
+
+		that_weirdo=_.g_act1.that_weirdo[g];
+
+		that = _.g_act2.that[g];
+		l_that = that.toLowerCase();
+
+		bastard=_.g_act2.bastard[g];
+		pretty=_.g_act2.pretty[g];
+		redhead=_.g_act2.redhead[g];
+		than_host=_.g_act2.than_host[g];
+
+		tormented=_.g_act3.tormented[g];
+
+		rejected=_.g_act4.rejected[g];
+		seen=_.g_act4.seen[g];
+		sit=_.g_act4.sit[g];
 	};
 
-	$("#g_undefined").onchange = function(){ _.setGender(0); };
+	const storedGender = localStorage.getItem('gender');
+	_.setGender(Genders.includes(storedGender) ? parseInt(storedGender, 10) : 0);
+
+	const storedHostGender = localStorage.getItem('host_gender');
+	_.setHostGender(Genders.includes(storedHostGender) ? parseInt(storedHostGender, 10) : 0);
+
+	$("#g_neutral").checked = true;
+	$("#hg_neutral").checked = true;
+
+	$("#player_gender_options_toss").onclick = function(){
+		sfx("ui_click");
+
+		const prev_gender = _.gender;
+		do {
+			if ($("#g_tosswith0").checked) {
+				_.setGender(Math.round(Math.random() * 2));
+			} else {
+				_.setGender(Math.round(Math.random() + 1));
+			}
+		} while (_.gender == prev_gender);
+
+		update_player_gender_menu();
+	};
+
+	$("#host_gender_options_toss").onclick = function(){
+		sfx("ui_click");
+
+		const prev_gender = _.hostGender;
+		do {
+			if ($("#hg_tosswith0").checked) {
+				_.setHostGender(Math.round(Math.random() * 2));
+			} else {
+				_.setHostGender(Math.round(Math.random() + 1));
+			}
+		} while (_.hostGender == prev_gender);
+
+		update_host_gender_menu();
+	};
+
+	$("#g_neutral").onchange = function(){ _.setGender(0); };
 	$("#g_male").onchange = function(){ _.setGender(1); };
 	$("#g_female").onchange = function(){ _.setGender(2); };
 
-	$("#g_toss").onchange = _.toggleTossing;
+	$("#hg_neutral").onchange = function(){ _.setHostGender(0); };
+	$("#hg_male").onchange = function(){ _.setHostGender(1); };
+	$("#hg_female").onchange = function(){ _.setHostGender(2); };
 };
 
 var last_frame = Date.now();
@@ -221,7 +473,8 @@ Game.onUnpause = function(){
 };
 Game.pausedDOM.onclick = function(e){
 	if(Options.showing){
-		publish("hide_gender_options");
+		publish("hide_player_gender_options");
+		publish("hide_host_gender_options");
 		publish("hide_options");
 	}else if(About.showing){
 		$("#close_about").onclick();
@@ -1032,7 +1285,7 @@ Game.parseLine = function(line){
 			var condition = fullConditional.match(/\{\{if\s+([^\{\}]*)\}\}/)[1];
 
 			// Extract the inside text
-			var insideText = fullConditional.match(/\}\}([^\{\}]*)\{\{/)[1].trim()+" ";
+			var insideText = fullConditional.match(/\}\}(.*)\{\{\/if/)[1].trim()+" ";
 
 			// Eval condition!
 			var conditionIsTrue = false;

@@ -6,7 +6,7 @@
 
 (...51)
 
-[PLAY!](#intro-start) `publish("intro-to-game-1"); Game.OVERRIDE_CHOICE_LINE=true;`
+[JOUER !](#intro-start) `publish("intro-to-game-1"); Game.OVERRIDE_CHOICE_LINE=true;`
 
 # intro-start
 
@@ -14,7 +14,7 @@
 
 `clearText()`
 
-n3: Alors, avant qu'on ne commence, comment est-ce que *tu* aimes lire ?
+n3: Alors, avant qu'on ne commence, comment est-ce que *tu* aimes lire ?
 
 `publish("show_options_bottom")`
 
@@ -86,17 +86,17 @@ h: Ouais, je me demande pourquoi je ne m'asseois pas pour écouter mes pensées 
 
 `hong({eyes:"neutral"});`
 
-n: VITE, AVERTIS-LÆ D'UN *DANGER!*
+n: VITE, AVERTIS-LÆ D'UN *DANGER !*
 
 ```
 bb({eyes:"look"});
 ```
 
-[Oh non, regarde cette horrible nouvelle !](#act1d_news)
+[Oh non, regarde cette horrible nouvelle !](#act1d_news)
 
-[Oh non, est-ce que ce tweet est à propos de *nous ?*](#act1d_subtweet)
+[Oh non, est-ce que ce tweet est à propos de *nous ?*](#act1d_subtweet)
 
-[Hé, un GIF d'un chat qui boit du lait !](#act1d_milk)
+[Hé, un GIF d'un chat qui boit du lait !](#act1d_milk)
 
 # act1d_milk
 
