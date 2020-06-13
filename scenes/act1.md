@@ -1176,7 +1176,7 @@ b: DANGER DANGER DANGER DANGER DANGER DANGER
 
 [On *utilise* d'autres gens.](#act1f_using_others)
 
-[TON MATCH EST {{host_uan}} {{killer}}](#act1f_killer)
+[TON MATCH EST {{host_uan}} {{u_killer}}](#act1f_killer)
 
 # act1f_used_by_others
 
