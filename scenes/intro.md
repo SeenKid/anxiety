@@ -42,7 +42,7 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 [Sélection du Chapitre](#chapter-select) `Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
-[(notes de contenu)](#intro-play-button) `Game.OVERRIDE_CHOICE_LINE=true; publish('show_cn');`
+[(notes sur le contenu)](#intro-play-button) `Game.OVERRIDE_CHOICE_LINE=true; publish('show_cn');`
 
 # chapter-select
 

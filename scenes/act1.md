@@ -569,7 +569,7 @@ h: Héhé, je me demande bien pourquoi.
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-b: Donc si on y va, on va {{host_cpronoun}} mettre mal à l'aise, mais si on rejette son invitation, on va aussi l'incommoder !
+b: Donc si on y va, on va {{host_lcpronoun}} mettre mal à l'aise, mais si on rejette son invitation, on va aussi l'incommoder !
 
 `bb({body:"fear", eyes:"fear"});`
 
