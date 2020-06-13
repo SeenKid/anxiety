@@ -31,7 +31,7 @@ Game.FORCE_CANT_SKIP = false;
 Game.CLICK_TO_ADVANCE = true;
 ```
 
-n5: (Jeu sauvegardé automatiquement ! Tu peux quitter pour reprendre plus tard)
+n5: (Jeu sauvegardé automatiquement ! Tu peux quitter et reprendre après)
 
 ```
 Game.clearAll();

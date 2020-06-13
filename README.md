@@ -1,6 +1,6 @@
-![](https://ncase.me/anxiety/sharing/banner.png)
+![](https://nathsom.github.io/ncase-anxiety/sharing/banner.png)
 
-# [Jouez à l'histoire interactive ici !](https://nathsom.github.io/)
+# [Jouez à l'histoire interactive ici !](https://nathsom.github.io/ncase-anxiety)
 
 ## Domaine public
 
