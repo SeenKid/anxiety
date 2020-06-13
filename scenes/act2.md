@@ -1726,7 +1726,7 @@ h: Je vais te ^putain^ de tuer.
 Game.clearText();
 publish("act2", ["act2_end","next"]);
 sfx("concrete_step1");
-````
+```
 
 (...901)
 
