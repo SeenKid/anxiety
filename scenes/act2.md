@@ -826,7 +826,7 @@ b: Et si quelque chose était irréversiblement cassé à l'intérieur de nous d
 
 `bb({body:"scream_a_1"})`
 
-b: AHH ON EST {{broken}} ! TELLEMENT {{broken}} TELLEMENT {{broken}} TELLEMENT CASS--
+b: AHH ON EST {{u_broken}} ! TELLEMENT {{u_broken}} TELLEMENT {{u_broken}} TELLEMENT CASS--
 
 `_.a2_attack_3 = "alone";`
 
@@ -848,7 +848,7 @@ b: Et si c'était dans notre nature de blesser les autres ? Et si on ne pouvait
 
 `bb({body:"scream_a_1"})`
 
-b: AHH ON EST {{broken}} ! TELLEMENT {{broken}} TELLEMENT {{broken}} TELLEMENT CASS--
+b: AHH ON EST {{u_broken}} ! TELLEMENT {{u_broken}} TELLEMENT {{u_broken}} TELLEMENT CASS--
 
 `_.a2_attack_3 = "bad";`
 
@@ -1098,7 +1098,7 @@ b: Et si on *tous les deux* irrationnels, alors on n'arrivera *jamais* à trouve
 
 `bb({body:"scream_a_1"})`
 
-b: AHHH ON EST {{broken}} ! TELLEMENT {{broken}} TELLEMENT {{broken}} TELLEMENT CASS--
+b: AHHH ON EST {{u_broken}} ! TELLEMENT {{u_broken}} TELLEMENT {{u_broken}} TELLEMENT CASS--
 
 ```
 music(null);
@@ -1510,7 +1510,7 @@ h: C'ÉTAIT QUOI CE ^BORDEL^ ?
 b: Je suis désolé. Je devais te montrer les conséquences.
 
 {{if _.SPECIAL_ATTACK=="harm"}}
-h: JE POUVAIS *VOIR* MON PROPRE CORPS. JE POUVAIS *SENTIR* LA SENSATION D'ÊTRE VRAIMENT {{dead}}.
+h: JE POUVAIS *VOIR* MON PROPRE CORPS. JE POUVAIS *SENTIR* LA SENSATION D'ÊTRE VRAIMENT {{u_dead}}.
 {{/if}}
 
 {{if _.SPECIAL_ATTACK=="alone"}}
@@ -1653,7 +1653,7 @@ r: Toi et moi, {{l_kiddo}}, on va montrer à cette bête qui est le patron !
 
 `publish("act2",["party_hong",36]);`
 
-h2: ok {{sorry}} je dois partir
+h2: ok {{l_sorry}} je dois partir
 
 `publish("act2",["party_hunter",16]);`
 

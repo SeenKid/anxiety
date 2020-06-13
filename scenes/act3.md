@@ -360,7 +360,7 @@ b: {{human}}, je t'en prie...
 
 `hong({ eyes:"look_right" });`
 
-h: Oh je suis *{{sorry}}* que Big Pharma n'approuve pas mon auto-médication.
+h: Oh je suis *{{l_sorry}}* que Big Pharma n'approuve pas mon auto-médication.
 
 h: Regarde ^connard^, on a tous un moyen de te faire fermer ta *^putain^* de gueule.
 

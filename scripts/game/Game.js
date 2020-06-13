@@ -100,21 +100,25 @@ Game.start = function(){
 
 	_.g_acts = {
 		acknowledging: ['reconnaissant·e', 'reconnaissant', 'reconnaissante'],
+		alone: ['tout·e seul·e', 'tout seul', 'toute seule'],
 		an: ['un·e', 'un', 'une'],
+		broken: ['cassé·e', 'cassé', 'cassée'],
 		cpronoun: ['Læ', 'Le', 'La'],
+		dead: ['mort·e', 'mort', 'morte'],
 		freed: ['libéré·e', 'libéré', 'libérée'],
 		harmed: ['blessé·e', 'blessé', 'blessée'],
 		human: ['Humain·e', 'Humain', 'Humaine'],
 		kiddo: ['Gamin·e', 'Gamin', 'Gamine'],
+		kind: ['gentil·le', 'gentil', 'gentille'],
 		loved: ['aimé·e', 'aimé', 'aimée'],
 		meant_to: ['censé·e', 'censé', 'censée'],
-		sorry: ['désolé·e', 'désolé', 'désolée'],
+		patient: ['patient·e', 'patient', 'patiente'],
+		sorry: ['Désolé·e', 'Désolé', 'Désolée'],
 		spronoun: ['Iel', 'Il', 'Elle'],
 		spronounplural: ['Iels', 'Ils', 'Elles'],
 	};
 
 	_.g_act1 = {
-		alone: ['tout·e seul·e', 'tout seul', 'toute seule'],
 		alone_bis: ['DÉLAISSÉ·E', 'DÉLAISSÉ', 'DÉLAISSÉE'],
 		disgusting: ['dégoûtant·e', 'dégoûtant', 'dégoûtante'],
 		eaten: ['mangé·e', 'mangé', 'mangée'],
@@ -134,20 +138,16 @@ Game.start = function(){
 	};
 
 	_.g_act2 = {
-		broken: ['CASSÉ·E', 'CASSÉ', 'CASSÉE'],
 		condemned: ['condamné·e', 'condamné', 'condamnée'],
 		confined: ['confiné·e', 'confiné', 'confinée'],
 		cutie: ['ma·on mignon·ne', 'mon mignon', 'ma mignonne'],
-		dead: ['MORT·E', 'MORT', 'MORTE'],
 		forced: ['obligé·e', 'obligé', 'obligée'],
 		friend: ['ami·e', 'ami', 'amie'],
 		full: ['plein·e', 'plein', 'pleine'],
 		happy: ['heureux·se', 'heureux', 'heureuse'],
 		irrational: ['irrationnel·le', 'irrationnel', 'irrationnelle'],
-		kind: ['gentil·le', 'gentil', 'gentille'],
 		little_one: ['petit·e', 'petit', 'petite'],
 		mad: ['taré·e', 'taré', 'tarée'],
-		patient: ['patient·e', 'patient', 'patiente'],
 		pervert: ['pervers·e', 'pervers', 'perverse'],
 		pervert_bis: ['GROS·SE PERVERS·E DÉGOÛTANT·E', 'GROS PERVERS DÉGOÛTANT', 'GROSSE PERVERSE DÉGOÛTANTE'],
 		pleasure_zombie: ['ESCLAVE DE L\'HÉDONISME', 'CHAROGNARD SANS CERVELLE', 'COPULATRICE STUPIDE'],
@@ -174,6 +174,25 @@ Game.start = function(){
 		tormented: ['tourmenté·e', 'tourmenté', 'tourmentée']
 	};
 
+	_.g_act4 = {
+		all_human: ['tout·e humain·e', 'tout humain', 'toute humaine'],
+		confident: ['sûr·e', 'sûr', 'sûre'],
+		content: ['content·e', 'content', 'contente'],
+		gone: ['parti·e', 'parti', 'partie'],
+		impolite: ['malpoli·e', 'malpoli', 'malpolie'],
+		open: ['ouvert·e', 'ouvert', 'ouverte'],
+		psycho: ['UN·E DANGEREUX·SE PSYCHOPATHE PANIQUÉ·E', 'UN DANGEREUX PSYCHOPATHE PANIQUÉ', 'UNE DANGEREUSE PSYCHOPATHE PANIQUÉE'],
+		student: ['étudiant·e', 'étudiant', 'étudiante'],
+		traumatized: ['TRAUMATISÉ·E', 'TRAUMATISÉ', 'TRAUMATISÉE'],
+		troubled: ['tout·e troublé·e', 'tout troublé', 'toute troublée'],
+		went: ['allé·e', 'allé', 'allée'],
+
+		// Crush (Host)
+		rejected: ['REJETÉ·E', 'REJETÉ', 'REJETÉE'],
+		seen: ['vu·e', 'vu', 'vue'],
+		sit: ['assis·e', 'assis', 'assise']
+	};
+
 	_.setGender = function(g){
 		const g_preview = $("#player_gender_preview");
 		switch (g) {
@@ -192,8 +211,20 @@ Game.start = function(){
 
 		acknowledging=_.g_acts.acknowledging[g].toUpperCase();
 
+		alone=_.g_acts.alone[g];
+		u_alone=alone.toUpperCase();
+
+		an=_.g_acts.an[g];
+		u_an=an.toUpperCase();
+
+		broken=_.g_acts.broken[g];
+		u_broken=broken.toUpperCase();
+
 		cpronoun=_.g_acts.cpronoun[g];
 		u_cpronoun=cpronoun.toUpperCase();
+
+		dead=_.g_acts.dead[g];
+		u_dead=dead.toUpperCase();
 
 		harmed=_.g_acts.harmed[g];
 		u_harmed=harmed.toUpperCase();
@@ -205,22 +236,25 @@ Game.start = function(){
 		kiddo=_.g_acts.kiddo[g];
 		l_kiddo=kiddo.toLowerCase();
 
+		kind=_.g_acts.kind[g];
+		u_kind=kind.toUpperCase();
+
 		loved=_.g_acts.loved[g];
 		u_loved=loved.toUpperCase();
 
 		meant_to=_.g_acts.meant_to[g];
 		u_meant_to=meant_to.toUpperCase();
 
+		sorry=_.g_acts.sorry[g];
+		l_sorry=sorry.toLowerCase();
+
 		spronoun=_.g_acts.spronoun[g];
 		u_spronoun=spronoun.toUpperCase();
 		l_spronoun=spronoun.toLowerCase();
 
-		an=_.g_acts.an[g];
 		freed=_.g_acts.freed[g];
-		sorry=_.g_acts.sorry[g];
+		patient=_.g_acts.patient[g];
 
-		alone=_.g_act1.alone[g];
-		u_alone=alone.toUpperCase();
 		productive=_.g_act1.productive[g];
 		u_productive=productive.toUpperCase();
 
@@ -241,20 +275,16 @@ Game.start = function(){
 		u_scary=scary.toUpperCase();
 		l_scary=scary.toLowerCase();
 
-		broken=_.g_act2.broken[g];
 		condemned=_.g_act2.condemned[g];
 		confined=_.g_act2.confined[g];
 		cutie=_.g_act2.cutie[g];
-		dead=_.g_act2.dead[g];
 		forced=_.g_act2.forced[g];
 		friend=_.g_act2.friend[g];
 		full=_.g_act2.full[g];
 		happy=_.g_act2.happy[g];
 		irrational=_.g_act2.irrational[g];
-		kind=_.g_act2.kind[g];
 		little_one=_.g_act2.little_one[g];
 		mad=_.g_act2.mad[g];
-		patient=_.g_act2.patient[g];
 		pervert=_.g_act2.pervert[g];
 		pervert_bis=_.g_act2.pervert_bis[g];
 		pleasure_zombie=_.g_act2.pleasure_zombie[g];
@@ -265,6 +295,18 @@ Game.start = function(){
 		vicious=_.g_act2.vicious[g];
 
 		respected=_.g_act3.respected[g];
+
+		all_human=_.g_act4.all_human[g];
+		confident=_.g_act4.confident[g];
+		content=_.g_act4.content[g];
+		gone=_.g_act4.gone[g];
+		impolite=_.g_act4.impolite[g];
+		g_open=_.g_act4.open[g];
+		psycho=_.g_act4.psycho[g];
+		student=_.g_act4.student[g];
+		traumatized=_.g_act4.traumatized[g];
+		troubled=_.g_act4.troubled[g];
+		went=_.g_act4.went[g];
 	};
 
 	_.setHostGender = function(g){
@@ -283,13 +325,17 @@ Game.start = function(){
 		_.hostGender = g;
 		localStorage.setItem('host_gender', g);
 
-		host_acknowledging=_.g_acts.acknowledging[g];
-
 		host_cpronoun=_.g_acts.cpronoun[g];
 		host_ucpronoun=host_cpronoun.toUpperCase();
 		host_lcpronoun=host_cpronoun.toLowerCase();
 
 		host_spronoun=_.g_acts.spronoun[g];
+		host_uspronoun=host_spronoun.toUpperCase();
+		host_lspronoun=host_spronoun.toLowerCase();
+
+		host_acknowledging=_.g_acts.acknowledging[g];
+		host_alone=_.g_acts.alone[g];
+		host_loved=_.g_acts.loved[g].toUpperCase();
 		host_spronounplural=_.g_acts.spronounplural[g];
 
 		that_weirdo=_.g_act1.that_weirdo[g];
@@ -303,6 +349,10 @@ Game.start = function(){
 		than_host=_.g_act2.than_host[g];
 
 		tormented=_.g_act3.tormented[g];
+
+		rejected=_.g_act4.rejected[g];
+		seen=_.g_act4.seen[g];
+		sit=_.g_act4.sit[g];
 	};
 
 	const storedGender = localStorage.getItem('gender');
