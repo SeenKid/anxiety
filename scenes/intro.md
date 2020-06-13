@@ -15,7 +15,7 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 {{/if}}
 
 {{if !_.PLAYED_BEFORE}}
-[#play1# JOUER! #play2#](#intro-start) `publish("intro-to-game-1"); Game.OVERRIDE_CHOICE_LINE=true;`
+[#play1# JOUER ! #play2#](#intro-start) `publish("intro-to-game-1"); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="act2"}}
@@ -98,9 +98,15 @@ n3: Alors, avant de commencer, comment est-ce que *tu* préfères lire ?
 
 `publish("show_options_bottom")`
 
+# intro-start-gender
+
+n3: Cool ! Ah, au fait, comment est-ce que tu voudrais être genré·e par le jeu ?
+
+`publish("show_player_gender_options_bottom")`
+
 # intro-start-2
 
-n3: Super ! Note : tu peux changer tes réglages à tout moment avec l'icone ⚙ en bas. Aussi, le jeu sauvegarde automatiquement après chaque chapitre !
+n3: Super ! Note : tu peux changer tes réglages à tout moment avec l'icone ⚙ en bas. Le jeu sauvegarde aussi automatiquement après chaque chapitre !
 
 n3: Et maintenant, commençons notre histoire...
 
@@ -110,7 +116,7 @@ n3: Et maintenant, commençons notre histoire...
 
 `publish("intro-to-game-2")`
 
-n2: CECI EST UN·E HUMAIN·E
+n2: CECI EST {{if _.gender==0}}UN·E HUMAIN·E{{/if}}{{if _.gender==1}}UN HUMAIN{{/if}}{{if _.gender==2}}UNE HUMAINE{{/if}}
 
 (...600)
 

@@ -5,9 +5,59 @@ Loader.addSounds([
 	{ id:"ui_button2", src:"sounds/ui/button2.mp3" }
 ]);
 
+const update_player_gender_menu = function() {
+	const g_neutral = $("#g_neutral");
+	const g_male = $("#g_male");
+	const g_female = $("#g_female");
+	const g_preview = $("#player_gender_preview");
+
+	if (_.gender == 1) {
+		g_neutral.checked = false;
+		g_male.checked = true;
+		g_female.checked = false;
+		g_preview.innerHTML = "masculin";
+	} else if (_.gender == 2) {
+		g_neutral.checked = false;
+		g_male.checked = false;
+		g_female.checked = true;
+		g_preview.innerHTML = "féminin";
+	} else {
+		g_neutral.checked = true;
+		g_male.checked = false;
+		g_female.checked = false;
+		g_preview.innerHTML = "neutre";
+	}
+};
+
+const update_host_gender_menu = function() {
+	const g_neutral = $("#hg_neutral");
+	const g_male = $("#hg_male");
+	const g_female = $("#hg_female");
+	const g_preview = $("#host_gender_preview");
+
+	if (_.hostGender == 1) {
+		g_neutral.checked = false;
+		g_male.checked = true;
+		g_female.checked = false;
+		g_preview.innerHTML = "masculin";
+	} else if (_.hostGender == 2) {
+		g_neutral.checked = false;
+		g_male.checked = false;
+		g_female.checked = true;
+		g_preview.innerHTML = "féminin";
+	} else {
+		g_neutral.checked = true;
+		g_male.checked = false;
+		g_female.checked = false;
+		g_preview.innerHTML = "neutre";
+	}
+};
+
 (function(){
 
 	var optionsDOM = $("#options");
+	var playerGenderOptionsDOM = $("#player_gender_options");
+	var hostGenderOptionsDOM = $("#host_gender_options");
 	var text_speed_slider = $("#text_speed_slider");
 	var text_speed_preview = $("#text_speed_preview");
 	var volume_slider = $("#volume_slider");
@@ -69,10 +119,10 @@ Loader.addSounds([
 
 		click_to_advance.style.display = "block";
 		blinkCTA();
-		
+
 	});
 	subscribe("hide_click_to_advance", function(){
-		
+
 		click_to_advance.style.display = "none";
 
 		if(currentBlinkingInterval) clearInterval(currentBlinkingInterval);
@@ -145,7 +195,7 @@ Loader.addSounds([
 		div.innerHTML = "";
 
 		// What's the dialogue?
-		var dialogue = Game.TEXT_SPEED<80 ? "Cette vitesse" : "Cette lenteur";
+		var dialogue = Game.TEXT_SPEED<80 ? "À cette vitesse" : "Avec cette lenteur";
 
 		// Put in the text
 		var span, chr;
@@ -182,12 +232,13 @@ Loader.addSounds([
 
 
 	var ALREADY_DID_INTRO = false;
+	var ALREADY_DID_HOST_INTRO = false;
 
 	subscribe("show_options_bottom", function(){
 
 		ALREADY_DID_INTRO = false;
 		optionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
-		
+
 		optionsDOM.style.top = "447px";
 		_clearAllTimeouts();
 		text_speed_preview.innerHTML = "";
@@ -200,16 +251,56 @@ Loader.addSounds([
 
 	});
 
-	$("#options_ok").onclick = function(){
+	subscribe("show_player_gender_options_bottom", function(){
+		update_player_gender_menu();
+		playerGenderOptionsDOM.style.top = "370px";
+		sfx("ui_show_choice", {volume:0.4});
+	});
 
+	subscribe("show_host_gender_options_bottom", function(){
+		publish("hide_tabs");
+		update_host_gender_menu();
+		hostGenderOptionsDOM.style.top = "370px";
+		hostGenderOptionsDOM.style['background-color'] = "rgba(0, 0, 0, 0.5)";
+		sfx("ui_show_choice", {volume:0.4});
+	});
+
+	$("#options_ok").onclick = function(){
 		if(!ALREADY_DID_INTRO){
 			sfx("ui_click");
 			publish("cut_options_bottom");
-			ALREADY_DID_INTRO = true;
 		}else{
 			publish("hide_options");
 		}
 
+	};
+
+	$("#show_player_gender_options").onclick = function(){
+		publish("show_player_gender_options");
+	};
+
+	$("#show_host_gender_options").onclick = function(){
+		publish("show_host_gender_options");
+	};
+
+	$("#player_gender_options_ok").onclick = function(){
+		if(!ALREADY_DID_INTRO){
+			sfx("ui_click");
+			publish("cut_player_gender_options_bottom");
+			ALREADY_DID_INTRO = true;
+		}else{
+			publish("hide_player_gender_options");
+		}
+	};
+
+	$("#host_gender_options_ok").onclick = function(){
+		if(!ALREADY_DID_HOST_INTRO){
+			sfx("ui_click");
+			publish("cut_host_gender_options_bottom");
+			ALREADY_DID_HOST_INTRO = true;
+		}else{
+			publish("hide_host_gender_options");
+		}
 	};
 
 	subscribe("cut_options_bottom", function(){
@@ -220,11 +311,30 @@ Loader.addSounds([
 		},100);
 
 		// Total hack, but whatever
+		Game.goto("intro-start-gender");
+	});
+
+	subscribe("cut_player_gender_options_bottom", function(){
+		playerGenderOptionsDOM.style.display = "none";
+		playerGenderOptionsDOM.style.top = "";
+		setTimeout(function(){
+			playerGenderOptionsDOM.style.display = "block";
+		},100);
+
 		Game.goto("intro-start-2");
-
-		// Double total hack
 		publish("show_tabs");
+	});
 
+	subscribe("cut_host_gender_options_bottom", function(){
+		hostGenderOptionsDOM.style.display = "none";
+		hostGenderOptionsDOM.style.top = "";
+		hostGenderOptionsDOM.style['background-color'] = "unset";
+		setTimeout(function(){
+			hostGenderOptionsDOM.style.display = "block";
+		},100);
+
+		Game.goto("act1c-host");
+		publish("show_tabs");
 	});
 
 	subscribe("hide_tabs", function(){
@@ -238,9 +348,11 @@ Loader.addSounds([
 
 
 	subscribe("show_options", function(){
-
 		ALREADY_DID_INTRO = true;
 		optionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
+
+		$("#show_player_gender_options").style.display = "inline-block";
+		$("#show_host_gender_options").style.display = "inline-block";
 
 		optionsDOM.style.top = "200px";
 		Options.showing = true;
@@ -248,11 +360,49 @@ Loader.addSounds([
 		Howler.mute(false); // hack
 	});
 
-	subscribe("hide_options", function(){	
-		sfx("ui_click");	
+	subscribe("show_player_gender_options", function(){
+		ALREADY_DID_INTRO = true;
+		playerGenderOptionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
+
+		update_player_gender_menu();
+
+		playerGenderOptionsDOM.style.top = "200px";
+
+		sfx("ui_click");
+		optionsDOM.style.top = "";
+	});
+
+	subscribe("show_host_gender_options", function(){
+		ALREADY_DID_HOST_INTRO = true;
+		hostGenderOptionsDOM.setAttribute("past_intro", ALREADY_DID_HOST_INTRO ? "yes" : "no");
+
+		update_player_gender_menu();
+
+		hostGenderOptionsDOM.style.top = "200px";
+
+		sfx("ui_click");
+		optionsDOM.style.top = "";
+	});
+
+	subscribe("hide_options", function(){
+		sfx("ui_click");
 		optionsDOM.style.top = "";
 		Options.showing = false;
 		Game.onUnpause();
+	});
+
+	subscribe("hide_player_gender_options", function(){
+		sfx("ui_click");
+		playerGenderOptionsDOM.style.top = "";
+
+		optionsDOM.style.top = "200px";
+	});
+
+	subscribe("hide_host_gender_options", function(){
+		sfx("ui_click");
+		hostGenderOptionsDOM.style.top = "";
+
+		optionsDOM.style.top = "200px";
 	});
 
 })();
