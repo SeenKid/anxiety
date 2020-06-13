@@ -1408,7 +1408,7 @@ b: En parlant de fête... à propos de cette invitation pour ce week-end. Voici 
 
 [On devrait y aller.](#act1g_go) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[On ne devrait pas y aller.](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
+[On devrait pas y aller.](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act1g_go
 
