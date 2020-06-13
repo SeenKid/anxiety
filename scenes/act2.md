@@ -229,7 +229,7 @@ publish("act2",["party_hunter",0]);
 publish("act2",["dee",3]);
 ```
 
-s: Ouais, je sais pas ! J'ai l'air d'un *tueur en série* ou quoi ? Faut vraiment être parano.
+s: Ouais, je sais pas ! J'ai l'air d'{{host_an}} *{{killer}}* ou quoi ? Faut vraiment être parano.
 
 ```
 publish("act2",["party_hunter",1]);

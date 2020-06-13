@@ -116,6 +116,9 @@ Game.start = function(){
 		sorry: ['Désolé·e', 'Désolé', 'Désolée'],
 		spronoun: ['Iel', 'Il', 'Elle'],
 		spronounplural: ['Iels', 'Ils', 'Elles'],
+
+		// Host
+		killer: ['tueur·se en série', 'tueur en série', 'tueuse en série']
 	};
 
 	_.g_act1 = {
@@ -325,6 +328,9 @@ Game.start = function(){
 		_.hostGender = g;
 		localStorage.setItem('host_gender', g);
 
+		host_an=_.g_acts.an[g];
+		host_uan=host_an.toUpperCase();
+
 		host_cpronoun=_.g_acts.cpronoun[g];
 		host_ucpronoun=host_cpronoun.toUpperCase();
 		host_lcpronoun=host_cpronoun.toLowerCase();
@@ -332,6 +338,9 @@ Game.start = function(){
 		host_spronoun=_.g_acts.spronoun[g];
 		host_uspronoun=host_spronoun.toUpperCase();
 		host_lspronoun=host_spronoun.toLowerCase();
+
+		killer=_.g_acts.killer[g];
+		u_killer=killer.toUpperCase();
 
 		host_acknowledging=_.g_acts.acknowledging[g];
 		host_alone=_.g_acts.alone[g];

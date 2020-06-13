@@ -194,7 +194,7 @@ n: TON TRAVAIL EST DE PROTÉGER TON {{u_human}} DU *DANGER*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: EN FAIT, CE SANDWICH {{u_cpronoun}} MET EN *DANGER*, JUSTE MAINTENANT, LÀ
+n: EN FAIT, CE SANDWICH {{u_cpronoun}} MET EN *DANGER*, LÀ, MAINTENANT
 
 n: VITE, PRÉVIENS-{{u_cpronoun}} !
 
@@ -208,7 +208,7 @@ b: {{human}} ! Écoute, on est en danger ! Le danger, c'est que...
 
 `bb({body:"squeeze"})`
 
-n4: (LAISSE _TON_ ANXIÉTÉ SORTIR ET JOUER ! CHOISIS CE QUI RESSEMBLE LE PLUS À CE QUE _TA_ PEUR TE DIT)
+n4: (LAISSE _TON_ ANXIÉTÉ SORTIR POUR JOUER ! CHOISIS CE QUI RESSEMBLE LE PLUS À CE QUE _TA_ PEUR TE DIT)
 
 (#act1_normal_choice)
 
@@ -516,7 +516,7 @@ b: On va faire une overdose de méthamphétamines et de pain blanc, notre cadavr
 {{/if}}
 
 {{if !_.whitebread}}
-b: On va faire une telle overdose de médicaments que l'embaumeur se demandera pourquoi notre cadavre est *déjà* embaumé !
+b: On va faire une telle overdose de médicaments que l'embaumeur·se se demandera pourquoi notre cadavre est *déjà* embaumé !
 {{/if}}
 
 ```
@@ -680,13 +680,13 @@ h: Heu... Probablement pas ?
 
 `bb({eyes:"narrow", mouth:"small"});`
 
-b: Mais et s'ils parlent tous de nous derrière notre dos
+b: Mais et s'ils cassent tous du sucre sur notre dos
 
 h: Ils n--
 
 `bb({body:"fear", eyes:"fear", mouth:"normal"});`
 
-b: DEVANT NOTRE DOS
+b: SUR NOTRE VENTRE
 
 `hong({eyes:"sad", mouth:"sad"});`
 
@@ -1176,7 +1176,7 @@ b: DANGER DANGER DANGER DANGER DANGER DANGER
 
 [On *utilise* d'autres gens.](#act1f_using_others)
 
-[TON MATCH EST UN TUEUR EN SÉRIE](#act1f_killer)
+[TON MATCH EST {{host_uan}} {{killer}}](#act1f_killer)
 
 # act1f_used_by_others
 
@@ -1353,7 +1353,7 @@ h:
 {{if _.subtweet}}"ils parlent dans notre dos"... {{/if}}
 {{if _.badnews}}"le monde est en feu"... {{/if}}
 {{if _.hookuphole}}"on va mourir {{alone}}"... {{/if}}
-{{if _.serialkiller}}"c'est un tueur en série"... {{/if}}
+{{if _.serialkiller}}"c'est {{host_an}} {{killer}}"... {{/if}}
 {{if _.catmilk}}"les chats ne peuvent pas digérer le lait"... {{/if}}
 {{if _.pokemon}}une chanson parodique ^merdique^... {{/if}}
 
@@ -1456,7 +1456,7 @@ b: quoi?
 h: Je vais dire OUI à cette fête,
 
 {{if _.act1g=="go"}}
-h: PAS parce que tu me le demandes, mais parce que *JE* le veux.
+h: NON PAS parce que tu me le demandes, mais parce que *JE* le veux.
 {{/if}}
 
 {{if _.act1g=="dont"}}
