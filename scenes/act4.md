@@ -1020,11 +1020,11 @@ h: Je pense qu'on pourrait découvrir qu'on est plus aimable que ce qu'on pense.
 
 `bb({ eyes:"annoyed" });`
 
-[Et si ce ne sont que des petites "victoires" bas de gamme ?](#act4_alone_experiment_cheap)
+[Et si ce ne sont que des petites "victoires" ?](#act4_alone_experiment_cheap)
 
 [Et si c'est un fardeau pour les autres ?](#act4_alone_experiment_burden)
 
-[Mais quand on parle de la pluie et du beau temps, ce n'est pas le *vrai* nous !](#act4_alone_experiment_real_us)
+[Mais quand on fait la discussion, ce n'est pas le *vrai* nous !](#act4_alone_experiment_real_us)
 
 # act4_alone_experiment_real_us
 
@@ -1597,15 +1597,15 @@ a: Ç-ça ne te dérange pas si je m'asseois avec toi pour déjeuner ?
 `publish("act4", ["alshire", 1]);`
 
 {{if _.TOP_FEAR=="harm"}}
-s: *C'est {{host_lspronoun}}* ton coup de cœur ? Pourquoi est-{{host_lspronoun}} {{sit}} {{host_alone}} comme un tueur en série psychopathe ?
+s: *C'est {{host_lcpronoun}}* ton coup de cœur ? Pourquoi est-{{host_lspronoun}} {{sit}} {{host_alone}} comme un tueur en série psychopathe ?
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: Demander à ton coup de cœur si tu peux t'asseoir avec {{host_lspronoun}} ? Tu te rends compte à quel point tu sembles dans le *besoin* ?!
+s: Demander à ton coup de cœur si tu peux t'asseoir avec {{host_lcpronoun}} ? Tu te rends compte à quel point tu sembles dans le *besoin* ?!
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
-s:  *C'est {{host_lspronoun}}* ton coup de cœur ? On a interrompu sa paix et sa tranquillité ! On est tellement un fardeau !
+s:  *C'est {{host_lcpronoun}}* ton coup de cœur ? On a interrompu sa paix et sa tranquillité ! On est tellement un fardeau !
 {{/if}}
 
 `publish("act4", ["alshire", 2]);`

@@ -548,7 +548,7 @@ b: Une vie superficielle avec des amis superficiels qui connaissent uniquement t
 
 `bb({body:"two_up", eyes:"shock", mouth:"normal"})`
 
-b: {{human}}, on doit fuir ces zombies du plaisir avant qu'ils ne nous transforment en l'{{one}} des leurs !
+b: {{human}}, on doit fuir ces zombies du plaisir avant qu'ils ne nous transforment en l'{{an}} des leurs !
 
 ```
 _.a2_second_danger = 'zombies';
@@ -937,9 +937,9 @@ h: *Je suis {{loved}}. Je suis {{kind}}. Je suis {{smart}}. Je suis {{special}}.
 
 [Mon Dieu, que c'est narcissique !](#act2d_narcissist)
 
-[Tu sais que cette technique a été *prouvée comme inefficace* ?](#act2d_disproven)
+[Tu sais qu'on a prouvé l'inefficacité de ce truc ?](#act2d_disproven)
 
-[OMG, n'associe pas les amérindiens à une histoire random comme ça !](#act2d_racist)
+[OMG, n'associe pas les amérindiens à cette histoire random !](#act2d_racist)
 
 # act2d_disproven
 
@@ -1392,7 +1392,7 @@ b: C'est mal, {{l_human}}. C'est vraiment, vraiment mal.
 
 [C'est *vraiment* comme ça que l'addiction commence.](#act2h_opt1) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[Je *savais* que cet hôte était profondément taré !](#act2h_opt3) `Game.OVERRIDE_CHOICE_LINE=true`
+[Je *savais* que {{that_person}} était profondément {{host_mad}} !](#act2h_opt3) `Game.OVERRIDE_CHOICE_LINE=true`
 
 [Et ça aussi, ça a pu être drogué !](#act2h_opt2) `Game.OVERRIDE_CHOICE_LINE=true`
 

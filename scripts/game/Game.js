@@ -167,7 +167,8 @@ Game.start = function(){
 		pretty: ['beaux·lles', 'beaux', 'belles'],
 		redhead: ['roux·sse', 'roux', 'rousse'],
 		than_host: ['qu\'iel', 'que lui', 'qu\'elle'],
-		that: ['Ce·tte', 'Ce', 'Cette']
+		that: ['Ce·tte', 'Ce', 'Cette'],
+		that_person: ['cette personne', 'ce gars', 'cette fille']
 	};
 
 	_.g_act3 = {
@@ -353,9 +354,11 @@ Game.start = function(){
 		l_that = that.toLowerCase();
 
 		bastard=_.g_act2.bastard[g];
+		host_mad=_.g_act2.mad[g];
 		pretty=_.g_act2.pretty[g];
 		redhead=_.g_act2.redhead[g];
 		than_host=_.g_act2.than_host[g];
+		that_person=_.g_act2.that_person[g];
 
 		tormented=_.g_act3.tormented[g];
 
