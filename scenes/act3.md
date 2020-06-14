@@ -133,7 +133,7 @@ r: Mais c'est exactement pour ça que nous avons besoin de défier la mort ! *P
 publish("act3",["roofhunter",10]);
 ```
 
-r: Montre à cet animal qu'on s'en bat les *^couilles^* de ses *^putains^* de râlements ! Saute.
+r: Montre à cet animal qu'on s'en ^bat les *couilles*^ de ses *^putains^* de râlements ! Saute.
 
 ```
 publish("act3",["roofhunter",11]);
@@ -655,7 +655,7 @@ bb({ eyes:"sorry"});
 hong({ body:"yell_2", mouth:"yell", eyes:"blank" });
 ```
 
-h: NON. TU DÉC-^ONNES^.
+h: NON. TU ^DÉCONNES^.
 
 `hong({ body:"yell_1" });`
 
@@ -885,7 +885,7 @@ publish("act3",["roofhunter",27]);
 
 `Game.FORCE_CANT_SKIP = false;`
 
-r: Oh *allez*. Après tout ce que cet animal a fait pour toi, tu *abandonnes* ?
+r: Oh *allez*. Après tout ce que cet animal t'a fait, tu *abandonnes* ?
 
 r: C'est quoi le problème, {{l_kiddo}} ? Tu as *peur* ?
 
@@ -973,7 +973,7 @@ publish("act3",["roofhunter",32]);
 publish("act3",["roofhunter",33]);
 ```
 
-r: Est-ce qu'{{l_spronoun}} vient de fermer la porte ?
+r: Est-ce qu'{{l_spronoun}} vient de verrouiller la porte ?
 
 ```
 Game.clearAll();

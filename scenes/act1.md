@@ -100,7 +100,7 @@ h: OK, l'histoire est la même, mais chaque chapitre a deux fins possibles, en p
 
 `bb({body:"fear"});`
 
-b: L{{if _.gender==0}}æ joueur·se{{/if}}{{if _.gender==1}}e joueur{/if}}{{if _.gender==2}}a joueuse{{/if}} va être {{if _.gender==0}}déçu·e{{/if}}{{if _.gender==1}}déçu{/if}}{{if _.gender==2}}déçue{{/if}}, fermer cet onglet, effacer ce logiciel, et on va--
+b: {{cpronoun}} {{player}} va être {{disappointed}}, fermer cet onglet, effacer ce logiciel, et on va--
 
 (#act1_replay_end)
 
@@ -766,7 +766,7 @@ h: O-KAY, essayons Snapchat.
 
 `hong({mouth:"neutral", eyes:"neutral"});`
 
-h: Ah, des photos d'hier soir. Alors c'est à *ça* que ça ressemblent ces fêtes hebdomadaires.
+h: Ah, des photos d'hier soir. Alors c'est à *ça* que ça ressemble, ces fêtes hebdomadaires.
 
 {{if _.partyinvite=="yes"}} (#act1e_said_yes) {{/if}}
 
@@ -1228,7 +1228,7 @@ Game.FORCE_TEXT_DURATION = 1000;
 Game.FORCE_NO_VOICE = true;
 ```
 
-b: ♫ (thème de pokémon)-
+b: ♫ (générique de pokémon)-
 
 (...5600)
 
@@ -1283,7 +1283,7 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Le truc, c'est qu'on est juste {{an}} {{sociopath}}.
+b: Ce que je veux dire, c'est qu'on est juste {{an}} {{sociopath}}.
 
 ```
 hong({mouth:"shock", eyes:"shock"});

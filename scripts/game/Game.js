@@ -123,6 +123,7 @@ Game.start = function(){
 
 	_.g_act1 = {
 		alone_bis: ['DÉLAISSÉ·E', 'DÉLAISSÉ', 'DÉLAISSÉE'],
+		disappointed: ['déçu·e', 'déçu', 'déçue'],
 		disgusting: ['dégoûtant·e', 'dégoûtant', 'dégoûtante'],
 		eaten: ['mangé·e', 'mangé', 'mangée'],
 		eater: ['mangeur·se', 'mangeur', 'mangeuse'],
@@ -183,8 +184,10 @@ Game.start = function(){
 		confident: ['sûr·e', 'sûr', 'sûre'],
 		content: ['content·e', 'content', 'contente'],
 		gone: ['parti·e', 'parti', 'partie'],
+		good: ['Bon·ne', 'Bon', 'Bonne'],
 		impolite: ['malpoli·e', 'malpoli', 'malpolie'],
 		open: ['ouvert·e', 'ouvert', 'ouverte'],
+		pronoun: ['cette personne-là', 'lui', 'elle'],
 		psycho: ['UN·E DANGEREUX·SE PSYCHOPATHE PANIQUÉ·E', 'UN DANGEREUX PSYCHOPATHE PANIQUÉ', 'UNE DANGEREUSE PSYCHOPATHE PANIQUÉE'],
 		student: ['étudiant·e', 'étudiant', 'étudiante'],
 		traumatized: ['TRAUMATISÉ·E', 'TRAUMATISÉ', 'TRAUMATISÉE'],
@@ -263,6 +266,7 @@ Game.start = function(){
 		u_productive=productive.toUpperCase();
 
 		alone_bis=_.g_act1.alone_bis[g];
+		disappointed=_.g_act1.disappointed[g];
 		disgusting=_.g_act1.disgusting[g];
 		eaten=_.g_act1.eaten[g];
 		eater=_.g_act1.eater[g];
@@ -304,8 +308,10 @@ Game.start = function(){
 		confident=_.g_act4.confident[g];
 		content=_.g_act4.content[g];
 		gone=_.g_act4.gone[g];
+		good=_.g_act4.good[g];
 		impolite=_.g_act4.impolite[g];
 		g_open=_.g_act4.open[g];
+		pronoun=_.g_act4.pronoun[g];
 		psycho=_.g_act4.psycho[g];
 		student=_.g_act4.student[g];
 		traumatized=_.g_act4.traumatized[g];

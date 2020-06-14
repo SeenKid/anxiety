@@ -1259,7 +1259,7 @@ h: S'il te plaît, ne fais pas ça.
 
 `bb({ eyes:"angry_d" })`
 
-b: C'est fou à dire, mais... un part de moi *veut* avoir ce trouble.
+b: C'est fou à dire, mais... une part de moi *veut* avoir ce trouble.
 
 `bb({ eyes:"angry" })`
 
@@ -1271,7 +1271,7 @@ b: Sans le trouble, notre art ne serait-il pas éculé et insipide ?
 
 `bb({ eyes:"sad_u", body:"two_up" })`
 
-b: Sans le trouble, ne serions-nous pas incapable de nous connecter avec nos amis qui ont ce trouble ?
+b: Sans le trouble, est-ce qu'on ne serait pas incapable d'établir un lien avec nos amis qui *ont* ce trouble ?
 
 `bb({ eyes:"sad", body:"chest" })`
 
@@ -1561,9 +1561,9 @@ b: Construire une relation saine avec ses émotions n'est pas quelque chose d'au
 
 `bb({eyes:"sad", body:"normal"})`
 
-b: Est-ce qu'on *peut* vraiment bien s'entendre ?
+b: Est-ce qu'on peut *vraiment* bien s'entendre ?
 
-b: Est-ce qu'on *peut* vraiment travailler ensemble, comme une équipe ?
+b: Est-ce qu'on peut *vraiment* travailler ensemble, comme une équipe ?
 
 `hong({eyes:"sad", body:"one_up"})`
 
@@ -1597,15 +1597,15 @@ a: Ç-ça ne te dérange pas si je m'asseois avec toi pour déjeuner ?
 `publish("act4", ["alshire", 1]);`
 
 {{if _.TOP_FEAR=="harm"}}
-s: *C'est {{host_lcpronoun}}* ton coup de cœur ? Pourquoi est-{{host_lspronoun}} {{sit}} {{host_alone}} comme un tueur en série psychopathe ?
+s: *C'est {{pronoun}}* ton coup de cœur ? Pourquoi est-{{l_spronoun}} {{sit}} {{alone}} comme un tueur en série psychopathe ?
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: Demander à ton coup de cœur si tu peux t'asseoir avec {{host_lcpronoun}} ? Tu te rends compte à quel point tu sembles dans le *besoin* ?!
+s: Demander à ton coup de cœur si tu peux t'asseoir avec {{pronoun}} ? Tu te rends compte à quel point tu sembles dans le *besoin* ?!
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
-s:  *C'est {{host_lcpronoun}}* ton coup de cœur ? On a interrompu sa paix et sa tranquillité ! On est tellement un fardeau !
+s:  *C'est {{pronoun}}* ton coup de cœur ? On a interrompu sa paix et sa tranquillité ! On est tellement un fardeau !
 {{/if}}
 
 `publish("act4", ["alshire", 2]);`
@@ -1650,7 +1650,7 @@ publish("act4", ["hong_to_alshire", 3]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 2 : 0]);
 ```
 
-h2: Ah, je ne veux pas te mettre dans l'embarras !
+h2: Ah, je ne voulais pas te mettre dans l'embarras !
 
 `publish("act4", ["hong_to_alshire",4]);`
 
@@ -1666,7 +1666,7 @@ s: AHHHHH JE LE SAVAIS ! C'EST {{psycho}} !
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: AAHHH LA PREMIÈRE IMPRESSION QU'ON A FAITE EST "J'AI ÉTÉ TÉMOIN DE TON TRAUMA" ! {{u_spronoun}} NOUS DÉTESTE, C'EST SÛR !
+s: AAHHH LA PREMIÈRE IMPRESSION QU'ON A FAITE EST "J'AI ÉTÉ TÉMOIN DE TON TRAUMATISME" ! {{u_spronoun}} NOUS DÉTESTE, C'EST SÛR !
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
@@ -1812,7 +1812,7 @@ publish("act4", ["hong_closer", 1]);
 publish("act4", ["bb_closer", 4]);
 ```
 
-b: Ils disent que tu devrais "faire la paix" avec tes émotions, comme si tes émotions étaient des "criminels de guerre".
+b: Ils disent que tu devrais "faire la paix" avec tes émotions, comme si tes émotions étaient des criminels de guerre.
 
 `publish("act4", ["bb_closer", 7]);`
 
@@ -1874,7 +1874,7 @@ b: Peut-être que tu pourras apprivoiser ce loup que je suis.
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "b"`
 
-[Bon humain.](#act4f-pat-hong) `Game.OVERRIDE_CHOICE_SPEAKER = "b"; publish("act4", ["bb_closer", 8]);`
+[{{good}} {{l_human}}.](#act4f-pat-hong) `Game.OVERRIDE_CHOICE_SPEAKER = "b"; publish("act4", ["bb_closer", 8]);`
 
 # act4f-pat-hong
 

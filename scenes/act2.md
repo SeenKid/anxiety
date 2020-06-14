@@ -898,9 +898,9 @@ attack("20p", _.a2_attack_3);
 
 (...1001)
 
-h: P^UUUUTAIN^ !
+h: ^PUUUUTAIN^ !
 
-h: P^UTAIN^ DE P^UTAIN^ DE M^EEEEERDE^
+h: ^PUTAIN^ DE ^PUTAIN^ DE ^MEEEEERDE^
 
 `bb({body:"two_up", mouth:"smile", eyes:"happy"});`
 
@@ -1386,7 +1386,7 @@ bb({body:"frazzled", mouth:"frazzled", eyes:"frazzled"});
 
 h: Mmm, quelle palette exquise !
 
-h: Une saveur corsée de "ferme-la, conscience", avec un subtil arrière-goût de "ne plus jamais rien ressentir de nouveau" !
+h: Une saveur corsée de "ferme-la, conscience", avec un subtil arrière-goût de "ne plus jamais rien ressentir" !
 
 b: C'est mal, {{l_human}}. C'est vraiment, vraiment mal.
 
