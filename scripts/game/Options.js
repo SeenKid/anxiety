@@ -287,6 +287,7 @@ const update_host_gender_menu = function() {
 		if(!ALREADY_DID_INTRO){
 			sfx("ui_click");
 			publish("cut_player_gender_options_bottom");
+			$("#show_player_gender_options").style.display = "inline-block";
 			ALREADY_DID_INTRO = true;
 		}else{
 			publish("hide_player_gender_options");
@@ -297,6 +298,7 @@ const update_host_gender_menu = function() {
 		if(!ALREADY_DID_HOST_INTRO){
 			sfx("ui_click");
 			publish("cut_host_gender_options_bottom");
+			$("#show_host_gender_options").style.display = "inline-block";
 			ALREADY_DID_HOST_INTRO = true;
 		}else{
 			publish("hide_host_gender_options");
@@ -350,9 +352,6 @@ const update_host_gender_menu = function() {
 	subscribe("show_options", function(){
 		ALREADY_DID_INTRO = true;
 		optionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
-
-		$("#show_player_gender_options").style.display = "inline-block";
-		$("#show_host_gender_options").style.display = "inline-block";
 
 		optionsDOM.style.top = "200px";
 		Options.showing = true;
