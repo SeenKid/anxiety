@@ -45,7 +45,7 @@ function BG_Credits(){
 	self.thanks = new Sprite({
 		image: Library.images.credits_thanks,
 		grid:{ width:1, height:1 },
-		frame:{ width:720, height:7200 },
+		frame:{ width:720, height:8500 },
 		anchor:{ x:0, y:0 },
 		x:0, y:0
 	});
@@ -70,10 +70,10 @@ function BG_Credits(){
 		x:0, y:17
 	};
 	self.endMessages = [];
-	[{from:49.9667,to:50.6},
-	 {from:51.4667,to:52.1},
-	 {from:53.8333,to:54.4667},
-	 {from:57.8333,to:58.4667}].forEach(function(period, i){
+	[{from:54.9667,to:55.6},
+	 {from:56.4667,to:57.1},
+	 {from:58.8333,to:59.4667},
+	 {from:62.8333,to:63.4667}].forEach(function(period, i){
 		var msg = new Sprite(endMsg);
 		msg.gotoFrame(i);
 		msg._PERIOD = period;
@@ -123,9 +123,9 @@ function BG_Credits(){
 
 	// STAGE 2
 	var S2_SCROLL_START = 34.1667;// + 0.75;
-	var S2_SCROLL_END = 49.6667;
+	var S2_SCROLL_END = 54.6667;
 	var S2_SCROLL_DUR = S2_SCROLL_END-S2_SCROLL_START;
-	var S2_SCROLL_LEN = 3600 + 600;
+	var S2_SCROLL_LEN = 3600 + 600 + 300;
 
 	// STAGE 4
 	var YELPED = false;
@@ -142,16 +142,16 @@ function BG_Credits(){
 		self.t += delta; //1/60;		
 
 		// What STAGE?
-		if(self.t >= 71.0333 + 1.5){
+		if(self.t >= 76.0333 + 1.5){
 			if(!HAS_PUBLISHED_THE_END){
 				HAS_PUBLISHED_THE_END = true;
 				publish("THE_END");
 			}
-		}else if(self.t >= 71.0333){
+		}else if(self.t >= 76.0333){
 			STAGE = 5; // THE END
-		}else if(self.t >= 63.9667){
+		}else if(self.t >= 68.9667){
 			STAGE = 4; // END WALK
-		}else if(self.t >= 49.9667){
+		}else if(self.t >= 54.9667){
 			STAGE = 3; // END MESSAGE
 		}else if(self.t >= 33.9667){
 			STAGE = 2; // THANKS DANCE
@@ -302,10 +302,10 @@ function BG_Credits(){
 				var frame = Math.floor(t*6);
 				self.bb_dance.gotoFrame(frame);
 
-			}else if(self.t < 49.6667){
+			}else if(self.t < 54.6667){
 
 				// DANCE
-				var t = (self.t-33.9667)/(49.6667-33.9667);
+				var t = (self.t-33.9667)/(54.6667-33.9667);
 				var DANCE_STAGE = Math.floor(t*8);
 				var frame = DANCE_STAGE*4 + 6;
 				if(DANCE_STAGE>5) frame+=4;
@@ -319,7 +319,7 @@ function BG_Credits(){
 
 				// The hook
 				if(DANCE_STAGE==7){
-					var t = (self.t-47.9333)/(49.6667-47.9333);
+					var t = (self.t-47.9333)/(54.6667-47.9333);
 					self.hook.x = 360 - t*360;
 					self.hook.draw(ctx);
 				}
@@ -330,8 +330,8 @@ function BG_Credits(){
 				self.bb_dance.gotoFrame(42);
 
 				// DRAG AWAY
-				if(self.t>49.7667){
-					var t = (self.t-49.7667)/(49.9333-49.7667);
+				if(self.t>54.7667){
+					var t = (self.t-54.7667)/(54.9333-54.7667);
 					self.bb_dance.x = t*360;
 					ctx.fillStyle = "#fff";
 					ctx.fillRect(0,0,self.bb_dance.x,600);
@@ -365,8 +365,8 @@ function BG_Credits(){
 			});
 
 			// Fade out
-			if(self.t>59.3333){
-				var alpha = (self.t-59.3333) / (63.9333-59.3333);
+			if(self.t>64.3333){
+				var alpha = (self.t-64.3333) / (68.9333-64.3333);
 				ctx.globalAlpha = alpha;
 				ctx.fillStyle = "#fff";
 				ctx.fillRect(0,0,360,600);
@@ -383,9 +383,9 @@ function BG_Credits(){
 			ctx.fillRect(0,0,360,600);
 
 			// WALKING IN
-			var t = (self.t-63.9667)/0.3667;
+			var t = (self.t-68.9667)/0.3667;
 			var frame = Math.floor(t)%4;
-			if(self.t>70.6 && !YELPED){
+			if(self.t>75.6 && !YELPED){
 				YELPED = true;
 				sfx("yelp");
 			}
@@ -393,7 +393,7 @@ function BG_Credits(){
 			self.end_walk.draw(ctx);
 
 			// Fade in
-			var t = Math.min( (self.t-63.9667)/(70.1-63.9667), 1 );
+			var t = Math.min( (self.t-68.9667)/(75.1-68.9667), 1 );
 			var alpha = 1 - t*0.75;
 			ctx.globalAlpha = alpha;
 			ctx.fillStyle = "#fff";
