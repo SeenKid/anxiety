@@ -107,6 +107,24 @@ B Cavello, EmilyKate McDonough, Glen Chiacchieri, Mikayla Hutchinson, Monica Sri
 
 **Et bien sûr, merci à [mes fans sur Patreon](https://www.patreon.com/ncase) pour leur généreux soutien.** J'vous aime tous <3
 
+### Traduit en français par
+* Algorythmis
+* angela-quidam
+* B. dCruz
+* Begounet
+* DPS2004
+* Edwin
+* Febrile257
+* Feufoll
+* Idevernay
+* LauDev
+* LukasOchiwo
+* NathSoM
+* MadEwink
+* MarieCpll
+* mdamien
+* SortGenji
+
 ## Comment traduire
 
 **TRADUCTIONS TERMINÉES :**
